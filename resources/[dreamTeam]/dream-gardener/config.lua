@@ -12,6 +12,8 @@ Keys = {
 Config = {}
 
 
+Config = {HAYALET}
+
 Config.jobReq = false
 Config.jobName = 'gardener'
 

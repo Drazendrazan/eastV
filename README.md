@@ -8,7 +8,7 @@
 1.5- Animasyon menüsüne dilediğiniz şekilde ayar yapabilmeniz için ayar sekmesi getirildi (Hareket edemediğiniz bazı animasyonlar için Hareket ayarı eklendi)
 1.6- Tüm bildirimler üzerinde tasarımsal değişiklikler tamamlandı
 1.7- Discord üzerinden perm isteme işi tamamen bitirilmiştir. Meslek sahipleri IC olarak işe alabilir veya kovabilirler.
-1.7- Özellikle ghetto bölgesi olmak üzere şehir içerisinde farklı bölgelerde ki yerli halk ile İl****l satış yapılması için gereken script hazırlandı ve test edildi.
+1.7- Özellikle ghetto bölgesi olmak üzere şehir içerisinde farklı bölgelerde ki yerli halk ile İl\*\*\*\*l satış yapılması için gereken script hazırlandı ve test edildi.
 1.8- Ghetto bölgesinde orjinal hikaye de ki çeteler ve yerli halk npc sayısı ayarlandı(Unutmayınız aralarında silahlı olanlar var şakaları yok)
 1.9- Araç göstergesi tamamlandı MPH bazında çalışmaktadır mümkün olabildiğince FPS modunda ki kadrana yakın bir değer vermesi için gereken iyileştirmeler sağlandı.
 1.10- QBCore üzerinde ki gerekli güncellemeler ve fixler tamamlandı
@@ -61,7 +61,6 @@
 5.9- 'qb-garage' üzerinde ki gerekli iyileştirmeler tamamlandı.
 5.10- Polis departmanı mlo yüklendi ve gerekli entegreler tamamlandı.
 
-
 12.09.2022 - Güncellemeler
 6.1- qb-house üzerinde ki var olan dekorasyon bugu fixlendi.
 6.2- Galeri üzerinde ki son hatalar giderildi araçların fiyatları ayarlanıyor.
@@ -86,10 +85,8 @@
 7.9- Oyun içi konuşma sistemi entegre edildi testleri devam ediyor. Testlerin sonucuna göre teamspeak kullanılmayacak daha kaliteli olan 8D sistemi kullanılacaktır.
 7.10- Kısa bir süreliğine standart hud entegre edildi betadan çıktığımızda yeni huda geçiş yapılacak.
 
-
-
 13.08.2022 - Güncellemeler
 8.1- Kese kağıdı, ses bombası, molotf ve kırık cam şişesi eklendi.
-8.2- Çöpleri karıştırarak gerekli ** itemleri artık bulabilirsiniz.
+8.2- Çöpleri karıştırarak gerekli \** itemleri artık bulabilirsiniz.
 8.3- İllegal modifiye hayranları için yeni ithal motor, fren, suspansiyon eklendi. (mekanik aracılığı ile üretebilir veya satın alabilirsiniz.)
-8.4- *Bağış Araçlar* eklendi.(IC olarak erişebileceğiniz güzel araçlarda var, bağış araçları ile ilgili söylebileceğimiz en önemli şey hızlarının IC araçlar ile yakın seviyelerde olmasıdır.Bağışcı araçlarının tek farkı görüntüleri ve bizlere olan desteğidir. )
+8.4- *Bağış Araçlar\* eklendi.(IC olarak erişebileceğiniz güzel araçlarda var, bağış araçları ile ilgili söylebileceğimiz en önemli şey hızlarının IC araçlar ile yakın seviyelerde olmasıdır.Bağışcı araçlarının tek farkı görüntüleri ve bizlere olan desteğidir. )
