@@ -83,7 +83,7 @@ Play.Scene = function(scene, p)
     if scene then
         local sex = checkSex()
         if not scene.sex == 'both' and not (sex == scene.sex) then
-            Play.Notification('info', 'Cinsiyeti bu animasyona izin vermiyor')
+            Play.Notification('info', 'Sex does not allow this animation')
         else
             if scene.sex == 'position' then
                 local coords = GetOffsetFromEntityInWorldCoords(PlayerPedId(), 0.0, 0 - 0.5, -0.5);
@@ -170,7 +170,7 @@ Play.Shared = function(shared, p)
         local closePed = Load.GetPlayer()
         if closePed then
             local targetId = NetworkGetEntityOwner(closePed)
-            Play.Notification('info', 'İstek gönderildi ' .. GetPlayerName(targetId))
+            Play.Notification('info', 'Request sent to ' .. GetPlayerName(targetId))
             TriggerServerEvent('anims:awaitConfirmation', GetPlayerServerId(targetId), shared)
             p:resolve({passed = true, shared = true})
         end

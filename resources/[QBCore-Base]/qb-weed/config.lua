@@ -100,6 +100,6 @@ QBWeed.Props = {
 
 
 QBWeed.WaitTimes = {
-    ['dryWeed'] = 8000,
+    ['dryWeed'] = 80000,
     ['cutWeed'] = 8000
 }

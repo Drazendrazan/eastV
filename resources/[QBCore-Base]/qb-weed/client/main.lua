@@ -339,6 +339,15 @@ end)
 -- weedTable dreamTeam Functions -- 
 ---------------------------------------------------------
 
+function startAnim(ped, dictionary, anim)
+	Citizen.CreateThread(function()
+	  RequestAnimDict(dictionary)
+	  while not HasAnimDictLoaded(dictionary) do
+		Citizen.Wait(0)
+	  end
+		TaskPlayAnim(ped, dictionary, anim ,8.0, -8.0, -1, 50, 0, false, false, false)
+	end)
+end
     
 RegisterNetEvent('dream:client:openPersonalStash', function()
     TriggerServerEvent("inventory:server:OpenInventory", "stash", "Personel", {
@@ -370,21 +379,15 @@ AddEventHandler("dream-weed:client:cutWeed", function()
 end)
 
 RegisterNetEvent('dream-weed:client:dryWeed', function()
-    QBCore.Functions.Progressbar("dry_Weed", "Bitki Kurutuluyor ", (QBWeed.WaitTimes['dryWeed']), false, true, {
-		disableMovement = true,
-		disableCarMovement = true,
-		disableMouse = false,
-		disableCombat = true,
-	}, {
-		animDict = "mini@repair",
-		anim = "fixing_a_player",
-		flags = 16,
-	}, {}, {}, function() -- Done
-		-- StopAnimTask(ped, "mini@repair", "fixing_a_player", 1.0)
+    exports['anims']:PlayEmote('mechanic')
+    QBCore.Functions.Progressbar("dry_weed", "Esrar Kurutuluyor", (QBWeed.WaitTimes['dryWeed']), false, true, {
+        disableMovement = false,
+        disableCarMovement = false,
+        disableMouse = false,
+        disableCombat = false,
+    }, {}, {}, {}, function() -- Done
+          exports['anims']:PlayEmote('c')
         TriggerServerEvent("dream-weed:server:dryWeed")
-    end, function() -- Cancel
-        ClearPedTasks(ped)
-        QBCore.Functions.Notify("İşlem İptal Edildi", "error")
     end)
 end)
 
@@ -392,20 +395,19 @@ local weedTableProps = {
     `bkr_prop_weed_table_01a`,
 }
 
+
 exports['qb-target']:AddTargetModel(weedTableProps, {
         options = {
             {
-                event = "dream-weed:client:cutWeed",
+                event = 'dream-weed:client:cutWeed',
                 icon = "fa fa-scissors",
                 label = "Bitkiyi Kes", 
             },
             {
-                event = "dream-weed:client:dryWeed",
-                icon = "fa-solid fa-dryer",
+                event = 'dream-weed:client:dryWeed',
+                icon = "fa fa-scissors",
                 label = "Bitkiyi Kurut", 
             },
         },
     distance = 1.0
 })
-
-
