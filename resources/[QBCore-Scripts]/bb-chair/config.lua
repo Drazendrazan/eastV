@@ -1,0 +1,9 @@
+
+Config = {}
+
+Config.Target = true   -- LEAVE THIS ENABLED IF USING QB-TARGET
+
+
+
+--PRICES ARE ALL "0" CHANGE THEM IF YOU WANT TO CHARGE FOR THEM
+

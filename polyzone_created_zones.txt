@@ -1,0 +1,41 @@
+--Name: evidenceTest | 2022-08-11T02:44:25Z
+BoxZone:Create(vector3(485.11, -994.19, 30.69), 1, 1, {
+  name = "evidenceTest",
+  heading = 0,
+  --debugPoly = true,
+  minZ = 29.69,
+  maxZ = 33.69
+})
+
+--Name: policeStash | 2022-08-11T05:12:16Z
+BoxZone:Create(vector3(482.47, -994.68, 30.69), 1, 1, {
+  name = "policeStash",
+  heading = 0,
+  --debugPoly = true,
+  minZ = 29.69,
+  maxZ = 33.69
+})
+
+--Name: sahilDrug | Thu Aug 11 2022
+PolyZone:Create({
+ vector2(-1430.78, -971.81),
+ vector2(-1385.34, -1088.43),
+ vector2(-1367.16, -1162.65),
+ vector2(-1367.16, -1211.11),
+ vector2(-1367.16, -1276.24),
+ vector2(-1332.32, -1320.17),
+ vector2(-1302.03, -1395.90),
+ vector2(-1217.21, -1388.32),
+ vector2(-1215.69, -1351.97),
+ vector2(-1277.79, -1220.20),
+ vector2(-1283.85, -1179.31),
+ vector2(-1285.37, -1123.27),
+ vector2(-1286.88, -1085.40),
+ vector2(-1256.59, -1065.71),
+ vector2(-1265.68, -1017.25),
+ vector2(-1276.28, -988.47)
+}, {
+ name="sahilDrug",
+ --minZ=0,
+ --maxZ=800
+})
