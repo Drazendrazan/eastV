@@ -291,15 +291,15 @@ RegisterNetEvent('tuners:client:openbilling', function()
     if player ~= -1 and distance < 2.5 then
         local playerId = GetPlayerServerId(player)
         local dialog = exports['qb-input']:ShowInput({
-            header = "Create Receipt",
-            submitText = "Bill",
+            header = "Fatura Oluştur",
+            submitText = "Fatura",
             inputs = {{
-                text = "Player ID",
+                text = "Oyuncu ID",
                 name = "plyid",
                 type = "number",
                 isRequired = true
             }, {
-                text = "Amount",
+                text = "Ücret",
                 name = "amount",
                 type = "number",
                 isRequired = true
@@ -308,10 +308,10 @@ RegisterNetEvent('tuners:client:openbilling', function()
         if tonumber(dialog['plyid']) > 0 and tonumber(dialog['amount']) > 0 then
             TriggerServerEvent("tuners:server:billplayer", dialog['plyid'], dialog['amount'])
         else
-            QBCore.Functions.Notify('Amount must be greater than 0', 'error')
+            QBCore.Functions.Notify('Tutar 0dan büyük olmalıdır', 'error')
         end
     else
-        QBCore.Functions.Notify('No one nearby!', 'error')
+        QBCore.Functions.Notify('Yakınlarda kimse yok!', 'error')
     end
 end)
 

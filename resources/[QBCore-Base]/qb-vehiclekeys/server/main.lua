@@ -27,7 +27,7 @@ RegisterNetEvent('qb-vehiclekeys:server:GiveVehicleKeys', function(receiver, pla
             GiveKeys(receiver, plate)
         end
     else
-        TriggerClientEvent('QBCore:Notify', giver, "You don't have keys to this vehicle.", "error")
+        TriggerClientEvent('QBCore:Notify', giver, "Bu aracın anahtarları sizde yok.", "error")
     end
 end)
 
@@ -66,7 +66,7 @@ function GiveKeys(id, plate)
     if not VehicleList[plate] then VehicleList[plate] = {} end
     VehicleList[plate][citizenid] = true
     
-    TriggerClientEvent('QBCore:Notify', id, "You get keys to the vehicle!")
+    TriggerClientEvent('QBCore:Notify', id, "Aracın anahtarlarını aldınız!")
     TriggerClientEvent('qb-vehiclekeys:client:AddKeys', id, plate)
 end
 
@@ -88,28 +88,28 @@ function HasKeys(id, plate)
     return false
 end
 
-QBCore.Commands.Add("engine", "Toggle Engine", {}, false, function(source)
+QBCore.Commands.Add("motor", "Motoru Çalıştır", {}, false, function(source)
 	TriggerClientEvent('qb-vehiclekeys:client:ToggleEngine', source)
 end)
 
-QBCore.Commands.Add("givekeys", "Hand over the keys to someone. If no ID, gives to closest person or everyone in the vehicle.", {{name = "id", help = "Player ID"}}, false, function(source, args)
+QBCore.Commands.Add("anahtarver", "Araç anahtarlarını ver.", {{name = "id", help = "Player ID"}}, false, function(source, args)
 	local src = source
     TriggerClientEvent('qb-vehiclekeys:client:GiveKeys', src, tonumber(args[1]))
 end)
 
-QBCore.Commands.Add("addkeys", "Adds keys to a vehicle for someone.", {{name = "id", help = "Player ID"}, {name = "plate", help = "Plate"}}, true, function(source, args)
+QBCore.Commands.Add("anahtarekle", "Birisi için yedek anahtar yap.", {{name = "id", help = "Player ID"}, {name = "plate", help = "Plate"}}, true, function(source, args)
 	local src = source
     if not args[1] or not args[2] then
-        TriggerClientEvent('QBCore:Notify', src, 'Fill out the player ID and Plate arguments.')
+        TriggerClientEvent('QBCore:Notify', src, 'Oyuncu kimliğini ve Plaka argümanlarını doldurun.')
         return
     end
     GiveKeys(tonumber(args[1]), args[2])
 end, 'admin')
 
-QBCore.Commands.Add("removekeys", "Remove keys to a vehicle for someone.", {{name = "id", help = "Player ID"}, {name = "plate", help = "Plate"}}, true, function(source, args)
+QBCore.Commands.Add("anahtarsil", "Remove keys to a vehicle for someone.", {{name = "id", help = "Player ID"}, {name = "plate", help = "Plate"}}, true, function(source, args)
 	local src = source
     if not args[1] or not args[2] then
-        TriggerClientEvent('QBCore:Notify', src, 'Fill out the player ID and Plate arguments.')
+        TriggerClientEvent('QBCore:Notify', src, 'Oyuncu kimliğini ve Plaka argümanlarını doldurun.')
         return
     end
     RemoveKeys(tonumber(args[1]), args[2])

@@ -360,17 +360,14 @@ end)
 
 RegisterNetEvent("dream-weed:client:cutWeed")
 AddEventHandler("dream-weed:client:cutWeed", function()
+    exports['anims']:PlayEmote('mechanic')
     QBCore.Functions.Progressbar("cut_weed", "Bitki Kesiliyor ", (QBWeed.WaitTimes['cutWeed']), false, true, {
-		disableMovement = true,
-		disableCarMovement = true,
-		disableMouse = false,
-		disableCombat = true,
-	}, {
-		animDict = "mini@repair",
-		anim = "fixing_a_player",
-		flags = 16,
-	}, {}, {}, function() -- Done
-		-- StopAnimTask(ped, "mini@repair", "fixing_a_player", 1.0)
+        disableMovement = false,
+        disableCarMovement = false,
+        disableMouse = false,
+        disableCombat = false,
+    }, {}, {}, {}, function() -- Done
+          exports['anims']:PlayEmote('c')
         TriggerServerEvent("dream-weed:server:cutWeed")
     end, function() -- Cancel
         ClearPedTasks(ped)

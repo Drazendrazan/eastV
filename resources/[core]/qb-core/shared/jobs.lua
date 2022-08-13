@@ -2,12 +2,12 @@ QBShared = QBShared or {}
 QBShared.ForceJobDefaultDutyAtLogin = true -- true: Force duty state to jobdefaultDuty | false: set duty state from database last saved
 QBShared.Jobs = {
 	['unemployed'] = {
-		label = 'Civilian',
+		label = 'Sivil',
 		defaultDuty = true,
 		offDutyPay = false,
 		grades = {
             ['0'] = {
-                name = 'Freelancer',
+                name = 'Serbest Meslek',
                 payment = 10
             },
         },
@@ -70,12 +70,12 @@ QBShared.Jobs = {
         },
 	},
 	['realestate'] = {
-		label = 'Real Estate',
+		label = 'Emlakcı',
 		defaultDuty = true,
 		offDutyPay = false,
 		grades = {
             ['0'] = {
-                name = 'Recruit',
+                name = 'Acemi',
                 payment = 50
             },
 			['1'] = {
@@ -103,7 +103,7 @@ QBShared.Jobs = {
 		offDutyPay = false,
 		grades = {
             ['0'] = {
-                name = 'Recruit',
+                name = 'Acemi',
                 payment = 50
             },
 			['1'] = {
@@ -131,7 +131,7 @@ QBShared.Jobs = {
 		offDutyPay = false,
 		grades = {
             ['0'] = {
-                name = 'Driver',
+                name = 'Sürücü',
                 payment = 50
             },
 		},
@@ -165,12 +165,12 @@ QBShared.Jobs = {
         },
 	},
 	['mechanic'] = {
-		label = 'Mechanic',
+		label = 'Mekanik',
 		defaultDuty = true,
 		offDutyPay = false,
 		grades = {
             ['0'] = {
-                name = 'Recruit',
+                name = 'Acemi',
                 payment = 50
             },
 			['1'] = {

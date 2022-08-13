@@ -192,7 +192,7 @@ RegisterNetEvent('qb-vehiclekeys:client:GiveKeys', function(id)
                 end
             end
         else
-            QBCore.Functions.Notify("You don't have keys to this vehicle.", 'error')
+            QBCore.Functions.Notify("Aracın anahtarına sahip değilsin.", 'error')
         end
     end
 end)
@@ -217,7 +217,7 @@ function GiveKeys(id, plate)
     if distance < 1.5 and distance > 0.0 then
         TriggerServerEvent('qb-vehiclekeys:server:GiveVehicleKeys', id, plate)
     else
-        QBCore.Functions.Notify('There is nobody nearby to hand keys to.','error')
+        QBCore.Functions.Notify('Yakınlarda kimse yok.','error')
     end
 end
 
@@ -285,10 +285,10 @@ function ToggleVehicleLocks(veh)
                 NetworkRequestControlOfEntity(veh)
                 if vehLockStatus == 1 then
                     SetVehicleDoorsLocked(veh, 2)
-                    QBCore.Functions.Notify("Vehicle locked!", "primary")
+                    QBCore.Functions.Notify("Araç kilitlendi!", "primary")
                 else
                     SetVehicleDoorsLocked(veh, 1)
-                    QBCore.Functions.Notify("Vehicle unlocked!", "success")
+                    QBCore.Functions.Notify("Araç kilidi açıldı!", "success")
                 end
 
                 SetVehicleLights(veh, 2)
@@ -299,7 +299,7 @@ function ToggleVehicleLocks(veh)
                 Wait(300)
                 ClearPedTasks(ped)
             else
-                QBCore.Functions.Notify("You don't have keys to this vehicle.", 'error')
+                QBCore.Functions.Notify("Aracın anahtarlarına sahip değilsin.", 'error')
             end
         else
             SetVehicleDoorsLocked(veh, 1)
@@ -366,7 +366,7 @@ function lockpickFinish(success)
         if GetPedInVehicleSeat(vehicle, -1) == PlayerPedId() then
             TriggerServerEvent('qb-vehiclekeys:server:AcquireVehicleKeys', QBCore.Functions.GetPlate(vehicle))
         else
-            QBCore.Functions.Notify('You managed to pick the door lock open!', 'success')
+            QBCore.Functions.Notify('Kapı kilidini açmayı başardın!', 'success')
             SetVehicleDoorsLocked(vehicle, 1)
         end
 
@@ -408,7 +408,7 @@ function Hotwire(vehicle, plate)
         if (math.random() <= Config.HotwireChance) then
             TriggerServerEvent('qb-vehiclekeys:server:AcquireVehicleKeys', plate)
         else
-            QBCore.Functions.Notify("You fail to find the keys and get frustrated.", "error")
+            QBCore.Functions.Notify("Anahtarları bulamıyorsun.", "error")
         end
         Wait(Config.TimeBetweenHotwires)
         IsHotwiring = false
