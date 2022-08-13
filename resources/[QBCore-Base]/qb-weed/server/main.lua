@@ -155,7 +155,7 @@ RegisterNetEvent('qb-weed:server:harvestPlant', function(house, amount, plantNam
                         'SELECT * FROM house_plants WHERE plantid = ? AND building = ?', {plantId, house})
                     if result[1] ~= nil then
                         Player.Functions.AddItem('weed_' .. plantName .. '_seed', amount)
-                        Player.Functions.AddItem('weed_' .. plantName, sndAmount)
+                        Player.Functions.AddItem('weed_leafs', sndAmount)
                         Player.Functions.RemoveItem('empty_weed_bag', sndAmount)
                         MySQL.query('DELETE FROM house_plants WHERE plantid = ? AND building = ?',
                             {plantId, house})
@@ -199,19 +199,39 @@ RegisterNetEvent('qb-weed:server:foodPlant', function(house, amount, plantName, 
 end)
 
 
+RegisterNetEvent('dream-weed:server:cutWeed', function()
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+    local weedleafs = Player.Functions.GetItemByName('weed_leafs')
+    local weedShears = Player.Functions.GetItemByName('weed_shears')
+    if weedleafs ~= nil then
+        if weedShears ~= nil then
+            if weedleafs.amount >= 1 then
+                Player.Functions.RemoveItem('weed_leafs', 1)
+                Player.Functions.AddItem('weed_dry', 1)
+                TriggerClientEvent('QBCore:Notify', src, 'Bitki Yaprakları Kesildi', 'success', 3500)
+            else
+                TriggerClientEvent('QBCore:Notify', src, 'Yeterince bitki yaprağın yok', 'error', 3500)
+            end
+        else
+            TriggerClientEvent('QBCore:Notify', src, 'Bitki makasın yok', 'error', 3500)
+        end
+    end
+end)
+
 RegisterNetEvent('dream-weed:server:dryWeed', function()
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
-    local weed = Player.Functions.GetItemByName('weed_skunk')
-    local weedShears = Player.Functions.GetItemByName('weed_shears')
-    if weed ~= nil then
-        if weedShears ~= nil then
-            if weed.amount >= 1 then
-                Player.Functions.RemoveItem('weed_skunk', 1)
-                Player.Functions.AddItem('readyweed', 1)
+    local weedDry = Player.Functions.GetItemByName('weed_leafs')
+    local weedDryer = Player.Functions.GetItemByName('weed_dryer')
+    if weedDry ~= nil then
+        if weedDryer ~= nil then
+            if weedDry.amount >= 1 then
+                Player.Functions.RemoveItem('weed_leafs', 1)
+                Player.Functions.AddItem('ready_weed', 1)
                 TriggerClientEvent('QBCore:Notify', src, 'Bitki Kurutuldu', 'success', 3500)
             else
-                TriggerClientEvent('QBCore:Notify', src, 'Yeterince bitkin yok', 'error', 3500)
+                TriggerClientEvent('QBCore:Notify', src, 'Yeterince bitki yaprağın yok', 'error', 3500)
             end
         else
             TriggerClientEvent('QBCore:Notify', src, 'Bitki makasın yok', 'error', 3500)

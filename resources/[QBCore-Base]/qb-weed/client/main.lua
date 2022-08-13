@@ -328,7 +328,7 @@ end)
 
 
 ---------------------------------------------------------
--- weedTable Functions -- 
+-- weedTable dreamTeam Functions -- 
 ---------------------------------------------------------
 
     
@@ -341,49 +341,29 @@ RegisterNetEvent('dream:client:openPersonalStash', function()
 end)
 
 
-local function ItemsToItemInfo()
-	itemInfos = {
-		[1] = {costs = QBCore.Shared.Items["weed_skunk"]["label"] .. ": 2x, "},
-	}
-
-	local items = {}
-	for k, item in pairs(QBWeed.CraftingItems) do
-		local itemInfo = QBCore.Shared.Items[item.name:lower()]
-		items[item.slot] = {
-			name = itemInfo["name"],
-			amount = tonumber(item.amount),
-			info = itemInfos[item.slot],
-			label = itemInfo["label"],
-			description = itemInfo["description"] or "",
-			weight = itemInfo["weight"],
-			type = itemInfo["type"],
-			unique = itemInfo["unique"],
-			useable = itemInfo["useable"],
-			image = itemInfo["image"],
-			slot = item.slot,
-			costs = item.costs,
-			threshold = item.threshold,
-			points = item.points,
-		}
-	end
-	QBWeed.CraftingItems = items
-end
-
-
-local function getWeedItems()
-	ItemsToItemInfo()
-	local items = {}
-	for k, item in pairs(QBWeed.CraftingItems) do
-		if PlayerData.metadata["craftingrep"] >= QBWeed.CraftingItems[k].threshold then
-			items[k] = QBWeed.CraftingItems[k]
-		end
-	end
-	return items
-end
+RegisterNetEvent("dream-weed:client:cutWeed")
+AddEventHandler("dream-weed:client:cutWeed", function()
+    QBCore.Functions.Progressbar("cut_weed", "Bitki Kesiliyor ", (QBWeed.WaitTimes['cutWeed']), false, true, {
+		disableMovement = true,
+		disableCarMovement = true,
+		disableMouse = false,
+		disableCombat = true,
+	}, {
+		animDict = "mini@repair",
+		anim = "fixing_a_player",
+		flags = 16,
+	}, {}, {}, function() -- Done
+		-- StopAnimTask(ped, "mini@repair", "fixing_a_player", 1.0)
+        TriggerServerEvent("dream-weed:server:cutWeed")
+    end, function() -- Cancel
+        ClearPedTasks(ped)
+        QBCore.Functions.Notify("İşlem İptal Edildi", "error")
+    end)
+end)
 
 RegisterNetEvent("dream-weed:client:dryWeed")
 AddEventHandler("dream-weed:client:dryWeed", function()
-    QBCore.Functions.Progressbar("cut_weed", "Bitki Kesiliyor ", (QBWeed.WaitTimes['dryWeed']), false, true, {
+    QBCore.Functions.Progressbar("dry_Weed", "Bitki Kurutuluyor ", (QBWeed.WaitTimes['dryWeed']), false, true, {
 		disableMovement = true,
 		disableCarMovement = true,
 		disableMouse = false,
@@ -401,16 +381,21 @@ AddEventHandler("dream-weed:client:dryWeed", function()
     end)
 end)
 
-
 local weedTableProps = {
     `bkr_prop_weed_table_01a`,
 }
+
 exports['qb-target']:AddTargetModel(weedTableProps, {
         options = {
             {
-                event = "dream-weed:client:dryWeed2",
+                event = "dream-weed:client:cutWeed",
                 icon = "fa fa-scissors",
-                label = "Esrar Kes", 
+                label = "Bitkiyi Kes", 
+            },
+            {
+                event = "dream-weed:client:dryWeed",
+                icon = "fa-solid fa-dryer",
+                label = "Bitkiyi Kurut", 
             },
         },
     distance = 1.0

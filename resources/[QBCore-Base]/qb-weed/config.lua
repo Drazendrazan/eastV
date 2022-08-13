@@ -99,22 +99,7 @@ QBWeed.Props = {
 }
 
 
-QBWeed.WaitTimes = { -- [[ Wait times for progress bars ]]
-    ['dryWeed'] = 8000
-}
-
-
-QBWeed.CraftingItems = {
-    [1] = {
-        name = "readyweed",
-        amount = 4,
-        info = {},
-        costs = {
-            ["weed_skunk"] = 2
-        },
-        type = "item",
-        slot = 1,
-        threshold = 0,
-        points = 1,
-    },
+QBWeed.WaitTimes = {
+    ['dryWeed'] = 8000,
+    ['cutWeed'] = 8000
 }
