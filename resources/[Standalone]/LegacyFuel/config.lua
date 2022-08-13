@@ -1,8 +1,8 @@
 Config = {}
 
 -- What should the price of jerry cans be?
-Config.JerryCanCost = 100
-Config.RefillCost = 50 -- If it is missing half of it capacity, this amount will be divided in half, and so on.
+Config.JerryCanCost = 1000
+Config.RefillCost = 100 -- If it is missing half of it capacity, this amount will be divided in half, and so on.
 
 -- Display Refuel Info For 3 Seconds After Done
 Config.WaitTimeAfterRefuel = 3000
@@ -14,11 +14,11 @@ Config.FuelDecor = "_FUEL_LEVEL"
 Config.DisableKeys = {0, 22, 23, 24, 29, 30, 31, 37, 44, 56, 82, 140, 166, 167, 168, 170, 288, 289, 311, 323}
 
 -- Want to use the HUD? Turn this to true.
-Config.EnableHUD = true
+Config.EnableHUD = false
 
 -- Configure blips here. Turn both to false to disable blips all together.
-Config.ShowNearestGasStationOnly = true
-Config.ShowAllGasStations = false
+Config.ShowNearestGasStationOnly = false
+Config.ShowAllGasStations = true
 
 -- Modify the fuel-cost here, using a multiplier value. Setting the value to 2.0 would cause a doubled increase.
 Config.CostMultiplier = 1.0
@@ -27,15 +27,15 @@ Config.Strings = {
 	ExitVehicle = "Yakıt ikmali için araçtan çıkın",
 	EToRefuel = "Araca yakıt ikmali yapmak için ~g~E ~w~ basın",
 	JerryCanEmpty = "Benzin bidonu boş",
-	FullTank = "Tank is full",
-	PurchaseJerryCan = "You purchased a jerry can for ~g~$" .. Config.JerryCanCost,
-	CancelFuelingPump = "Press ~g~E ~w~to cancel the fueling",
-	CancelFuelingJerryCan = "Press ~g~E ~w~to cancel the fueling",
-	NotEnoughCash = "~r~Not enough cash",
-	RefillJerryCan = "You refilled the jerry can for ",
-	NotEnoughCashJerryCan = "~r~Not enough cash to refill jerry can",
-	JerryCanFull = "~g~Jerry can is full",
-	TotalCost = "Cost",
+	FullTank = "Depo full",
+	PurchaseJerryCan = "Benzin bidonu için ödediğin miktar: ~g~$" .. Config.JerryCanCost,
+	CancelFuelingPump = "~g~E ~w~Doldurmayı Durdur",
+	CancelFuelingJerryCan = "~g~E ~w~Doldurmayı Durdur",
+	NotEnoughCash = "~r~Yeterince paran yok",
+	RefillJerryCan = "Bidonu tekrar doldurdun ",
+	NotEnoughCashJerryCan = "~r~Bidonu dolduracak paran yok",
+	JerryCanFull = "~g~Benzin bidonu full",
+	TotalCost = "Ücret",
 }
 
 -- Blacklist certain vehicles. Use names or hashes. https://wiki.gtanet.work/index.php?title=Vehicle_Models
