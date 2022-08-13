@@ -1,8 +1,8 @@
 Config = Config or {}
 
-Config.DEBUG = false -- make sure it's false
-Config.sv_dataClearnigTimer = 1000 * 60 * 60 -- 1000 per sec
-Config.sv_maxTableSize = 5000 -- saved entites in table
+Config.DEBUG = false -- debug mode aç kapat
+Config.sv_dataClearnigTimer = 1000 * 60 * 60 -- Saniye de 1000 * 60 * 60 = 1 saat
+Config.sv_maxTableSize = 5000 -- Max tablo kayıtları
 
 Config.SlughterEveryAnimal = true
 Config.ShootingProtection = false
@@ -22,30 +22,30 @@ Config.BaitIndicator = {
     model = 'prop_peanut_bowl_01'
 }
 
-Config.BaitCooldown = 1000 * 30 -- 1000 per sec
-Config.SpawningTimer = 1000 * 10 -- script will wait until "SpawningTimer" time out then it will spwan animal
+Config.BaitCooldown = 1000 * 30 -- Saniye de 1000 * 30 = 30 saniye
+Config.SpawningTimer = 1000 * 10 -- komut dosyası "SpawningTimer" zaman aşımına uğrayana kadar bekleyecek, ardından hayvanı spawnlayacak
 
-Config.AnimalsEatingSpeed = 1000 * 15 -- how much animals will wait in baits location
-Config.AnimalsFleeView = 15.0 -- animal Flee range if they get to see players
+Config.AnimalsEatingSpeed = 1000 * 15 -- yemlerin bulunduğu yerde ne kadar süre hayvan bekleyecek
+Config.AnimalsFleeView = 15.0 -- oyuncuları görürlerse hayvan kaçma menzili
 
 Config.BaitPlacementSpeed = math.random(1000 * 5, 1000 * 7)
 Config.SlaughteringSpeed = math.random(1000 * 5, 1000 * 7)
 
-Config.maxSpawnDistance = 100 -- animal spwan radius from placed bait
-Config.minSpawnDistance = 60 -- animal spwan radius from placed bait
-Config.spawnAngle = { 0, 360 } -- animal spwan radius from placed bait
+Config.maxSpawnDistance = 100 -- yerleştirilen yemden hayvan spawn yarıçapı
+Config.minSpawnDistance = 60 -- yerleştirilen yemden hayvan spawn yarıçapı
+Config.spawnAngle = { 0, 360 } -- yerleştirilen yemden hayvan spawn yarıçapı
 
 Config.animalDespawnRange = 150.0
 
-Config.spawnedAnimalsBlips = true -- when animals spawend it will appears in map with blips on them
+Config.spawnedAnimalsBlips = true -- Hayvanların blipleri
 
 Config.AnimalBlip = {
     sprite = 463, -- icon https://docs.fivem.net/docs/game-references/blips/
     color = 5
 }
--- 25 , 75 => 25% chance to call police
--- 100 , 0 => 100% chance to call police
--- 0 , 100 => 0% chance to call police
+-- 25 , 75 => 25% polisi arama şansı
+-- 100 , 0 => 100% polisi arama şansı
+-- 0 , 100 => 0% polisi arama şansı
 Config.callPoliceChance = { 25, 75 }
 
 Config.llegalHuntingNotification = function(animalCoord)
@@ -139,7 +139,7 @@ Config.HuntingArea = { {
 
 Config.SellSpots = { {
     BlipsCoords = vector3(570.34, 2796.46, 42.01),
-    name = 'Ürünleri Sat!',
+    name = 'Avcılık Kazançlarını Sat!',
     showBlip = true,
     SellerNpc = {
         model = 'csb_chef',

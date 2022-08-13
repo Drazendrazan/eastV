@@ -1,7 +1,7 @@
 fx_version 'bodacious'
 games {'gta5'}
 
-author "Swkeep#7049"
+author "Hayalet#7141"
 
 shared_script {'config.lua', 'shared/shared.lua'}
 

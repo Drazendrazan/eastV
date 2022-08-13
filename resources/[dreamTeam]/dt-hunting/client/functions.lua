@@ -85,9 +85,9 @@ function initSellspotsQbTargets(sellspot)
         -- init qb-target for sellers
         exports['qb-target']:AddTargetModel(v.SellerNpc.model, {
             options = { {
-                event = "keep-hunting:client:sellREQ",
+                event = "dt-hunting:client:sellREQ",
                 icon = "fas fa-sack-dollar",
-                label = "Sell All"
+                label = "Herşeyi Sat"
             } },
             distance = 2.5
         })
@@ -100,7 +100,7 @@ function putQbTargetAllOnAnimals()
         exports['qb-target']:AddTargetModel(v.model, {
             options = { {
                 icon = "fas fa-sack-dollar",
-                label = "slaughter",
+                label = "Kes",
                 canInteract = function(entity)
                     if not IsPedAPlayer(entity) then
                         return (entity and IsEntityDead(entity))
@@ -110,7 +110,7 @@ function putQbTargetAllOnAnimals()
                     if IsPedAPlayer(entity) and IsEntityDead(entity) then
                         return false
                     end
-                    TriggerEvent('keep-hunting:client:slaughterAnimal', entity)
+                    TriggerEvent('dt-hunting:client:slaughterAnimal', entity)
                     return true
                 end
             } },
@@ -123,7 +123,7 @@ function putQbTargetOnEntity(ped)
     exports['qb-target']:AddTargetEntity(ped, {
         options = { {
             icon = "fas fa-sack-dollar",
-            label = "slaughter",
+            label = "Kes",
             canInteract = function(entity)
                 return IsEntityDead(entity)
             end,
@@ -131,7 +131,7 @@ function putQbTargetOnEntity(ped)
                 if IsEntityDead(entity) == false then
                     return false
                 end
-                TriggerEvent('keep-hunting:client:slaughterAnimal', entity)
+                TriggerEvent('dt-hunting:client:slaughterAnimal', entity)
                 return true
             end
         } },

@@ -3,13 +3,10 @@ local TableSize = Config.sv_maxTableSize
 local garbageCollection_tm = Config.sv_dataClearnigTimer
 local Animals = Config.Animals
 
--- ============================
---       EVENTS
--- ============================
-local animalsEnity = {} -- prevent players to slaughter twice
+local animalsEnity = {}
 
-RegisterServerEvent("keep-hunting:server:AddItem")
-AddEventHandler("keep-hunting:server:AddItem", function(data, entity, multiplier)
+RegisterServerEvent("dt-hunting:server:AddItem")
+AddEventHandler("dt-hunting:server:AddItem", function(data, entity, multiplier)
     local _source = source
     local Player = CoreName.Functions.GetPlayer(_source)
 
@@ -18,16 +15,15 @@ AddEventHandler("keep-hunting:server:AddItem", function(data, entity, multiplier
             -- check if another player already slaughtered or not
             if animalsEnity ~= nil then
                 if isAleadySlaughtered(entity) == false then
-                    setHash(entity) -- prevent player to slaughter twice
+                    setHash(entity)
                     choiceRewardsForPlayer(v.Loots, _source, Player, multiplier)
-                    TriggerClientEvent('keep-hunting:client:ForceRemoveAnimalEntity', -1, entity)
+                    TriggerClientEvent('dt-hunting:client:ForceRemoveAnimalEntity', -1, entity)
                 else
                     TriggerClientEvent('QBCore:Notify', _source, "Birisi bu hayvanı çoktan katletti!")
-                    TriggerClientEvent('keep-hunting:client:ForceRemoveAnimalEntity', -1, entity)
+                    TriggerClientEvent('dt-hunting:client:ForceRemoveAnimalEntity', -1, entity)
                 end
             else
-                -- init animalsEnity table
-                setHash(entity) -- prevent player to slaughter twice
+                setHash(entity)
                 choiceRewardsForPlayer(v.Loots, _source, Player, multiplier)
             end
         end
@@ -42,12 +38,7 @@ function choiceRewardsForPlayer(LootTable, _source, Player, multiplier)
     local multiplierResult = 0
 
     for key, value in pairs(LootTable) do
-        -- value[1] contains item names
-        -- value[2] contains lootTable Chances
-
-        -- Separate Definite and Chance Rewarding
         if value[2] == 100 then
-            -- Definite
             table.insert(DefiniteRewardsList, value[1])
         else
             -- Chance
@@ -102,7 +93,6 @@ function calMultiplier(multiplier)
         end
 
         result = result + multiplier.weapon + (#multiplier['bones'] - count) * Config.boneHitMultiplier.default.multiplier
-        --multiplier.weapon
         if result > Config.maxMultiplier then
             result = Config.maxMultiplier
         end
@@ -111,16 +101,11 @@ function calMultiplier(multiplier)
         end
         return result
     elseif multiplier ~= nil and type(multiplier) == "string" and multiplier == 'default' then
-        --Config.weaponQualitymultiplier.default
-
-        --Config.boneHitmultiplier.default
-
     end
     return 0
 end
 
 function CompleteRestOfChancesData(RewardChances)
-    -- here we Complete the rest Chances to reach 100% in total in every try and then make EarnedLoot table
     local sample
     local temp = {}
     for key, value in pairs(RewardChances) do
@@ -132,11 +117,8 @@ function CompleteRestOfChancesData(RewardChances)
     return temp
 end
 
--- ============================
---   SELLING
--- ============================
-RegisterServerEvent('keep-hunting:server:sellmeat')
-AddEventHandler('keep-hunting:server:sellmeat', function()
+RegisterServerEvent('dt-hunting:server:sellmeat')
+AddEventHandler('dt-hunting:server:sellmeat', function()
     local src = source
     local Player = CoreName.Functions.GetPlayer(src)
     local price = 0
@@ -173,23 +155,23 @@ AddEventHandler('keep-hunting:server:sellmeat', function()
 end)
 
 CoreName.Functions.CreateUseableItem("huntingbait", function(source, item)
-    TriggerClientEvent('keep-hunting:client:useBait', source)
+    TriggerClientEvent('dt-hunting:client:useBait', source)
 end)
 
-RegisterServerEvent('keep-hunting:server:removeBaitFromPlayerInventory')
-AddEventHandler('keep-hunting:server:removeBaitFromPlayerInventory', function()
+RegisterServerEvent('dt-hunting:server:removeBaitFromPlayerInventory')
+AddEventHandler('dt-hunting:server:removeBaitFromPlayerInventory', function()
     local Player = CoreName.Functions.GetPlayer(source)
     Player.Functions.RemoveItem("huntingbait", 1)
 end)
 
-RegisterServerEvent('keep-hunting:server:choiceWhichAnimalToSpawn')
-AddEventHandler('keep-hunting:server:choiceWhichAnimalToSpawn', function(coord, outPosition, was_llegal, indicator)
+RegisterServerEvent('dt-hunting:server:choiceWhichAnimalToSpawn')
+AddEventHandler('dt-hunting:server:choiceWhichAnimalToSpawn', function(coord, outPosition, was_llegal, indicator)
     local src = source
     local Player = CoreName.Functions.GetPlayer(src)
     local C_animal = choiceAnimal(Animals, was_llegal)
 
     if C_animal ~= nil then
-        TriggerClientEvent('keep-hunting:client:spawnAnimal', source, coord, outPosition, C_animal, was_llegal, indicator)
+        TriggerClientEvent('dt-hunting:client:spawnAnimal', source, coord, outPosition, C_animal, was_llegal, indicator)
     end
 end)
 
@@ -209,17 +191,13 @@ function choiceAnimal(Rarities, was_llegal)
     end
 end
 
--- ============================
---      Commands
--- ============================
-
 CoreName.Commands.Add("spawnanimal", "Spawn Animals (Admin Only)",
     { { "model", "Animal Model" }, { "was_llegal", "area of hunt true/false" } }, false, function(source, args)
-        TriggerClientEvent('keep-hunting:client:spawnanim', source, args[1], args[2])
+        TriggerClientEvent('dt-hunting:client:spawnanim', source, args[1], args[2])
     end, 'admin')
 
 CoreName.Commands.Add("clearTask", "Clear Animations", {}, false, function(source)
-    TriggerClientEvent('keep-hunting:client:clearTask', source)
+    TriggerClientEvent('dt-hunting:client:clearTask', source)
 end, 'user')
 
 CoreName.Commands.Add('addBait', 'add bait to player inventory (Admin Only)', {}, false, function(source)
@@ -230,10 +208,6 @@ CoreName.Commands.Add('addBait', 'add bait to player inventory (Admin Only)', {}
     TriggerClientEvent("inventory:client:ItemBox", src, CoreName.Shared.Items["huntingbait"], "add")
 end, 'admin')
 
--- ============================
---      Server garbage collection
--- ============================
-
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(garbageCollection_tm)
@@ -241,9 +215,6 @@ Citizen.CreateThread(function()
     end
 end)
 
--- ============================
---      Functions
--- ============================
 function isAleadySlaughtered(entity)
     local isAleadySlaughtered = false
 

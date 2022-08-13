@@ -1,6 +1,5 @@
 local alias_table = {}
 
--- https://gist.github.com/RyanPattison/7dd900f4042e8a6f9f23
 
 function alias_table:new(weights)
     local total = 0
@@ -25,7 +24,7 @@ function alias_table:new(weights)
 
     local prob = {}
     local alias = {}
-    while small_stack[1] and big_stack[1] do -- both non-empty
+    while small_stack[1] and big_stack[1] do
         small = table.remove(small_stack)
         large = table.remove(big_stack)
         prob[small] = norm[small]
