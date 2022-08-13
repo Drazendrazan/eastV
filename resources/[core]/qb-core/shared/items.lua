@@ -327,6 +327,7 @@ QBShared.Items = {
 	['weed_nutrition'] 				 = {['name'] = 'weed_nutrition', 			    ['label'] = 'Gübre', 					['weight'] = 2000, 		['type'] = 'item', 		['image'] = 'weed_nutrition.png', 		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Bitki Gübresi'},
 	['weed_leafs'] 				 	 = {['name'] = 'weed_leafs', 			    	['label'] = 'Esrar Yaprakları', 		['weight'] = 2000, 		['type'] = 'item', 		['image'] = 'weed_nutrition.png', 		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Esrar Yaprağı'},
 	['weed_dry'] 				 	 = {['name'] = 'weed_dry', 			    		['label'] = 'Islak Esrar', 				['weight'] = 2000, 		['type'] = 'item', 		['image'] = 'weed_nutrition.png', 		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Islak Esrar'},
+	['weed_dryer'] 				 	 = {['name'] = 'weed_dryer', 			    	['label'] = 'Bitki Kurutucu', 			['weight'] = 100, 		['type'] = 'item', 		['image'] = 'weed_shears.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Esrarı Kurutmaya yarıyormuş..'},
 	['weed_shears'] 				 = {['name'] = 'weed_shears', 			    	['label'] = 'Esrar Makası', 			['weight'] = 100, 		['type'] = 'item', 		['image'] = 'weed_shears.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Esrarı Kesmeye yarıyormuş..'},
 
 	-- Material

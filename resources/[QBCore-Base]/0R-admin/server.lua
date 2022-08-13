@@ -194,11 +194,11 @@ end)
 		
 -- RegisterServerEvent('0R.ADMIN.CLEARINV')
 -- AddEventHandler('0R.ADMIN.CLEARINV', function(id)
---     if PermCheck(source, 'clearinv') then
+--    if PermCheck(source, 'clearinv') then
 -- 	   local xPlayer = QBCore.Functions.GetPlayer(source)
 --       local items = xPlayer.PlayerData.items
---       xPlayer.Functions.RemoveItem(items, )
---     end
+--       xPlayer.Functions.RemoveItem(items)
+--    end
 -- end)
 
 RegisterServerEvent('0R.ADMIN.GIVECAR')

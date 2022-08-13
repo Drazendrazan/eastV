@@ -199,7 +199,7 @@ RegisterNetEvent('qb-weed:server:foodPlant', function(house, amount, plantName, 
 end)
 
 
-RegisterNetEvent('dream-weed:server:cutWeed', function()
+RegisterNetEvent('dream-weed:server:cutWeed', function(amount)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
     local weedleafs = Player.Functions.GetItemByName('weed_leafs')
@@ -207,8 +207,8 @@ RegisterNetEvent('dream-weed:server:cutWeed', function()
     if weedleafs ~= nil then
         if weedShears ~= nil then
             if weedleafs.amount >= 1 then
-                Player.Functions.RemoveItem('weed_leafs', 1)
-                Player.Functions.AddItem('weed_dry', 1)
+                Player.Functions.RemoveItem('weed_leafs', weedleafs.amount)
+                Player.Functions.AddItem('weed_dry', weedleafs.amount)
                 TriggerClientEvent('QBCore:Notify', src, 'Bitki Yaprakları Kesildi', 'success', 3500)
             else
                 TriggerClientEvent('QBCore:Notify', src, 'Yeterince bitki yaprağın yok', 'error', 3500)
@@ -222,19 +222,19 @@ end)
 RegisterNetEvent('dream-weed:server:dryWeed', function()
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
-    local weedDry = Player.Functions.GetItemByName('weed_leafs')
+    local weedDry = Player.Functions.GetItemByName('weed_dry')
     local weedDryer = Player.Functions.GetItemByName('weed_dryer')
     if weedDry ~= nil then
         if weedDryer ~= nil then
-            if weedDry.amount >= 1 then
-                Player.Functions.RemoveItem('weed_leafs', 1)
-                Player.Functions.AddItem('ready_weed', 1)
+            if weedDry.amount > 1 then
+                Player.Functions.RemoveItem('weed_dry', weedDry.amount)
+                Player.Functions.AddItem('ready_weed', weedDry.amount)
                 TriggerClientEvent('QBCore:Notify', src, 'Bitki Kurutuldu', 'success', 3500)
             else
                 TriggerClientEvent('QBCore:Notify', src, 'Yeterince bitki yaprağın yok', 'error', 3500)
             end
         else
-            TriggerClientEvent('QBCore:Notify', src, 'Bitki makasın yok', 'error', 3500)
+            TriggerClientEvent('QBCore:Notify', src, 'Bitki kurutucun yok', 'error', 3500)
         end
     end
 end)

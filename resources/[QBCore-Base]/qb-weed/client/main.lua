@@ -19,6 +19,14 @@ RegisterNetEvent('QBCore:Player:SetPlayerData', function(val)
     PlayerData = val
 end)
 
+function loadAnimDict(dict)
+    while (not HasAnimDictLoaded(dict)) do
+        RequestAnimDict(dict)
+        Wait(5)
+    end
+end
+
+
 
 DrawText3Ds = function(x, y, z, text)
 	SetTextScale(0.45, 0.45)
@@ -361,8 +369,7 @@ AddEventHandler("dream-weed:client:cutWeed", function()
     end)
 end)
 
-RegisterNetEvent("dream-weed:client:dryWeed")
-AddEventHandler("dream-weed:client:dryWeed", function()
+RegisterNetEvent('dream-weed:client:dryWeed', function()
     QBCore.Functions.Progressbar("dry_Weed", "Bitki Kurutuluyor ", (QBWeed.WaitTimes['dryWeed']), false, true, {
 		disableMovement = true,
 		disableCarMovement = true,
@@ -400,3 +407,5 @@ exports['qb-target']:AddTargetModel(weedTableProps, {
         },
     distance = 1.0
 })
+
+

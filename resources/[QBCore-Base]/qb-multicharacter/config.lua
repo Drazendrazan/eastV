@@ -8,5 +8,5 @@ Config.CamCoords = vector4(307.86514, -1468.126, 46.509475, 138.3394) -- Camera 
 
 Config.DefaultNumberOfCharacters = 1 -- Define maximum amount of default characters (maximum 5 characters defined by default)
 Config.PlayersNumberOfCharacters = { -- Define maximum amount of player characters by rockstar license (you can find this license in your server's database in the player table)
-    { license = "license:0914ab671d4452856c454f3e70c58c6cb585f1cd", numberOfChars = 5 },
+    { license = "license:0914ab671d4452856c454f3e70c58c6cb585f1cd", numberOfChars = 1 },
 }
