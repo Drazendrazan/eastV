@@ -213,7 +213,7 @@ QBCore.Commands.Add('setjob', 'Set A Players Job (Admin Only)', { { name = 'id',
     else
         TriggerClientEvent('QBCore:Notify', source, Lang:t('error.not_online'), 'error')
     end
-end, 'user')
+end, 'admin')
 
 -- Gang
 
