@@ -15,7 +15,7 @@ Config.jobrequirement = false --whether work requires a job
 Config.jobname = 'tanker' --name of the job that is required
 
 
-Config.TruckPrice = 20000 --price for the first truck
+Config.TruckPrice = 1000 --price for the first truck
 Config.TruckOutPrice = 1000 --price for retrieving the vehicle
 
 Config.PayOutMin = 7000 --Minimum Payout

@@ -41,7 +41,7 @@ function CreateBossBlip(type)
 		SetBlipColour (StartJobBlip, 0)
 		SetBlipAsShortRange(StartJobBlip, true)
 		BeginTextCommandSetBlipName("STRING")
-		AddTextComponentString('Tanker Work')
+		AddTextComponentString('Benzin Taşımacılığı')
 		EndTextCommandSetBlipName(StartJobBlip)
 	else
 		RemoveBlip(StartJobBlip)
@@ -128,9 +128,9 @@ Citizen.CreateThread(function()
 				sleep = 0
 				if (Config.jobrequirement and (PlayerData.job ~= nil and PlayerData.job.name == Config.jobname)) or not Config.jobrequirement then
 					if not JobStarted then						
-						DrawText3Ds(Config.tanker['BossSpawn'].Pos.x, Config.tanker['BossSpawn'].Pos.y, Config.tanker['BossSpawn'].Pos.z+1.0, 'Press [~g~E~w~] to start working')
+						DrawText3Ds(Config.tanker['BossSpawn'].Pos.x, Config.tanker['BossSpawn'].Pos.y, Config.tanker['BossSpawn'].Pos.z+1.0, 'Çalışmaya başlamak için [~g~E~w~] tuşuna basın')
 					else
-						DrawText3Ds(Config.tanker['BossSpawn'].Pos.x, Config.tanker['BossSpawn'].Pos.y, Config.tanker['BossSpawn'].Pos.z+1.0, 'Press [~r~E~w~] to finish the job')
+						DrawText3Ds(Config.tanker['BossSpawn'].Pos.x, Config.tanker['BossSpawn'].Pos.y, Config.tanker['BossSpawn'].Pos.z+1.0, 'İşi bitirmek için [~r~E~w~] tuşuna basın')
 					end
 
 					if (IsControlJustReleased(0, Keys['E']) and not IsPedInAnyVehicle(ped, false) and not JobStarted) then
@@ -163,7 +163,7 @@ Citizen.CreateThread(function()
 						
 							JobStarted = true
 							if tutorial then 
-								exports.pNotify:SendNotification({text = "<b>Boss</b></br>I see that you are here for the first time, go to the man who will get you a truck, I will mark you on the map where to look for him.", timeout = 10000})
+								exports.pNotify:SendNotification({text = "<b>Patron</b></br>Aracını teslim al!.", timeout = 10000})
 
 								TruckManBlip = AddBlipForCoord(Config.tanker['TruckMan'].Pos.x, Config.tanker['TruckMan'].Pos.y, Config.tanker['TruckMan'].Pos.z)
 								SetBlipSprite (TruckManBlip, 133)
@@ -172,10 +172,10 @@ Citizen.CreateThread(function()
 								SetBlipColour (TruckManBlip, 0)
 								SetBlipAsShortRange(TruckManBlip, true)
 								BeginTextCommandSetBlipName("STRING")
-								AddTextComponentString('Truck Man')
+								AddTextComponentString('Araç Teslimatı')
 								EndTextCommandSetBlipName(TruckManBlip)
 							else
-								exports.pNotify:SendNotification({text = "<b>Boss</b></br>You know what to do, go get your truck.", timeout = 4000})
+								exports.pNotify:SendNotification({text = "<b>Patron</b></br>Ne yapacağını biliyorsun, git kamyonunu al.", timeout = 4000})
 
 								TruckOutBlip = AddBlipForCoord(Config.tanker['TruckOut'].Pos.x, Config.tanker['TruckOut'].Pos.y, Config.tanker['TruckOut'].Pos.z)
 								SetBlipSprite (TruckOutBlip, 477)
@@ -184,7 +184,7 @@ Citizen.CreateThread(function()
 								SetBlipColour (TruckOutBlip, 0)
 								SetBlipAsShortRange(TruckOutBlip, true)
 								BeginTextCommandSetBlipName("STRING")
-								AddTextComponentString('Truck Out')
+								AddTextComponentString('Tanker Çıkış Noktası')
 								EndTextCommandSetBlipName(TruckOutBlip)	
 							end
 							CreateStartWork()
@@ -213,7 +213,7 @@ Citizen.CreateThread(function()
 					end
 
 				else
-					DrawText3Ds(Config.tanker['BossSpawn'].Pos.x, Config.tanker['BossSpawn'].Pos.y, Config.tanker['BossSpawn'].Pos.z+1.0, 'This job is not for you')
+					DrawText3Ds(Config.tanker['BossSpawn'].Pos.x, Config.tanker['BossSpawn'].Pos.y, Config.tanker['BossSpawn'].Pos.z+1.0, 'bu iş sana göre değil')
 				end
 			end
 		end
@@ -237,12 +237,12 @@ function CreateStartWork()
 					if(GetDistanceBetweenCoords(coords,Config.tanker['TruckMan'].Pos.x, Config.tanker['TruckMan'].Pos.y, Config.tanker['TruckMan'].Pos.z, true) < 1.5) then	
 						sleep = 0
 						if Text3 then
-							DrawText3Ds(Config.tanker['TruckMan'].Pos.x, Config.tanker['TruckMan'].Pos.y, Config.tanker['TruckMan'].Pos.z+1.0, 'Great, pick her on your left and go to the pickup point')
+							DrawText3Ds(Config.tanker['TruckMan'].Pos.x, Config.tanker['TruckMan'].Pos.y, Config.tanker['TruckMan'].Pos.z+1.0, 'Harika, onu solundan al ve teslim alma noktasına git.')
 						elseif Text2 then
-							DrawText3Ds(Config.tanker['TruckMan'].Pos.x, Config.tanker['TruckMan'].Pos.y, Config.tanker['TruckMan'].Pos.z+1.2, 'Hello, for sure you need your first truck, you have to pay '..Config.TruckPrice..'~g~$')
-							DrawText3Ds(Config.tanker['TruckMan'].Pos.x, Config.tanker['TruckMan'].Pos.y, Config.tanker['TruckMan'].Pos.z+1.0, 'Press [~g~G~w~] to pay')				
+							DrawText3Ds(Config.tanker['TruckMan'].Pos.x, Config.tanker['TruckMan'].Pos.y, Config.tanker['TruckMan'].Pos.z+1.2, 'Merhaba, ilk kamyonunuza kesinlikle ihtiyacınız var, ödemeniz gereken '..Config.TruckPrice..'~g~$')
+							DrawText3Ds(Config.tanker['TruckMan'].Pos.x, Config.tanker['TruckMan'].Pos.y, Config.tanker['TruckMan'].Pos.z+1.0, 'Ödeme yapmak için [~g~G~w~] tuşuna basın')				
 						elseif Text1 then					
-							DrawText3Ds(Config.tanker['TruckMan'].Pos.x, Config.tanker['TruckMan'].Pos.y, Config.tanker['TruckMan'].Pos.z+1.0, 'Press [~g~E~w~] to start a conversation')
+							DrawText3Ds(Config.tanker['TruckMan'].Pos.x, Config.tanker['TruckMan'].Pos.y, Config.tanker['TruckMan'].Pos.z+1.0, 'Bir teslimat başlatmak için [~g~E~w~] tuşlarına basın')
 						end
 						if (IsControlJustReleased(0, Keys['E']) and not IsPedInAnyVehicle(ped, false) and Text1) then
 							Text1 = false
@@ -254,7 +254,7 @@ function CreateStartWork()
 									Text3 = true
 									tutorial = false
 									
-									exports.pNotify:SendNotification({text = "<b>Boss</b></br>You bought the vehicle for "..Config.TruckPrice.."$", timeout = 4500})
+									exports.pNotify:SendNotification({text = "<b>Patron</b></br>Araca ödediğin fiyat "..Config.TruckPrice.."$", timeout = 4500})
 
 									TruckOutBlip = AddBlipForCoord(Config.tanker['TruckOut'].Pos.x, Config.tanker['TruckOut'].Pos.y, Config.tanker['TruckOut'].Pos.z)
 									SetBlipSprite (TruckOutBlip, 477)
@@ -263,12 +263,12 @@ function CreateStartWork()
 									SetBlipColour (TruckOutBlip, 0)
 									SetBlipAsShortRange(TruckOutBlip, true)
 									BeginTextCommandSetBlipName("STRING")
-									AddTextComponentString('Truck Out')
+									AddTextComponentString('Tanker Çıkış Noktası')
 									EndTextCommandSetBlipName(TruckOutBlip)	
 
 									RemoveBlip(TruckManBlip)
 								elseif not cb then
-									exports.pNotify:SendNotification({text = "<b>Boss</b></br>You don't have money for a truck.", timeout = 4500})	
+									exports.pNotify:SendNotification({text = "<b>Patron</b></br>Aracı kiralayacak paran yok.", timeout = 4500})	
 								end
 							end)			
 						end
@@ -308,7 +308,7 @@ function CreateStartWork()
 										TriggerEvent("vehiclekeys:client:SetOwner", QBCore.Functions.GetPlate(vehicle))
 										Plate = GetVehicleNumberPlateText(vehicle)
 										VehicleOut = true 
-										exports.pNotify:SendNotification({text = "<b>Boss</b></br>You pulled the truck for "..Config.TruckOutPrice.."$, go to the loading point.", timeout = 4500})	
+										exports.pNotify:SendNotification({text = "<b>Patron</b></br>"..Config.TruckOutPrice.."$, ücret ile aracı aldınız yükleme noktasına gidin.", timeout = 4500})	
 
 										ManagerBlip = AddBlipForCoord(Config.tanker['Manager'].Pos.x, Config.tanker['Manager'].Pos.y, Config.tanker['Manager'].Pos.z)
 										SetBlipSprite (ManagerBlip, 133)
@@ -317,7 +317,7 @@ function CreateStartWork()
 										SetBlipColour (ManagerBlip, 0)
 										SetBlipAsShortRange(ManagerBlip, true)
 										BeginTextCommandSetBlipName("STRING")
-										AddTextComponentString('Manager')
+										AddTextComponentString('Yönetici')
 										EndTextCommandSetBlipName(ManagerBlip)
 
 										
@@ -326,11 +326,11 @@ function CreateStartWork()
 										CreateWork()							
 									end, Config.tanker['TruckOut'].Pos, true)
 								elseif not cb then
-									exports.pNotify:SendNotification({text = "<b>Boss</b></br>You don't have "..Config.TruckOutPrice.."$ to get the vehicle.", timeout = 4500})	
+									exports.pNotify:SendNotification({text = "<b>Patron</b></br>Aracı almak için "..Config.TruckOutPrice.."$ ihtiyacın var.", timeout = 4500})	
 								end
 							end, 'gettruck')
 						else
-							exports.pNotify:SendNotification({text = "<b>Boss</b></br>There is not enough space here to pull out a truck.", timeout = 4500})
+							exports.pNotify:SendNotification({text = "<b>Patron</b></br>Burada bir kamyonu çekmek için yeterli alan yok.", timeout = 4500})
 						end
 					elseif(IsControlJustReleased(0, Keys['E']) and IsPedInAnyVehicle(ped, false) and VehicleOut) then
 						local vehicle = GetVehiclePedIsIn(GetPlayerPed(-1), true)
@@ -339,7 +339,7 @@ function CreateStartWork()
 								if cb then
 									QBCore.Functions.DeleteVehicle(Vehicle)
 									VehicleOut = false
-									exports.pNotify:SendNotification({text = "<b>Boss</b></br>You hide your truck.", timeout = 4500})
+									exports.pNotify:SendNotification({text = "<b>Patron</b></br>Aracını teslim ettin.", timeout = 4500})
 
 									JobStarted = false
 									TriggerServerEvent("qb-clothes:loadPlayerSkin")
@@ -364,7 +364,7 @@ function CreateStartWork()
 								end
 							end, 'backtruck')
 						else
-							exports.pNotify:SendNotification({text = "<b>Boss</b></br>It's not your truck.", timeout = 4500})
+							exports.pNotify:SendNotification({text = "<b>Patron</b></br>Senin aracın değil.", timeout = 4500})
 						end
 					end
 				end
@@ -385,12 +385,12 @@ function CreateWork()
 						sleep = 4
 						if(GetDistanceBetweenCoords(coords,Config.tanker['Manager'].Pos.x, Config.tanker['Manager'].Pos.y, Config.tanker['Manager'].Pos.z, true) < 1.5) then
 							sleep = 0
-							DrawText3Ds(Config.tanker['Manager'].Pos.x, Config.tanker['Manager'].Pos.y, Config.tanker['Manager'].Pos.z+1.0, 'Press [~g~E~w~] to receive information about the order')
+							DrawText3Ds(Config.tanker['Manager'].Pos.x, Config.tanker['Manager'].Pos.y, Config.tanker['Manager'].Pos.z+1.0, '[~g~E~w~] Sipariş Hakkında bilgi al')
 							if(IsControlJustReleased(0, Keys['E']) and not IsPedInAnyVehicle(ped, false)) then
 								job = true
 								RemoveBlip(ManagerBlip)
 
-								exports.pNotify:SendNotification({text = "<b>Boss</b></br>Drive there and connect the trailer to the vehicle.", timeout = 5500})
+								exports.pNotify:SendNotification({text = "<b>Patron</b></br>Oraya sürün ve römorku araca bağlayın.", timeout = 5500})
 
 								SemiTrailerBlip = AddBlipForCoord(Config.tanker['Semitrailer'].Pos.x, Config.tanker['Semitrailer'].Pos.y, Config.tanker['Semitrailer'].Pos.z)
 								SetBlipSprite (SemiTrailerBlip, 479)
@@ -399,7 +399,7 @@ function CreateWork()
 								SetBlipColour (SemiTrailerBlip, 0)
 								SetBlipAsShortRange(SemiTrailerBlip, true)
 								BeginTextCommandSetBlipName("STRING")
-								AddTextComponentString('Place')
+								AddTextComponentString('Alan')
 								EndTextCommandSetBlipName(SemiTrailerBlip)									
 							end
 						end
@@ -420,20 +420,20 @@ function CreateWork()
 												AttachVehicleToTrailer(Vehicle, Trailer, 1.1)
 											end, Config.tanker['Semitrailer'].PosSpawn, true)
 											RemoveBlip(SemiTrailerBlip)
-											exports.pNotify:SendNotification({text = "<b>Boss</b></br>Go to the place where they will fill the trailer with fuel, it's behind the building.", timeout = 4500})
+											exports.pNotify:SendNotification({text = "<b>Patron</b></br>Karavana yakıt dolduracakları yere git, binanın arkasında..", timeout = 4500})
 											Work()
 											break
 										else
-											exports.pNotify:SendNotification({text = "<b>Boss</b></br>There is not enough space here to pull out a tanker.", timeout = 4500})
+											exports.pNotify:SendNotification({text = "<b>Patron</b></br>Burada bir tankeri çıkarmak için yeterli alan yok.", timeout = 4500})
 										end
 									else
-										exports.pNotify:SendNotification({text = "<b>Boss</b></br>Drive backwards.", timeout = 4500})
+										exports.pNotify:SendNotification({text = "<b>Patron</b></br>Geriye doğru sür.", timeout = 4500})
 									end
 								else
-									exports.pNotify:SendNotification({text = "<b>Boss</b></br>It's not your truck.", timeout = 4500})
+									exports.pNotify:SendNotification({text = "<b>Patron</b></br>senin kamyonun değil.", timeout = 4500})
 								end
 							elseif(IsControlJustReleased(0, Keys['E']) and IsPedInAnyVehicle(ped, false)) then
-								exports.pNotify:SendNotification({text = "<b>Boss</b></br>Do it outside the vehicle.", timeout = 4500})
+								exports.pNotify:SendNotification({text = "<b>Patron</b></br>Aracın dışında yapın.", timeout = 4500})
 							end
 						end
 					end							
@@ -453,7 +453,7 @@ function Work()
 	SetBlipColour (RefuelingBlip, 0)
 	SetBlipAsShortRange(RefuelingBlip, true)
 	BeginTextCommandSetBlipName("STRING")
-	AddTextComponentString('Refueling')
+	AddTextComponentString('Yakıt İkmali')
 	EndTextCommandSetBlipName(RefuelingBlip)
 	
 
@@ -491,7 +491,7 @@ function Work()
 								end
 								SetVehicleDoorsLocked(vehicle, 0)
 
-								exports.pNotify:SendNotification({text = "<b>Boss</b></br>The trailer is full, go to the designated station.", timeout = 4500})
+								exports.pNotify:SendNotification({text = "<b>Patron</b></br>Depo dolu, belirlenen istasyona gidin.", timeout = 4500})
 								RemoveBlip(RefuelingBlip)
 
 								RandomPlace = math.random(1,#Config.Places)
@@ -503,7 +503,7 @@ function Work()
 								SetBlipColour (StationBlip, 0)
 								SetBlipAsShortRange(StationBlip, true)
 								BeginTextCommandSetBlipName("STRING")
-								AddTextComponentString('Filling station')
+								AddTextComponentString('Benzin İstasyonu')
 								EndTextCommandSetBlipName(StationBlip)	
 
 								SetNewWaypoint(Config.Places[RandomPlace].Ped.x, Config.Places[RandomPlace].Ped.y)
@@ -534,9 +534,9 @@ function Work()
 											-- DrawMarker(27, Config.Places[RandomPlace].Pos.x, Config.Places[RandomPlace].Pos.y, Config.Places[RandomPlace].Pos.z-1.20, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 3.0, 3.0, 3.0, 123, 204, 88, 200, false, true, 2, true, false, false, false)
 											if(GetDistanceBetweenCoords(coords,Config.Places[RandomPlace].Ped.x, Config.Places[RandomPlace].Ped.y, Config.Places[RandomPlace].Ped.z, true) < 1.5) then			
 												sleep = 0	
-												DrawText3Ds(Config.Places[RandomPlace].Ped.x, Config.Places[RandomPlace].Ped.y, Config.Places[RandomPlace].Ped.z+1.0, 'Press [~g~E~w~] to talk.')
+												DrawText3Ds(Config.Places[RandomPlace].Ped.x, Config.Places[RandomPlace].Ped.y, Config.Places[RandomPlace].Ped.z+1.0, '[~g~E~w~] Konuş.')
 												if(IsControlJustReleased(0, Keys['E']) and not IsPedInAnyVehicle(ped, false)) and not done then
-													exports.pNotify:SendNotification({text = "<b>Client</b></br>You probably brought fuel, go to the indicated place and empty your trailer.", timeout = 4500})
+													exports.pNotify:SendNotification({text = "<b>Client</b></br>Getirdiğin yakıtı lütfen alana boşalt.", timeout = 4500})
 
 													RefulingPlaceBlip = AddBlipForCoord(Config.Places[RandomPlace].RefulingPlace.x, Config.Places[RandomPlace].RefulingPlace.y, Config.Places[RandomPlace].RefulingPlace.z)
 													SetBlipSprite (RefulingPlaceBlip, 162)
@@ -545,7 +545,7 @@ function Work()
 													SetBlipColour (RefulingPlaceBlip, 0)
 													SetBlipAsShortRange(RefulingPlaceBlip, true)
 													BeginTextCommandSetBlipName("STRING")
-													AddTextComponentString('Refuling Place')
+													AddTextComponentString('Yakıt İkmali')
 													EndTextCommandSetBlipName(RefulingPlaceBlip)			
 													
 													while true do
@@ -561,9 +561,9 @@ function Work()
 															if(GetDistanceBetweenCoords(coords,Config.Places[RandomPlace].RefulingPlace.x, Config.Places[RandomPlace].RefulingPlace.y, Config.Places[RandomPlace].RefulingPlace.z, true) < 1.5) then
 																sleep = 0	
 																if not tube then
-																	DrawText3Ds(Config.Places[RandomPlace].RefulingPlace.x, Config.Places[RandomPlace].RefulingPlace.y, Config.Places[RandomPlace].RefulingPlace.z+1.0, 'Filling place, connect the hose from the trailer here.')
+																	DrawText3Ds(Config.Places[RandomPlace].RefulingPlace.x, Config.Places[RandomPlace].RefulingPlace.y, Config.Places[RandomPlace].RefulingPlace.z+1.0, 'Doldurma yeri, tankerden gelen hortumu buraya bağlayın.')
 																else 
-																	DrawText3Ds(Config.Places[RandomPlace].RefulingPlace.x, Config.Places[RandomPlace].RefulingPlace.y, Config.Places[RandomPlace].RefulingPlace.z+1.0, 'Press [~g~E~w~] to connect the hose.')
+																	DrawText3Ds(Config.Places[RandomPlace].RefulingPlace.x, Config.Places[RandomPlace].RefulingPlace.y, Config.Places[RandomPlace].RefulingPlace.z+1.0, '[~g~E~w~] Hortumu bağla.')
 																end
 
 																if(IsControlJustReleased(0, Keys['E']) and not IsPedInAnyVehicle(ped, false)) and tube then
@@ -604,7 +604,7 @@ function Work()
 																		Citizen.Wait(sleep)
 																	end
 
-																	exports.pNotify:SendNotification({text = "<b>Boss</b></br>Fueled station go inform the station employee.", timeout = 4500})
+																	exports.pNotify:SendNotification({text = "<b>Patron</b></br>Benzin istasyonuna gidip istasyon çalışanını bilgilendirin.", timeout = 4500})
 
 																	RemoveBlip(RefulingPlaceBlip)
 
@@ -628,46 +628,15 @@ function Work()
 														if not JobStarted or not VehicleOut then
 															break
 														end
-														-- if GetVehicleBodyHealth(Trailer) < 1 then
-														-- 	exports.pNotify:SendNotification({text = "<b>Boss</b></br>Your trailer has been damaged, go get a new one to the manager.", timeout = 4500})
-														-- 	job = false
-											
-														-- 	ManagerBlip = AddBlipForCoord(Config.tanker['Manager'].Pos.x, Config.tanker['Manager'].Pos.y, Config.tanker['Manager'].Pos.z)
-														-- 	SetBlipSprite (ManagerBlip, 133)
-														-- 	SetBlipDisplay(ManagerBlip, 4)
-														-- 	SetBlipScale  (ManagerBlip, 0.8)
-														-- 	SetBlipColour (ManagerBlip, 0)
-														-- 	SetBlipAsShortRange(ManagerBlip, true)
-														-- 	BeginTextCommandSetBlipName("STRING")
-														-- 	AddTextComponentString('Manager')
-														-- 	EndTextCommandSetBlipName(ManagerBlip)
-				
-														-- 	RemoveBlip(RefuelingBlip)
-														-- 	RemoveBlip(StationBlip)
-				
-														-- 	DeletePed(StationNPC)
-														-- 	DeleteObject(tank)
-
-														-- 	CanRopeOut = false
-
-														-- 	tube = false
-
-														-- 	RopeUnloadTextures()
-														-- 	DeleteRope(rope)
-				
-														-- 	CreateWork()
-											
-														-- 	break 
-														-- end 
 														Citizen.Wait(sleep)
 													end
 
 												elseif(IsControlJustReleased(0, Keys['E']) and not IsPedInAnyVehicle(ped, false)) and done then 
 
 													QBCore.Functions.TriggerCallback('dream-tanker:payout', function(money)
-														exports.pNotify:SendNotification({text = "<b>Client</b></br>Thank you, your boss is calling you to go to the next station. Refuel the trailer on the base!.", timeout = 4000})
+														exports.pNotify:SendNotification({text = "<b>Client</b></br>Teşekkürler, Patronunuz sizi bir sonraki istasyona gitmeniz için arıyor. Tankere yakıt ikmali yapın!.", timeout = 4000})
 														Citizen.Wait(4500)
-														exports.pNotify:SendNotification({text = "<b>Boss</b></br>It's a job for you "..money.."$, come to the base for another delivery.", timeout = 4000})
+														exports.pNotify:SendNotification({text = "<b>Patron</b></br>Bu senin için "..money.."$, başka bir teslimat için üsse gel.", timeout = 4000})
 
 														RemoveBlip(StationBlip)
 
@@ -685,7 +654,7 @@ function Work()
 											break
 										end
 										-- if GetVehicleBodyHealth(Trailer) < 1 then
-										-- 	exports.pNotify:SendNotification({text = "<b>Boss</b></br>Your trailer has been damaged, go get a new one to the manager.", timeout = 4500})
+										-- 	exports.pNotify:SendNotification({text = "<b>Patron</b></br>Your trailer has been damaged, go get a new one to the manager.", timeout = 4500})
 										-- 	job = false
 							
 										-- 	ManagerBlip = AddBlipForCoord(Config.tanker['Manager'].Pos.x, Config.tanker['Manager'].Pos.y, Config.tanker['Manager'].Pos.z)
@@ -712,10 +681,10 @@ function Work()
 								end
 								break								
 							else
-								exports.pNotify:SendNotification({text = "<b>Boss</b></br>You don't have a trailer with you.", timeout = 4500})
+								exports.pNotify:SendNotification({text = "<b>Patron</b></br>Yanınızda bir tanker yok.", timeout = 4500})
 							end
 						else
-							exports.pNotify:SendNotification({text = "<b>Boss</b></br>It's not your truck.", timeout = 4500})
+							exports.pNotify:SendNotification({text = "<b>Patron</b></br>Bu tanker sana ait değil", timeout = 4500})
 						end
 					end
 				end
@@ -724,7 +693,7 @@ function Work()
 				break
 			end
 			-- if GetVehicleBodyHealth(Trailer) < 1 then
-			-- 	exports.pNotify:SendNotification({text = "<b>Boss</b></br>Your trailer has been damaged, go get a new one to the manager.", timeout = 4500})
+			-- 	exports.pNotify:SendNotification({text = "<b>Patron</b></br>Your trailer has been damaged, go get a new one to the manager.", timeout = 4500})
 			-- 	job = false
 
 			-- 	ManagerBlip = AddBlipForCoord(Config.tanker['Manager'].Pos.x, Config.tanker['Manager'].Pos.y, Config.tanker['Manager'].Pos.z)
@@ -758,7 +727,7 @@ Citizen.CreateThread(function ()
 				
 				if(GetDistanceBetweenCoords(coords.x, coords.y, coords.z, trunkpos.x, trunkpos.y, trunkpos.z, true) < 2.5) and not tube then
 					sleep = 0
-					DrawText3Ds(trunkpos.x, trunkpos.y, trunkpos.z - 0.5, "To pull out the hose, press [E]")
+					DrawText3Ds(trunkpos.x, trunkpos.y, trunkpos.z - 0.5, "Hortumu Al [E]")
 					if(IsControlJustReleased(0, Keys['E']) and not IsPedInAnyVehicle(ped, false)) then
 						FreezeEntityPosition(ped, true)
 						startAnim(ped, 'mini@repair', 'fixing_a_ped')
@@ -781,7 +750,7 @@ Citizen.CreateThread(function ()
 					end	
 				elseif(GetDistanceBetweenCoords(coords.x, coords.y, coords.z, trunkpos.x, trunkpos.y, trunkpos.z, true) < 2.5) and tube then 	
 					sleep = 0
-					DrawText3Ds(trunkpos.x, trunkpos.y, trunkpos.z - 0.5, "To hide the hose, press [E]")	
+					DrawText3Ds(trunkpos.x, trunkpos.y, trunkpos.z - 0.5, "Hortumu gizlemek için [E]")	
 					if(IsControlJustReleased(0, Keys['E']) and not IsPedInAnyVehicle(ped, false)) then
 						FreezeEntityPosition(ped, true)
 						startAnim(ped, 'mini@repair', 'fixing_a_ped')
