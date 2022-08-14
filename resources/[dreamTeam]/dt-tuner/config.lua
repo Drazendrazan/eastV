@@ -1,18 +1,21 @@
 Config = {}
 
 Config.TunerJob = 'mechanic'
+Config.JobInstall = true
+Config.UseQbLock = true
+Config.isVehicleOwned = true
 
-Config.JobInstall = true -- [[ Whether or not players have to have the tuner job in order to install vehicle parts ]]
 
-Config.UseQbLock = true -- [[ https://github.com/Nathan-FiveM/qb-lock ]]
+Config.isVehicleCheckOwned = false
+Config.checkTunesMessage    = "phone"
 
-Config.WaitTimes = { -- [[ Wait times for progress bars ]]
+Config.WaitTimes = {
     ['crafting'] = 20000,
     ['installing'] = 25000
 }
 
 Config.ShopItems = {
-    label = "Tuner Shop",
+    label = "Market",
     slots = 7,
     items = {
         [1] = {
@@ -146,6 +149,16 @@ Config.Costs = { -- Don't add or remove materials. You can change the amount.
         ['rubber'] = 140
     },
     ['turbo'] = {
+        ['aluminum'] = 130,
+        ['steel'] = 170,
+        ['rubber'] = 20
+    },
+    ['xenon'] = {
+        ['aluminum'] = 130,
+        ['steel'] = 170,
+        ['rubber'] = 20
+    },
+    ['neon'] = {
         ['aluminum'] = 130,
         ['steel'] = 170,
         ['rubber'] = 20

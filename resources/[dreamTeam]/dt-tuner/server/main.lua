@@ -34,12 +34,12 @@ RegisterNetEvent('tuners:server:craftItem', function(data)
             local totalWeight = QBCore.Player.GetTotalWeight(Player.PlayerData.items)
             local itemInfo = QBCore.Shared.Items[data.item:lower()]
             if (totalWeight + itemInfo['weight']) >= QBCore.Config.Player.MaxWeight then
-                TriggerClientEvent('QBCore:Notify', _s, 'Inventory too full', 'error')
+                TriggerClientEvent('QBCore:Notify', _s, 'Üzerinde çok şey taşıyorsun', 'error')
                 return
             end
             TriggerClientEvent('tuners:client:craftitem', _s, data.item)
         else
-            TriggerClientEvent('QBCore:Notify', _s, 'You don\'t have enough materials')
+            TriggerClientEvent('QBCore:Notify', _s, 'Yeterli malzemeye sahip değilsin')
         end
     elseif data.action == 'receive' then
         for k, v in pairs(Config.Costs[data.item]) do
@@ -65,16 +65,16 @@ RegisterNetEvent("tuners:server:billplayer", function(playerId, amount)
                         {billed.PlayerData.citizenid, amount, biller.PlayerData.job.name,
                          biller.PlayerData.charinfo.firstname, biller.PlayerData.citizenid})
                     TriggerClientEvent('qb-phone:RefreshPhone', billed.PlayerData.source)
-                    TriggerClientEvent('QBCore:Notify', _s, 'Invoice Sent Successfully', 'success')
-                    TriggerClientEvent('qb-phone:client:CustomNotification', billed.PlayerData.source, 'Tuners', 'New Invoice Received', 'fas fa-file-invoice', '#52ff91', 5000)
+                    TriggerClientEvent('QBCore:Notify', _s, 'Fatura Kesildi', 'success')
+                    TriggerClientEvent('qb-phone:client:CustomNotification', billed.PlayerData.source, 'Tuners', 'Yeni Bir Faturan Var', 'fas fa-file-invoice', '#52ff91', 5000)
                 else
-                    TriggerClientEvent('QBCore:Notify', _s, 'Must Be A Valid Amount Above 0', 'error')
+                    TriggerClientEvent('QBCore:Notify', _s, '0dan yüksek bir rakam yazmalısın', 'error')
                 end
             else
-                TriggerClientEvent('QBCore:Notify', _s, 'You can not bill yourself', 'error')
+                TriggerClientEvent('QBCore:Notify', _s, 'Kendine fatura kesemezsin', 'error')
             end
         else
-            TriggerClientEvent('QBCore:Notify', _s, 'Player not online', 'error')
+            TriggerClientEvent('QBCore:Notify', _s, 'Oyuncu yok', 'error')
         end
     else
         TriggerClientEvent('QBCore:Notify', 'No Authorization', 'error')
@@ -202,4 +202,27 @@ QBCore.Functions.CreateUseableItem("xenon", function(source, item)
 	if Player.Functions.GetItemByName('xenon') ~= nil then
         TriggerClientEvent("tuners:client:useitem", source, 'xenon', item.name, 1)
     end
+end)
+
+QBCore.Functions.CreateUseableItem("neon", function(source, item)
+    local Player = QBCore.Functions.GetPlayer(source)
+	if Player.Functions.GetItemByName('neon') ~= nil then
+        TriggerClientEvent("tuners:client:useitem", source, 'neon', item.name, 1)
+    end
+end)
+
+
+QBCore.Functions.CreateUseableItem("xenon_controller", function(source, item)
+    local Player = QBCore.Functions.GetPlayer(source)
+    TriggerClientEvent('tuners:client:xenonMenu', source)
+end)
+
+QBCore.Functions.CreateUseableItem("coilovers", function(source, item)
+    local Player = QBCore.Functions.GetPlayer(source)
+    TriggerClientEvent('tuners:client:coiloverMenu', source)
+end)
+
+QBCore.Functions.CreateUseableItem("underglow_controller", function(source, item)
+    local Player = QBCore.Functions.GetPlayer(source)
+    TriggerClientEvent('tuners:client:openNeonMenu', source)
 end)

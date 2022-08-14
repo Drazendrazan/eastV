@@ -438,7 +438,16 @@ QBShared.Items = {
 	-- Turbo
 	["turbo"] 			 	 		 = {["name"] = "turbo", 			  			["label"] = "Turbo", 					["weight"] = 30000,		["type"] = "item", 		["image"] = "turbo.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["description"] = "Güzel görünen bir Turbo"},
 	-- Xenon
-	["xenon"] 			 	 		 = {["name"] = "xenon", 			  			["label"] = "Xenon", 					["weight"] = 30000,		["type"] = "item", 		["image"] = "turbo.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["description"] = "Mavi Xenon"},
+	["xenon_controller"] 			 = {["name"] = "xenon_controller", 			  	["label"] = "Xenon Kontrol", 			["weight"] = 100,		["type"] = "item", 		["image"] = "turbo.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["description"] = "Xenon Kontrolü"},
+	["xenon"] 			 	 		 = {["name"] = "xenon", 			  			["label"] = "Xenon", 					["weight"] = 100,		["type"] = "item", 		["image"] = "turbo.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["description"] = "Xenon"},
+	-- Coilover
+	["coilovers"] 			 	     = {["name"] = "coilovers", 			  		["label"] = "Süspansiyon Kontrol", 		["weight"] = 100,		["type"] = "item", 		["image"] = "turbo.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["description"] = "Süspansiyon Kontrolü"},
+	["coilover_wrenches"] 			 = {["name"] = "coilover_wrenches", 			["label"] = "Bobin Anahtarı", 			["weight"] = 100,		["type"] = "item", 		["image"] = "turbo.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["description"] = "Bobin Anahtarı"},
+	-- Neon
+	["underglow_controller"] 		 = {["name"] = "underglow_controller", 			["label"] = "Neon Kontroller", 			["weight"] = 100,		["type"] = "item", 		["image"] = "turbo.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["description"] = "Neon Kontrolü"},
+	["neon"] 		 				 = {["name"] = "neon", 							["label"] = "Neon", 					["weight"] = 100,		["type"] = "item", 		["image"] = "turbo.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["description"] = "Neon"},
+	-- Tuners Check
+	["tuners_check"] 		 		 = {["name"] = "tuners_check", 					["label"] = "Araç Kontrol Cihazı", 		["weight"] = 100,		["type"] = "item", 		["image"] = "turbo.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["description"] = "Modifikasyon Denetleme"},
 	---chairs 
 	["chair1"] 						= {["name"] = "chair1",  	    				["label"] = "Kamp Sandalyesi",			["weight"] = 100, 		["type"] = "item", 		["image"] = "chair1.png", 		["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,   	["combinable"] = nil,   ["description"] = "" },
 	-- Combine itemler

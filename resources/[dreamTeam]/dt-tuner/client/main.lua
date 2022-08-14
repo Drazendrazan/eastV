@@ -2,19 +2,18 @@ local QBCore = exports['qb-core']:GetCoreObject()
 local isCrafting, isUpgrading = false, false
 local isAuth = false
 
--- Functions
+-- Functions qb-target 
 local function init()
     exports['qb-target']:AddBoxZone("TunerOrder", vector3(128.61, -3014.46, 7.04), 1.2, 2.8, {
         name="tunershop",
         heading=0,
-        --debugPoly=true,
         minZ=5.24,
         maxZ=9.24
     }, {
         options = {{
             event = "tuners:client:order",
             icon = "far fa-clipboard",
-            label = "Tuner Shop",
+            label = "Market",
             job = Config.TunerJob
         }},
         distance = 1.5
@@ -22,14 +21,13 @@ local function init()
     exports['qb-target']:AddBoxZone("TunerStorage", vector3(128.58, -3008.24, 7.04), 1.3, 2.8, {
         name="tunerstorage",
         heading=0,
-        --debugPoly=true,
         minZ=5.04,
         maxZ=9.04
     }, {
         options = {{
             event = "tuners:client:openstorage",
             icon = "fas fa-boxes",
-            label = "Open Storage",
+            label = "Depo",
             job = Config.TunerJob
         }},
         distance = 2
@@ -37,14 +35,13 @@ local function init()
     exports['qb-target']:AddBoxZone("TunerCraft", vector3(138.96, -3051.4, 7.04), 0.8, 2.2, {
         name="tunercraft",
         heading=0,
-        --debugPoly=true,
         minZ=3.44,
         maxZ=7.44
     }, {
         options = {{
             event = "tuners:client:opencrafting",
             icon = "fas fa-wrench",
-            label = "Open Crafting",
+            label = "Üretim",
             job = Config.TunerJob
         }},
         distance = 2
@@ -52,14 +49,13 @@ local function init()
     exports['qb-target']:AddBoxZone("TunerBill", vector3(133.16, -3015.12, 7.04), 0.5, 0.35, {
         name="tunerbill",
         heading=346,
-        --debugPoly=true,
         minZ=3.04,
         maxZ=7.04
     }, {
         options = {{
             event = "tuners:client:openbilling",
             icon = "fas fa-file-invoice",
-            label = "Create Bill",
+            label = "Fatura Kes",
             job = Config.TunerJob
         }},
         distance = 2
@@ -67,7 +63,6 @@ local function init()
     exports['qb-target']:AddBoxZone("TunerDuty", vector3(126.06, -3007.28, 7.04), 0.4, 0.35, {
         name="tunerduty",
         heading=325,
-        --debugPoly=true,
         minZ=3.04,
         maxZ=7.04
     }, {
@@ -75,7 +70,7 @@ local function init()
             type = 'server',
             event = "QBCore:ToggleDuty",
             icon = "fas fa-business-time",
-            label = "Toggle Duty",
+            label = "Mesai Gir/ÇıK",
             job = Config.TunerJob
         }},
         distance = 2
@@ -102,7 +97,7 @@ RegisterNetEvent('QBCore:Client:OnJobUpdate', function(job)
 end)
 
 RegisterNetEvent('tuners:client:order', function()
-    TriggerServerEvent("inventory:server:OpenInventory", "shop", "Tuner Shop", Config.ShopItems)
+    TriggerServerEvent("inventory:server:OpenInventory", "shop", "Market", Config.ShopItems)
 end)
 
 RegisterNetEvent('tuners:client:openstorage', function()
@@ -116,13 +111,13 @@ end)
 RegisterNetEvent('tuners:client:opencrafting', function()
     local menu = {
         {
-            header = "Tuner Crafting",
-            txt = 'Craft your things',
+            header = "Üretim Menüsü",
+            txt = 'Eşyalarını hazırla',
             isMenuHeader = true
         },
         {
-            header = "Engines",
-            txt = 'Craft Engines For Vehicles',
+            header = "Motorlar",
+            txt = 'Araçlar için motorları üret',
             params = {
                 event = "tuners:client:craftmenu",
                 args = {
@@ -132,8 +127,8 @@ RegisterNetEvent('tuners:client:opencrafting', function()
             }
         },
         {
-            header = "Transmissions",
-            txt = 'Craft Transmissions For Vehicles',
+            header = "Şanzımanlar",
+            txt = 'Araçlar için şanzımanları üret',
             params = {
                 event = "tuners:client:craftmenu",
                 args = {
@@ -142,8 +137,8 @@ RegisterNetEvent('tuners:client:opencrafting', function()
             }
         },
         {
-            header = "Suspensions",
-            txt = 'Craft Suspensions For Vehicles',
+            header = "Süspansiyonlar",
+            txt = 'Aracın süspansiyonlarını üret',
             params = {
                 event = "tuners:client:craftmenu",
                 args = {
@@ -153,8 +148,8 @@ RegisterNetEvent('tuners:client:opencrafting', function()
             }
         },
         {
-            header = "Brakes",
-            txt = 'Craft Brakes For Vehicles',
+            header = "Frenler",
+            txt = 'Aracın frenlerini üret',
             params = {
                 event = "tuners:client:craftmenu",
                 args = {
@@ -175,7 +170,31 @@ RegisterNetEvent('tuners:client:opencrafting', function()
             }
         },
         {
-            header = "⬅ Exit",
+            header = "Xenon",
+            txt = QBCore.Shared.Items["steel"]["label"] .. ": ".. Config.Costs['xenon']['steel'] ..", " .. QBCore.Shared.Items["aluminum"]["label"] .. ": "..Config.Costs['xenon']['aluminum'] ..", " .. QBCore.Shared.Items["rubber"]["label"] .. ": "..Config.Costs['xenon']['rubber'],
+            params = {
+                isServer = true,
+                event = "tuners:server:craftItem",
+                args = {
+                    action = 'start',
+                    item = 'xenon',
+                }
+            }
+        },
+        {
+            header = "Neon",
+            txt = QBCore.Shared.Items["steel"]["label"] .. ": ".. Config.Costs['neon']['steel'] ..", " .. QBCore.Shared.Items["aluminum"]["label"] .. ": "..Config.Costs['neon']['aluminum'] ..", " .. QBCore.Shared.Items["rubber"]["label"] .. ": "..Config.Costs['neon']['rubber'],
+            params = {
+                isServer = true,
+                event = "tuners:server:craftItem",
+                args = {
+                    action = 'start',
+                    item = 'neon',
+                }
+            }
+        },
+        {
+            header = "⬅ Geri",
             txt = "",
             params = {
                 event = "qb-menu:closeMenu"
@@ -189,7 +208,7 @@ RegisterNetEvent('tuners:client:craftmenu', function(data)
     local level1, level2, level3 = QBCore.Shared.Items[data.category..'1']["label"], QBCore.Shared.Items[data.category..'2']["label"], QBCore.Shared.Items[data.category..'3']["label"]
     local menu = {
         {
-            header = "Engine Crafting",
+            header = "Motor Üret",
             txt = '',
             isMenuHeader = true
         },
@@ -261,7 +280,7 @@ RegisterNetEvent('tuners:client:craftitem', function(item)
     if isCrafting then return end
     local ped = PlayerPedId()
     isCrafting = true
-    QBCore.Functions.Progressbar("repair_vehicle", "Crafting", (Config.WaitTimes['crafting']), false, true, {
+    QBCore.Functions.Progressbar("repair_vehicle", "Üretiliyor", (Config.WaitTimes['crafting']), false, true, {
 		disableMovement = true,
 		disableCarMovement = true,
 		disableMouse = false,
@@ -281,7 +300,7 @@ RegisterNetEvent('tuners:client:craftitem', function(item)
         isCrafting = false
 	end, function() -- Cancel
 		StopAnimTask(ped, "mini@repair", "fixing_a_player", 1.0)
-        QBCore.Functions.Notify("Failed", "error")
+        QBCore.Functions.Notify("Hata", "error")
         isCrafting = false
 	end)
 end)
@@ -291,15 +310,15 @@ RegisterNetEvent('tuners:client:openbilling', function()
     if player ~= -1 and distance < 2.5 then
         local playerId = GetPlayerServerId(player)
         local dialog = exports['qb-input']:ShowInput({
-            header = "Create Receipt",
-            submitText = "Bill",
+            header = "Fatura Oluştur",
+            submitText = "Fatura",
             inputs = {{
-                text = "Player ID",
+                text = "Oyuncu ID",
                 name = "plyid",
                 type = "number",
                 isRequired = true
             }, {
-                text = "Amount",
+                text = "Ücret",
                 name = "amount",
                 type = "number",
                 isRequired = true
@@ -308,10 +327,10 @@ RegisterNetEvent('tuners:client:openbilling', function()
         if tonumber(dialog['plyid']) > 0 and tonumber(dialog['amount']) > 0 then
             TriggerServerEvent("tuners:server:billplayer", dialog['plyid'], dialog['amount'])
         else
-            QBCore.Functions.Notify('Amount must be greater than 0', 'error')
+            QBCore.Functions.Notify('0dan yüksek bir rakam yazmalısın', 'error')
         end
     else
-        QBCore.Functions.Notify('No one nearby!', 'error')
+        QBCore.Functions.Notify('Yakınlarda kimse yok!', 'error')
     end
 end)
 
@@ -325,7 +344,6 @@ RegisterNetEvent('tuners:client:useitem', function(type, item, tier)
             local pedCoords = GetEntityCoords(ped)
             local vehEngine = GetEntityBoneIndexByName(closestVeh, "engine")
             local enginePos = GetWorldPositionOfEntityBone(closestVeh, vehEngine)
-            local spawnObj  = CreateObject(GetHashKey("imp_prop_engine_hoist_02a"), pedCoords.x, pedCoords.y, pedCoords.z, true, true, true)
             
             if #(pedCoords - enginePos) < 2 then
                 if (not IsBackEngine(GetEntityModel(closestVeh)) and GetVehicleDoorAngleRatio(closestVeh, 4) ~= 0) or (IsBackEngine(GetEntityModel(closestVeh)) and GetVehicleDoorAngleRatio(closestVeh, 5) ~= 0) then
@@ -347,18 +365,22 @@ RegisterNetEvent('tuners:client:useitem', function(type, item, tier)
                     }, {}, {}, function() -- Done
                         TriggerEvent('inventory:client:ItemBox', QBCore.Shared.Items[item], 'remove')
                         StopAnimTask(ped, "mini@repair", "fixing_a_player", 1.0)
-                        DeleteObject(spawnObj)
                         SetVehicleModKit(closestVeh, 0)
                         if type == 'engine' then
                             SetVehicleMod(closestVeh, 11, tier, false)
                         elseif type == 'transmission' then
                             SetVehicleMod(closestVeh, 13, tier, false)
                         elseif type == 'suspension' then
-                            SetVehicleMod(closestVeh, 15, tier)
+                            SetVehicleMod(closestVeh, 15, true)
                         elseif type == 'brakes' then
                             SetVehicleMod(closestVeh, 12, tier, false)
                         elseif type == 'xenon' then
-                            SetVehicleMod(closestVeh, 22, tier, false)
+                            ToggleVehicleMod(closestVeh, 22, true)
+                        elseif type == 'neon' then
+                            SetVehicleNeonLightEnabled(closestVeh, 0, true)
+                            SetVehicleNeonLightEnabled(closestVeh, 1, true)
+                            SetVehicleNeonLightEnabled(closestVeh, 2, true)
+                            SetVehicleNeonLightEnabled(closestVeh, 3, true)
                         elseif type == 'turbo' then
                             ToggleVehicleMod(closestVeh, 18, 1)
                         end
