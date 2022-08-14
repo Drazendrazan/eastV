@@ -25,13 +25,13 @@ Config.OverheatTime = math.random(50000, 60000)
 Config.CommonItems = {
     'metaltrash',
     'irontrash',
-    'bulletcasings',
+    'water_bottle',
     'aluminumcan',
     'steeltrash',
     'brokenknife',
     'brokendetector',
-    'brokenphone',
-    'housekeys',
+    'binoculars',
+    'lockpick',
 }
 
 Config.RareItems = {

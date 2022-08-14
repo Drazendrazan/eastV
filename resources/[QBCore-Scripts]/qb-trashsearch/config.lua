@@ -42,8 +42,8 @@ Config.Reward = {
 
     -- Items you can get
     ItemList = {
-        "water_bottle", "metalscrap", "plastic", "copper", "glass", "lockpick",
-        "tunerlaptop","cryptostick","binoculars","lighter","beer","tosti"
+        "water_bottle", "irontrash", "plastic", "copper", "glass", "lockpick",
+        "steeltrash","plastic","brokenphone","lighter","beer","tosti"
     }
 }
 
