@@ -109,7 +109,7 @@ AddEventHandler('dt-hunting:client:useBait', function()
             if Config.HuntingHours.active == true then
                 local hunting_hour = check_hunting_hour()
                 if hunting_hour ~= nil and hunting_hour == false then
-                    CoreName.Functions.Notify("You cant hunt at this hour")
+                    CoreName.Functions.Notify("Bu saatte avlanamazsın")
                     return
                 end
             end
