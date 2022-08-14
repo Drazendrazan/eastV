@@ -1,4 +1,6 @@
---#[Local Variable]#--
+-----------------------
+----   Variables   ----
+-----------------------
 local currentMenuItemID = 0
 local currentMenuItem = ""
 local currentMenuItem2 = ""
@@ -8,12 +10,10 @@ local currentResprayCategory = 0
 local currentResprayType = 0
 local currentWheelCategory = 0
 local currentNeonSide = 0
-local menuStructure = {}
 
---#[Local Functions]#--
-local function roundNum(num, numDecimalPlaces)
-    return tonumber(string.format("%." .. (numDecimalPlaces or 0) .. "f", num))
-end
+-----------------------
+----   Functions   ----
+-----------------------
 
 local function toggleMenuContainer(state)
     SendNUIMessage({
@@ -117,27 +117,11 @@ local function playSoundEffect(soundEffect, volume)
     })
 end
 
-local function playSoundEffect(soundEffect, volume)
-    SendNUIMessage({
-        playSoundEffect = true,
-        soundEffect = soundEffect,
-        volume = volume
-    })
-end
-
-RegisterNetEvent('qb-customs:client:playSoundEffect', function(soundEffect, volume)
-    SendNUIMessage({
-        playSoundEffect = true,
-        soundEffect = soundEffect,
-        volume = volume
-    })
-end)
-
 local function isMenuActive(menu)
     local menuActive = false
 
     if menu == "modMenu" then
-        for k, v in pairs(vehicleCustomisation) do
+        for _, v in pairs(vehicleCustomisation) do
             if (v.category:gsub("%s+", "") .. "Menu") == currentMenu then
                 menuActive = true
 
@@ -147,7 +131,7 @@ local function isMenuActive(menu)
             end
         end
     elseif menu == "ResprayMenu" then
-        for k, v in pairs(vehicleResprayOptions) do
+        for _, v in pairs(vehicleResprayOptions) do
             if (v.category:gsub("%s+", "") .. "Menu") == currentMenu then
                 menuActive = true
 
@@ -157,7 +141,7 @@ local function isMenuActive(menu)
             end
         end
     elseif menu == "WheelsMenu" then
-        for k, v in pairs(vehicleWheelOptions) do
+        for _, v in pairs(vehicleWheelOptions) do
             if (v.category:gsub("%s+", "") .. "Menu") == currentMenu then
                 menuActive = true
 
@@ -167,7 +151,7 @@ local function isMenuActive(menu)
             end
         end
     elseif menu == "NeonsSideMenu" then
-        for k, v in pairs(vehicleNeonOptions.neonTypes) do
+        for _, v in pairs(vehicleNeonOptions.neonTypes) do
             if (v.name:gsub("%s+", "") .. "Menu") == currentMenu then
                 menuActive = true
 
@@ -215,86 +199,78 @@ local function updateCurrentMenuItemID(id, item, item2)
     end
 end
 
---#[Global Functions]#--
-function Draw3DText(x, y, z, str, r, g, b, a, font, scaleSize, enableProportional, enableCentre, enableOutline, enableShadow, sDist, sR, sG, sB, sA)
-    local onScreen, worldX, worldY = World3dToScreen2d(x, y, z)
-    local gameplayCamX, gameplayCamY, gameplayCamZ = table.unpack(GetGameplayCamCoords())
-
-    if onScreen then
-        SetTextScale(1.0, scaleSize)
-        SetTextFont(font)
-        SetTextColour(r, g, b, a)
-        SetTextEdge(2, 0, 0, 0, 150)
-
-        if enableProportional then
-            SetTextProportional(1)
-        end
-
-        if enableOutline then
-            SetTextOutline()
-        end
-
-        if enableShadow then
-            SetTextDropshadow(sDist, sR, sG, sB, sA)
-            SetTextDropShadow()
-        end
-
-        if enableCentre then
-            SetTextCentre(1)
-        end
-
-        SetTextEntry("STRING")
-        AddTextComponentString(str)
-        DrawText(worldX, worldY)
-    end
-end
-
-function InitiateMenus(isMotorcycle, vehicleHealth)
+function InitiateMenus(isMotorcycle, vehicleHealth, categories, welcomeLabel)
     local plyPed = PlayerPedId()
     local plyVeh = GetVehiclePedIsIn(plyPed, false)
     --#[Repair Menu]#--
-    if vehicleHealth < 1000.0 then
-        -- local repairCost = math.ceil(1000 - vehicleHealth)
-        TriggerServerEvent("qb-customs:updateRepairCost", repairCost)
-         
-        createMenu("repairMenu", "Welcome to Benny's Original Motorworks", "Repair Vehicle")
-        -- populateMenu("repairMenu", -1, "Repair", "$" .. repairCost)
-        populateMenu("repairMenu", -1, "Please Repait Your Car...", "Vehicle is damaged" )
-        
+    if vehicleHealth < 1000.0 and categories.repair then
+        local repairCost = math.ceil(1000 - vehicleHealth)
+
+        TriggerServerEvent("qb-customs:server:updateRepairCost", repairCost)
+        createMenu("repairMenu", welcomeLabel, "Repair Vehicle")
+        populateMenu("repairMenu", -1, "Repair", "$" .. repairCost)
         finishPopulatingMenu("repairMenu")
     end
 
     --#[Main Menu]#--
-    createMenu("mainMenu", "Welcome to Benny's Original Motorworks", "Choose a Category")
+    createMenu("mainMenu", welcomeLabel, "Choose a Category")
 
-    for k, v in ipairs(vehicleCustomisation) do
-        local validMods, amountValidMods = CheckValidMods(v.category, v.id)
+    for _, v in ipairs(vehicleCustomisation) do
+        local _, amountValidMods = CheckValidMods(v.category, v.id)
 
         if amountValidMods > 0 or v.id == 18 then
-            populateMenu("mainMenu", v.id, v.category, "none")
+            if (v.id == 11 or v.id == 12 or v.id == 13 or v.id == 15) then
+                if categories.mods and maxVehiclePerformanceUpgrades ~= -1 then
+                    populateMenu("mainMenu", v.id, v.category, "none")
+                end
+            elseif v.id == 16 then
+                if categories.armor then
+                    populateMenu("mainMenu", v.id, v.category, "none")
+                end
+            elseif v.id == 14 then
+                if categories.horn then
+                    populateMenu("mainMenu", v.id, v.category, "none")
+                end
+            elseif v.id == 18 then
+                if categories.turbo then
+                    populateMenu("mainMenu", v.id, v.category, "none")
+                end
+            elseif v.id == 48 then
+                if categories.liveries then
+                    populateMenu("mainMenu", v.id, v.category, "none")
+                end
+            else
+                if categories.cosmetics then
+                    populateMenu("mainMenu", v.id, v.category, "none")
+                end
+            end
         end
     end
 
-    populateMenu("mainMenu", -1, "Respray", "none")
+    if categories.respray then populateMenu("mainMenu", -1, "Respray", "none") end
 
     if not isMotorcycle then
-        populateMenu("mainMenu", -2, "Window Tint", "none")
-        populateMenu("mainMenu", -3, "Neons", "none")
+        if categories.tint then populateMenu("mainMenu", -2, "Window Tint", "none") end
+        if categories.neons then populateMenu("mainMenu", -3, "Neons", "none") end
     end
 
-    populateMenu("mainMenu", 22, "Xenons", "none")
-    populateMenu("mainMenu", 23, "Wheels", "none")
+    if categories.xenons then populateMenu("mainMenu", 22, "Xenons", "none") end
+    if categories.wheels then populateMenu("mainMenu", 23, "Wheels", "none") end
 
-    populateMenu("mainMenu", 24, "Old Livery", "none")
-    populateMenu("mainMenu", 25, "Plate Index", "none")
-    populateMenu("mainMenu", 26, "Vehicle Extras", "none")
+    local livCount = GetVehicleLiveryCount(plyVeh)
+    if livCount > 0 and categories.liveries then
+        populateMenu("mainMenu", 24, "Old Livery", "none")
+    end
+
+    if categories.plate then populateMenu("mainMenu", 25, "Plate Index", "none") end
+    if categories.extras then populateMenu("mainMenu", 26, "Vehicle Extras", "none") end
 
     finishPopulatingMenu("mainMenu")
 
     --#[Mods Menu]#--
-    for k, v in ipairs(vehicleCustomisation) do
+    for _, v in ipairs(vehicleCustomisation) do
         local validMods, amountValidMods = CheckValidMods(v.category, v.id)
-        local currentMod, currentModName = GetCurrentMod(v.id)
+        local currentMod, _ = GetCurrentMod(v.id)
 
         if amountValidMods > 0 or v.id == 18 then
             if v.id == 11 or v.id == 12 or v.id == 13 or v.id == 15 or v.id == 16 then --Performance Upgrades
@@ -302,7 +278,7 @@ function InitiateMenus(isMotorcycle, vehicleHealth)
 
                 createMenu(v.category:gsub("%s+", "") .. "Menu", v.category, "Choose an Upgrade")
 
-                for m, n in pairs(validMods) do
+                for _, n in pairs(validMods) do
                     tempNum = tempNum + 1
 
                     if maxVehiclePerformanceUpgrades == 0 then
@@ -327,8 +303,8 @@ function InitiateMenus(isMotorcycle, vehicleHealth)
                 local currentTurboState = GetCurrentTurboState()
                 createMenu(v.category:gsub("%s+", "") .. "Menu", v.category .. " Customisation", "Enable or Disable Turbo")
 
-                populateMenu(v.category:gsub("%s+", "") .. "Menu", 0, "Disable", "$0")
-                populateMenu(v.category:gsub("%s+", "") .. "Menu", 1, "Enable", "$" .. vehicleCustomisationPrices.turbo.price)
+                populateMenu(v.category:gsub("%s+", "") .. "Menu", -1, "Disable", "$0")
+                populateMenu(v.category:gsub("%s+", "") .. "Menu", 0, "Enable", "$" .. vehicleCustomisationPrices.turbo.prices[2])
 
                 updateItem2Text(v.category:gsub("%s+", "") .. "Menu", currentTurboState, "Installed")
 
@@ -336,7 +312,7 @@ function InitiateMenus(isMotorcycle, vehicleHealth)
             else
                 createMenu(v.category:gsub("%s+", "") .. "Menu", v.category .. " Customisation", "Choose a Mod")
 
-                for m, n in pairs(validMods) do
+                for _, n in pairs(validMods) do
                     populateMenu(v.category:gsub("%s+", "") .. "Menu", n.id, n.name, "$" .. vehicleCustomisationPrices.cosmetics.price)
 
                     if currentMod == n.id then
@@ -364,17 +340,17 @@ function InitiateMenus(isMotorcycle, vehicleHealth)
     --#[Respray Types]#--
     createMenu("ResprayTypeMenu", "Respray Types", "Choose a Colour Type")
 
-    for k, v in ipairs(vehicleResprayOptions) do
+    for _, v in ipairs(vehicleResprayOptions) do
         populateMenu("ResprayTypeMenu", v.id, v.category, "none")
     end
 
     finishPopulatingMenu("ResprayTypeMenu")
 
     --#[Respray Colours]#--
-    for k, v in ipairs(vehicleResprayOptions) do
+    for _, v in ipairs(vehicleResprayOptions) do
         createMenu(v.category .. "Menu", v.category .. " Colours", "Choose a Colour")
 
-        for m, n in ipairs(v.colours) do
+        for _, n in ipairs(v.colours) do
             populateMenu(v.category .. "Menu", n.id, n.name, "$" .. vehicleCustomisationPrices.respray.price)
         end
 
@@ -384,7 +360,7 @@ function InitiateMenus(isMotorcycle, vehicleHealth)
     --#[Wheel Categories Menu]#--
     createMenu("WheelsMenu", "Wheel Categories", "Choose a Category")
 
-    for k, v in ipairs(vehicleWheelOptions) do
+    for _, v in ipairs(vehicleWheelOptions) do
         if isMotorcycle then
             if v.id == -1 or v.id == 20 or v.id == 6 then --Motorcycle Wheels
                 populateMenu("WheelsMenu", v.id, v.category, "none")
@@ -397,7 +373,7 @@ function InitiateMenus(isMotorcycle, vehicleHealth)
     finishPopulatingMenu("WheelsMenu")
 
     --#[Wheels Menu]#--
-    for k, v in ipairs(vehicleWheelOptions) do
+    for _, v in ipairs(vehicleWheelOptions) do
         if v.id == -1 then
             local currentCustomWheelState = GetCurrentCustomWheelState()
             createMenu(v.category:gsub("%s+", "") .. "Menu", v.category, "Enable or Disable Custom Wheels")
@@ -411,22 +387,22 @@ function InitiateMenus(isMotorcycle, vehicleHealth)
         elseif v.id ~= 20 then
             if isMotorcycle then
                 if v.id == 6 then --Motorcycle Wheels
-                    local validMods, amountValidMods = CheckValidMods(v.category, v.wheelID, v.id)
+                    local validMods, _ = CheckValidMods(v.category, v.wheelID, v.id)
 
                     createMenu(v.category .. "Menu", v.category .. " Wheels", "Choose a Wheel")
 
-                    for m, n in pairs(validMods) do
+                    for _, n in pairs(validMods) do
                         populateMenu(v.category .. "Menu", n.id, n.name, "$" .. vehicleCustomisationPrices.wheels.price)
                     end
 
                     finishPopulatingMenu(v.category .. "Menu")
                 end
             else
-                local validMods, amountValidMods = CheckValidMods(v.category, v.wheelID, v.id)
+                local validMods, _ = CheckValidMods(v.category, v.wheelID, v.id)
 
                 createMenu(v.category .. "Menu", v.category .. " Wheels", "Choose a Wheel")
 
-                for m, n in pairs(validMods) do
+                for _, n in pairs(validMods) do
                     populateMenu(v.category .. "Menu", n.id, n.name, "$" .. vehicleCustomisationPrices.wheels.price)
                 end
 
@@ -453,7 +429,7 @@ function InitiateMenus(isMotorcycle, vehicleHealth)
     local currentWindowTint = GetCurrentWindowTint()
     createMenu("WindowTintMenu", "Window Tint Customisation", "Choose a Tint")
 
-    for k, v in ipairs(vehicleWindowTintOptions) do
+    for _, v in ipairs(vehicleWindowTintOptions) do
         populateMenu("WindowTintMenu", v.id, v.name, "$" .. vehicleCustomisationPrices.windowtint.price)
 
         if currentWindowTint == v.id then
@@ -464,16 +440,13 @@ function InitiateMenus(isMotorcycle, vehicleHealth)
     finishPopulatingMenu("WindowTintMenu")
 
     --#[Old Livery Menu]#--
-    local livCount = GetVehicleLiveryCount(plyVeh)
     if livCount > 0 then
         local tempOldLivery = GetVehicleLivery(plyVeh)
         createMenu("OldLiveryMenu", "Old Livery Customisation", "Choose a Livery")
-        if GetVehicleClass(plyVeh) ~= 18 then
-            for i=0, GetVehicleLiveryCount(plyVeh)-1 do
-                populateMenu("OldLiveryMenu", i, "Livery", "$100")
-                if tempOldLivery == i then
-                    updateItem2Text("OldLiveryMenu", i, "Installed")
-                end
+        for i=0, livCount-1 do
+            populateMenu("OldLiveryMenu", i, "Livery", "$100")
+            if tempOldLivery == i then
+                updateItem2Text("OldLiveryMenu", i, "Installed")
             end
         end
         finishPopulatingMenu("OldLiveryMenu")
@@ -491,13 +464,11 @@ function InitiateMenus(isMotorcycle, vehicleHealth)
         "Blue on White #3",
         "North Yankton",
     }
-    if GetVehicleClass(plyVeh) ~= 18 then
-        for i=0, #plateTypes-1 do
-            if i ~= 4 then
-                populateMenu("PlateIndexMenu", i, plateTypes[i+1], "$1000")
-                if tempPlateIndex == i then
-                    updateItem2Text("PlateIndexMenu", i, "Installed")
-                end
+    for i=0, #plateTypes-1 do
+        if i ~= 4 or (i == 4 and GetVehicleClass(plyVeh) == 18) or Config.allowGovPlateIndex then
+            populateMenu("PlateIndexMenu", i, plateTypes[i+1], "$"..vehicleCustomisationPrices.plateindex.price)
+            if tempPlateIndex == i then
+                updateItem2Text("PlateIndexMenu", i, "Installed")
             end
         end
     end
@@ -505,13 +476,11 @@ function InitiateMenus(isMotorcycle, vehicleHealth)
 
     --#[Vehicle Extras Menu]#--
     createMenu("VehicleExtrasMenu", "Vehicle Extras Customisation", "Toggle Extras")
-    if GetVehicleClass(plyVeh) ~= 18 then
-        for i=1, 12 do
-            if DoesExtraExist(plyVeh, i) then
-                populateMenu("VehicleExtrasMenu", i, "Extra "..tostring(i), "Toggle")
-            else
-                populateMenu("VehicleExtrasMenu", i, "No Option", "NONE")
-            end
+    for i=1, 12 do
+        if DoesExtraExist(plyVeh, i) then
+            populateMenu("VehicleExtrasMenu", i, "Extra "..tostring(i), "Toggle")
+        else
+            populateMenu("VehicleExtrasMenu", i, "No Option", "NONE")
         end
     end
     finishPopulatingMenu("VehicleExtrasMenu")
@@ -519,7 +488,7 @@ function InitiateMenus(isMotorcycle, vehicleHealth)
     --#[Neons Menu]#--
     createMenu("NeonsMenu", "Neon Customisation", "Choose a Category")
 
-    for k, v in ipairs(vehicleNeonOptions.neonTypes) do
+    for _, v in ipairs(vehicleNeonOptions.neonTypes) do
         populateMenu("NeonsMenu", v.id, v.name, "none")
     end
 
@@ -527,7 +496,7 @@ function InitiateMenus(isMotorcycle, vehicleHealth)
     finishPopulatingMenu("NeonsMenu")
 
     --#[Neon State Menu]#--
-    for k, v in ipairs(vehicleNeonOptions.neonTypes) do
+    for _, v in ipairs(vehicleNeonOptions.neonTypes) do
         local currentNeonState = GetCurrentNeonState(v.id)
         createMenu(v.name:gsub("%s+", "") .. "Menu", "Neon Customisation", "Enable or Disable Neon")
 
@@ -543,7 +512,7 @@ function InitiateMenus(isMotorcycle, vehicleHealth)
     local currentNeonR, currentNeonG, currentNeonB = GetCurrentNeonColour()
     createMenu("NeonColoursMenu", "Neon Colours", "Choose a Colour")
 
-    for k, v in ipairs(vehicleNeonOptions.neonColours) do
+    for k, _ in ipairs(vehicleNeonOptions.neonColours) do
         populateMenu("NeonColoursMenu", k, vehicleNeonOptions.neonColours[k].name, "$" .. vehicleCustomisationPrices.neoncolours.price)
 
         if currentNeonR == vehicleNeonOptions.neonColours[k].r and currentNeonG == vehicleNeonOptions.neonColours[k].g and currentNeonB == vehicleNeonOptions.neonColours[k].b then
@@ -557,7 +526,7 @@ function InitiateMenus(isMotorcycle, vehicleHealth)
     createMenu("XenonsMenu", "Xenon Customisation", "Choose a Category")
 
     populateMenu("XenonsMenu", 0, "Headlights", "none")
-    ---- populateMenu("XenonsMenu", 1, "Xenon Colours", "none")
+    populateMenu("XenonsMenu", 1, "Xenon Colours", "none")
 
     finishPopulatingMenu("XenonsMenu")
 
@@ -576,7 +545,7 @@ function InitiateMenus(isMotorcycle, vehicleHealth)
     local currentXenonColour = GetCurrentXenonColour()
     createMenu("XenonColoursMenu", "Xenon Colours", "Choose a Colour")
 
-    for k, v in ipairs(vehicleXenonOptions.xenonColours) do
+    for _, v in ipairs(vehicleXenonOptions.xenonColours) do
         populateMenu("XenonColoursMenu", v.id, v.name, "$" .. vehicleCustomisationPrices.xenoncolours.price)
 
         if currentXenonColour == v.id then
@@ -605,12 +574,12 @@ function DisplayMenu(state, menu)
     updateMenuSubheading(menu)
 end
 
-function MenuManager(state)
+function MenuManager(state, repairOnly)
     if state then
         if currentMenuItem2 ~= "Installed" then
             if isMenuActive("modMenu") then
                 if currentCategory == 18 then --Turbo
-                    if AttemptPurchase("turbo") then
+                    if AttemptPurchase("turbo", currentMenuItemID) then
                         ApplyMod(currentCategory, currentMenuItemID)
                         playSoundEffect("wrench", 0.4)
                         updateItem2Text(currentMenu, currentMenuItemID, "Installed")
@@ -618,7 +587,7 @@ function MenuManager(state)
                     else
                         updateMenuStatus("Not Enough Money!")
                     end
-                elseif currentCategory == 11 or currentCategory == 12 or currentCategory== 13 or currentCategory == 15 or currentCategory == 16 then --Performance Upgrades 
+                elseif currentCategory == 11 or currentCategory == 12 or currentCategory== 13 or currentCategory == 15 or currentCategory == 16 then --Performance Upgrades
                     if AttemptPurchase("performance", currentMenuItemID) then
                         ApplyMod(currentCategory, currentMenuItemID)
                         playSoundEffect("wrench", 0.4)
@@ -704,23 +673,27 @@ function MenuManager(state)
                     updateMenuStatus("Not Enough Money")
                 end
             else
-                -- if currentMenu == "repairMenu" then
-                --     if AttemptPurchase("repair") then
-                --         currentMenu = "mainMenu"
+                if currentMenu == "repairMenu" then
+                    if AttemptPurchase("repair") then
+                        currentMenu = "mainMenu"
 
-                --         RepairVehicle()
+                        RepairVehicle()
 
-                --         toggleMenu(false, "repairMenu")
-                --         toggleMenu(true, currentMenu)
-                --         updateMenuHeading(currentMenu)
-                --         updateMenuSubheading(currentMenu)
-                --         playSoundEffect("wrench", 0.4)
-                --         updateMenuStatus("")
-                --     else
-                --         updateMenuStatus("Not Enough Money")
-                --     end
-                -- else
-                if currentMenu == "mainMenu" then
+                        if not repairOnly then
+                            toggleMenu(false, "repairMenu")
+                            toggleMenu(true, currentMenu)
+                        else
+                            ExitBennys()
+                            QBCore.Functions.Notify('Your vehicle was repaired!')
+                        end
+                        updateMenuHeading(currentMenu)
+                        updateMenuSubheading(currentMenu)
+                        playSoundEffect("wrench", 0.4)
+                        updateMenuStatus("")
+                    else
+                        updateMenuStatus("Not Enough Money")
+                    end
+                elseif currentMenu == "mainMenu" then
                     currentMenu = currentMenuItem:gsub("%s+", "") .. "Menu"
                     currentCategory = currentMenuItemID
 
@@ -745,7 +718,7 @@ function MenuManager(state)
                     updateMenuHeading(currentMenu)
                     updateMenuSubheading(currentMenu)
                 elseif currentMenu == "WheelsMenu" then
-                    local currentWheel, currentWheelName, currentWheelType = GetCurrentWheel()
+                    local currentWheel, _, currentWheelType = GetCurrentWheel()
 
                     currentMenu = currentMenuItem:gsub("%s+", "") .. "Menu"
                     currentWheelCategory = currentMenuItemID
@@ -814,30 +787,22 @@ function MenuManager(state)
                         updateMenuStatus("Not Enough Money")
                     end
                 elseif currentMenu == "OldLiveryMenu" then
-                    local plyPed = PlayerPedId()
-                    local plyVeh = GetVehiclePedIsIn(plyPed, false)
-                    if GetVehicleClass(plyVeh) ~= 18 then
-                        if AttemptPurchase("oldlivery") then
-                            ApplyOldLivery(currentMenuItemID)
-                            playSoundEffect("wrench", 0.4)
-                            updateItem2Text(currentMenu, currentMenuItemID, "Installed")
-                            updateMenuStatus("Purchased")
-                        else
-                            updateMenuStatus("Not Enough Money")
-                        end
+                    if AttemptPurchase("oldlivery") then
+                        ApplyOldLivery(currentMenuItemID)
+                        playSoundEffect("wrench", 0.4)
+                        updateItem2Text(currentMenu, currentMenuItemID, "Installed")
+                        updateMenuStatus("Purchased")
+                    else
+                        updateMenuStatus("Not Enough Money")
                     end
                 elseif currentMenu == "PlateIndexMenu" then
-                    local plyPed = PlayerPedId()
-                    local plyVeh = GetVehiclePedIsIn(plyPed, false)
-                    if GetVehicleClass(plyVeh) ~= 18 then
-                        if AttemptPurchase("plateindex") then
-                            ApplyPlateIndex(currentMenuItemID)
-                            playSoundEffect("wrench", 0.4)
-                            updateItem2Text(currentMenu, currentMenuItemID, "Installed")
-                            updateMenuStatus("Purchased")
-                        else
-                            updateMenuStatus("Not Enough Money")
-                        end
+                    if AttemptPurchase("plateindex") then
+                        ApplyPlateIndex(currentMenuItemID)
+                        playSoundEffect("wrench", 0.4)
+                        updateItem2Text(currentMenu, currentMenuItemID, "Installed")
+                        updateMenuStatus("Purchased")
+                    else
+                        updateMenuStatus("Not Enough Money")
                     end
                 elseif currentMenu == "VehicleExtrasMenu" then
                     ApplyExtra(currentMenuItemID)
@@ -916,12 +881,10 @@ function MenuManager(state)
                     RestoreOriginalWindowTint()
                 end
 
-                local plyPed = PlayerPedId()
-                local plyVeh = GetVehiclePedIsIn(plyPed, false)
-                if currentMenu == "OldLiveryMenu" and GetVehicleClass(plyVeh) ~= 18 then
+                if currentMenu == "OldLiveryMenu" then
                     RestoreOldLivery()
                 end
-                if currentMenu == "PlateIndexMenu" and GetVehicleClass(plyVeh) ~= 18 then
+                if currentMenu == "PlateIndexMenu" then
                     RestorePlateIndex()
                 end
 
@@ -975,17 +938,20 @@ function MenuScrollFunctionality(direction)
     scrollMenuFunctionality(direction, currentMenu)
 end
 
---#[NUI Callbacks]#--
+-----------------------
+----   Threads     ----
+-----------------------
+
+-----------------------
+---- Client Events ----
+-----------------------
+
 RegisterNUICallback("selectedItem", function(data, cb)
     updateCurrentMenuItemID(tonumber(data.id), data.item, data.item2)
-
-    --print("Current Selected Item: " .. currentMenuItemID)
-
     cb("ok")
 end)
 
 RegisterNUICallback("updateItem2", function(data, cb)
     currentMenuItem2 = data.item
-
     cb("ok")
 end)

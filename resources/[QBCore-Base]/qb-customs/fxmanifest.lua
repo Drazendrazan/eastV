@@ -7,23 +7,25 @@ files {
     'html/index.html',
     'html/css/menu.css',
     'html/js/ui.js',
-    'html/imgs/*.png',
-    'html/sounds/*.ogg',
+    'html/sounds/wrench.ogg',
+    'html/sounds/respray.ogg'
 }
 
-
-shared_script 'config.lua'
+shared_scripts {
+    'config.lua',
+    'shared/locations.lua',
+}
 
 client_scripts {
-	'@PolyZone/client.lua',
+    '@PolyZone/client.lua',
     '@PolyZone/BoxZone.lua',
-    '@PolyZone/EntityZone.lua',
-    '@PolyZone/CircleZone.lua',
-    '@PolyZone/ComboZone.lua',
     'client/cl_ui.lua',
-    'client/cl_bennys.lua'
+    'client/cl_bennys.lua',
 }
 
-server_script 'server/sv_bennys.lua'
+server_scripts {
+    '@oxmysql/lib/MySQL.lua',
+    'server/sv_bennys.lua'
+}
 
 lua54 'yes'

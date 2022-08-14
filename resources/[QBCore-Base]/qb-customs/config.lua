@@ -1,30 +1,18 @@
-maxVehiclePerformanceUpgrades = 0 -- Set to 0 to have all the upgrades
-vehicleBaseRepairCost = 600
-vehicleRepairCostMultiplier = 1
-moneyType = 'bank'
+Config = Config or {}
 
--- Location Configs
--- Add locations here
--- Add jobs specific to the garage.
-bennyGarages = {
-    [1] = {coords = vector4(109.89, 6627.07, 31.78, 227.576), useJob = false, job = {""}}, -- Paleto Bay 1
-    [2] = {coords = vector4(105.278, 6621.45, 31.409, 225.734), useJob = false, job = {""}}, -- Paleto Bay 2
-    [3] = {coords = vector4(1174.866, 2639.107, 37.32, 359.716), useJob = false, job = {""}}, -- SandyShores 1
-    [4] = {coords = vector4(1182.109, 2639.328, 37.315, 359.716), useJob = false, job = {""}}, -- SandyShores 2
-    [5] = {coords = vector4(135.839, -3030.302, 6.603, 179.684), useJob = false, job = {""}}, -- Tunershop 1
-    [6] = {coords = vector4(1145.012,  -3030.394, 6.603, 179.684), useJob = false, job = {""}}, -- Tunershop 2
-    [7] = {coords = vector4(-32.158, -1054.049, 28.018, 40.0), useJob = false, job = {""}}, -- Hub by Pdm
-    [8] = {coords = vector4(-211.55, -1324.55, 30.90, 319.731), useJob = false, job = {""}}, -- Bennys
-    [9] = {coords = vector4(450.31, -976.1, 25.5, 90.25), useJob = false, job = {""}}, -- PDBennys
-} 
+Config.Debug = false -- Set to True to enable Debug Prints
+Config.MoneyType = 'bank'
+Config.RepairMoneyType = 'cash'
+Config.UseRadial = false -- Will use qb-radial menu for entering instead of press E
+Config.allowGovPlateIndex = false -- Setting this to true will allow all vehicles to purchase gov plate index "Blue on White #3" (only for emergency vehicles otherwise)
+maxVehiclePerformanceUpgrades = 0 -- | All Upgrades: 0 | No Upgrades: -1 | Can be -1 to 4
 
 -- ADJUST PRICING
-
 vehicleCustomisationPrices = {
     cosmetics = {price = 400},
-    respray = {price = 50},
-    performance = {prices = {0, 3250, 5500, 10450, 15250, 20500}},
-    turbo = {price = 15000},
+    respray = {price = 1000},
+    performance = {prices = {0, 3250, 5500, 10450, 15250, 20500, 25000}},
+    turbo = {prices = {0, 15000}},
     wheels = {price = 400},
     customwheels = {price = 600},
     wheelsmoke = {price = 400},
@@ -34,18 +22,7 @@ vehicleCustomisationPrices = {
     headlights = {price = 100},
     xenoncolours = {price = 500},
     oldlivery = {price = 500},
-    plateindex = {price = 100}
-}
-
--- RESPRAY CATEGORIES
-
-vehicleResprayCategories = {
-    {category = "Primary Colour", id = 0},
-    {category = "Secondary Colour", id = 1},
-    {category = "Pearlescent Colour", id = 2},
-    {category = "Wheel Colour", id = 3},
-    {category = "Dashboard Colour", id = 4},
-    {category = "Interior Colour", id = 5}
+    plateindex = {price = 1000}
 }
 
 -- WINDOW TINTS
@@ -62,18 +39,18 @@ vehicleWindowTintOptions = {
 vehicleXenonOptions = {
     xenonColours = {
         {name = "Stock", id = 255},
-        {name = "White",id = 0}, {name = "Blue",id = 1},
-        {name = "Electric Blue",id = 2},
-        {name = "Mint Green",id = 3},
-        {name = "Lime Green",id = 4},
-        {name = "Yellow",id = 5},
-        {name = "Golden Shower",id = 6},
-        {name = "Orange",id = 7},
-        {name = "Red",id = 8},
-        {name = "Pony Pink",id = 9},
-        {name = "Hot Pink",id = 10},
-        {name = "Purple",id = 11},
-        {name = "Blacklight",id = 12}
+        {name = "White", id = 0}, {name = "Blue", id = 1},
+        {name = "Electric Blue", id = 2},
+        {name = "Mint Green", id = 3},
+        {name = "Lime Green", id = 4},
+        {name = "Yellow", id = 5},
+        {name = "Golden Shower", id = 6},
+        {name = "Orange", id = 7},
+        {name = "Red", id = 8},
+        {name = "Pony Pink", id = 9},
+        {name = "Hot Pink", id = 10},
+        {name = "Purple", id = 11},
+        {name = "Blacklight", id = 12}
     }
 }
 
@@ -89,160 +66,62 @@ vehicleWheelOptions = {
     {category = "Offroad", id = 4, wheelID = 23},
     {category = "Tuner", id = 5, wheelID = 23},
     {category = "Motorcycle", id = 6, wheelID = 23},
-    {category = "Highend", id = 7, wheelID = 23}
+    {category = "Highend", id = 7, wheelID = 23},
+    {category = "BennysWheel", id = 8, wheelID = 23},
+    {category = "BespokeWheel", id = 9, wheelID = 23},
+    {category = "Dragster", id = 10, wheelID = 23},
+    {category = "Street", id = 11, wheelID = 23},
+    {category = "Rally", id = 12, wheelID = 23},
 }
 
 -- TIRE SMOKE
 
 vehicleTyreSmokeOptions = {
-    {
-        name = "White Smoke",
-        r = 254,
-        g = 254,
-        b = 254
-    }, 
-    {
-        name = "Black Smoke",
-        r = 1,
-        g = 1,
-        b = 1
-    },
-    {
-        name = "Blue Smoke",
-        r = 0,
-        g = 150,
-        b = 255
-    },
-    {
-        name = "Yellow Smoke",
-        r = 255,
-        g = 255,
-        b = 50
-    },
-    {
-        name = "Orange Smoke",
-        r = 255,
-        g = 153,
-        b = 51
-    },
-    {
-        name = "Red Smoke",
-        r = 255,
-        g = 10,
-        b = 10
-    },
-    {
-        name = "Green Smoke",
-        r = 10,
-        g = 255,
-        b = 10
-    },
-    {
-        name = "Purple Smoke",
-        r = 153,
-        g = 10,
-        b = 153
-    },
-    {
-        name = "Pink Smoke",
-        r = 255,
-        g = 102,
-        b = 178
-    },
-    {
-        name = "Gray Smoke",
-        r = 128,
-        g = 128,
-        b = 128
-    }
+    { name = "White Smoke", r = 254, g = 254, b = 254},
+    { name = "Black Smoke", r = 1, g = 1, b = 1},
+    { name = "Blue Smoke", r = 0, g = 150, b = 255},
+    { name = "Yellow Smoke", r = 255, g = 255, b = 50},
+    { name = "Orange Smoke", r = 255, g = 153, b = 51},
+    { name = "Red Smoke", r = 255, g = 10, b = 10},
+    { name = "Green Smoke", r = 10, g = 255, b = 10},
+    { name = "Purple Smoke", r = 153, g = 10, b = 153},
+    { name = "Pink Smoke", r = 255, g = 102, b = 178},
+    { name = "Gray Smoke", r = 128, g = 128, b = 128}
 }
 
 -- NEONS
 
 vehicleNeonOptions = {
     category = "Neons",
-        neonTypes = {
-            {name = "Front Neon", id = 2},
-            {name = "Rear Neon", id = 3},
-            {name = "Left Neon", id = 0},
-            {name = "Right Neon", id = 1}
-        },
+    neonTypes = {
+        {name = "Front Neon", id = 2},
+        {name = "Rear Neon", id = 3},
+        {name = "Left Neon", id = 0},
+        {name = "Right Neon", id = 1}
+    },
     neonColours = {
-        {
-            name = "White",
-            r = 222,
-            g = 222,
-            b = 255
-        }, {
-            name = "Blue",
-            r = 2,
-            g = 21,
-            b = 255
-        }, {
-            name = "Electric Blue",
-            r = 3,
-            g = 83,
-            b = 255
-        }, {
-            name = "Mint Green",
-            r = 0,
-            g = 255,
-            b = 140
-        }, {
-            name = "Lime Green",
-            r = 94,
-            g = 255,
-            b = 1
-        }, {
-            name = "Yellow",
-            r = 255,
-            g = 255,
-            b = 0
-        }, {
-            name = "Golden Shower",
-            r = 255,
-            g = 150,
-            b = 0
-        }, {
-            name = "Orange",
-            r = 255,
-            g = 62,
-            b = 0
-        }, {
-            name = "Red",
-            r = 255,
-            g = 1,
-            b = 1
-        }, {
-            name = "Pony Pink",
-            r = 255,
-            g = 50,
-            b = 100
-        }, {
-            name = "Hot Pink",
-            r = 255,
-            g = 5,
-            b = 190
-        }, {
-            name = "Purple",
-            r = 35,
-            g = 1,
-            b = 255
-        }, {
-            name = "Blacklight",
-            r = 15,
-            g = 3,
-            b = 255
-        }
+        { name = "White", r = 222, g = 222, b = 255},
+        { name = "Blue", r = 2, g = 21, b = 255},
+        { name = "Electric Blue", r = 3, g = 83, b = 255},
+        { name = "Mint Green", r = 0, g = 255, b = 140},
+        { name = "Lime Green", r = 94, g = 255, b = 1},
+        { name = "Yellow", r = 255, g = 255, b = 0},
+        { name = "Golden Shower", r = 255, g = 150, b = 0},
+        { name = "Orange", r = 255, g = 62, b = 0},
+        { name = "Red", r = 255, g = 1, b = 1},
+        { name = "Pony Pink", r = 255, g = 50, b = 100},
+        { name = "Hot Pink", r = 255, g = 5, b = 190},
+        { name = "Purple", r = 35, g = 1, b = 255},
+        { name = "Blacklight", r = 15, g = 3, b = 255}
     }
 }
 
 -- MAIN COMPONENTS
 
 vehicleCustomisation = {
-    {category = "Spoiler", id = 0}, 
+    {category = "Spoiler", id = 0},
     {category = "Front Bumper", id = 1},
-    {category = "Rear Bumper", id = 2}, 
+    {category = "Rear Bumper", id = 2},
     {category = "Side Skirt", id = 3},
     {category = "Exhaust", id = 4},
     {category = "Roll Cage", id = 5},
@@ -250,14 +129,14 @@ vehicleCustomisation = {
     {category = "Hood", id = 7},
     {category = "Left Fender", id = 8},
     {category = "Right Fender", id = 9},
-    {category = "Roof",id = 10},
-    ---- {category = "Engine Upgrade", id = 11},
-    ---- {category = "Brake Upgrade", id = 12},
-    ---- {category = "Transmission Upgrade", id = 13},
-    ---- {category = "Suspension Upgrade", id = 15},
-    ---- {category = "Armour Upgrade", id = 16},
-    ---- {category = "Turbo Upgrade", id = 18},
-    {category = "Vanity Plates",id = 25},
+    {category = "Roof", id = 10},
+    {category = "Engine Upgrade", id = 11},
+    {category = "Brake Upgrade", id = 12},
+    {category = "Transmission Upgrade", id = 13},
+    {category = "Suspension Upgrade", id = 15},
+    {category = "Armour Upgrade", id = 16},
+    {category = "Turbo Upgrade", id = 18},
+    {category = "Vanity Plates", id = 25},
     {category = "Trim A", id = 27},
     {category = "Ornaments", id = 28},
     {category = "Dashboard", id = 29},
@@ -279,8 +158,7 @@ vehicleCustomisation = {
     {category = "Fuel Tank", id = 45},
     {category = "Window", id = 46},
     {category = "Livery", id = 48},
-    {category = "Horns", id = 14, 
-        
+    {category = "Horns", id = 14,
         hornNames = {
             {name = "Truck Horn", id = 0},
             {name = "Cop Horn", id = 1},
@@ -419,7 +297,7 @@ vehicleResprayOptions = {
             {name = "Ice White", id = 111},
             {name = "Frost White", id = 112}
         }
-    }, 
+    },
     {category = "Metallic", id = 1,
         colours = {{name = "Black", id = 0},
             {name = "Carbon Black", id = 147},
