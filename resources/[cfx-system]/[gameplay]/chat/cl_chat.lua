@@ -58,20 +58,6 @@ AddEventHandler('chat:showCID', function(cidInformation, pid)
     end
 end)
 
--- AddEventHandler('__cfx_internal:serverPrint', function(msg)
---   print(msg)
-
---   SendNUIMessage({
---     type = 'ON_MESSAGE',
---     message = {
---       color = { 0, 0, 0 },
---       multiline = true,
---       args = { msg }
---     }
---   })
--- end)
-
-
 
 AddEventHandler('chat:addMessage', function(message)
   local hud = exports["isPed"]:isPed("hud")
