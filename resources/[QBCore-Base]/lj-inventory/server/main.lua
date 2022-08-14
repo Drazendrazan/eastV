@@ -1536,6 +1536,8 @@ QBCore.Commands.Add("giveitem", "Give An Item (Admin Only)", {{name="id", help="
 					info.birthdate = Player.PlayerData.charinfo.birthdate
 					info.gender = Player.PlayerData.charinfo.gender
 					info.nationality = Player.PlayerData.charinfo.nationality
+				elseif itemData["name"] == "laptop_black" then
+					info.uses = 3
 				end
 
 				if Player.Functions.AddItem(itemData["name"], amount, false, info) then

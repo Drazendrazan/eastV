@@ -1399,4 +1399,78 @@ Config.DoorList = {
 		pickable = false,
 		distance = 2.0
 	},
+	-- Art Galery Heist Doorlock
+		-- First door
+	{
+		textCoords = vector3(17.631237, 146.65492, 93.8013),
+		authorizedJobs = { 'police' },
+		locking = false,
+		locked = true,
+		pickable = false,
+		distance = 1,
+		doors = {
+			{
+				objName = 'k4mb1_vault_door',
+				objYaw = 70.0,
+				objCoords = vector3(18.023517, 147.58903, 93.801933),
+			},
+			{
+				objName = 'k4mb1_vault_door',
+				objYaw = 250.0,
+				objCoords = vector3(17.12697, 145.72598, 93.801918),
+			}
+		}
+	},
+	-- THERMITE DOORS
+	{
+		textCoords = vector3(36.774448, 145.01174, 93.792892),
+		authorizedJobs = { 'police' },
+		locking = false,
+		locked = true,
+		pickable = false,
+		distance = 1,
+		doors = {
+			{
+				objName = 'hei_v_ilev_bk_safegate_pris',
+				objYaw = -20.0,
+				objCoords = vector3(36.774448, 145.01174, 93.792892),
+			}
+		}
+	},
+	{
+		textCoords = vector3(33.178558, 135.44357, 93.792823),
+		authorizedJobs = { 'police' },
+		locking = false,
+		locked = true,
+		pickable = false,
+		distance = 1,
+		doors = {
+			{
+				objName = 'hei_v_ilev_bk_safegate_pris',
+				objYaw = -20.0,
+				objCoords = vector3(33.178558, 135.44357, 93.792823),
+			}
+		}
+	},
+	-- SECURITY ROOM
+	{
+		textCoords = vector3(21.183677, 155.05815, 93.792655),
+		authorizedJobs = { 'police' },
+		locking = false,
+		locked = true,
+		pickable = false,
+		distance = 2,
+		doors = {
+			{
+				objName = 'hei_prop_hei_bankdoor_new',
+				objYaw = 70.0,
+				objCoords = vector3(20.740106, 153.73904, 93.79264),
+			},
+			{
+				objName = 'hei_prop_hei_bankdoor_new',
+				objYaw = 250.0,
+				objCoords = vector3(21.773963, 156.44949, 93.79261),
+			}
+		}
+	}
 }
