@@ -1536,23 +1536,21 @@ QBCore.Commands.Add("giveitem", "Give An Item (Admin Only)", {{name="id", help="
 					info.birthdate = Player.PlayerData.charinfo.birthdate
 					info.gender = Player.PlayerData.charinfo.gender
 					info.nationality = Player.PlayerData.charinfo.nationality
-				elseif itemData["name"] == "laptop_black" then
-					info.uses = 3
 				end
 
 				if Player.Functions.AddItem(itemData["name"], amount, false, info) then
-					TriggerClientEvent('QBCore:Notify', source, "You Have Given " ..GetPlayerName(tonumber(args[1])).." "..amount.." "..itemData["name"].. "", "success")
+					TriggerClientEvent('QBCore:Notify', source, "Verdin " ..GetPlayerName(tonumber(args[1])).." "..amount.." "..itemData["name"].. "", "success")
 				else
-					TriggerClientEvent('QBCore:Notify', source,  "Can't give item!", "error")
+					TriggerClientEvent('QBCore:Notify', source,  "Bu item verilemiyor!", "error")
 				end
 			else
-				TriggerClientEvent('QBCore:Notify', source,  "Item Does Not Exist", "error")
+				TriggerClientEvent('QBCore:Notify', source,  "Öğe yok", "error")
 			end
 		else
-			TriggerClientEvent('QBCore:Notify', source,  "Invalid Amount", "error")
+			TriggerClientEvent('QBCore:Notify', source,  "Geçersiz Tutar", "error")
 		end
 	else
-		TriggerClientEvent('QBCore:Notify', source,  "Player Is Not Online", "error")
+		TriggerClientEvent('QBCore:Notify', source,  "Oyuncu uyanık değil", "error")
 	end
 end, "admin")
 
