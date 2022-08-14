@@ -1,26 +1,26 @@
 local Translations = {
     error = {
-        to_far_from_door = 'You are to far away from the Doorbell',
-        nobody_home = 'There is nobody home..',
+        to_far_from_door = 'Kapı zilinden çok uzaktasın',
+        nobody_home = 'Evde kimse yok..',
     },
     success = {
-        receive_apart = 'You got a apartment',
-        changed_apart = 'You moved apartments',
+        receive_apart = 'Bir daire aldın',
+        changed_apart = 'Daireleri taşıdın',
     },
     info = {
-        at_the_door = 'Someone is at the door!',
+        at_the_door = 'Kapıda birisi var!',
     },
     text = {
-        enter = 'Enter Apartment',
-        ring_doorbell = 'Ring Doorbell',
-        logout = 'Logout Character',
-        change_outfit = 'Change Outfit',
-        open_stash = 'Open Stash',
-        move_here = 'Move Here',
-        open_door = 'Open Door',
-        leave = 'Leave Apartment',
-        close_menu = '⬅ Close Menu',
-        tennants = 'Tennants',
+        enter = 'Daireye gir',
+        ring_doorbell = 'Zili çal',
+        logout = 'Karakterden çık',
+        change_outfit = 'Kıyafetini değiştir',
+        open_stash = 'Depoyu aç',
+        move_here = 'Buraya hareket et',
+        open_door = 'Kapıyı aç',
+        leave = 'Daireden çık',
+        close_menu = '⬅ Menüyü kapat',
+        tennants = 'Kiracılar',
     },
 }
 

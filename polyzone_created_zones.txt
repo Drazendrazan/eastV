@@ -38,4 +38,12 @@ PolyZone:Create({
  name="sahilDrug",
  --minZ=0,
  --maxZ=800
+})--
+
+
+Name: meltMining | 2022-08-14T12:29:57Z
+BoxZone:Create(vector3(1112.21, -2009.66, 30.94), 5, 5, {
+  name = "meltMining",
+  heading = 0,
 })
+

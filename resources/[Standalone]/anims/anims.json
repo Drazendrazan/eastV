@@ -1,8 +1,8 @@
 [
   {
     "type": "dances",
-    "title": "Dance F",
-    "subtitle": "/e dancef",
+    "title": "Dans Kadın",
+    "subtitle": "/e danskadın",
     "dances": {
       "dict": "anim@amb@nightclub@dancers@solomun_entourage@",
       "anim": "mi_dance_facedj_17_v1_female^1"
@@ -10,8 +10,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance F2",
-    "subtitle": "/e dancef2",
+    "title": "Dans Kadın 2",
+    "subtitle": "/e danskadın2",
     "dances": {
       "dict": "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@",
       "anim": "high_center"
@@ -19,8 +19,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance F3",
-    "subtitle": "/e dancef3",
+    "title": "Dans Kadın 3",
+    "subtitle": "/e danskadın3",
     "dances": {
       "dict": "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@",
       "anim": "high_center_up"
@@ -28,8 +28,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance F4",
-    "subtitle": "/e dancef4",
+    "title": "Dans Kadın 4",
+    "subtitle": "/e danskadın4",
     "dances": {
       "dict": "anim@amb@nightclub@dancers@crowddance_facedj@hi_intensity",
       "anim": "hi_dance_facedj_09_v2_female^1"
@@ -37,8 +37,8 @@
   },
   {
     "type": "dances",
-    "title": "Dances F5",
-    "subtitle": "/e dancef5",
+    "title": "Dans Kadın 5",
+    "subtitle": "/e danskadın5",
     "dances": {
       "dict": "anim@amb@nightclub@dancers@crowddance_facedj@hi_intensity",
       "anim": "hi_dance_facedj_09_v2_female^3"
@@ -46,8 +46,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance F6",
-    "subtitle": "/e dancef6",
+    "title": "Dans Kadın 6",
+    "subtitle": "/e danskadın6",
     "dances": {
       "dict": "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@",
       "anim": "high_center_up"
@@ -55,8 +55,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance Slow 2",
-    "subtitle": "/e danceslow2",
+    "title": "Dans Yavaş 2",
+    "subtitle": "/e dansyavaş2",
     "dances": {
       "dict": "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@",
       "anim": "low_center"
@@ -64,8 +64,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance Slow 3",
-    "subtitle": "/e danceslow3",
+    "title": "Dans Yavaş 3",
+    "subtitle": "/e dansyavaş3",
     "dances": {
       "dict": "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@",
       "anim": "low_center_down"
@@ -73,8 +73,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance Slow 4",
-    "subtitle": "/e danceslow4",
+    "title": "Dans Yavaş 4",
+    "subtitle": "/e dansyavaş4",
     "dances": {
       "dict": "anim@amb@nightclub@mini@dance@dance_solo@female@var_b@",
       "anim": "low_center"
@@ -82,8 +82,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance",
-    "subtitle": "/e dance",
+    "title": "Dans",
+    "subtitle": "/e dans",
     "dances": {
       "dict": "anim@amb@nightclub@dancers@podium_dancers@",
       "anim": "hi_dance_facedj_17_v2_male^5"
@@ -91,8 +91,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance 2",
-    "subtitle": "/e dance2",
+    "title": "Dans 2",
+    "subtitle": "/e dans2",
     "dances": {
       "dict": "anim@amb@nightclub@mini@dance@dance_solo@male@var_b@",
       "anim": "high_center_down"
@@ -100,8 +100,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance 3",
-    "subtitle": "/e dance3",
+    "title": "Dans 3",
+    "subtitle": "/e dans3",
     "dances": {
       "dict": "anim@amb@nightclub@mini@dance@dance_solo@male@var_a@",
       "anim": "high_center"
@@ -109,8 +109,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance Upper",
-    "subtitle": "/e danceupper",
+    "title": "Dans Üst",
+    "subtitle": "/e dansüst",
     "dances": {
       "dict": "anim@amb@nightclub@mini@dance@dance_solo@female@var_b@",
       "anim": "high_center"
@@ -118,8 +118,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance Upper 2",
-    "subtitle": "/e danceupper2",
+    "title": "Dans Üst 2",
+    "subtitle": "/e dansüst2",
     "dances": {
       "dict": "anim@amb@nightclub@mini@dance@dance_solo@female@var_b@",
       "anim": "high_center_up"
@@ -127,8 +127,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance Shy",
-    "subtitle": "/e danceshy",
+    "title": "Dans Utangaç",
+    "subtitle": "/e dansutangaç",
     "dances": {
       "dict": "anim@amb@nightclub@mini@dance@dance_solo@male@var_a@",
       "anim": "low_center"
@@ -136,8 +136,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance Shy 2",
-    "subtitle": "/e danceshy2",
+    "title": "Dans Utangaç 2",
+    "subtitle": "/e dansutangaç2",
     "dances": {
       "dict": "anim@amb@nightclub@mini@dance@dance_solo@female@var_b@",
       "anim": "low_center_down"
@@ -145,8 +145,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance Slow",
-    "subtitle": "/e danceslow",
+    "title": "Dans Yavaş",
+    "subtitle": "/e dansyavaş",
     "dances": {
       "dict": "anim@amb@nightclub@mini@dance@dance_solo@male@var_b@",
       "anim": "low_center"
@@ -154,8 +154,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance 6",
-    "subtitle": "/e dance6",
+    "title": "Dans 6",
+    "subtitle": "/e dans6",
     "dances": {
       "dict": "misschinese2_crystalmazemcs1_cs",
       "anim": "dance_loop_tao"
@@ -163,8 +163,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance 7",
-    "subtitle": "/e dance7",
+    "title": "Dans 7",
+    "subtitle": "/e dans7",
     "dances": {
       "dict": "misschinese2_crystalmazemcs1_ig",
       "anim": "dance_loop_tao"
@@ -172,8 +172,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance 8",
-    "subtitle": "/e dance8",
+    "title": "Dans 8",
+    "subtitle": "/e dans8",
     "dances": {
       "dict": "missfbi3_sniping",
       "anim": "dance_m_default"
@@ -181,8 +181,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance Silly",
-    "subtitle": "/e dancesilly",
+    "title": "Dans Zevzek",
+    "subtitle": "/e danszevzek",
     "dances": {
       "dict": "special_ped@mountain_dancer@monologue_3@monologue_3a",
       "anim": "mnt_dnc_buttwag"
@@ -190,26 +190,26 @@
   },
   {
     "type": "dances",
-    "title": "Dance Silly 2",
-    "subtitle": "/e dancesilly2",
+    "title": "Dans Zevzek 2",
+    "subtitle": "/e danszevzek2",
     "dances": {
-      "dict": "move_clown@p_m_zero_idles@",
+      "dict": "move_Palyaço@p_m_zero_idles@",
       "anim": "fidget_short_dance"
     }
   },
   {
     "type": "dances",
-    "title": "Dance Silly 3",
-    "subtitle": "/e dancesilly3",
+    "title": "Dans Zevzek 3",
+    "subtitle": "/e danszevzek3",
     "dances": {
-      "dict": "move_clown@p_m_two_idles@",
+      "dict": "move_Palyaço@p_m_two_idles@",
       "anim": "fidget_short_dance"
     }
   },
   {
     "type": "dances",
-    "title": "Dance Silly 4",
-    "subtitle": "/e dancesilly4",
+    "title": "Dance Zevzek 4",
+    "subtitle": "/e danszevzek4",
     "dances": {
       "dict": "anim@amb@nightclub@lazlow@hi_podium@",
       "anim": "danceidle_hi_11_buttwiggle_b_laz"
@@ -217,8 +217,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance Silly 5",
-    "subtitle": "/e dancesilly5",
+    "title": "Dance Zevzek 5",
+    "subtitle": "/e danszevzek5",
     "dances": {
       "dict": "timetable@tracy@ig_5@idle_a",
       "anim": "idle_a"
@@ -226,8 +226,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance Silly 6",
-    "subtitle": "/e dancesilly6",
+    "title": "Dance Zevzek 6",
+    "subtitle": "/e danszevzek6",
     "dances": {
       "dict": "timetable@tracy@ig_8@idle_b",
       "anim": "idle_d"
@@ -235,17 +235,17 @@
   },
   {
     "type": "dances",
-    "title": "Dance Silly 7",
-    "subtitle": "/e dancesilly7",
+    "title": "Dance Zevzek 7",
+    "subtitle": "/e danszevzek7",
     "dances": {
       "dict": "anim@amb@casino@mini@dance@dance_solo@female@var_b@",
       "anim": "high_center"
     }
   },
   {
-    "type": "dances",
-    "title": "Dance Silly 8",
-    "subtitle": "/e dancesilly8",
+    "type": "dances,",
+    "title": "Dance Zevzek 8",
+    "subtitle": "/e danszevzek8",
     "dances": {
       "dict": "anim@mp_player_intcelebrationfemale@the_woogie",
       "anim": "the_woogie"
@@ -253,8 +253,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance Silly 9",
-    "subtitle": "/e dancesilly9",
+    "title": "Dance Zevzek 9",
+    "subtitle": "/e danszevzek9",
     "dances": {
       "dict": "rcmnigel1bnmt_1b",
       "anim": "dance_loop_tyler"
@@ -262,8 +262,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance 9",
-    "subtitle": "/e dance9",
+    "title": "Dans 9",
+    "subtitle": "/e dans9",
     "dances": {
       "dict": "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@",
       "anim": "med_center_up"
@@ -271,8 +271,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance 5",
-    "subtitle": "/e dance5",
+    "title": "Dans 5",
+    "subtitle": "/e dans5",
     "dances": {
       "dict": "anim@amb@casino@mini@dance@dance_solo@female@var_a@",
       "anim": "med_center"
@@ -280,8 +280,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance Glowsticks",
-    "subtitle": "/e danceglowstick",
+    "title": "Dans Neon",
+    "subtitle": "/e dansneon",
     "dances": {
       "dict": "anim@amb@nightclub@lazlow@hi_railing@",
       "anim": "ambclub_13_mi_hi_sexualgriding_laz"
@@ -297,8 +297,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance Glowsticks 2",
-    "subtitle": "/e danceglowstick2",
+    "title": "Dans Neon 2",
+    "subtitle": "/e dansneon2",
     "dances": {
       "dict": "anim@amb@nightclub@lazlow@hi_railing@",
       "anim": "ambclub_12_mi_hi_bootyshake_laz"
@@ -314,8 +314,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance Glowsticks 3",
-    "subtitle": "/e danceglowstick3",
+    "title": "Dans Neon 3",
+    "subtitle": "/e dansneon3",
     "dances": {
       "dict": "anim@amb@nightclub@lazlow@hi_railing@",
       "anim": "ambclub_09_mi_hi_bellydancer_laz"
@@ -331,8 +331,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance Horse",
-    "subtitle": "/e dancehorse",
+    "title": "Dans At",
+    "subtitle": "/e dan",
     "dances": {
       "dict": "anim@amb@nightclub@lazlow@hi_dancefloor@",
       "anim": "dancecrowd_li_15_handup_laz"
@@ -345,8 +345,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance Horse 2",
-    "subtitle": "/e dancehorse2",
+    "title": "Dans At 2",
+    "subtitle": "/e dansat2",
     "dances": {
       "dict": "anim@amb@nightclub@lazlow@hi_dancefloor@",
       "anim": "crowddance_hi_11_handup_laz"
@@ -359,8 +359,8 @@
   },
   {
     "type": "dances",
-    "title": "Dance Horse 3",
-    "subtitle": "/e dancehorse3",
+    "title": "Dans At 3",
+    "subtitle": "/e dansat3",
     "dances": {
       "dict": "anim@amb@nightclub@lazlow@hi_dancefloor@",
       "anim": "dancecrowd_li_11_hu_shimmy_laz"
@@ -372,9 +372,9 @@
     }
   },
   {
-    "type": "props",
-    "title": "Umbrella",
-    "subtitle": "/e umbrella",
+    "type": "Eşyalar",
+    "title": "Şemsiye",
+    "subtitle": "/e şemsiye",
     "dances": {
       "dict": "amb@world_human_drinking@coffee@male@base",
       "anim": "base"
@@ -386,9 +386,9 @@
     }
   },
   {
-    "type": "props",
-    "title": "Notepad",
-    "subtitle": "/e notepad",
+    "type": "Eşyalar",
+    "title": "Not Defteri",
+    "subtitle": "/e notal",
     "dances": {
       "dict": "missheistdockssetup1clipboard@base",
       "anim": "base"
@@ -403,9 +403,9 @@
     }
   },
   {
-    "type": "props",
-    "title": "Box",
-    "subtitle": "/e box",
+    "type": "Eşyalar",
+    "title": "Kutu",
+    "subtitle": "/e kutu",
     "dances": {
       "dict": "anim@heists@box_carry@",
       "anim": "idle"
@@ -417,9 +417,9 @@
     }
   },
   {
-    "type": "props",
-    "title": "Bumper",
-    "subtitle": "/e bumper",
+    "type": "Eşyalar",
+    "title": "Tampon",
+    "subtitle": "/e tampon",
     "dances": {
       "dict": "anim@heists@box_carry@",
       "anim": "idle"
@@ -431,9 +431,9 @@
     }
   },
   {
-    "type": "props",
-    "title": "Medic Kit",
-    "subtitle": "/e medikit",
+    "type": "Eşyalar",
+    "title": "Medkit",
+    "subtitle": "/e medkit",
     "dances": {
       "dict": "missheistdocksprep1hold_cellphone",
       "anim": "static"
@@ -445,9 +445,9 @@
     }
   },
   {
-    "type": "props",
-    "title": "Rose",
-    "subtitle": "/e rose",
+    "type": "Eşyalar",
+    "title": "Gül",
+    "subtitle": "/e gül",
     "dances": {
       "dict": "anim@heists@humane_labs@finale@keycards",
       "anim": "ped_a_enter_loop"
@@ -460,8 +460,8 @@
   },
   {
     "type": "dances",
-    "title": "Smoke 2",
-    "subtitle": "/e smoke2",
+    "title": "Sigara 2",
+    "subtitle": "/e sigara2",
     "dances": {
       "dict": "amb@world_human_aa_smoke@male@idle_a",
       "anim": "idle_c"
@@ -474,8 +474,8 @@
   },
   {
     "type": "dances",
-    "title": "Smoke 3",
-    "subtitle": "/e smoke3",
+    "title": "Sigara 3",
+    "subtitle": "/e sigara3",
     "dances": {
       "dict": "amb@world_human_aa_smoke@male@idle_a",
       "anim": "idle_b"
@@ -488,8 +488,8 @@
   },
   {
     "type": "dances",
-    "title": "Smoke 4",
-    "subtitle": "/e smoke4",
+    "title": "Sigara 4",
+    "subtitle": "/e sigara4",
     "dances": {
       "dict": "amb@world_human_smoking@female@idle_a",
       "anim": "idle_b"
@@ -502,8 +502,8 @@
   },
   {
     "type": "dances",
-    "title": "Smoke 5",
-    "subtitle": "/e smoke5",
+    "title": "Sigara 5",
+    "subtitle": "/e sigara5",
     "dances": {
       "dict": "anim@amb@carmeet@checkout_car@smoke@male_a@base",
       "anim": "base"
@@ -516,8 +516,8 @@
   },
   {
     "type": "dances",
-    "title": "Smoke 6",
-    "subtitle": "/e smoke6",
+    "title": "Sigara 6",
+    "subtitle": "/e sigara6",
     "dances": {
       "dict": "anim@amb@carmeet@checkout_car@smoke@male_b@base",
       "anim": "base"
@@ -530,8 +530,8 @@
   },
   {
     "type": "dances",
-    "title": "Smoke 7",
-    "subtitle": "/e smoke7",
+    "title": "Sigara 7",
+    "subtitle": "/e sigara7",
     "dances": {
       "dict": "anim@amb@carmeet@checkout_car@smoke@male_c@base",
       "anim": "base"
@@ -558,8 +558,8 @@
   },
   {
     "type": "dances",
-    "title": "Suitcase",
-    "subtitle": "/e suitcase",
+    "title": "Bavul",
+    "subtitle": "/e bavul",
     "dances": {
       "dict": "missheistdocksprep1hold_cellphone",
       "anim": "static"
@@ -572,8 +572,8 @@
   },
   {
     "type": "dances",
-    "title": "Suitcase 2",
-    "subtitle": "/e suitcase2",
+    "title": "Bavul 2",
+    "subtitle": "/e bavul2",
     "dances": {
       "dict": "missheistdocksprep1hold_cellphone",
       "anim": "static"
@@ -586,8 +586,8 @@
   },
   {
     "type": "dances",
-    "title": "Suitcase 3",
-    "subtitle": "/e suitcase2",
+    "title": "Bavul 3",
+    "subtitle": "/e bavul3",
     "dances": {
       "dict": "anim@heists@box_carry@",
       "anim": "idle"
@@ -600,8 +600,8 @@
   },
   {
     "type": "dances",
-    "title": "Mugshot",
-    "subtitle": "/e mugshot",
+    "title": "Sabıka Fotoğrafı",
+    "subtitle": "/e sabıka",
     "dances": {
       "dict": "mp_character_creation@customise@male_a",
       "anim": "loop"
@@ -614,8 +614,8 @@
   },
   {
     "type": "dances",
-    "title": "Coffee",
-    "subtitle": "/e coffee",
+    "title": "Kahve",
+    "subtitle": "/e kahve",
     "dances": {
       "dict": "amb@world_human_drinking@coffee@male@idle_a",
       "anim": "idle_c"
@@ -628,8 +628,8 @@
   },
   {
     "type": "dances",
-    "title": "Whiskey",
-    "subtitle": "/e whiskey",
+    "title": "Viski",
+    "subtitle": "/e viski",
     "dances": {
       "dict": "amb@world_human_drinking@coffee@male@idle_a",
       "anim": "idle_c"
@@ -642,8 +642,8 @@
   },
   {
     "type": "dances",
-    "title": "Beer",
-    "subtitle": "/e beer",
+    "title": "Bira",
+    "subtitle": "/e bira",
     "dances": {
       "dict": "amb@world_human_drinking@coffee@male@idle_a",
       "anim": "idle_c"
@@ -656,8 +656,8 @@
   },
   {
     "type": "dances",
-    "title": "Cup",
-    "subtitle": "/e cup",
+    "title": "Fincan",
+    "subtitle": "/e fincan",
     "dances": {
       "dict": "amb@world_human_drinking@coffee@male@idle_a",
       "anim": "idle_c"
@@ -698,8 +698,8 @@
   },
   {
     "type": "dances",
-    "title": "Sandwich",
-    "subtitle": "/e sandwich",
+    "title": "Sandviç",
+    "subtitle": "/e sandviç",
     "dances": {
       "dict": "mp_player_inteat@burger",
       "anim": "mp_player_int_eat_burger"
@@ -712,8 +712,8 @@
   },
   {
     "type": "dances",
-    "title": "Soda",
-    "subtitle": "/e soda",
+    "title": "Kola",
+    "subtitle": "/e kola",
     "dances": {
       "dict": "amb@world_human_drinking@coffee@male@idle_a",
       "anim": "idle_c"
@@ -726,8 +726,8 @@
   },
   {
     "type": "dances",
-    "title": "Ego Bar",
-    "subtitle": "/e egobar",
+    "title": "Çikolata",
+    "subtitle": "/e çikolata",
     "dances": {
       "dict": "mp_player_inteat@burger",
       "anim": "mp_player_int_eat_burger"
@@ -740,8 +740,8 @@
   },
   {
     "type": "dances",
-    "title": "Wine",
-    "subtitle": "/e wine",
+    "title": "Şarap",
+    "subtitle": "/e şarap",
     "dances": {
       "dict": "anim@heists@humane_labs@finale@keycards",
       "anim": "ped_a_enter_loop"
@@ -754,8 +754,8 @@
   },
   {
     "type": "dances",
-    "title": "Flute",
-    "subtitle": "/e flute",
+    "title": "Flüt",
+    "subtitle": "/e flüt",
     "dances": {
       "dict": "anim@heists@humane_labs@finale@keycards",
       "anim": "ped_a_enter_loop"
@@ -768,8 +768,8 @@
   },
   {
     "type": "dances",
-    "title": "Champagne",
-    "subtitle": "/e champagne",
+    "title": "Şampanya",
+    "subtitle": "/e şampanya",
     "dances": {
       "dict": "anim@heists@humane_labs@finale@keycards",
       "anim": "ped_a_enter_loop"
@@ -782,8 +782,8 @@
   },
   {
     "type": "dances",
-    "title": "Cigar",
-    "subtitle": "/e cigar",
+    "title": "Puro",
+    "subtitle": "/e puro",
     "dances": {
       "dict": "amb@world_human_smoking@male@male_a@enter",
       "anim": "enter"
@@ -796,8 +796,8 @@
   },
   {
     "type": "dances",
-    "title": "Cigar 2",
-    "subtitle": "/e cigar2",
+    "title": "Puro 2",
+    "subtitle": "/e puro2",
     "dances": {
       "dict": "amb@world_human_smoking@male@male_a@enter",
       "anim": "enter"
@@ -810,8 +810,8 @@
   },
   {
     "type": "dances",
-    "title": "Guitar",
-    "subtitle": "/e guitar",
+    "title": "Gitar",
+    "subtitle": "/e gitar",
     "dances": {
       "dict": "amb@world_human_musician@guitar@male@idle_a",
       "anim": "idle_b"
@@ -824,8 +824,8 @@
   },
   {
     "type": "dances",
-    "title": "Guitar 2",
-    "subtitle": "/e guitar2",
+    "title": "Gitar 2",
+    "subtitle": "/e gitar2",
     "dances": {
       "dict": "switch@trevor@guitar_beatdown",
       "anim": "001370_02_trvs_8_guitar_beatdown_idle_busker"
@@ -838,8 +838,8 @@
   },
   {
     "type": "dances",
-    "title": "Guitarelectric",
-    "subtitle": "/e guitarelectric",
+    "title": "Elektro Gitar",
+    "subtitle": "/e elektrogitar",
     "dances": {
       "dict": "amb@world_human_musician@guitar@male@idle_a",
       "anim": "idle_b"
@@ -852,8 +852,8 @@
   },
   {
     "type": "dances",
-    "title": "Guitar Electric 2",
-    "subtitle": "/e guitarelectric2",
+    "title": "Elektro Gitar 2",
+    "subtitle": "/e gitarelektro2",
     "dances": {
       "dict": "amb@world_human_musician@guitar@male@idle_a",
       "anim": "idle_b"
@@ -866,8 +866,8 @@
   },
   {
     "type": "dances",
-    "title": "Book",
-    "subtitle": "/e book",
+    "title": "Kitap",
+    "subtitle": "/e kitap",
     "dances": {
       "dict": "cellphone@",
       "anim": "cellphone_text_read_base"
@@ -880,8 +880,8 @@
   },
   {
     "type": "dances",
-    "title": "Bouquet",
-    "subtitle": "/e bouquet",
+    "title": "Buket",
+    "subtitle": "/e buket",
     "dances": {
       "dict": "impexp_int-0",
       "anim": "mp_m_waremech_01_dual-0"
@@ -894,8 +894,8 @@
   },
   {
     "type": "dances",
-    "title": "Teddy",
-    "subtitle": "/e teddy",
+    "title": "Ayıcık",
+    "subtitle": "/e ayıcık",
     "dances": {
       "dict": "impexp_int-0",
       "anim": "mp_m_waremech_01_dual-0"
@@ -908,8 +908,8 @@
   },
   {
     "type": "dances",
-    "title": "Backpack",
-    "subtitle": "/e backpack",
+    "title": "Sırt Çantası",
+    "subtitle": "/e sırtçantası",
     "dances": {
       "dict": "move_p_m_zero_rucksack",
       "anim": "idle"
@@ -922,8 +922,8 @@
   },
   {
     "type": "dances",
-    "title": "Clipboard",
-    "subtitle": "/e clipboard",
+    "title": "Pano",
+    "subtitle": "/e pano",
     "dances": {
       "dict": "missfam4",
       "anim": "base"
@@ -936,8 +936,8 @@
   },
   {
     "type": "dances",
-    "title": "Map",
-    "subtitle": "/e map",
+    "title": "Harita",
+    "subtitle": "/e harita",
     "dances": {
       "dict": "amb@world_human_tourist_map@male@base",
       "anim": "base"
@@ -950,8 +950,8 @@
   },
   {
     "type": "dances",
-    "title": "Beg",
-    "subtitle": "/e beg",
+    "title": "Dilen",
+    "subtitle": "/e dilen",
     "dances": {
       "dict": "amb@world_human_bum_freeway@male@base",
       "anim": "base"
@@ -964,8 +964,8 @@
   },
   {
     "type": "dances",
-    "title": "Make It Rain",
-    "subtitle": "/e makeitrain",
+    "title": "Para Saç",
+    "subtitle": "/e para",
     "dances": {
       "dict": "anim@mp_player_intupperraining_cash",
       "anim": "idle_a"
@@ -984,8 +984,8 @@
   },
   {
     "type": "dances",
-    "title": "Spray",
-    "subtitle": "/e spray",
+    "title": "Sprey",
+    "subtitle": "/e sprey",
     "dances": {
       "dict": "switch@franklin@lamar_tagging_wall",
       "anim": "lamar_tagging_exit_loop_lamar"
@@ -1004,8 +1004,8 @@
   },
   {
     "type": "dances",
-    "title": "Spray 2",
-    "subtitle": "/e spray2",
+    "title": "Sprey 2",
+    "subtitle": "/e sprey2",
     "dances": {
       "dict": "switch@franklin@lamar_tagging_wall",
       "anim": "lamar_tagging_wall_loop_lamar"
@@ -1018,8 +1018,8 @@
   },
   {
     "type": "dances",
-    "title": "Champagne Spray",
-    "subtitle": "/e champagnespray",
+    "title": "Şampanya 2",
+    "subtitle": "/e şampanya2",
     "dances": {
       "dict": "anim@mp_player_intupperspray_champagne",
       "anim": "idle_a"
@@ -1038,8 +1038,8 @@
   },
   {
     "type": "dances",
-    "title": "Camera",
-    "subtitle": "/e camera",
+    "title": "Kamera",
+    "subtitle": "/e kamera",
     "dances": {
       "dict": "amb@world_human_paparazzi@male@base",
       "anim": "base"
@@ -1058,8 +1058,8 @@
   },
   {
     "type": "dances",
-    "title": "Joint",
-    "subtitle": "/e joint",
+    "title": "Ot",
+    "subtitle": "/e ot",
     "dances": {
       "dict": "amb@world_human_smoking@male@male_a@enter",
       "anim": "enter"
@@ -1072,8 +1072,8 @@
   },
   {
     "type": "dances",
-    "title": "Cig",
-    "subtitle": "/e cig",
+    "title": "Sigara İç",
+    "subtitle": "/e sigaraiç",
     "dances": {
       "dict": "amb@world_human_smoking@male@male_a@enter",
       "anim": "enter"
@@ -1086,8 +1086,8 @@
   },
   {
     "type": "dances",
-    "title": "Brief 3",
-    "subtitle": "/e brief3",
+    "title": "İş Çantası 3",
+    "subtitle": "/e işçantası3",
     "dances": {
       "dict": "missheistdocksprep1hold_cellphone",
       "anim": "static"
@@ -1128,8 +1128,8 @@
   },
   {
     "type": "dances",
-    "title": "Phone Call",
-    "subtitle": "/e phonecall",
+    "title": "Telefon Araması",
+    "subtitle": "/e telara",
     "dances": {
       "dict": "cellphone@",
       "anim": "cellphone_call_listen_base"
@@ -1142,8 +1142,8 @@
   },
   {
     "type": "dances",
-    "title": "Phone",
-    "subtitle": "/e phone",
+    "title": "Telefon",
+    "subtitle": "/e telefon",
     "dances": {
       "dict": "cellphone@",
       "anim": "cellphone_text_read_base"
@@ -1156,8 +1156,8 @@
   },
   {
     "type": "dances",
-    "title": "Clean",
-    "subtitle": "/e clean",
+    "title": "Temizle",
+    "subtitle": "/e temizle",
     "dances": {
       "dict": "timetable@floyd@clean_kitchen@base",
       "anim": "base"
@@ -1170,8 +1170,8 @@
   },
   {
     "type": "dances",
-    "title": "Clean 2",
-    "subtitle": "/e clean2",
+    "title": "Temizle 2",
+    "subtitle": "/e temizle2",
     "dances": {
       "dict": "amb@world_human_maid_clean@",
       "anim": "base"
@@ -1184,8 +1184,8 @@
   },
   {
     "type": "dances",
-    "title": "Drink",
-    "subtitle": "/e drink",
+    "title": "İç",
+    "subtitle": "/e iç",
     "dances": {
       "dict": "mp_player_intdrink",
       "anim": "loop_bottle"
@@ -1198,8 +1198,8 @@
   },
   {
     "type": "dances",
-    "title": "Beast",
-    "subtitle": "/e beast",
+    "title": "Canavar",
+    "subtitle": "/e canavar",
     "dances": {
       "dict": "anim@mp_fm_event@intro",
       "anim": "beast_transform"
@@ -1207,8 +1207,8 @@
   },
   {
     "type": "dances",
-    "title": "Braaains",
-    "subtitle": "/e brains",
+    "title": "Beyiiin",
+    "subtitle": "/e beyinler",
     "dances": {
       "dict": "special_ped@zombie@base",
       "anim": "base"
@@ -1216,8 +1216,8 @@
   },
   {
     "type": "dances",
-    "title": "Chill",
-    "subtitle": "/e chill",
+    "title": "Sakinleş",
+    "subtitle": "/e sakin",
     "dances": {
       "dict": "switch@trevor@scares_tramp",
       "anim": "trev_scares_tramp_idle_tramp"
@@ -1225,8 +1225,8 @@
   },
   {
     "type": "dances",
-    "title": "Cloudgaze",
-    "subtitle": "/e cloudgaze",
+    "title": "Bulut Bakışı",
+    "subtitle": "/e bulut",
     "dances": {
       "dict": "switch@trevor@annoys_sunbathers",
       "anim": "trev_annoys_sunbathers_loop_girl"
@@ -1234,8 +1234,8 @@
   },
   {
     "type": "dances",
-    "title": "Cloudgaze 2",
-    "subtitle": "/e cloudgaze2",
+    "title": "Bulut Bakışı 2",
+    "subtitle": "/e bulut2",
     "dances": {
       "dict": "switch@trevor@annoys_sunbathers",
       "anim": "trev_annoys_sunbathers_loop_guy"
@@ -1243,8 +1243,8 @@
   },
   {
     "type": "dances",
-    "title": "Prone",
-    "subtitle": "/e prone",
+    "title": "Yüz Üstü Uzanmak",
+    "subtitle": "/e yüzüstü",
     "dances": {
       "dict": "missfbi3_sniping",
       "anim": "prone_dave"
@@ -1252,8 +1252,8 @@
   },
   {
     "type": "dances",
-    "title": "Pullover",
-    "subtitle": "/e pullover",
+    "title": "Kenara Çek",
+    "subtitle": "/e kenaraçek",
     "dances": {
       "dict": "misscarsteal3pullover",
       "anim": "pull_over_right"
@@ -1261,8 +1261,8 @@
   },
   {
     "type": "dances",
-    "title": "Idle",
-    "subtitle": "/e idle",
+    "title": "Boşta",
+    "subtitle": "/e boşta",
     "dances": {
       "dict": "anim@heists@heist_corona@team_idles@male_a",
       "anim": "idle"
@@ -1270,8 +1270,8 @@
   },
   {
     "type": "dances",
-    "title": "Idle 8",
-    "subtitle": "/e idle8",
+    "title": "Boşta 8",
+    "subtitle": "/e boşta8",
     "dances": {
       "dict": "amb@world_human_hang_out_street@male_b@idle_a",
       "anim": "idle_b"
@@ -1279,8 +1279,8 @@
   },
   {
     "type": "dances",
-    "title": "Idle 9",
-    "subtitle": "/e idle9",
+    "title": "Boşta 9",
+    "subtitle": "/e boşta9",
     "dances": {
       "dict": "friends@fra@ig_1",
       "anim": "base_idle"
@@ -1288,8 +1288,8 @@
   },
   {
     "type": "dances",
-    "title": "Idle 10",
-    "subtitle": "/e idle10",
+    "title": "Boşta 10",
+    "subtitle": "/e boşta10",
     "dances": {
       "dict": "mp_move@prostitute@m@french",
       "anim": "idle"
@@ -1297,8 +1297,8 @@
   },
   {
     "type": "dances",
-    "title": "Idle 11",
-    "subtitle": "/e idle11",
+    "title": "Boşta 11",
+    "subtitle": "/e boşta11",
     "dances": {
       "dict": "random@countrysiderobbery",
       "anim": "idle_a"
@@ -1306,8 +1306,8 @@
   },
   {
     "type": "dances",
-    "title": "Idle 2",
-    "subtitle": "/e idle2",
+    "title": "Boşta 2",
+    "subtitle": "/e boşta2",
     "dances": {
       "dict": "anim@heists@heist_corona@team_idles@female_a",
       "anim": "idle"
@@ -1315,8 +1315,8 @@
   },
   {
     "type": "dances",
-    "title": "Idle 3",
-    "subtitle": "/e idle3",
+    "title": "Boşta 3",
+    "subtitle": "/e boşta3",
     "dances": {
       "dict": "anim@heists@humane_labs@finale@strip_club",
       "anim": "ped_b_celebrate_loop"
@@ -1324,8 +1324,8 @@
   },
   {
     "type": "dances",
-    "title": "Idle 4",
-    "subtitle": "/e idle4",
+    "title": "Boşta 4",
+    "subtitle": "/e boşta4",
     "dances": {
       "dict": "anim@mp_celebration@idles@female",
       "anim": "celebration_idle_f_a"
@@ -1333,8 +1333,8 @@
   },
   {
     "type": "dances",
-    "title": "Idle 5",
-    "subtitle": "/e idle5",
+    "title": "Boşta 5",
+    "subtitle": "/e boşta5",
     "dances": {
       "dict": "anim@mp_corona_idles@female_b@idle_a",
       "anim": "idle_a"
@@ -1342,8 +1342,8 @@
   },
   {
     "type": "dances",
-    "title": "Idle 6",
-    "subtitle": "/e idle6",
+    "title": "Boşta 6",
+    "subtitle": "/e boşta6",
     "dances": {
       "dict": "anim@mp_corona_idles@male_c@idle_a",
       "anim": "idle_a"
@@ -1351,8 +1351,8 @@
   },
   {
     "type": "dances",
-    "title": "Idle 7",
-    "subtitle": "/e idle7",
+    "title": "Boşta 7",
+    "subtitle": "/e boşta7",
     "dances": {
       "dict": "anim@mp_corona_idles@male_d@idle_a",
       "anim": "idle_a"
@@ -1360,8 +1360,8 @@
   },
   {
     "type": "dances",
-    "title": "Wait 3",
-    "subtitle": "/e wait3",
+    "title": "Bekle 3",
+    "subtitle": "/e bekle3",
     "dances": {
       "dict": "amb@world_human_hang_out_street@female_hold_arm@idle_a",
       "anim": "idle_a"
@@ -1369,8 +1369,8 @@
   },
   {
     "type": "dances",
-    "title": "Idle Drunk",
-    "subtitle": "/e idledrunk",
+    "title": "Sarhoş",
+    "subtitle": "/e sarhoş",
     "dances": {
       "dict": "random@drunk_driver_1",
       "anim": "drunk_driver_stand_loop_dd1"
@@ -1378,8 +1378,8 @@
   },
   {
     "type": "dances",
-    "title": "Idle Drunk 2",
-    "subtitle": "/e idledrunk2",
+    "title": "Sarhoş 2",
+    "subtitle": "/e sarhoş2",
     "dances": {
       "dict": "random@drunk_driver_1",
       "anim": "drunk_driver_stand_loop_dd2"
@@ -1387,8 +1387,8 @@
   },
   {
     "type": "dances",
-    "title": "Idle Drunk 3",
-    "subtitle": "/e idledrunk3",
+    "title": "Sarhoş 3",
+    "subtitle": "/e sarhoş3",
     "dances": {
       "dict": "missarmenian2",
       "anim": "standing_idle_loop_drunk"
@@ -1396,8 +1396,8 @@
   },
   {
     "type": "dances",
-    "title": "Air Guitar",
-    "subtitle": "/e airguitar",
+    "title": "Gitar Çal",
+    "subtitle": "/e gitarçal",
     "dances": {
       "dict": "anim@mp_player_intcelebrationfemale@air_guitar",
       "anim": "air_guitar"
@@ -1405,8 +1405,8 @@
   },
   {
     "type": "dances",
-    "title": "Air Synth",
-    "subtitle": "/e airsynth",
+    "title": "Sevinç",
+    "subtitle": "/e sevin",
     "dances": {
       "dict": "anim@mp_player_intcelebrationfemale@air_synth",
       "anim": "air_synth"
@@ -1414,8 +1414,8 @@
   },
   {
     "type": "dances",
-    "title": "Argue",
-    "subtitle": "/e argue",
+    "title": "Tartışmak",
+    "subtitle": "/e tartış",
     "dances": {
       "dict": "misscarsteal4@actor",
       "anim": "actor_berating_loop"
@@ -1423,8 +1423,8 @@
   },
   {
     "type": "dances",
-    "title": "Argue 2",
-    "subtitle": "/e argue2",
+    "title": "Tartışmak 2",
+    "subtitle": "/e tartış2",
     "dances": {
       "dict": "oddjobs@assassinate@vice@hooker",
       "anim": "argue_a"
@@ -1432,8 +1432,8 @@
   },
   {
     "type": "dances",
-    "title": "Bartender",
-    "subtitle": "/e bartender",
+    "title": "Barmen",
+    "subtitle": "/e barmen",
     "dances": {
       "dict": "anim@amb@clubhouse@bar@drink@idle_a",
       "anim": "idle_a_bartender"
@@ -1441,8 +1441,8 @@
   },
   {
     "type": "dances",
-    "title": "Blow Kiss",
-    "subtitle": "/e blowkiss",
+    "title": "Öpücük Atmak",
+    "subtitle": "/e öpücük",
     "dances": {
       "dict": "anim@mp_player_intcelebrationfemale@blow_kiss",
       "anim": "blow_kiss"
@@ -1450,8 +1450,8 @@
   },
   {
     "type": "dances",
-    "title": "Blow Kiss 2",
-    "subtitle": "/e blowkiss2",
+    "title": "Öpücük Atmak 2",
+    "subtitle": "/e öpücük2",
     "dances": {
       "dict": "anim@mp_player_intselfieblow_kiss",
       "anim": "exit"
@@ -1459,8 +1459,8 @@
   },
   {
     "type": "dances",
-    "title": "Cursty",
-    "subtitle": "/e curtsy",
+    "title": "Huysuz",
+    "subtitle": "/e huysuz",
     "dances": {
       "dict": "anim@mp_player_intcelebrationpaired@f_f_sarcastic",
       "anim": "sarcastic_left"
@@ -1468,8 +1468,8 @@
   },
   {
     "type": "dances",
-    "title": "Bring It On",
-    "subtitle": "/e bringiton",
+    "title": "Bırakın Gelsin!",
+    "subtitle": "/e bırakıngelsin",
     "dances": {
       "dict": "misscommon@response",
       "anim": "bring_it_on"
@@ -1477,8 +1477,8 @@
   },
   {
     "type": "dances",
-    "title": "Come At Me Bro",
-    "subtitle": "/e comeatmebro",
+    "title": "Bana gel adamım",
+    "subtitle": "/e banagel",
     "dances": {
       "dict": "mini@triathlon",
       "anim": "want_some_of_this"
@@ -1486,8 +1486,8 @@
   },
   {
     "type": "dances",
-    "title": "Cop 2",
-    "subtitle": "/e cop2",
+    "title": "Polis 2",
+    "subtitle": "/e polis2",
     "dances": {
       "dict": "anim@amb@nightclub@peds@",
       "anim": "rcmme_amanda1_stand_loop_cop"
@@ -1495,8 +1495,8 @@
   },
   {
     "type": "dances",
-    "title": "Cop 3",
-    "subtitle": "/e cop3",
+    "title": "Polis 3",
+    "subtitle": "/e polis3",
     "dances": {
       "dict": "amb@code_human_police_investigate@idle_a",
       "anim": "idle_b"
@@ -1504,8 +1504,8 @@
   },
   {
     "type": "dances",
-    "title": "Cross Arms",
-    "subtitle": "/e crossarms",
+    "title": "Kol Bağla",
+    "subtitle": "/e kolbağla",
     "dances": {
       "dict": "amb@world_human_hang_out_street@female_arms_crossed@idle_a",
       "anim": "idle_a"
@@ -1513,8 +1513,8 @@
   },
   {
     "type": "dances",
-    "title": "Cross Arms 2",
-    "subtitle": "/e crossarms2",
+    "title": "Kol Bağla 2",
+    "subtitle": "/e kolbağla2",
     "dances": {
       "dict": "amb@world_human_hang_out_street@male_c@idle_a",
       "anim": "idle_b"
@@ -1522,8 +1522,8 @@
   },
   {
     "type": "dances",
-    "title": "Cross Arms 3",
-    "subtitle": "/e crossarms3",
+    "title": "Kol Bağla 3",
+    "subtitle": "/e kolbağla3",
     "dances": {
       "dict": "anim@heists@heist_corona@single_team",
       "anim": "single_team_loop_boss"
@@ -1531,8 +1531,8 @@
   },
   {
     "type": "dances",
-    "title": "Cross Arms 4",
-    "subtitle": "/e crossarms4",
+    "title": "Kol Bağla 4",
+    "subtitle": "/e kolbağla4",
     "dances": {
       "dict": "random@street_race",
       "anim": "_car_b_lookout"
@@ -1540,8 +1540,8 @@
   },
   {
     "type": "dances",
-    "title": "Cross Arms 5",
-    "subtitle": "/e crossarms5",
+    "title": "Kol Bağla 5",
+    "subtitle": "/e kolbağla5",
     "dances": {
       "dict": "anim@amb@nightclub@peds@",
       "anim": "rcmme_amanda1_stand_loop_cop"
@@ -1549,8 +1549,8 @@
   },
   {
     "type": "dances",
-    "title": "Fold Arms 2",
-    "subtitle": "/e foldarms2",
+    "title": "Kol Bağla 8",
+    "subtitle": "/e kolbağla8",
     "dances": {
       "dict": "anim@amb@nightclub@peds@",
       "anim": "rcmme_amanda1_stand_loop_cop"
@@ -1558,8 +1558,8 @@
   },
   {
     "type": "dances",
-    "title": "Cross Arms 6",
-    "subtitle": "/e crossarms6",
+    "title": "Kol Bağla 6",
+    "subtitle": "/e kolbağla6",
     "dances": {
       "dict": "random@shop_gunstore",
       "anim": "_idle"
@@ -1567,8 +1567,8 @@
   },
   {
     "type": "dances",
-    "title": "Fold Arms",
-    "subtitle": "/e foldarms",
+    "title": "Kol Bağla 7",
+    "subtitle": "/e kolbağla7",
     "dances": {
       "dict": "anim@amb@business@bgen@bgen_no_work@",
       "anim": "stand_phone_phoneputdown_idle_nowork"
@@ -1576,8 +1576,8 @@
   },
   {
     "type": "dances",
-    "title": "Cross Arms Side",
-    "subtitle": "/e crossarmsside",
+    "title": "Kafa Yasla",
+    "subtitle": "/e kafayasla",
     "dances": {
       "dict": "rcmnigel1a_band_groupies",
       "anim": "base_m2"
@@ -1585,8 +1585,8 @@
   },
   {
     "type": "dances",
-    "title": "Damn",
-    "subtitle": "/e damn",
+    "title": "Hassiktir",
+    "subtitle": "/e siktir",
     "dances": {
       "dict": "gestures@m@standing@casual",
       "anim": "gesture_damn"
@@ -1594,8 +1594,8 @@
   },
   {
     "type": "dances",
-    "title": "Damn 2",
-    "subtitle": "/e damn2",
+    "title": "Hassiktir 2",
+    "subtitle": "/e siktir2",
     "dances": {
       "dict": "anim@am_hold_up@male",
       "anim": "shoplift_mid"
@@ -1603,8 +1603,8 @@
   },
   {
     "type": "dances",
-    "title": "Point Down",
-    "subtitle": "/e pointdown",
+    "title": "Aşağıyı Göster",
+    "subtitle": "/e göster",
     "dances": {
       "dict": "gestures@f@standing@casual",
       "anim": "gesture_hand_down"
@@ -1612,8 +1612,8 @@
   },
   {
     "type": "dances",
-    "title": "Surrender",
-    "subtitle": "/e surrender",
+    "title": "Teslim Ol",
+    "subtitle": "/e teslim",
     "dances": {
       "dict": "random@arrests@busted",
       "anim": "idle_a"
@@ -1621,8 +1621,8 @@
   },
   {
     "type": "dances",
-    "title": "Face Palm",
-    "subtitle": "/e facepalm2",
+    "title": "Kahretsin 2",
+    "subtitle": "/e kahretsin2",
     "dances": {
       "dict": "anim@mp_player_intcelebrationfemale@face_palm",
       "anim": "face_palm"
@@ -1630,8 +1630,8 @@
   },
   {
     "type": "dances",
-    "title": "Face Palm",
-    "subtitle": "/e facepalm",
+    "title": "Kahretsin",
+    "subtitle": "/e kahretsin",
     "dances": {
       "dict": "random@car_thief@agitated@idle_a",
       "anim": "agitated_idle_a"
@@ -1639,8 +1639,8 @@
   },
   {
     "type": "dances",
-    "title": "Face Palm",
-    "subtitle": "/e facepalm3",
+    "title": "Kahretsin 3",
+    "subtitle": "/e kahretsin3",
     "dances": {
       "dict": "missminuteman_1ig_2",
       "anim": "tasered_2"
@@ -1648,8 +1648,8 @@
   },
   {
     "type": "dances",
-    "title": "Face Palm 4",
-    "subtitle": "/e facepalm4",
+    "title": "Kahretsin 4",
+    "subtitle": "/e kahretsin4",
     "dances": {
       "dict": "anim@mp_player_intupperface_palm",
       "anim": "idle_a"
@@ -1657,8 +1657,8 @@
   },
   {
     "type": "dances",
-    "title": "Fall Over",
-    "subtitle": "/e fallover",
+    "title": "Devrilmek",
+    "subtitle": "/e devril",
     "dances": {
       "dict": "random@drunk_driver_1",
       "anim": "drunk_fall_over"
@@ -1666,8 +1666,8 @@
   },
   {
     "type": "dances",
-    "title": "Fall Over 2",
-    "subtitle": "/e fallover2",
+    "title": "Devrilmek 2",
+    "subtitle": "/e devril2",
     "dances": {
       "dict": "mp_suicide",
       "anim": "pistol"
@@ -1675,8 +1675,8 @@
   },
   {
     "type": "dances",
-    "title": "Fall Over 3",
-    "subtitle": "/e fallover3",
+    "title": "Devrilmek 3",
+    "subtitle": "/e devril3",
     "dances": {
       "dict": "mp_suicide",
       "anim": "pill"
@@ -1684,8 +1684,8 @@
   },
   {
     "type": "dances",
-    "title": "Fall Over 4",
-    "subtitle": "/e fallover4",
+    "title": "Devrilmek 4",
+    "subtitle": "/e devril4",
     "dances": {
       "dict": "friends@frf@ig_",
       "anim": "knockout_plyr"
@@ -1693,8 +1693,8 @@
   },
   {
     "type": "dances",
-    "title": "Fall Over 5",
-    "subtitle": "/e fallover5",
+    "title": "Devrilmek 5",
+    "subtitle": "/e devril5",
     "dances": {
       "dict": "anim@gangops@hostage@",
       "anim": "victim_fail"
@@ -1702,8 +1702,8 @@
   },
   {
     "type": "dances",
-    "title": "Fall Asleep",
-    "subtitle": "/e fallasleep",
+    "title": "Uyuyakalmak",
+    "subtitle": "/e uyu",
     "dances": {
       "dict": "fallasleep",
       "anim": "sleep_loop"
@@ -1711,8 +1711,8 @@
   },
   {
     "type": "dances",
-    "title": "Fight Me",
-    "subtitle": "/e fightme",
+    "title": "Benimle Dövüş",
+    "subtitle": "/e dövüş",
     "dances": {
       "dict": "anim@deathmatch_intros@unarmed",
       "anim": "intro_male_unarmed_c"
@@ -1720,8 +1720,8 @@
   },
   {
     "type": "dances",
-    "title": "Fight Me 2",
-    "subtitle": "/e fightme2",
+    "title": "Benimle Dövüş 2",
+    "subtitle": "/e dövüş2",
     "dances": {
       "dict": "anim@deathmatch_intros@unarmed",
       "anim": "intro_male_unarmed_e"
@@ -1729,8 +1729,8 @@
   },
   {
     "type": "dances",
-    "title": "Finger",
-    "subtitle": "/e finger",
+    "title": "Parmak",
+    "subtitle": "/e parmak",
     "dances": {
       "dict": "anim@mp_player_intselfiethe_bird",
       "anim": "idle_a"
@@ -1738,8 +1738,8 @@
   },
   {
     "type": "dances",
-    "title": "Finger 2",
-    "subtitle": "/e finger2",
+    "title": "Parmak 2",
+    "subtitle": "/e parmak2",
     "dances": {
       "dict": "anim@mp_player_intupperfinger",
       "anim": "idle_a_fp"
@@ -1747,8 +1747,8 @@
   },
   {
     "type": "dances",
-    "title": "Hand Shake",
-    "subtitle": "/e handshake",
+    "title": "Tokalaş",
+    "subtitle": "/e tokalaş",
     "dances": {
       "dict": "mp_ped_interaction",
       "anim": "handshake_guy_a"
@@ -1756,8 +1756,8 @@
   },
   {
     "type": "dances",
-    "title": "Hand Shake 2",
-    "subtitle": "/e handshake2",
+    "title": "Tokalaş 2",
+    "subtitle": "/e tokalaş2",
     "dances": {
       "dict": "mp_ped_interaction",
       "anim": "handshake_guy_b"
@@ -1765,8 +1765,8 @@
   },
   {
     "type": "dances",
-    "title": "Wait 4",
-    "subtitle": "/e wait4",
+    "title": "Bekle 4",
+    "subtitle": "/e bekle4",
     "dances": {
       "dict": "amb@world_human_hang_out_street@Female_arm_side@idle_a",
       "anim": "idle_a"
@@ -1774,8 +1774,8 @@
   },
   {
     "type": "dances",
-    "title": "Wait 5",
-    "subtitle": "/e wait5",
+    "title": "Bekle 5",
+    "subtitle": "/e bekle5",
     "dances": {
       "dict": "missclothing",
       "anim": "idle_storeclerk"
@@ -1783,8 +1783,8 @@
   },
   {
     "type": "dances",
-    "title": "Wait 6",
-    "subtitle": "/e wait6",
+    "title": "Bekle 6",
+    "subtitle": "/e bekle6",
     "dances": {
       "dict": "timetable@amanda@ig_2",
       "anim": "ig_2_base_amanda"
@@ -1792,8 +1792,8 @@
   },
   {
     "type": "dances",
-    "title": "Wait 7",
-    "subtitle": "/e wait7",
+    "title": "Bekle 7",
+    "subtitle": "/e bekle7",
     "dances": {
       "dict": "rcmnigel1cnmt_1c",
       "anim": "base"
@@ -1801,8 +1801,8 @@
   },
   {
     "type": "dances",
-    "title": "Wait 8",
-    "subtitle": "/e wait8",
+    "title": "Bekle 8",
+    "subtitle": "/e bekle8",
     "dances": {
       "dict": "rcmjosh1",
       "anim": "idle"
@@ -1810,8 +1810,8 @@
   },
   {
     "type": "dances",
-    "title": "Wait 9",
-    "subtitle": "/e wait9",
+    "title": "Bekle 9",
+    "subtitle": "/e bekle9",
     "dances": {
       "dict": "rcmjosh2",
       "anim": "josh_2_intp1_base"
@@ -1819,8 +1819,8 @@
   },
   {
     "type": "dances",
-    "title": "Wait 10",
-    "subtitle": "/e wait10",
+    "title": "Bekle 10",
+    "subtitle": "/e bekle10",
     "dances": {
       "dict": "timetable@amanda@ig_3",
       "anim": "ig_3_base_tracy"
@@ -1828,8 +1828,8 @@
   },
   {
     "type": "dances",
-    "title": "Wait 11",
-    "subtitle": "/e wait11",
+    "title": "Bekle 11",
+    "subtitle": "/e bekle11",
     "dances": {
       "dict": "misshair_shop@hair_dressers",
       "anim": "keeper_base"
@@ -1837,8 +1837,8 @@
   },
   {
     "type": "dances",
-    "title": "Hiking",
-    "subtitle": "/e hiking",
+    "title": "Doğa Yürüyüşü",
+    "subtitle": "/e doğayürüyüşü",
     "dances": {
       "dict": "move_m@hiking",
       "anim": "idle"
@@ -1846,8 +1846,8 @@
   },
   {
     "type": "dances",
-    "title": "Hug",
-    "subtitle": "/e hug",
+    "title": "Sarıl",
+    "subtitle": "/e sarıl",
     "dances": {
       "dict": "mp_ped_interaction",
       "anim": "kisses_guy_a"
@@ -1855,8 +1855,8 @@
   },
   {
     "type": "dances",
-    "title": "Hug 2",
-    "subtitle": "/e hug2",
+    "title": "Sarıl 2",
+    "subtitle": "/e sarıl2",
     "dances": {
       "dict": "mp_ped_interaction",
       "anim": "kisses_guy_b"
@@ -1864,8 +1864,8 @@
   },
   {
     "type": "dances",
-    "title": "Hug 3",
-    "subtitle": "/e hug3",
+    "title": "Sarıl 3",
+    "subtitle": "/e sarıl3",
     "dances": {
       "dict": "mp_ped_interaction",
       "anim": "hugs_guy_a"
@@ -1873,8 +1873,8 @@
   },
   {
     "type": "dances",
-    "title": "Inspect",
-    "subtitle": "/e inspect",
+    "title": "İncelemek",
+    "subtitle": "/e incele",
     "dances": {
       "dict": "random@train_tracks",
       "anim": "idle_e"
@@ -1891,8 +1891,8 @@
   },
   {
     "type": "dances",
-    "title": "Jog 2",
-    "subtitle": "/e jog2",
+    "title": "Koşu 2",
+    "subtitle": "/e koşu2",
     "dances": {
       "dict": "amb@world_human_jog_standing@male@idle_a",
       "anim": "idle_a"
@@ -1900,8 +1900,8 @@
   },
   {
     "type": "dances",
-    "title": "Jog 3",
-    "subtitle": "/e jog3",
+    "title": "Koşu 3",
+    "subtitle": "/e koşu3",
     "dances": {
       "dict": "amb@world_human_jog_standing@female@idle_a",
       "anim": "idle_a"
@@ -1909,8 +1909,8 @@
   },
   {
     "type": "dances",
-    "title": "Jog 4",
-    "subtitle": "/e jog4",
+    "title": "Koşu 4",
+    "subtitle": "/e koşu4",
     "dances": {
       "dict": "amb@world_human_power_walker@female@idle_a",
       "anim": "idle_a"
@@ -1918,8 +1918,8 @@
   },
   {
     "type": "dances",
-    "title": "Jog 5",
-    "subtitle": "/e jog5",
+    "title": "Koşu 5",
+    "subtitle": "/e koşu5",
     "dances": {
       "dict": "move_m@joy@a",
       "anim": "walk"
@@ -1936,8 +1936,8 @@
   },
   {
     "type": "dances",
-    "title": "Kneel 2",
-    "subtitle": "/e kneel2",
+    "title": "Eğil 2",
+    "subtitle": "/e eğil2",
     "dances": {
       "dict": "rcmextreme3",
       "anim": "idle"
@@ -1945,8 +1945,8 @@
   },
   {
     "type": "dances",
-    "title": "Kneel 3",
-    "subtitle": "/e kneel3",
+    "title": "Eğil 3",
+    "subtitle": "/e eğil3",
     "dances": {
       "dict": "amb@world_human_bum_wash@male@low@idle_a",
       "anim": "idle_a"
@@ -1954,8 +1954,8 @@
   },
   {
     "type": "dances",
-    "title": "Kneel-handsup",
-    "subtitle": "/e kneelhu",
+    "title": "Eller Yukarıda Eğil",
+    "subtitle": "/e eğil4",
     "dances": {
       "dict": "rcmminute2",
       "anim": "kneeling_arrest_idle"
@@ -1963,8 +1963,8 @@
   },
   {
     "type": "dances",
-    "title": "Knock",
-    "subtitle": "/e knock",
+    "title": "Kapıyı Çal",
+    "subtitle": "/e kapı",
     "dances": {
       "dict": "timetable@jimmy@doorknock@",
       "anim": "knockdoor_idle"
@@ -1972,8 +1972,8 @@
   },
   {
     "type": "dances",
-    "title": "Knock 2",
-    "subtitle": "/e knock2",
+    "title": "Kapıyı Çal 2",
+    "subtitle": "/e kapı2",
     "dances": {
       "dict": "missheistfbi3b_ig7",
       "anim": "lift_fibagent_loop"
@@ -1981,8 +1981,8 @@
   },
   {
     "type": "dances",
-    "title": "Knucle Crunch",
-    "subtitle": "/e knucklecrunch",
+    "title": "El Çıtlatmak",
+    "subtitle": "/e elçıtlat",
     "dances": {
       "dict": "anim@mp_player_intcelebrationfemale@knuckle_crunch",
       "anim": "knuckle_crunch"
@@ -1990,8 +1990,8 @@
   },
   {
     "type": "dances",
-    "title": "Lap Dance",
-    "subtitle": "/e lapdance",
+    "title": "Kucak Dansı",
+    "subtitle": "/e kucakdansı",
     "dances": {
       "dict": "mp_safehouse",
       "anim": "lap_dance_girl"
@@ -1999,8 +1999,8 @@
   },
   {
     "type": "dances",
-    "title": "Lean 2",
-    "subtitle": "/e lean2",
+    "title": "Yaslan 2",
+    "subtitle": "/e yaslan2",
     "dances": {
       "dict": "amb@world_human_leaning@female@wall@back@hand_up@idle_a",
       "anim": "idle_a"
@@ -2008,8 +2008,8 @@
   },
   {
     "type": "dances",
-    "title": "Lean 3",
-    "subtitle": "/e lean3",
+    "title": "Yaslan 3",
+    "subtitle": "/e yaslan3",
     "dances": {
       "dict": "amb@world_human_leaning@female@wall@back@holding_elbow@idle_a",
       "anim": "idle_a"
@@ -2017,8 +2017,8 @@
   },
   {
     "type": "dances",
-    "title": "Lean 4",
-    "subtitle": "/e lean4",
+    "title": "Yaslan 4",
+    "subtitle": "/e yaslan4",
     "dances": {
       "dict": "amb@world_human_leaning@male@wall@back@foot_up@idle_a",
       "anim": "idle_a"
@@ -2026,8 +2026,8 @@
   },
   {
     "type": "dances",
-    "title": "Lean 5",
-    "subtitle": "/e lean5",
+    "title": "Yaslan 5",
+    "subtitle": "/e yaslan5",
     "dances": {
       "dict": "amb@world_human_leaning@male@wall@back@hands_together@idle_b",
       "anim": "idle_b"
@@ -2035,8 +2035,8 @@
   },
   {
     "type": "dances",
-    "title": "Lean Flirt",
-    "subtitle": "/e leanflirt",
+    "title": "Yaslan Flört",
+    "subtitle": "/e yaslanflört",
     "dances": {
       "dict": "random@street_race",
       "anim": "_car_a_flirt_girl"
@@ -2044,8 +2044,8 @@
   },
   {
     "type": "dances",
-    "title": "Lean Bar 2",
-    "subtitle": "/e leanbar2",
+    "title": "Bara yaslan 2",
+    "subtitle": "/e yaslanbar2",
     "dances": {
       "dict": "amb@prop_human_bum_shopping_cart@male@idle_a",
       "anim": "idle_c"
@@ -2053,8 +2053,8 @@
   },
   {
     "type": "dances",
-    "title": "Lean Bar 2",
-    "subtitle": "/e leanbar3",
+    "title": "Bara yaslan 3",
+    "subtitle": "/e yaslanbar3",
     "dances": {
       "dict": "anim@amb@nightclub@lazlow@ig1_vip@",
       "anim": "clubvip_base_laz"
@@ -2062,8 +2062,8 @@
   },
   {
     "type": "dances",
-    "title": "Lean Bar 4",
-    "subtitle": "/e leanbar4",
+    "title": "Bara yaslan 4",
+    "subtitle": "/e yaslanbar4",
     "dances": {
       "dict": "anim@heists@prison_heist",
       "anim": "ped_b_loop_a"
@@ -2071,8 +2071,8 @@
   },
   {
     "type": "dances",
-    "title": "Lean High",
-    "subtitle": "/e leanhigh",
+    "title": "Yaslan Yüksek",
+    "subtitle": "/e yaslanyüksek",
     "dances": {
       "dict": "anim@mp_ferris_wheel",
       "anim": "idle_a_player_one"
@@ -2080,8 +2080,8 @@
   },
   {
     "type": "dances",
-    "title": "Lean High 2",
-    "subtitle": "/e leanhigh2",
+    "title": "Yaslan Yüksek 2",
+    "subtitle": "/e yaslanyüksek2",
     "dances": {
       "dict": "anim@mp_ferris_wheel",
       "anim": "idle_a_player_two"
@@ -2089,8 +2089,8 @@
   },
   {
     "type": "dances",
-    "title": "Lean Side",
-    "subtitle": "/e leanside",
+    "title": "Yan Yaslan",
+    "subtitle": "/e yaslanyan",
     "dances": {
       "dict": "timetable@mime@01_gc",
       "anim": "idle_a"
@@ -2098,8 +2098,8 @@
   },
   {
     "type": "dances",
-    "title": "Lean Side 2",
-    "subtitle": "/e leanside2",
+    "title": "Yan Yaslan 2",
+    "subtitle": "/e yaslanyan2",
     "dances": {
       "dict": "misscarstealfinalecar_5_ig_1",
       "anim": "waitloop_lamar"
@@ -2107,8 +2107,8 @@
   },
   {
     "type": "dances",
-    "title": "Lean Side 3",
-    "subtitle": "/e leanside3",
+    "title": "Yan Yaslan 3",
+    "subtitle": "/e yaslanyan3",
     "dances": {
       "dict": "misscarstealfinalecar_5_ig_1",
       "anim": "_____"
@@ -2116,8 +2116,8 @@
   },
   {
     "type": "dances",
-    "title": "Lean Side 4",
-    "subtitle": "/e leanside4",
+    "title": "Yan Yaslan 4",
+    "subtitle": "/e yaslanyan4",
     "dances": {
       "dict": "rcmjosh2",
       "anim": "josh_2_intp1_base"
@@ -2125,8 +2125,8 @@
   },
   {
     "type": "dances",
-    "title": "Me",
-    "subtitle": "/e me",
+    "title": "Ben",
+    "subtitle": "/e ben",
     "dances": {
       "dict": "gestures@f@standing@casual",
       "anim": "gesture_me_hard"
@@ -2134,8 +2134,8 @@
   },
   {
     "type": "dances",
-    "title": "Mechanic",
-    "subtitle": "/e mechanic",
+    "title": "Mekanik",
+    "subtitle": "/e mekanik",
     "dances": {
       "dict": "mini@repair",
       "anim": "fixing_a_ped"
@@ -2143,8 +2143,8 @@
   },
   {
     "type": "dances",
-    "title": "Mechanic 2",
-    "subtitle": "/e mechanic2",
+    "title": "Mekanik 2",
+    "subtitle": "/e mekanik2",
     "dances": {
       "dict": "amb@world_human_vehicle_mechanic@male@base",
       "anim": "idle_a"
@@ -2152,8 +2152,8 @@
   },
   {
     "type": "dances",
-    "title": "Mechanic 3",
-    "subtitle": "/e mechanic3",
+    "title": "Mekanik 3",
+    "subtitle": "/e mekanik3",
     "dances": {
       "dict": "anim@amb@clubhouse@tutorial@bkr_tut_ig3@",
       "anim": "machinic_loop_mechandplayer"
@@ -2161,8 +2161,8 @@
   },
   {
     "type": "dances",
-    "title": "Medic 2",
-    "subtitle": "/e medic2",
+    "title": "Doktor 2",
+    "subtitle": "/e doktor2",
     "dances": {
       "dict": "amb@medic@standing@tendtodead@base",
       "anim": "base"
@@ -2170,8 +2170,8 @@
   },
   {
     "type": "dances",
-    "title": "Mechanic Check Engine",
-    "subtitle": "/e checkengine",
+    "title": "Motoru Kontrol Et",
+    "subtitle": "/e motorkontrol",
     "dances": {
       "dict": "anim@amb@carmeet@checkout_engine@male_a@base",
       "anim": "base"
@@ -2179,8 +2179,8 @@
   },
   {
     "type": "dances",
-    "title": "Mechanic Check Engine 2",
-    "subtitle": "/e checkengine2",
+    "title": "Motoru Kontrol Et 2",
+    "subtitle": "/e motorkontrol2",
     "dances": {
       "dict": "anim@amb@carmeet@checkout_engine@male_b@base",
       "anim": "base"
@@ -2188,8 +2188,8 @@
   },
   {
     "type": "dances",
-    "title": "Mechanic Check Engine 3",
-    "subtitle": "/e checkengine3",
+    "title": "Motoru Kontrol Et 3",
+    "subtitle": "/e motorkontrol3",
     "dances": {
       "dict": "anim@amb@carmeet@checkout_engine@male_c@base",
       "anim": "base"
@@ -2197,8 +2197,8 @@
   },
   {
     "type": "dances",
-    "title": "Mechanic Check Engine 4",
-    "subtitle": "/e checkengine4",
+    "title": "Motoru Kontrol Et 4",
+    "subtitle": "/e motorkontrol4",
     "dances": {
       "dict": "anim@amb@carmeet@checkout_engine@male_d@base",
       "anim": "base"
@@ -2206,8 +2206,8 @@
   },
   {
     "type": "dances",
-    "title": "Mechanic Check Engine 5",
-    "subtitle": "/e checkengine5",
+    "title": "Motoru Kontrol Et 5",
+    "subtitle": "/e motorkontrol5",
     "dances": {
       "dict": "anim@amb@carmeet@checkout_engine@male_e@base",
       "anim": "base"
@@ -2215,8 +2215,8 @@
   },
   {
     "type": "dances",
-    "title": "Mechanic Check Engine 6",
-    "subtitle": "/e checkengine6",
+    "title": "Motoru Kontrol Et 6",
+    "subtitle": "/e motorkontrol6",
     "dances": {
       "dict": "anim@amb@carmeet@checkout_engine@male_f@base",
       "anim": "base"
@@ -2224,8 +2224,8 @@
   },
   {
     "type": "dances",
-    "title": "Mechanic Check Engine 7",
-    "subtitle": "/e checkengine7",
+    "title": "Motoru Kontrol Et 7",
+    "subtitle": "/e motorkontrol7",
     "dances": {
       "dict": "anim@amb@carmeet@checkout_engine@male_g@base",
       "anim": "base"
@@ -2233,8 +2233,8 @@
   },
   {
     "type": "dances",
-    "title": "Mechanic Check Engine 8",
-    "subtitle": "/e checkengine8",
+    "title": "Motoru Kontrol Et 8",
+    "subtitle": "/e motorkontrol8",
     "dances": {
       "dict": "anim@amb@carmeet@checkout_engine@male_h@base",
       "anim": "base"
@@ -2242,8 +2242,8 @@
   },
   {
     "type": "dances",
-    "title": "Mechanic checkout car",
-    "subtitle": "/e checkcar",
+    "title": "Arabayı Kontrol Et",
+    "subtitle": "/e arabakontrol",
     "dances": {
       "dict": "anim@amb@carmeet@checkout_car@drink@male_a@base",
       "anim": "base"
@@ -2251,8 +2251,8 @@
   },
   {
     "type": "dances",
-    "title": "Mechanic checkout car 2",
-    "subtitle": "/e checkcar2",
+    "title": "Arabayı Kontrol Et 2",
+    "subtitle": "/e arabakontrol2",
     "dances": {
       "dict": "anim@amb@carmeet@checkout_car@male_a@base",
       "anim": "base"
@@ -2260,8 +2260,8 @@
   },
   {
     "type": "dances",
-    "title": "Mechanic checkout car 3",
-    "subtitle": "/e checkcar3",
+    "title": "Arabayı Kontrol Et 3",
+    "subtitle": "/e arabakontrol3",
     "dances": {
       "dict": "anim@amb@carmeet@checkout_car@male_b@base",
       "anim": "base"
@@ -2269,8 +2269,8 @@
   },
   {
     "type": "dances",
-    "title": "Mechanic checkout car 4",
-    "subtitle": "/e checkcar4",
+    "title": "Arabayı Kontrol Et 4",
+    "subtitle": "/e arabakontrol4",
     "dances": {
       "dict": "anim@amb@carmeet@checkout_car@male_c@base",
       "anim": "base"
@@ -2278,8 +2278,8 @@
   },
   {
     "type": "dances",
-    "title": "Mechanic checkout car 5",
-    "subtitle": "/e checkcar5",
+    "title": "Arabayı Kontrol Et 5",
+    "subtitle": "/e arabakontrol5",
     "dances": {
       "dict": "anim@amb@carmeet@checkout_car@male_d@base",
       "anim": "base"
@@ -2287,8 +2287,8 @@
   },
   {
     "type": "dances",
-    "title": "Mechanic checkout car 6",
-    "subtitle": "/e checkcar6",
+    "title": "Arabayı Kontrol Et 6",
+    "subtitle": "/e arabakontrol6",
     "dances": {
       "dict": "anim@amb@carmeet@checkout_car@male_e@base",
       "anim": "base"
@@ -2296,8 +2296,8 @@
   },
   {
     "type": "dances",
-    "title": "Mechanic checkout car 7",
-    "subtitle": "/e checkcar7",
+    "title": "Arabayı Kontrol Et 7",
+    "subtitle": "/e arabakontrol7",
     "dances": {
       "dict": "anim@amb@carmeet@checkout_car@male_f@base",
       "anim": "base"
@@ -2305,8 +2305,8 @@
   },
   {
     "type": "dances",
-    "title": "Mechanic checkout car 8",
-    "subtitle": "/e checkcar8",
+    "title": "Arabayı Kontrol Et 8",
+    "subtitle": "/e arabakontrol8",
     "dances": {
       "dict": "anim@amb@carmeet@checkout_car@male_g@base",
       "anim": "base"
@@ -2314,8 +2314,8 @@
   },
   {
     "type": "dances",
-    "title": "Mechanic checkout car 9",
-    "subtitle": "/e checkcar9",
+    "title": "Arabayı Kontrol Et 9",
+    "subtitle": "/e arabakontrol9",
     "dances": {
       "dict": "anim@amb@carmeet@checkout_car@male_h@base",
       "anim": "base"
@@ -2323,8 +2323,8 @@
   },
   {
     "type": "dances",
-    "title": "Meditate",
-    "subtitle": "/e meditate",
+    "title": "Meditasyon",
+    "subtitle": "/e meditasyon",
     "dances": {
       "dict": "rcmcollect_paperleadinout@",
       "anim": "meditiate_idle"
@@ -2332,8 +2332,8 @@
   },
   {
     "type": "dances",
-    "title": "Meditate 2",
-    "subtitle": "/e meditate2",
+    "title": "Meditasyon 2",
+    "subtitle": "/e meditasyon2",
     "dances": {
       "dict": "rcmepsilonism3",
       "anim": "ep_3_rcm_marnie_meditating"
@@ -2341,8 +2341,8 @@
   },
   {
     "type": "dances",
-    "title": "Meditate 3",
-    "subtitle": "/e meditate3",
+    "title": "Meditasyon 3",
+    "subtitle": "/e meditasyon3",
     "dances": {
       "dict": "rcmepsilonism3",
       "anim": "base_loop"
@@ -2359,8 +2359,8 @@
   },
   {
     "type": "dances",
-    "title": "Mime 1",
-    "subtitle": "/e mime",
+    "title": "Mim 1",
+    "subtitle": "/e mim",
     "dances": {
       "dict": "special_ped@mime",
       "anim": "idle_a"
@@ -2368,8 +2368,8 @@
   },
   {
     "type": "dances",
-    "title": "Mime 2",
-    "subtitle": "/e mime2",
+    "title": "Mim 2",
+    "subtitle": "/e mim2",
     "dances": {
       "dict": "special_ped@mime",
       "anim": "idle_b"
@@ -2377,8 +2377,8 @@
   },
   {
     "type": "dances",
-    "title": "Mime 3",
-    "subtitle": "/e mime3",
+    "title": "Mim 3",
+    "subtitle": "/e mim3",
     "dances": {
       "dict": "special_ped@mime",
       "anim": "idle_c"
@@ -2386,8 +2386,8 @@
   },
   {
     "type": "dances",
-    "title": "Mime 4",
-    "subtitle": "/e mime4",
+    "title": "Mim 4",
+    "subtitle": "/e mim4",
     "dances": {
       "dict": "special_ped@mime",
       "anim": "idle_d"
@@ -2395,8 +2395,8 @@
   },
   {
     "type": "dances",
-    "title": "Mimin'",
-    "subtitle": "/e mime5",
+    "title": "Mim 5'",
+    "subtitle": "/e mim5",
     "dances": {
       "dict": "special_ped@mime@monologue_1@monologue_1a",
       "anim": "02_ig_1_r_0"
@@ -2404,8 +2404,8 @@
   },
   {
     "type": "dances",
-    "title": "Mime - Ladder",
-    "subtitle": "/e mime6",
+    "title": "Mim 6",
+    "subtitle": "/e mim6",
     "dances": {
       "dict": "special_ped@mime@monologue_2@monologue_2a",
       "anim": "02_ig_1_cli_0"
@@ -2413,8 +2413,8 @@
   },
   {
     "type": "dances",
-    "title": "Mime - Window",
-    "subtitle": "/e mime7",
+    "title": "Mim 7",
+    "subtitle": "/e mim7",
     "dances": {
       "dict": "special_ped@mime@monologue_3@monologue_3a",
       "anim": "03_ig_1_open_wind_0"
@@ -2422,8 +2422,8 @@
   },
   {
     "type": "dances",
-    "title": "Mime - Baloon",
-    "subtitle": "/e mime8",
+    "title": "Mim 8",
+    "subtitle": "/e mim8",
     "dances": {
       "dict": "special_ped@mime@monologue_4@monologue_4a",
       "anim": "09_ig_1_balo_0"
@@ -2431,8 +2431,8 @@
   },
   {
     "type": "dances",
-    "title": "Mime - Wiggles",
-    "subtitle": "/e mime9",
+    "title": "Mim 9",
+    "subtitle": "/e mim9",
     "dances": {
       "dict": "special_ped@mime@monologue_5@monologue_5a",
       "anim": "10_ig_1_wa_0"
@@ -2440,8 +2440,8 @@
   },
   {
     "type": "dances",
-    "title": "Mime - who me?",
-    "subtitle": "/e mime10",
+    "title": "Mim 10",
+    "subtitle": "/e mim10",
     "dances": {
       "dict": "special_ped@mime@monologue_6@monologue_6a",
       "anim": "12_ig_1_beaten__0"
@@ -2449,8 +2449,8 @@
   },
   {
     "type": "dances",
-    "title": "Mime - Run Away!",
-    "subtitle": "/e mime11",
+    "title": "Mim 11",
+    "subtitle": "/e mim11",
     "dances": {
       "dict": "special_ped@mime@monologue_7@monologue_7a",
       "anim": "11_ig_1_run_aw_0"
@@ -2458,8 +2458,8 @@
   },
   {
     "type": "dances",
-    "title": "Mime - Run Away!",
-    "subtitle": "/e mime12",
+    "title": "Mim 12",
+    "subtitle": "/e mim12",
     "dances": {
       "dict": "special_ped@mime@monologue_8@monologue_8a",
       "anim": "08_ig_1_wall_ba_0"
@@ -2467,8 +2467,8 @@
   },
   {
     "type": "dances",
-    "title": "No",
-    "subtitle": "/e no",
+    "title": "Hayır",
+    "subtitle": "/e hayır",
     "dances": {
       "dict": "anim@heists@ornate_bank@chat_manager",
       "anim": "fail"
@@ -2476,8 +2476,8 @@
   },
   {
     "type": "dances",
-    "title": "No 2",
-    "subtitle": "/e no2",
+    "title": "Hayır 2",
+    "subtitle": "/e hayır2",
     "dances": {
       "dict": "mp_player_int_upper_nod",
       "anim": "mp_player_int_nod_no"
@@ -2485,8 +2485,8 @@
   },
   {
     "type": "dances",
-    "title": "Nose Pick",
-    "subtitle": "/e nosepick",
+    "title": "Burun Karıştırmak",
+    "subtitle": "/e burunkarıştır",
     "dances": {
       "dict": "anim@mp_player_intcelebrationfemale@nose_pick",
       "anim": "nose_pick"
@@ -2494,8 +2494,8 @@
   },
   {
     "type": "dances",
-    "title": "No Way",
-    "subtitle": "/e noway",
+    "title": "Yok Artık",
+    "subtitle": "/e yokartık",
     "dances": {
       "dict": "gestures@m@standing@casual",
       "anim": "gesture_no_way"
@@ -2503,8 +2503,8 @@
   },
   {
     "type": "dances",
-    "title": "Ok",
-    "subtitle": "/e ok",
+    "title": "Tamam",
+    "subtitle": "/e tamam",
     "dances": {
       "dict": "anim@mp_player_intselfiedock",
       "anim": "idle_a"
@@ -2512,8 +2512,8 @@
   },
   {
     "type": "dances",
-    "title": "Out Of Breath",
-    "subtitle": "/e outofbreath",
+    "title": "Nefessiz Kalmak",
+    "subtitle": "/e nefessiz",
     "dances": {
       "dict": "re@construction",
       "anim": "out_of_breath"
@@ -2521,8 +2521,8 @@
   },
   {
     "type": "dances",
-    "title": "Pick Up",
-    "subtitle": "/e pickup",
+    "title": "Yerden Al",
+    "subtitle": "/e yerdenal",
     "dances": {
       "dict": "random@domestic",
       "anim": "pickup_low"
@@ -2530,8 +2530,8 @@
   },
   {
     "type": "dances",
-    "title": "Push",
-    "subtitle": "/e push",
+    "title": "İt",
+    "subtitle": "/e it",
     "dances": {
       "dict": "missfinale_c2ig_11",
       "anim": "pushcar_offcliff_f"
@@ -2539,8 +2539,8 @@
   },
   {
     "type": "dances",
-    "title": "Push 2",
-    "subtitle": "/e push2",
+    "title": "İt 2",
+    "subtitle": "/e it2",
     "dances": {
       "dict": "missfinale_c2ig_11",
       "anim": "pushcar_offcliff_m"
@@ -2548,8 +2548,8 @@
   },
   {
     "type": "dances",
-    "title": "Point",
-    "subtitle": "/e point",
+    "title": "İşaret Et",
+    "subtitle": "/e işaret",
     "dances": {
       "dict": "gestures@f@standing@casual",
       "anim": "gesture_point"
@@ -2557,8 +2557,8 @@
   },
   {
     "type": "dances",
-    "title": "Pushup",
-    "subtitle": "/e pushup",
+    "title": "Şınav",
+    "subtitle": "/e şınav",
     "dances": {
       "dict": "amb@world_human_push_ups@male@idle_a",
       "anim": "idle_d"
@@ -2566,8 +2566,8 @@
   },
   {
     "type": "dances",
-    "title": "Countdown",
-    "subtitle": "/e countdown",
+    "title": "Geri Sayım",
+    "subtitle": "/e gerisayım",
     "dances": {
       "dict": "random@street_race",
       "anim": "grid_girl_race_start"
@@ -2575,8 +2575,8 @@
   },
   {
     "type": "dances",
-    "title": "Point Right",
-    "subtitle": "/e pointright",
+    "title": "Sağı İşret Et",
+    "subtitle": "/e işaretsağ",
     "dances": {
       "dict": "mp_gun_shop_tut",
       "anim": "indicate_right"
@@ -2584,8 +2584,8 @@
   },
   {
     "type": "dances",
-    "title": "Salute",
-    "subtitle": "/e salute",
+    "title": "Asker Selamı",
+    "subtitle": "/e aselam",
     "dances": {
       "dict": "anim@mp_player_intincarsalutestd@ds@",
       "anim": "idle_a"
@@ -2593,8 +2593,8 @@
   },
   {
     "type": "dances",
-    "title": "Salute 2",
-    "subtitle": "/e salute2",
+    "title": "Asker Selamı 2",
+    "subtitle": "/e aselam2",
     "dances": {
       "dict": "anim@mp_player_intincarsalutestd@ps@",
       "anim": "idle_a"
@@ -2602,8 +2602,8 @@
   },
   {
     "type": "dances",
-    "title": "Salute 3",
-    "subtitle": "/e salute3",
+    "title": "Asker Selamı 3",
+    "subtitle": "/e aselam3",
     "dances": {
       "dict": "anim@mp_player_intuppersalute",
       "anim": "idle_a"
@@ -2611,8 +2611,8 @@
   },
   {
     "type": "dances",
-    "title": "Scared",
-    "subtitle": "/e scared",
+    "title": "Korkmuş",
+    "subtitle": "/e korkmuş",
     "dances": {
       "dict": "random@domestic",
       "anim": "f_distressed_loop"
@@ -2620,8 +2620,8 @@
   },
   {
     "type": "dances",
-    "title": "Scared 2",
-    "subtitle": "/e scared2",
+    "title": "Korkmuş 2",
+    "subtitle": "/e korkmuş2",
     "dances": {
       "dict": "random@homelandsecurity",
       "anim": "knees_loop_girl"
@@ -2629,8 +2629,8 @@
   },
   {
     "type": "dances",
-    "title": "Screw You",
-    "subtitle": "/e screwyou",
+    "title": "Siktir Git",
+    "subtitle": "/e siktir",
     "dances": {
       "dict": "misscommon@response",
       "anim": "screw_you"
@@ -2638,8 +2638,8 @@
   },
   {
     "type": "dances",
-    "title": "Shake Off",
-    "subtitle": "/e shakeoff",
+    "title": "Çalkala",
+    "subtitle": "/e çalkala",
     "dances": {
       "dict": "move_m@_idles@shake_off",
       "anim": "shakeoff_1"
@@ -2656,8 +2656,8 @@
   },
   {
     "type": "dances",
-    "title": "Sleep",
-    "subtitle": "/e sleep",
+    "title": "Uyu",
+    "subtitle": "/e uyu",
     "dances": {
       "dict": "timetable@tracy@sleep@",
       "anim": "idle_c"
@@ -2665,8 +2665,8 @@
   },
   {
     "type": "dances",
-    "title": "Shrug",
-    "subtitle": "/e shrug",
+    "title": "Omuz Silk",
+    "subtitle": "/e omuz",
     "dances": {
       "dict": "gestures@f@standing@casual",
       "anim": "gesture_shrug_hard"
@@ -2674,8 +2674,8 @@
   },
   {
     "type": "dances",
-    "title": "Shrug 2",
-    "subtitle": "/e shrug2",
+    "title": "Omuz Silk 2",
+    "subtitle": "/e omuz2",
     "dances": {
       "dict": "gestures@m@standing@casual",
       "anim": "gesture_shrug_hard"
@@ -2683,8 +2683,8 @@
   },
   {
     "type": "dances",
-    "title": "Sit",
-    "subtitle": "/e sit",
+    "title": "Otur",
+    "subtitle": "/e yotur",
     "dances": {
       "dict": "anim@amb@business@bgen@bgen_no_work@",
       "anim": "sit_phone_phoneputdown_idle_nowork"
@@ -2692,8 +2692,8 @@
   },
   {
     "type": "dances",
-    "title": "Sit 2",
-    "subtitle": "/e sit2",
+    "title": "Otur 2",
+    "subtitle": "/e yotur2",
     "dances": {
       "dict": "rcm_barry3",
       "anim": "barry_3_sit_loop"
@@ -2701,8 +2701,8 @@
   },
   {
     "type": "dances",
-    "title": "Sit 3",
-    "subtitle": "/e sit3",
+    "title": "Otur 3",
+    "subtitle": "/e yotur3",
     "dances": {
       "dict": "amb@world_human_picnic@male@idle_a",
       "anim": "idle_a"
@@ -2710,8 +2710,8 @@
   },
   {
     "type": "dances",
-    "title": "Sit 4",
-    "subtitle": "/e sit4",
+    "title": "Otur 4",
+    "subtitle": "/e yotur4",
     "dances": {
       "dict": "amb@world_human_picnic@female@idle_a",
       "anim": "idle_a"
@@ -2719,8 +2719,8 @@
   },
   {
     "type": "dances",
-    "title": "Sit 5",
-    "subtitle": "/e sit5",
+    "title": "Otur 5",
+    "subtitle": "/e yotur5",
     "dances": {
       "dict": "anim@heists@fleeca_bank@ig_7_jetski_owner",
       "anim": "owner_idle"
@@ -2728,8 +2728,8 @@
   },
   {
     "type": "dances",
-    "title": "Sit 6",
-    "subtitle": "/e sit6",
+    "title": "Otur 6",
+    "subtitle": "/e yotur6",
     "dances": {
       "dict": "timetable@jimmy@mics3_ig_15@",
       "anim": "idle_a_jimmy"
@@ -2737,8 +2737,8 @@
   },
   {
     "type": "dances",
-    "title": "Sit 7",
-    "subtitle": "/e sit7",
+    "title": "Otur 7",
+    "subtitle": "/e yotur7",
     "dances": {
       "dict": "anim@amb@nightclub@lazlow@lo_alone@",
       "anim": "lowalone_base_laz"
@@ -2746,8 +2746,8 @@
   },
   {
     "type": "dances",
-    "title": "Sit 8",
-    "subtitle": "/e sit8",
+    "title": "Otur 8",
+    "subtitle": "/e yotur8",
     "dances": {
       "dict": "timetable@jimmy@mics3_ig_15@",
       "anim": "mics3_15_base_jimmy"
@@ -2755,8 +2755,8 @@
   },
   {
     "type": "dances",
-    "title": "Sit 9",
-    "subtitle": "/e sit9",
+    "title": "Otur 9",
+    "subtitle": "/e yotur9",
     "dances": {
       "dict": "amb@world_human_stupor@male@idle_a",
       "anim": "idle_a"
@@ -2764,8 +2764,8 @@
   },
   {
     "type": "dances",
-    "title": "Sit Lean",
-    "subtitle": "/e sitlean",
+    "title": "Otur 10",
+    "subtitle": "/e yotur10",
     "dances": {
       "dict": "timetable@tracy@ig_14@",
       "anim": "ig_14_base_tracy"
@@ -2773,8 +2773,8 @@
   },
   {
     "type": "dances",
-    "title": "Sit Sad",
-    "subtitle": "/e sitsad",
+    "title": "Otur 11",
+    "subtitle": "/e yotur11",
     "dances": {
       "dict": "anim@amb@business@bgen@bgen_no_work@",
       "anim": "sit_phone_phoneputdown_sleeping-noworkfemale"
@@ -2782,8 +2782,8 @@
   },
   {
     "type": "dances",
-    "title": "Sit Scared",
-    "subtitle": "/e sitscared",
+    "title": "Otur 12",
+    "subtitle": "/e yotur12",
     "dances": {
       "dict": "anim@heists@ornate_bank@hostages@hit",
       "anim": "hit_loop_ped_b"
@@ -2791,8 +2791,8 @@
   },
   {
     "type": "dances",
-    "title": "Sit Scared 2",
-    "subtitle": "/e sitscared2",
+    "title": "Otur 13",
+    "subtitle": "/e yotur13",
     "dances": {
       "dict": "anim@heists@ornate_bank@hostages@ped_c@",
       "anim": "flinch_loop"
@@ -2800,8 +2800,8 @@
   },
   {
     "type": "dances",
-    "title": "Sit Scared 3",
-    "subtitle": "/e sitscared3",
+    "title": "Otur 14",
+    "subtitle": "/e yotur14",
     "dances": {
       "dict": "anim@heists@ornate_bank@hostages@ped_e@",
       "anim": "flinch_loop"
@@ -2809,8 +2809,8 @@
   },
   {
     "type": "dances",
-    "title": "Sit Drunk",
-    "subtitle": "/e sitdrunk",
+    "title": "Otur 15",
+    "subtitle": "/e yotur15",
     "dances": {
       "dict": "timetable@amanda@drunk@base",
       "anim": "base"
@@ -2818,8 +2818,8 @@
   },
   {
     "type": "dances",
-    "title": "Sit Chair 2",
-    "subtitle": "/e sitchair2",
+    "title": "Sandalyeye Otur",
+    "subtitle": "/e sotur2",
     "dances": {
       "dict": "timetable@ron@ig_5_p3",
       "anim": "ig_5_p3_base"
@@ -2827,8 +2827,8 @@
   },
   {
     "type": "dances",
-    "title": "Sit Chair 3",
-    "subtitle": "/e sitchair3",
+    "title": "Sandalyeye Otur 3",
+    "subtitle": "/e sotur3",
     "dances": {
       "dict": "timetable@reunited@ig_10",
       "anim": "base_amanda"
@@ -2836,8 +2836,8 @@
   },
   {
     "type": "dances",
-    "title": "Sit Chair 4",
-    "subtitle": "/e sitchair4",
+    "title": "Sandalyeye Otur 4",
+    "subtitle": "/e sotur4",
     "dances": {
       "dict": "timetable@ron@ig_3_couch",
       "anim": "base"
@@ -2845,8 +2845,8 @@
   },
   {
     "type": "dances",
-    "title": "Sit Chair 5",
-    "subtitle": "/e sitchair5",
+    "title": "Sandalyeye Otur 5",
+    "subtitle": "/e sotur5",
     "dances": {
       "dict": "timetable@jimmy@mics3_ig_15@",
       "anim": "mics3_15_base_tracy"
@@ -2854,8 +2854,8 @@
   },
   {
     "type": "dances",
-    "title": "Sit Chair 6",
-    "subtitle": "/e sitchair6",
+    "title": "Sandalyeye Otur 6",
+    "subtitle": "/e sotur6",
     "dances": {
       "dict": "timetable@maid@couch@",
       "anim": "base"
@@ -2863,8 +2863,8 @@
   },
   {
     "type": "dances",
-    "title": "Sit Chair Side",
-    "subtitle": "/e sitchairside",
+    "title": "Sandalyeye Otur Side",
+    "subtitle": "/e soturside",
     "dances": {
       "dict": "timetable@ron@ron_ig_2_alt1",
       "anim": "ig_2_alt1_base"
@@ -2872,8 +2872,8 @@
   },
   {
     "type": "dances",
-    "title": "Sit Up",
-    "subtitle": "/e situp",
+    "title": "Mekik",
+    "subtitle": "/e mekik",
     "dances": {
       "dict": "amb@world_human_sit_ups@male@idle_a",
       "anim": "idle_a"
@@ -2881,8 +2881,8 @@
   },
   {
     "type": "dances",
-    "title": "Angry Clap",
-    "subtitle": "/e clapangry",
+    "title": "Kızgın Alkışla",
+    "subtitle": "/e kızgınalkış",
     "dances": {
       "dict": "anim@arena@celeb@flat@solo@no_props@",
       "anim": "angry_clap_a_player_a"
@@ -2890,8 +2890,8 @@
   },
   {
     "type": "dances",
-    "title": "Slow Clap 3",
-    "subtitle": "/e slowclap3",
+    "title": "Yavaş Alkış 3",
+    "subtitle": "/e yavaşalkış3",
     "dances": {
       "dict": "anim@mp_player_intupperslow_clap",
       "anim": "idle_a"
@@ -2899,8 +2899,8 @@
   },
   {
     "type": "dances",
-    "title": "Clap",
-    "subtitle": "/e clap",
+    "title": "Alkış",
+    "subtitle": "/e alkış",
     "dances": {
       "dict": "amb@world_human_cheering@male_a",
       "anim": "base"
@@ -2908,8 +2908,8 @@
   },
   {
     "type": "dances",
-    "title": "Slow Clap",
-    "subtitle": "/e slowclap",
+    "title": "Yavaş Alkış",
+    "subtitle": "/e yavaşalkış",
     "dances": {
       "dict": "anim@mp_player_intcelebrationfemale@slow_clap",
       "anim": "slow_clap"
@@ -2917,8 +2917,8 @@
   },
   {
     "type": "dances",
-    "title": "Slow Clap 2",
-    "subtitle": "/e slowclap2",
+    "title": "Yavaş Alkış 2",
+    "subtitle": "/e yavaşalkış2",
     "dances": {
       "dict": "anim@mp_player_intcelebrationmale@slow_clap",
       "anim": "slow_clap"
@@ -2926,8 +2926,8 @@
   },
   {
     "type": "dances",
-    "title": "Smell",
-    "subtitle": "/e smell",
+    "title": "Kokla",
+    "subtitle": "/e kokla",
     "dances": {
       "dict": "move_p_m_two_idles@generic",
       "anim": "fidget_sniff_fingers"
@@ -2935,8 +2935,8 @@
   },
   {
     "type": "dances",
-    "title": "Stick Up",
-    "subtitle": "/e stickup",
+    "title": "Soy",
+    "subtitle": "/e soy",
     "dances": {
       "dict": "random@countryside_gang_fight",
       "anim": "biker_02_stickup_loop"
@@ -2944,8 +2944,8 @@
   },
   {
     "type": "dances",
-    "title": "Stumble",
-    "subtitle": "/e stumble",
+    "title": "Sendelemek",
+    "subtitle": "/e sendele",
     "dances": {
       "dict": "misscarsteal4@actor",
       "anim": "stumble"
@@ -2953,8 +2953,8 @@
   },
   {
     "type": "dances",
-    "title": "Stunned",
-    "subtitle": "/e stunned",
+    "title": "Sersemlemiş",
+    "subtitle": "/e sersemle",
     "dances": {
       "dict": "stungun@standing",
       "anim": "damage"
@@ -2962,8 +2962,8 @@
   },
   {
     "type": "dances",
-    "title": "Sunbathe",
-    "subtitle": "/e sunbathe",
+    "title": "Güneşlenmek",
+    "subtitle": "/e güneşlen",
     "dances": {
       "dict": "amb@world_human_sunbathe@male@back@base",
       "anim": "base"
@@ -2971,8 +2971,8 @@
   },
   {
     "type": "dances",
-    "title": "Sunbathe 2",
-    "subtitle": "/e sunbathe2",
+    "title": "Güneşlenmek 2",
+    "subtitle": "/e güneşlen2",
     "dances": {
       "dict": "amb@world_human_sunbathe@female@back@base",
       "anim": "base"
@@ -2980,7 +2980,7 @@
   },
   {
     "type": "dances",
-    "title": "Swat Freeze",
+    "title": "Swat Dur",
     "subtitle": "/e swat1",
     "dances": {
       "dict": "swat",
@@ -2989,7 +2989,7 @@
   },
   {
     "type": "dances",
-    "title": "Swat Come",
+    "title": "Swat Gel",
     "subtitle": "/e swat2",
     "dances": {
       "dict": "swat",
@@ -2998,7 +2998,7 @@
   },
   {
     "type": "dances",
-    "title": "Swat Rally",
+    "title": "Swat Toplan",
     "subtitle": "/e swat3",
     "dances": {
       "dict": "swat",
@@ -3007,7 +3007,7 @@
   },
   {
     "type": "dances",
-    "title": "Swat yes",
+    "title": "Swat Evet",
     "subtitle": "/e swat4",
     "dances": {
       "dict": "swat",
@@ -3016,7 +3016,7 @@
   },
   {
     "type": "dances",
-    "title": "Swat back",
+    "title": "Swat Geri",
     "subtitle": "/e swat5",
     "dances": {
       "dict": "swat",
@@ -3025,7 +3025,7 @@
   },
   {
     "type": "dances",
-    "title": "Swat forward",
+    "title": "Swat İleri",
     "subtitle": "/e swat6",
     "dances": {
       "dict": "swat",
@@ -3034,7 +3034,7 @@
   },
   {
     "type": "dances",
-    "title": "Swat left",
+    "title": "Swat Sol",
     "subtitle": "/e swat7",
     "dances": {
       "dict": "swat",
@@ -3043,7 +3043,7 @@
   },
   {
     "type": "dances",
-    "title": "Swat right",
+    "title": "Swat Sağ",
     "subtitle": "/e swat8",
     "dances": {
       "dict": "swat",
@@ -3052,7 +3052,7 @@
   },
   {
     "type": "dances",
-    "title": "Swat Go",
+    "title": "Swat Git",
     "subtitle": "/e swat9",
     "dances": {
       "dict": "swat",
@@ -3061,8 +3061,8 @@
   },
   {
     "type": "dances",
-    "title": "T Pose",
-    "subtitle": "/e t",
+    "title": "Uçak",
+    "subtitle": "/e uçak",
     "dances": {
       "dict": "missfam5_yoga",
       "anim": "a2_pose"
@@ -3070,8 +3070,8 @@
   },
   {
     "type": "dances",
-    "title": "T Pose 2",
-    "subtitle": "/e t2",
+    "title": "Uçak 2",
+    "subtitle": "/e uçak2",
     "dances": {
       "dict": "mp_sleep",
       "anim": "bind_pose_180"
@@ -3079,8 +3079,8 @@
   },
   {
     "type": "dances",
-    "title": "Texting",
-    "subtitle": "/e texting",
+    "title": "Mesajlaş",
+    "subtitle": "/e mesaj",
     "dances": {
       "dict": "anim@amb@carmeet@take_photos@male_a@base",
       "anim": "base"
@@ -3088,8 +3088,8 @@
   },
   {
     "type": "dances",
-    "title": "Texting 2",
-    "subtitle": "/e texting2",
+    "title": "Mesajlaş 2",
+    "subtitle": "/e mesaj2",
     "dances": {
       "dict": "anim@amb@carmeet@take_photos@male_b@base",
       "anim": "base"
@@ -3097,8 +3097,8 @@
   },
   {
     "type": "dances",
-    "title": "Texting 3",
-    "subtitle": "/e texting3",
+    "title": "Mesajlaş 3",
+    "subtitle": "/e mesaj3",
     "dances": {
       "dict": "anim@amb@carmeet@take_photos@male_c@base",
       "anim": "base"
@@ -3106,8 +3106,8 @@
   },
   {
     "type": "dances",
-    "title": "Texting 4",
-    "subtitle": "/e texting4",
+    "title": "Mesajlaş 4",
+    "subtitle": "/e mesaj4",
     "dances": {
       "dict": "anim@amb@carmeet@take_photos@male_d@base",
       "anim": "base"
@@ -3115,8 +3115,8 @@
   },
   {
     "type": "dances",
-    "title": "Texting 5",
-    "subtitle": "/e texting5",
+    "title": "Mesajlaş 5",
+    "subtitle": "/e mesaj5",
     "dances": {
       "dict": "anim@amb@carmeet@take_photos@male_e@base",
       "anim": "base"
@@ -3124,8 +3124,8 @@
   },
   {
     "type": "dances",
-    "title": "Texting 6",
-    "subtitle": "/e texting6",
+    "title": "Mesajlaş 6",
+    "subtitle": "/e mesaj6",
     "dances": {
       "dict": "anim@amb@carmeet@take_photos@male_f@base",
       "anim": "base"
@@ -3133,8 +3133,8 @@
   },
   {
     "type": "dances",
-    "title": "Texting 7",
-    "subtitle": "/e texting7",
+    "title": "Mesajlaş 7",
+    "subtitle": "/e mesaj7",
     "dances": {
       "dict": "anim@amb@carmeet@take_photos@male_g@base",
       "anim": "base"
@@ -3142,8 +3142,8 @@
   },
   {
     "type": "dances",
-    "title": "Texting 8",
-    "subtitle": "/e texting8",
+    "title": "Mesajlaş 8",
+    "subtitle": "/e mesaj8",
     "dances": {
       "dict": "anim@amb@carmeet@take_photos@male_h@base",
       "anim": "base"
@@ -3151,17 +3151,17 @@
   },
   {
     "type": "dances",
-    "title": "Think",
-    "subtitle": "/e think",
+    "title": "Düşün"",
+    "subtitle": "/e düşün",
     "dances": {
-      "dict": "mp_cp_welcome_tutthink",
-      "anim": "b_think"
+      "dict": "mp_cp_welcome_tutDüşün",
+      "anim": "b_Düşün"
     }
   },
   {
     "type": "dances",
-    "title": "Think 2",
-    "subtitle": "/e think2",
+    "title": "Düşün 2",
+    "subtitle": "/e düşün2",
     "dances": {
       "dict": "misscarsteal4@aliens",
       "anim": "rehearsal_base_idle_director"
@@ -3169,8 +3169,8 @@
   },
   {
     "type": "dances",
-    "title": "Think 3",
-    "subtitle": "/e think3",
+    "title": "Düşün 3",
+    "subtitle": "/e düşün3",
     "dances": {
       "dict": "timetable@tracy@ig_8@base",
       "anim": "base"
@@ -3178,8 +3178,8 @@
   },
   {
     "type": "dances",
-    "title": "Think 4",
-    "subtitle": "/e think4",
+    "title": "Düşün 4",
+    "subtitle": "/e düşün4",
     "dances": {
       "dict": "missheist_jewelleadinout",
       "anim": "jh_int_outro_loop_a"
@@ -3187,8 +3187,8 @@
   },
   {
     "type": "dances",
-    "title": "Thumbs Up",
-    "subtitle": "/e thumbsup",
+    "title": "OK",
+    "subtitle": "/e ok",
     "dances": {
       "dict": "anim@mp_player_intincarthumbs_uplow@ds@",
       "anim": "enter"
@@ -3196,8 +3196,8 @@
   },
   {
     "type": "dances",
-    "title": "Thumbs Up 2",
-    "subtitle": "/e thumbsup2",
+    "title": "OK 2",
+    "subtitle": "/e ok2",
     "dances": {
       "dict": "anim@mp_player_intselfiethumbs_up",
       "anim": "idle_a"
@@ -3205,8 +3205,8 @@
   },
   {
     "type": "dances",
-    "title": "Thumbs Up 3",
-    "subtitle": "/e thumbsup3",
+    "title": "OK 3",
+    "subtitle": "/e ok3",
     "dances": {
       "dict": "anim@mp_player_intupperthumbs_u",
       "anim": "idle_a"
@@ -3214,8 +3214,8 @@
   },
   {
     "type": "dances",
-    "title": "Type",
-    "subtitle": "/e type",
+    "title": "Yazı Yaz",
+    "subtitle": "/e yaz",
     "dances": {
       "dict": "anim@heists@prison_heiststation@cop_reactions",
       "anim": "cop_b_idle"
@@ -3223,8 +3223,8 @@
   },
   {
     "type": "dances",
-    "title": "Type 2",
-    "subtitle": "/e type2",
+    "title": "Yazı Yaz 2",
+    "subtitle": "/e yaz2",
     "dances": {
       "dict": "anim@heists@prison_heistig1_p1_guard_checks_bus",
       "anim": "loop"
@@ -3232,8 +3232,8 @@
   },
   {
     "type": "dances",
-    "title": "Type 3",
-    "subtitle": "/e type3",
+    "title": "Yazı Yaz 3",
+    "subtitle": "/e yaz3",
     "dances": {
       "dict": "mp_prison_break",
       "anim": "hack_loop"
@@ -3241,8 +3241,8 @@
   },
   {
     "type": "dances",
-    "title": "Type 4",
-    "subtitle": "/e type4",
+    "title": "Yazı Yaz 4",
+    "subtitle": "/e yaz4",
     "dances": {
       "dict": "mp_fbi_heist",
       "anim": "loop"
@@ -3250,8 +3250,8 @@
   },
   {
     "type": "dances",
-    "title": "Warmth",
-    "subtitle": "/e warmth",
+    "title": "Isın",
+    "subtitle": "/e Isın",
     "dances": {
       "dict": "amb@world_human_stand_fire@male@idle_a",
       "anim": "idle_a"
@@ -3259,8 +3259,8 @@
   },
   {
     "type": "dances",
-    "title": "Wave",
-    "subtitle": "/e wave",
+    "title": "El Salla",
+    "subtitle": "/e elsalla",
     "dances": {
       "dict": "random@mugging5",
       "anim": "001445_01_gangintimidation_1_female_idle_b"
@@ -3268,17 +3268,17 @@
   },
   {
     "type": "dances",
-    "title": "Wave 2",
-    "subtitle": "/e wave2",
+    "title": "El Salla 2",
+    "subtitle": "/e elsalla2",
     "dances": {
-      "dict": "anim@mp_player_intcelebrationfemale@wave",
-      "anim": "wave"
+      "dict": "anim@mp_player_intcelebrationfemale@El Salla",
+      "anim": "El Salla"
     }
   },
   {
     "type": "dances",
-    "title": "Wave 3",
-    "subtitle": "/e wave3",
+    "title": "El Salla 3",
+    "subtitle": "/e elsalla3",
     "dances": {
       "dict": "friends@fra@ig_1",
       "anim": "over_here_idle_a"
@@ -3286,53 +3286,53 @@
   },
   {
     "type": "dances",
-    "title": "Wave 4",
-    "subtitle": "/e wave4",
+    "title": "El Salla 4",
+    "subtitle": "/e elsalla4",
     "dances": {
       "dict": "friends@frj@ig_1",
-      "anim": "wave_a"
+      "anim": "El Salla_a"
     }
   },
   {
     "type": "dances",
-    "title": "Wave 5",
-    "subtitle": "/e wave5",
+    "title": "El Salla 5",
+    "subtitle": "/e elsalla5",
     "dances": {
       "dict": "friends@frj@ig_1",
-      "anim": "wave_b"
+      "anim": "El Salla_b"
     }
   },
   {
     "type": "dances",
-    "title": "Wave 6",
-    "subtitle": "/e wave6",
+    "title": "El Salla 6",
+    "subtitle": "/e elsalla6",
     "dances": {
       "dict": "friends@frj@ig_1",
-      "anim": "wave_c"
+      "anim": "El Salla_c"
     }
   },
   {
     "type": "dances",
-    "title": "Wave 7",
-    "subtitle": "/e wave7",
+    "title": "El Salla 7",
+    "subtitle": "/e elsalla7",
     "dances": {
       "dict": "friends@frj@ig_1",
-      "anim": "wave_d"
+      "anim": "El Salla_d"
     }
   },
   {
     "type": "dances",
-    "title": "Wave 8",
-    "subtitle": "/e wave8",
+    "title": "El Salla 8",
+    "subtitle": "/e elsalla8",
     "dances": {
       "dict": "friends@frj@ig_1",
-      "anim": "wave_e"
+      "anim": "El Salla_e"
     }
   },
   {
     "type": "dances",
-    "title": "Wave 9",
-    "subtitle": "/e wave9",
+    "title": "El Salla 9",
+    "subtitle": "/e elsalla9",
     "dances": {
       "dict": "gestures@m@standing@casual",
       "anim": "gesture_hello"
@@ -3340,8 +3340,8 @@
   },
   {
     "type": "dances",
-    "title": "Whistle",
-    "subtitle": "/e whistle",
+    "title": "Islık",
+    "subtitle": "/e ıslık",
     "dances": {
       "dict": "taxi_hail",
       "anim": "hail_taxi"
@@ -3349,11 +3349,11 @@
   },
   {
     "type": "dances",
-    "title": "Whistle 2",
-    "subtitle": "/e whistle2",
+    "title": "Islık 2",
+    "subtitle": "/e ıslık2",
     "dances": {
       "dict": "rcmnigel1c",
-      "anim": "hailing_whistle_waive_a"
+      "anim": "hailing_Islık_waive_a"
     }
   },
   {
@@ -3367,8 +3367,8 @@
   },
   {
     "type": "dances",
-    "title": "Lift",
-    "subtitle": "/e lift",
+    "title": "Otostop",
+    "subtitle": "/e otostop",
     "dances": {
       "dict": "random@hitch_lift",
       "anim": "idle_f"
@@ -3394,8 +3394,8 @@
   },
   {
     "type": "dances",
-    "title": "Statue 2",
-    "subtitle": "/e statue2",
+    "title": "Heykel 2",
+    "subtitle": "/e heykel2",
     "dances": {
       "dict": "fra_0_int-1",
       "anim": "cs_lamardavis_dual-1"
@@ -3403,8 +3403,8 @@
   },
   {
     "type": "dances",
-    "title": "Statue 3",
-    "subtitle": "/e statue3",
+    "title": "Heykel 3",
+    "subtitle": "/e heykel3",
     "dances": {
       "dict": "club_intro2-0",
       "anim": "csb_englishdave_dual-0"
@@ -3430,8 +3430,8 @@
   },
   {
     "type": "dances",
-    "title": "Pass Out",
-    "subtitle": "/e passout",
+    "title": "Bayıl",
+    "subtitle": "/e bayıl",
     "dances": {
       "dict": "missarmenian2",
       "anim": "drunk_loop"
@@ -3439,8 +3439,8 @@
   },
   {
     "type": "dances",
-    "title": "Pass Out 2",
-    "subtitle": "/e passout2",
+    "title": "Bayıl 2",
+    "subtitle": "/e bayıl2",
     "dances": {
       "dict": "missarmenian2",
       "anim": "corpse_search_exit_ped"
@@ -3448,8 +3448,8 @@
   },
   {
     "type": "dances",
-    "title": "Pass Out 3",
-    "subtitle": "/e passout3",
+    "title": "Bayıl 3",
+    "subtitle": "/e bayıl3",
     "dances": {
       "dict": "anim@gangops@morgue@table@",
       "anim": "body_search"
@@ -3457,8 +3457,8 @@
   },
   {
     "type": "dances",
-    "title": "Pass Out 4",
-    "subtitle": "/e passout4",
+    "title": "Bayıl 4",
+    "subtitle": "/e bayıl4",
     "dances": {
       "dict": "mini@cpr@char_b@cpr_def",
       "anim": "cpr_pumpchest_idle"
@@ -3466,8 +3466,8 @@
   },
   {
     "type": "dances",
-    "title": "Pass Out 5",
-    "subtitle": "/e passout5",
+    "title": "Bayıl 5",
+    "subtitle": "/e bayıl5",
     "dances": {
       "dict": "random@mugging4",
       "anim": "flee_backward_loop_shopkeeper"
@@ -3475,8 +3475,8 @@
   },
   {
     "type": "dances",
-    "title": "Petting",
-    "subtitle": "/e petting",
+    "title": "Hayvanı Sev",
+    "subtitle": "/e sev",
     "dances": {
       "dict": "creatures@rottweiler@tricks@",
       "anim": "petting_franklin"
@@ -3484,8 +3484,8 @@
   },
   {
     "type": "dances",
-    "title": "Crawl",
-    "subtitle": "/e crawl",
+    "title": "Sürün",
+    "subtitle": "/e sürün",
     "dances": {
       "dict": "move_injured_ground",
       "anim": "front_loop"
@@ -3493,8 +3493,8 @@
   },
   {
     "type": "dances",
-    "title": "Flip",
-    "subtitle": "/e flip",
+    "title": "Takla At",
+    "subtitle": "/e takla",
     "dances": {
       "dict": "anim@arena@celeb@flat@solo@no_props@",
       "anim": "flip_a_player_a",
@@ -3505,8 +3505,8 @@
   },
   {
     "type": "dances",
-    "title": "Flip 2",
-    "subtitle": "/e flip2",
+    "title": "Takla At 2",
+    "subtitle": "/e takla2",
     "dances": {
       "dict": "anim@arena@celeb@flat@solo@no_props@",
       "anim": "cap_a_player_a"
@@ -3514,8 +3514,8 @@
   },
   {
     "type": "dances",
-    "title": "Slide",
-    "subtitle": "/e slide",
+    "title": "Kay",
+    "subtitle": "/e kay",
     "dances": {
       "dict": "anim@arena@celeb@flat@solo@no_props@",
       "anim": "slide_a_player_a"
@@ -3523,8 +3523,8 @@
   },
   {
     "type": "dances",
-    "title": "Slide 2",
-    "subtitle": "/e slide2",
+    "title": "Kay 2",
+    "subtitle": "/e kay2",
     "dances": {
       "dict": "anim@arena@celeb@flat@solo@no_props@",
       "anim": "slide_b_player_a"
@@ -3532,8 +3532,8 @@
   },
   {
     "type": "dances",
-    "title": "Slide 3",
-    "subtitle": "/e slide3",
+    "title": "Kay 3",
+    "subtitle": "/e kay3",
     "dances": {
       "dict": "anim@arena@celeb@flat@solo@no_props@",
       "anim": "slide_c_player_a"
@@ -3541,8 +3541,8 @@
   },
   {
     "type": "dances",
-    "title": "Slugger",
-    "subtitle": "/e slugger",
+    "title": "Tembel",
+    "subtitle": "/e tembel",
     "dances": {
       "dict": "anim@arena@celeb@flat@solo@no_props@",
       "anim": "slugger_a_player_a"
@@ -3550,8 +3550,8 @@
   },
   {
     "type": "dances",
-    "title": "Flip Off",
-    "subtitle": "/e flipoff",
+    "title": "Orta Parmak",
+    "subtitle": "/e orta",
     "dances": {
       "dict": "anim@arena@celeb@podium@no_prop@",
       "anim": "flip_off_a_1st"
@@ -3559,8 +3559,8 @@
   },
   {
     "type": "dances",
-    "title": "Flip Off 2",
-    "subtitle": "/e flipoff2",
+    "title": "Orta Parmak 2",
+    "subtitle": "/e orta2",
     "dances": {
       "dict": "anim@arena@celeb@podium@no_prop@",
       "anim": "flip_off_c_1st"
@@ -3568,8 +3568,8 @@
   },
   {
     "type": "dances",
-    "title": "Bow",
-    "subtitle": "/e bow",
+    "title": "Eğil",
+    "subtitle": "/e eğil",
     "dances": {
       "dict": "anim@arena@celeb@podium@no_prop@",
       "anim": "regal_c_1st"
@@ -3577,8 +3577,8 @@
   },
   {
     "type": "dances",
-    "title": "Bow 2",
-    "subtitle": "/e bow2",
+    "title": "Eğil 2",
+    "subtitle": "/e eğil2",
     "dances": {
       "dict": "anim@arena@celeb@podium@no_prop@",
       "anim": "regal_a_1st"
@@ -3586,8 +3586,8 @@
   },
   {
     "type": "dances",
-    "title": "Key Fob",
-    "subtitle": "/e keyfob",
+    "title": "Anahtarlık",
+    "subtitle": "/e anahtarlık",
     "dances": {
       "dict": "anim@mp_player_intmenu@key_fob@",
       "anim": "fob_click"
@@ -3595,8 +3595,8 @@
   },
   {
     "type": "dances",
-    "title": "Golf Swing",
-    "subtitle": "/e golfswing",
+    "title": "Golf Vuruşu",
+    "subtitle": "/e golf",
     "dances": {
       "dict": "rcmnigel1d",
       "anim": "swing_a_mark"
@@ -3604,8 +3604,8 @@
   },
   {
     "type": "dances",
-    "title": "Eat",
-    "subtitle": "/e eat",
+    "title": "Yemek Ye",
+    "subtitle": "/e yemek",
     "dances": {
       "dict": "mp_player_inteat@burger",
       "anim": "mp_player_int_eat_burger"
@@ -3613,8 +3613,8 @@
   },
   {
     "type": "dances",
-    "title": "Reaching",
-    "subtitle": "/e reaching",
+    "title": "Ulaşmak",
+    "subtitle": "/e ulaş",
     "dances": {
       "dict": "move_m@intimidation@cop@unarmed",
       "anim": "idle"
@@ -3622,8 +3622,8 @@
   },
   {
     "type": "dances",
-    "title": "Wait",
-    "subtitle": "/e wait",
+    "title": "Bekle",
+    "subtitle": "/e bekle",
     "dances": {
       "dict": "random@shop_tattoo",
       "anim": "_idle_a"
@@ -3631,8 +3631,8 @@
   },
   {
     "type": "dances",
-    "title": "Wait 2",
-    "subtitle": "/e wait2",
+    "title": "Bekle 2",
+    "subtitle": "/e bekle2",
     "dances": {
       "dict": "missbigscore2aig_3",
       "anim": "wait_for_van_c"
@@ -3640,8 +3640,8 @@
   },
   {
     "type": "dances",
-    "title": "Wait 12",
-    "subtitle": "/e wait12",
+    "title": "Bekle 12",
+    "subtitle": "/e bekle12",
     "dances": {
       "dict": "rcmjosh1",
       "anim": "idle"
@@ -3649,8 +3649,8 @@
   },
   {
     "type": "dances",
-    "title": "Wait 13",
-    "subtitle": "/e wait13",
+    "title": "Bekle 13",
+    "subtitle": "/e bekle13",
     "dances": {
       "dict": "rcmnigel1a",
       "anim": "base"
@@ -3658,8 +3658,8 @@
   },
   {
     "type": "dances",
-    "title": "Lap Dance 2",
-    "subtitle": "/e lapdance2",
+    "title": "Kucak Dansı 2",
+    "subtitle": "/e kucakdansı2",
     "dances": {
       "dict": "mini@strip_club@private_dance@idle",
       "anim": "priv_dance_idle"
@@ -3667,8 +3667,8 @@
   },
   {
     "type": "dances",
-    "title": "Lap Dance 3",
-    "subtitle": "/e lapdance3",
+    "title": "Kucak Dansı 3",
+    "subtitle": "/e kucakdansı3",
     "dances": {
       "dict": "mini@strip_club@private_dance@part2",
       "anim": "priv_dance_p2"
@@ -3676,8 +3676,8 @@
   },
   {
     "type": "dances",
-    "title": "Lap Dance 4",
-    "subtitle": "/e lapdance4",
+    "title": "Kucak Dansı 4",
+    "subtitle": "/e kucakdansı4",
     "dances": {
       "dict": "mini@strip_club@private_dance@part3",
       "anim": "priv_dance_p3"
@@ -3688,14 +3688,14 @@
     "title": "Twerk",
     "subtitle": "/e twerk",
     "dances": {
-      "dict": "switch@trevor@mocks_lapdance",
+      "dict": "switch@trevor@mocks_kucakdansı",
       "anim": "001443_01_trvs_28_idle_stripper"
     }
   },
   {
     "type": "dances",
-    "title": "Slap",
-    "subtitle": "/e slap",
+    "title": "Tokat At",
+    "subtitle": "/e tokat",
     "dances": {
       "dict": "melee@unarmed@streamed_variations",
       "anim": "plyr_takedown_front_slap"
@@ -3703,8 +3703,8 @@
   },
   {
     "type": "dances",
-    "title": "Headbutt",
-    "subtitle": "/e headbutt",
+    "title": "Kafa At",
+    "subtitle": "/e kafaat",
     "dances": {
       "dict": "melee@unarmed@streamed_variations",
       "anim": "plyr_takedown_front_headbutt"
@@ -3712,8 +3712,8 @@
   },
   {
     "type": "dances",
-    "title": "Fish Dance",
-    "subtitle": "/e fishdance",
+    "title": "Balık Dansı",
+    "subtitle": "/e dansbalık",
     "dances": {
       "dict": "anim@mp_player_intupperfind_the_fish",
       "anim": "idle_a"
@@ -3721,8 +3721,8 @@
   },
   {
     "type": "dances",
-    "title": "Peace",
-    "subtitle": "/e peace",
+    "title": "Barış",
+    "subtitle": "/e barış",
     "dances": {
       "dict": "mp_player_int_upperpeace_sign",
       "anim": "mp_player_int_peace_sign"
@@ -3730,8 +3730,8 @@
   },
   {
     "type": "dances",
-    "title": "Peace 2",
-    "subtitle": "/e peace2",
+    "title": "Barış 2",
+    "subtitle": "/e barış2",
     "dances": {
       "dict": "anim@mp_player_intupperpeace",
       "anim": "idle_a"
@@ -3739,7 +3739,7 @@
   },
   {
     "type": "dances",
-    "title": "CPR",
+    "title": "Kalp Masajı",
     "subtitle": "/e cpr",
     "dances": {
       "dict": "mini@cpr@char_a@cpr_str",
@@ -3748,8 +3748,8 @@
   },
   {
     "type": "dances",
-    "title": "Ledge",
-    "subtitle": "/e ledge",
+    "title": "Çıkıntı",
+    "subtitle": "/e çıkıntı",
     "dances": {
       "dict": "missfbi1",
       "anim": "ledge_loop"
@@ -3757,8 +3757,8 @@
   },
   {
     "type": "dances",
-    "title": "Airplane",
-    "subtitle": "/e airplane",
+    "title": "T Pose",
+    "subtitle": "/e tpose",
     "dances": {
       "dict": "missfbi1",
       "anim": "ledge_loop"
@@ -3766,8 +3766,8 @@
   },
   {
     "type": "dances",
-    "title": "Peek",
-    "subtitle": "/e peek",
+    "title": "Dikizlemek",
+    "subtitle": "/e dikizle",
     "dances": {
       "dict": "random@paparazzi@peek",
       "anim": "left_peek_a"
@@ -3775,8 +3775,8 @@
   },
   {
     "type": "dances",
-    "title": "Cough",
-    "subtitle": "/e cough",
+    "title": "Öksür",
+    "subtitle": "/e öksür",
     "dances": {
       "dict": "timetable@gardener@smoking_joint",
       "anim": "idle_cough"
@@ -3784,8 +3784,8 @@
   },
   {
     "type": "dances",
-    "title": "Stretch",
-    "subtitle": "/e stretch",
+    "title": "Esnemek",
+    "subtitle": "/e esne",
     "dances": {
       "dict": "mini@triathlon",
       "anim": "idle_e"
@@ -3793,8 +3793,8 @@
   },
   {
     "type": "dances",
-    "title": "Stretch 2",
-    "subtitle": "/e stretch2",
+    "title": "Esnemek 2",
+    "subtitle": "/e esne2",
     "dances": {
       "dict": "mini@triathlon",
       "anim": "idle_f"
@@ -3802,8 +3802,8 @@
   },
   {
     "type": "dances",
-    "title": "Stretch 3",
-    "subtitle": "/e stretch3",
+    "title": "Esnemek 3",
+    "subtitle": "/e esne3",
     "dances": {
       "dict": "mini@triathlon",
       "anim": "idle_d"
@@ -3811,17 +3811,17 @@
   },
   {
     "type": "dances",
-    "title": "Stretch 4",
-    "subtitle": "/e stretch4",
+    "title": "Esnemek 4",
+    "subtitle": "/e esne4",
     "dances": {
-      "dict": "rcmfanatic1maryann_stretchidle_",
+      "dict": "rcmfanatic1maryann_Esnemekidle_",
       "anim": "idle_e"
     }
   },
   {
     "type": "dances",
-    "title": "Celebrate",
-    "subtitle": "/e celebrate",
+    "title": "Kutlamak",
+    "subtitle": "/e kutla",
     "dances": {
       "dict": "rcmfanatic1celebrate",
       "anim": "celebrate"
@@ -3829,8 +3829,8 @@
   },
   {
     "type": "dances",
-    "title": "Punching",
-    "subtitle": "/e punching",
+    "title": "Yumruk At",
+    "subtitle": "/e yumruk",
     "dances": {
       "dict": "rcmextreme2",
       "anim": "loop_punching"
@@ -3838,8 +3838,8 @@
   },
   {
     "type": "dances",
-    "title": "Superhero",
-    "subtitle": "/e superhero",
+    "title": "Süper Kahraman",
+    "subtitle": "/e süperkahraman",
     "dances": {
       "dict": "rcmbarry",
       "anim": "base"
@@ -3847,8 +3847,8 @@
   },
   {
     "type": "dances",
-    "title": "Superhero 2",
-    "subtitle": "/e superhero2",
+    "title": "Süper Kahraman 2",
+    "subtitle": "/e süperkahraman2",
     "dances": {
       "dict": "rcmbarry",
       "anim": "base"
@@ -3856,8 +3856,8 @@
   },
   {
     "type": "dances",
-    "title": "Mind Control",
-    "subtitle": "/e mindcontrol",
+    "title": "Zihin Kontrolü",
+    "subtitle": "/e zihinkontrol",
     "dances": {
       "dict": "rcmbarry",
       "anim": "mind_control_b_loop"
@@ -3865,8 +3865,8 @@
   },
   {
     "type": "dances",
-    "title": "Mind Control 2",
-    "subtitle": "/e mindcontrol2",
+    "title": "Zihin Kontrolü 2",
+    "subtitle": "/e zihinkontrol2",
     "dances": {
       "dict": "rcmbarry",
       "anim": "bar_1_attack_idle_aln"
@@ -3874,53 +3874,53 @@
   },
   {
     "type": "dances",
-    "title": "Clown",
-    "subtitle": "/e clown",
+    "title": "Palyaço",
+    "subtitle": "/e palyaço",
     "dances": {
       "dict": "rcm_barry2",
-      "anim": "clown_idle_0"
+      "anim": "Palyaço_idle_0"
     }
   },
   {
     "type": "dances",
-    "title": "Clown 2",
-    "subtitle": "/e clown2",
+    "title": "Palyaço 2",
+    "subtitle": "/e palyaço2",
     "dances": {
       "dict": "rcm_barry2",
-      "anim": "clown_idle_1"
+      "anim": "Palyaço_idle_1"
     }
   },
   {
     "type": "dances",
-    "title": "Clown 3",
-    "subtitle": "/e clown3",
+    "title": "Palyaço 3",
+    "subtitle": "/e palyaço3",
     "dances": {
       "dict": "rcm_barry2",
-      "anim": "clown_idle_2"
+      "anim": "Palyaço_idle_2"
     }
   },
   {
     "type": "dances",
-    "title": "Clown 4",
-    "subtitle": "/e clown4",
+    "title": "Palyaço 4",
+    "subtitle": "/e palyaço4",
     "dances": {
       "dict": "rcm_barry2",
-      "anim": "clown_idle_3"
+      "anim": "Palyaço_idle_3"
     }
   },
   {
     "type": "dances",
-    "title": "Clown 6",
-    "subtitle": "/e clown5",
+    "title": "Palyaço 6",
+    "subtitle": "/e palyaço5",
     "dances": {
       "dict": "rcm_barry2",
-      "anim": "clown_idle_6"
+      "anim": "Palyaço_idle_6"
     }
   },
   {
     "type": "dances",
-    "title": "Try Clothes",
-    "subtitle": "/e tryclothes",
+    "title": "Kıyafet Dene",
+    "subtitle": "/e kıyafetdene",
     "dances": {
       "dict": "mp_clothing@female@trousers",
       "anim": "try_trousers_neutral_a"
@@ -3928,8 +3928,8 @@
   },
   {
     "type": "dances",
-    "title": "Try Clothes 2",
-    "subtitle": "/e tryclothes2",
+    "title": "Kıyafet Dene 2",
+    "subtitle": "/e kıyafetdene2",
     "dances": {
       "dict": "mp_clothing@female@shirt",
       "anim": "try_shirt_positive_a"
@@ -3937,8 +3937,8 @@
   },
   {
     "type": "dances",
-    "title": "Try Clothes 3",
-    "subtitle": "/e tryclothes3",
+    "title": "Kıyafet Dene 3",
+    "subtitle": "/e kıyafetdene3",
     "dances": {
       "dict": "mp_clothing@female@shoes",
       "anim": "try_shoes_positive_a"
@@ -3946,8 +3946,8 @@
   },
   {
     "type": "dances",
-    "title": "Nervous",
-    "subtitle": "/e nervous",
+    "title": "Gergin",
+    "subtitle": "/e gergin",
     "dances": {
       "dict": "mp_missheist_countrybank@nervous",
       "anim": "nervous_idle"
@@ -3955,8 +3955,8 @@
   },
   {
     "type": "dances",
-    "title": "Nervous 2",
-    "subtitle": "/e nervous2",
+    "title": "Gergin 2",
+    "subtitle": "/e gergin2",
     "dances": {
       "dict": "amb@world_human_bum_standing@twitchy@idle_a",
       "anim": "idle_c"
@@ -3964,8 +3964,8 @@
   },
   {
     "type": "dances",
-    "title": "Nervous 3",
-    "subtitle": "/e nervous3",
+    "title": "Gergin 3",
+    "subtitle": "/e gergin3",
     "dances": {
       "dict": "rcmme_tracey1",
       "anim": "nervous_loop"
@@ -3973,8 +3973,8 @@
   },
   {
     "type": "dances",
-    "title": "Uncuff",
-    "subtitle": "/e uncuff",
+    "title": "Kelepçeyi Aç",
+    "subtitle": "/e kelepçeaç",
     "dances": {
       "dict": "mp_arresting",
       "anim": "a_uncuff"
@@ -4000,8 +4000,8 @@
   },
   {
     "type": "dances",
-    "title": "Threaten",
-    "subtitle": "/e threaten",
+    "title": "Tehdit Et",
+    "subtitle": "/e tehditet",
     "dances": {
       "dict": "random@atmrobberygen",
       "anim": "b_atm_mugging"
@@ -4009,8 +4009,8 @@
   },
   {
     "type": "dances",
-    "title": "Radio",
-    "subtitle": "/e radio",
+    "title": "Radyo",
+    "subtitle": "/e radyo",
     "dances": {
       "dict": "random@arrests",
       "anim": "generic_radio_chatter"
@@ -4018,8 +4018,8 @@
   },
   {
     "type": "dances",
-    "title": "Pull",
-    "subtitle": "/e pull",
+    "title": "Çek",
+    "subtitle": "/e çek",
     "dances": {
       "dict": "random@mugging4",
       "anim": "struggle_loop_b_thief"
@@ -4027,8 +4027,8 @@
   },
   {
     "type": "dances",
-    "title": "Bird",
-    "subtitle": "/e bird",
+    "title": "Kuş",
+    "subtitle": "/e kuş",
     "dances": {
       "dict": "random@peyote@bird",
       "anim": "wakeup"
@@ -4036,8 +4036,8 @@
   },
   {
     "type": "dances",
-    "title": "Chicken",
-    "subtitle": "/e chicken",
+    "title": "Tavuk",
+    "subtitle": "/e tavuk",
     "dances": {
       "dict": "random@peyote@chicken",
       "anim": "wakeup"
@@ -4045,8 +4045,8 @@
   },
   {
     "type": "dances",
-    "title": "Bark",
-    "subtitle": "/e bark",
+    "title": "Havla",
+    "subtitle": "/e havla",
     "dances": {
       "dict": "random@peyote@dog",
       "anim": "wakeup"
@@ -4054,8 +4054,8 @@
   },
   {
     "type": "dances",
-    "title": "Rabbit",
-    "subtitle": "/e rabbit",
+    "title": "Tavşan",
+    "subtitle": "/e tavşan",
     "dances": {
       "dict": "random@peyote@rabbit",
       "anim": "wakeup"
@@ -4081,8 +4081,8 @@
   },
   {
     "type": "dances",
-    "title": "Adjust",
-    "subtitle": "/e adjust",
+    "title": "Ayarlamak",
+    "subtitle": "/e ayarla",
     "dances": {
       "dict": "missmic4",
       "anim": "michael_tux_fidget"
@@ -4090,8 +4090,8 @@
   },
   {
     "type": "dances",
-    "title": "Hands Up",
-    "subtitle": "/e handsup",
+    "title": "Eller Yukarı",
+    "subtitle": "/e elleryukarı",
     "dances": {
       "dict": "missminuteman_1ig_2",
       "anim": "handsup_base"
@@ -4099,8 +4099,8 @@
   },
   {
     "type": "dances",
-    "title": "Pee",
-    "subtitle": "/e pee",
+    "title": "işe",
+    "subtitle": "/e işe",
     "dances": {
       "dict": "misscarsteal2peeing",
       "anim": "peeing_loop"
@@ -4132,8 +4132,8 @@
   },
   {
     "type": "dances",
-    "title": "Cut Throat",
-    "subtitle": "/e cutthroat",
+    "title": "Boğazını Kes",
+    "subtitle": "/e boğaz",
     "dances": {
       "dict": "anim@mp_player_intcelebrationmale@cut_throat",
       "anim": "cut_throat"
@@ -4141,8 +4141,8 @@
   },
   {
     "type": "dances",
-    "title": "Cut Throat 2",
-    "subtitle": "/e cutthroat2",
+    "title": "Boğazını Kes 2",
+    "subtitle": "/e boğaz2",
     "dances": {
       "dict": "anim@mp_player_intcelebrationfemale@cut_throat",
       "anim": "cut_throat"
@@ -4150,8 +4150,8 @@
   },
   {
     "type": "dances",
-    "title": "Mind Blown",
-    "subtitle": "/e mindblown",
+    "title": "Zihin Karmaşası",
+    "subtitle": "/e zihinkarmaşası",
     "dances": {
       "dict": "anim@mp_player_intcelebrationmale@mind_blown",
       "anim": "mind_blown"
@@ -4159,8 +4159,8 @@
   },
   {
     "type": "dances",
-    "title": "Mind Blown 2",
-    "subtitle": "/e mindblown2",
+    "title": "Zihin Karmaşası 2",
+    "subtitle": "/e zihinkarmaşası2",
     "dances": {
       "dict": "anim@mp_player_intcelebrationfemale@mind_blown",
       "anim": "mind_blown"
@@ -4168,8 +4168,8 @@
   },
   {
     "type": "dances",
-    "title": "Boxing",
-    "subtitle": "/e boxing",
+    "title": "Box",
+    "subtitle": "/e box",
     "dances": {
       "dict": "anim@mp_player_intcelebrationmale@shadow_boxing",
       "anim": "shadow_boxing"
@@ -4177,8 +4177,8 @@
   },
   {
     "type": "dances",
-    "title": "Boxing 2",
-    "subtitle": "/e boxing2",
+    "title": "Box 2",
+    "subtitle": "/e box2",
     "dances": {
       "dict": "anim@mp_player_intcelebrationfemale@shadow_boxing",
       "anim": "shadow_boxing"
@@ -4186,8 +4186,8 @@
   },
   {
     "type": "dances",
-    "title": "Stink",
-    "subtitle": "/e stink",
+    "title": "Kokuşmuş",
+    "subtitle": "/e kokuşmuş",
     "dances": {
       "dict": "anim@mp_player_intcelebrationfemale@stinker",
       "anim": "stinker"
@@ -4195,8 +4195,8 @@
   },
   {
     "type": "dances",
-    "title": "Think 4",
-    "subtitle": "/e think4",
+    "title": "Düşün 4",
+    "subtitle": "/e düşün4",
     "dances": {
       "dict": "anim@amb@casino@hangout@ped_male@stand@02b@idles",
       "anim": "idle_a"
@@ -4204,8 +4204,8 @@
   },
   {
     "type": "dances",
-    "title": "Adjust Tie",
-    "subtitle": "/e adjusttie",
+    "title": "Kravat",
+    "subtitle": "/e kravat",
     "dances": {
       "dict": "clothingtie",
       "anim": "try_tie_positive_a"
@@ -4222,8 +4222,8 @@
   },
   {
     "type": "dances",
-    "title": "Can't See Me",
-    "subtitle": "/e cantsee",
+    "title": "Beni Göremezsin",
+    "subtitle": "/e benigöremezsin",
     "dances": {
       "dict": "custom@cant_see",
       "anim": "cant_see"
@@ -4231,8 +4231,8 @@
   },
   {
     "type": "dances",
-    "title": "Cop Search",
-    "subtitle": "/e copsearch",
+    "title": "Polis Araması",
+    "subtitle": "/e polisara",
     "dances": {
       "dict": "custom@dab",
       "anim": "dab"
@@ -4267,8 +4267,8 @@
   },
   {
     "type": "dances",
-    "title": "Id",
-    "subtitle": "/e id",
+    "title": "Kimlik",
+    "subtitle": "/e kimlik",
     "dances": {
       "dict": "friends@laf@ig_5",
       "anim": "nephew"
@@ -4276,8 +4276,8 @@
   },
   {
     "type": "dances",
-    "title": "Lap Dance 4",
-    "subtitle": "/e lapdance4",
+    "title": "Kucak Dansı 4",
+    "subtitle": "/e kucakdansı4",
     "dances": {
       "dict": "mini@strip_club@private_dance@part2",
       "anim": "priv_dance_p2"
@@ -4312,8 +4312,8 @@
   },
   {
     "type": "dances",
-    "title": "Fix",
-    "subtitle": "/e fix",
+    "title": "Düzeltmek",
+    "subtitle": "/e düzeltmek",
     "dances": {
       "dict": "amb@prop_human_bum_bin@base",
       "anim": "base"
@@ -4321,8 +4321,8 @@
   },
   {
     "type": "dances",
-    "title": "Fix 2",
-    "subtitle": "/e fix2",
+    "title": "Düzeltmek 2",
+    "subtitle": "/e düzeltmek2",
     "dances": {
       "dict": "amb@prop_human_movie_bulb@base",
       "anim": "base"
@@ -4330,8 +4330,8 @@
   },
   {
     "type": "dances",
-    "title": "Fix 3",
-    "subtitle": "/e fix3",
+    "title": "Düzeltmek 3",
+    "subtitle": "/e düzeltmek3",
     "dances": {
       "dict": "amb@prop_human_bum_bin@idle_a",
       "anim": "idle_a"
@@ -4339,8 +4339,8 @@
   },
   {
     "type": "dances",
-    "title": "Pick Butt",
-    "subtitle": "/e pickbutt",
+    "title": "Popo",
+    "subtitle": "/e popo",
     "dances": {
       "dict": "mp_player_int_upperarse_pick",
       "anim": "mp_player_int_arse_pick"
@@ -4366,8 +4366,8 @@
   },
   {
     "type": "dances",
-    "title": "Blowjob",
-    "subtitle": "/e blowjob",
+    "title": "Sakso",
+    "subtitle": "/e sakso",
     "dances": {
       "dict": "oddjobs@towing",
       "anim": "m_blow_job_loop"
@@ -4375,8 +4375,8 @@
   },
   {
     "type": "dances",
-    "title": "Blowjob 2",
-    "subtitle": "/e blowjob2",
+    "title": "Sakso 2",
+    "subtitle": "/e sakso2",
     "dances": {
       "dict": "oddjobs@towing",
       "anim": "f_blow_job_loop"
@@ -4492,8 +4492,8 @@
   },
   {
     "type": "dances",
-    "title": "Arm Swirl",
-    "subtitle": "/e armswirl",
+    "title": "Kol",
+    "subtitle": "/e kol",
     "dances": {
       "dict": "custom@",
       "anim": "armswirl"
@@ -4501,17 +4501,17 @@
   },
   {
     "type": "dances",
-    "title": "Arm Wave",
-    "subtitle": "/e armwave",
+    "title": "Kol 2",
+    "subtitle": "/e kol2",
     "dances": {
       "dict": "custom@",
-      "anim": "armwave"
+      "anim": "armEl Salla"
     }
   },
   {
     "type": "dances",
-    "title": "Circle Crunch",
-    "subtitle": "/e circlecrunch",
+    "title": "Çember",
+    "subtitle": "/e çember",
     "dances": {
       "dict": "custom@",
       "anim": "circle_crunch"
@@ -4519,8 +4519,8 @@
   },
   {
     "type": "dances",
-    "title": "Dig",
-    "subtitle": "/e dig",
+    "title": "Kazmak",
+    "subtitle": "/e kaz",
     "dances": {
       "dict": "custom@",
       "anim": "dig"
@@ -4564,8 +4564,8 @@
   },
   {
     "type": "dances",
-    "title": "What",
-    "subtitle": "/e whatidk",
+    "title": "Ne?",
+    "subtitle": "/e ne",
     "dances": {
       "dict": "custom@",
       "anim": "what_idk"
@@ -4573,8 +4573,8 @@
   },
   {
     "type": "dances",
-    "title": "Pick From Ground",
-    "subtitle": "/e pickfromground",
+    "title": "Yerden Al",
+    "subtitle": "/e yerdenal",
     "dances": {
       "dict": "custom@",
       "anim": "pickfromground"
@@ -4610,8 +4610,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Bum Sleep",
-    "subtitle": "/e bumsleep",
+    "title": "Bum Uyu",
+    "subtitle": "/e bumuyu",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_BUM_SLUMPED"
@@ -4619,8 +4619,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Cheer",
-    "subtitle": "/e cheer",
+    "title": "Şerefe",
+    "subtitle": "/e şerefe",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_CHEERING"
@@ -4628,8 +4628,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Chin Up",
-    "subtitle": "/e chinup",
+    "title": "Korkma",
+    "subtitle": "/e korkma",
     "scenarios": {
       "sex": "both",
       "scene": "PROP_HUMAN_MUSCLE_CHIN_UPS"
@@ -4637,8 +4637,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Clipboard 2",
-    "subtitle": "/e clipboard2",
+    "title": "Pano 2",
+    "subtitle": "/e pano2",
     "scenarios": {
       "sex": "male",
       "scene": "WORLD_HUMAN_CLIPBOARD"
@@ -4646,8 +4646,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Cop Idle",
-    "subtitle": "/e copidle",
+    "title": "Polis Boşta",
+    "subtitle": "/e polisboşta",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_COP_IDLES"
@@ -4655,8 +4655,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Cop Beacon",
-    "subtitle": "/e copbeacon",
+    "title": "Polis Fener",
+    "subtitle": "/e polisfener",
     "scenarios": {
       "sex": "male",
       "scene": "WORLD_HUMAN_CAR_PARK_ATTENDANT"
@@ -4664,8 +4664,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Film Shocking",
-    "subtitle": "/e filmshocking",
+    "title": "Şok Ol",
+    "subtitle": "/e şok",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_MOBILE_FILM_SHOCKING"
@@ -4673,8 +4673,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Flex",
-    "subtitle": "/e flex",
+    "title": "Esne",
+    "subtitle": "/e esne5",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_MUSCLE_FLEX"
@@ -4682,8 +4682,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Guard Stand",
-    "subtitle": "/e guardstand",
+    "title": "Bekçi",
+    "subtitle": "/e bekçi",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_GUARD_STAND"
@@ -4691,8 +4691,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Hammer",
-    "subtitle": "/e hammer",
+    "title": "Çekiç",
+    "subtitle": "/e çekiç",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_HAMMERING"
@@ -4700,8 +4700,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Hangout",
-    "subtitle": "/e hangout",
+    "title": "Takılmak",
+    "subtitle": "/e takıl",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_HANG_OUT_STREET"
@@ -4709,8 +4709,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Impatient",
-    "subtitle": "/e impatient",
+    "title": "Sabırsız",
+    "subtitle": "/e sabırsız",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_STAND_IMPATIENT"
@@ -4718,8 +4718,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Janitor",
-    "subtitle": "/e janitor",
+    "title": "Kapıcı",
+    "subtitle": "/e kapıcı",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_JANITOR"
@@ -4727,8 +4727,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Jog",
-    "subtitle": "/e jog",
+    "title": "Koşu",
+    "subtitle": "/e koşu",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_JOG_STANDING"
@@ -4736,8 +4736,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Kneel",
-    "subtitle": "/e kneel",
+    "title": "Diz Çökmek",
+    "subtitle": "/e dizçök",
     "scenarios": {
       "sex": "both",
       "scene": "CODE_HUMAN_MEDIC_KNEEL"
@@ -4745,8 +4745,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Leafblower",
-    "subtitle": "/e leafblower",
+    "title": "Yaprak Temizleyici",
+    "subtitle": "/e yaprak",
     "scenarios": {
       "sex": "male",
       "scene": "WORLD_HUMAN_GARDENER_LEAF_BLOWER"
@@ -4754,8 +4754,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Lean",
-    "subtitle": "/e leanscene",
+    "title": "Yaslan",
+    "subtitle": "/e yaslansahne",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_LEANING"
@@ -4763,8 +4763,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Lean Bar",
-    "subtitle": "/e leanbarscene",
+    "title": "Yaslan Bar",
+    "subtitle": "/e yaslanbar5",
     "scenarios": {
       "sex": "both",
       "scene": "PROP_HUMAN_BUM_SHOPPING_CART"
@@ -4772,8 +4772,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Lookout",
-    "subtitle": "/e lookout",
+    "title": "Bak",
+    "subtitle": "/e bak",
     "scenarios": {
       "sex": "both",
       "scene": "CODE_HUMAN_CROSS_ROAD_WAIT"
@@ -4781,8 +4781,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Maid",
-    "subtitle": "/e maid",
+    "title": "Hizmetçi",
+    "subtitle": "/e hizmetçi",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_MAID_CLEAN"
@@ -4790,8 +4790,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Medic",
-    "subtitle": "/e medic",
+    "title": "Doktor",
+    "subtitle": "/e doktor",
     "scenarios": {
       "sex": "both",
       "scene": "CODE_HUMAN_MEDIC_TEND_TO_DEAD"
@@ -4799,8 +4799,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Musician",
-    "subtitle": "/e musician",
+    "title": "Müzisyen",
+    "subtitle": "/e müzisyen",
     "scenarios": {
       "sex": "male",
       "scene": "WORLD_HUMAN_MUSICIAN"
@@ -4808,8 +4808,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Notepad",
-    "subtitle": "/e notepad2",
+    "title": "Not Defteri 2",
+    "subtitle": "/e notal2",
     "scenarios": {
       "sex": "both",
       "scene": "CODE_HUMAN_MEDIC_TIME_OF_DEATH"
@@ -4817,8 +4817,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Parking Meter",
-    "subtitle": "/e parkingmeter",
+    "title": "Parkmetre",
+    "subtitle": "/e parkmetre",
     "scenarios": {
       "sex": "both",
       "scene": "PROP_HUMAN_PARKING_METER"
@@ -4826,8 +4826,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Party",
-    "subtitle": "/e party",
+    "title": "Parti",
+    "subtitle": "/e parti",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_PARTYING"
@@ -4835,8 +4835,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Texting",
-    "subtitle": "/e texting",
+    "title": "Mesajlaş",
+    "subtitle": "/e mesajlaş",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_STAND_MOBILE"
@@ -4844,8 +4844,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Prostitute High",
-    "subtitle": "/e prosthigh",
+    "title": "Fahişe",
+    "subtitle": "/e fahişe",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_PROSTITUTE_HIGH_CLASS"
@@ -4853,8 +4853,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Prostitute Low",
-    "subtitle": "/e prostlow",
+    "title": "Fahişe 2",
+    "subtitle": "/e fahişe2",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_PROSTITUTE_LOW_CLASS"
@@ -4862,8 +4862,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Puddle",
-    "subtitle": "/e puddle",
+    "title": "Su Birikintisi",
+    "subtitle": "/e birikinti",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_BUM_WASH"
@@ -4871,8 +4871,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Record",
-    "subtitle": "/e record",
+    "title": "Kayıt",
+    "subtitle": "/e kayıt",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_MOBILE_FILM_SHOCKING"
@@ -4880,8 +4880,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Smoke",
-    "subtitle": "/e smoke",
+    "title": "Sigara İç 2",
+    "subtitle": "/e sigaraiç2",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_SMOKING"
@@ -4889,8 +4889,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Smoke Weed",
-    "subtitle": "/e smokeweed",
+    "title": "Ot İç",
+    "subtitle": "/e otiç",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_DRUG_DEALER"
@@ -4898,8 +4898,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Statue",
-    "subtitle": "/e statue",
+    "title": "Heykel",
+    "subtitle": "/e heykel",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_HUMAN_STATUE"
@@ -4907,8 +4907,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Sunbathe 3",
-    "subtitle": "/e sunbathe3",
+    "title": "Güneşlenmek 3",
+    "subtitle": "/e güneşlen3",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_SUNBATHE"
@@ -4916,8 +4916,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Sunbathe Back",
-    "subtitle": "/e sunbatheback",
+    "title": "Güneşlenmek 4",
+    "subtitle": "/e güneşlen4",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_SUNBATHE_BACK"
@@ -4925,8 +4925,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Weld",
-    "subtitle": "/e weld",
+    "title": "Kaynak",
+    "subtitle": "/e kaynak",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_WELDING"
@@ -4934,8 +4934,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Window Shop",
-    "subtitle": "/e windowshop",
+    "title": "Pencere",
+    "subtitle": "/e pencere",
     "scenarios": {
       "sex": "both",
       "scene": "WORLD_HUMAN_WINDOW_SHOP_BROWSE"
@@ -4952,8 +4952,8 @@
   },
   {
     "type": "scenarios",
-    "title": "Sit Chair",
-    "subtitle": "/e sitchair",
+    "title": "Sandalyeye Otur",
+    "subtitle": "/e sotur",
     "scenarios": {
       "sex": "position",
       "scene": "PROP_HUMAN_SEAT_CHAIR_MP_PLAYER"
@@ -4962,208 +4962,208 @@
 
   {
     "type": "walks",
-    "title": "Alien",
-    "subtitle": "/e alien",
+    "title": "Uzaylı",
+    "subtitle": "/e uzaylı",
     "walks": {
       "style": "move_m@alien"
     }
   },
   {
     "type": "walks",
-    "title": "Armored",
-    "subtitle": "/e armored",
+    "title": "Zırhlı",
+    "subtitle": "/e zırhlı",
     "walks": {
       "style": "anim_group_move_ballistic"
     }
   },
   {
     "type": "walks",
-    "title": "Arrogant",
-    "subtitle": "/e arrogant",
+    "title": "Kibirli",
+    "subtitle": "/e kibirli",
     "walks": {
       "style": "move_f@arrogant@a"
     }
   },
   {
     "type": "walks",
-    "title": "Brave",
-    "subtitle": "/e brave",
+    "title": "Cesur",
+    "subtitle": "/e cesur",
     "walks": {
       "style": "move_m@brave"
     }
   },
   {
     "type": "walks",
-    "title": "Casual",
-    "subtitle": "/e casual",
+    "title": "Gündelik",
+    "subtitle": "/e gündelik",
     "walks": {
       "style": "move_m@casual@a"
     }
   },
   {
     "type": "walks",
-    "title": "Casual 2",
-    "subtitle": "/e casual2",
+    "title": "Gündelik 2",
+    "subtitle": "/e gündelik2",
     "walks": {
       "style": "move_m@casual@b"
     }
   },
   {
     "type": "walks",
-    "title": "Casual 3",
-    "subtitle": "/e casual3",
+    "title": "Gündelik 3",
+    "subtitle": "/e gündelik3",
     "walks": {
       "style": "move_m@casual@c"
     }
   },
   {
     "type": "walks",
-    "title": "Casual 4",
-    "subtitle": "/e casual4",
+    "title": "Gündelik 4",
+    "subtitle": "/e gündelik4",
     "walks": {
       "style": "move_m@casual@d"
     }
   },
   {
     "type": "walks",
-    "title": "Casual 5",
-    "subtitle": "/e casual5",
+    "title": "Gündelik 5",
+    "subtitle": "/e gündelik5",
     "walks": {
       "style": "move_m@casual@e"
     }
   },
   {
     "type": "walks",
-    "title": "Casual 6",
-    "subtitle": "/e casual6",
+    "title": "Gündelik 6",
+    "subtitle": "/e gündelik6",
     "walks": {
       "style": "move_m@casual@f"
     }
   },
   {
     "type": "walks",
-    "title": "Chichi",
-    "subtitle": "/e chichi",
+    "title": "Gösterlişli",
+    "subtitle": "/e gösterişli",
     "walks": {
       "style": "move_f@chichi"
     }
   },
   {
     "type": "walks",
-    "title": "Confident",
-    "subtitle": "/e confident",
+    "title": "Kendinden Emin",
+    "subtitle": "/e kendindenemin",
     "walks": {
       "style": "move_m@confident"
     }
   },
   {
     "type": "walks",
-    "title": "Cop",
-    "subtitle": "/e cop",
+    "title": "Polis",
+    "subtitle": "/e polis",
     "walks": {
       "style": "move_m@business@a"
     }
   },
   {
     "type": "walks",
-    "title": "Cop 2",
-    "subtitle": "/e cop2",
+    "title": "Polis 2",
+    "subtitle": "/e polis2",
     "walks": {
       "style": "move_m@business@b"
     }
   },
   {
     "type": "walks",
-    "title": "Cop 3",
-    "subtitle": "/e cop3",
+    "title": "Polis 3",
+    "subtitle": "/e polis3",
     "walks": {
       "style": "move_m@business@c"
     }
   },
   {
     "type": "walks",
-    "title": "Default Female",
-    "subtitle": "/e defaultfemale",
+    "title": "Varsayılan Kadın",
+    "subtitle": "/e varsayılankadın",
     "walks": {
       "style": "move_f@multiplayer"
     }
   },
   {
     "type": "walks",
-    "title": "Default Male",
-    "subtitle": "/e defaultmale",
+    "title": "Varsayılan Erkek",
+    "subtitle": "/e varsayılanerkek",
     "walks": {
       "style": "move_m@multiplayer"
     }
   },
   {
     "type": "walks",
-    "title": "Drunk",
-    "subtitle": "/e drunk",
+    "title": "Sarhoş",
+    "subtitle": "/e sarhoş",
     "walks": {
       "style": "move_m@drunk@a"
     }
   },
   {
     "type": "walks",
-    "title": "Drunk 2",
-    "subtitle": "/e drunk2",
+    "title": "Sarhoş 2",
+    "subtitle": "/e sarhoş2",
     "walks": {
       "style": "move_m@drunk@slightlydrunk"
     }
   },
   {
     "type": "walks",
-    "title": "Drunk 3",
-    "subtitle": "/e drunk3",
+    "title": "Sarhoş 3",
+    "subtitle": "/e sarhoş3",
     "walks": {
       "style": "move_m@buzzed"
     }
   },
   {
     "type": "walks",
-    "title": "Drunk 4",
-    "subtitle": "/e drunk4",
+    "title": "Sarhoş 4",
+    "subtitle": "/e sarhoş4",
     "walks": {
       "style": "move_m@drunk@verydrunk"
     }
   },
   {
     "type": "walks",
-    "title": "Femme",
-    "subtitle": "/e femme",
+    "title": "Kadın",
+    "subtitle": "/e kadın",
     "walks": {
       "style": "move_f@femme@"
     }
   },
   {
     "type": "walks",
-    "title": "Fire",
-    "subtitle": "/e fire",
+    "title": "Ateş",
+    "subtitle": "/e ateş",
     "walks": {
       "style": "move_characters@franklin@fire"
     }
   },
   {
     "type": "walks",
-    "title": "Fire 2",
-    "subtitle": "/e fire2",
+    "title": "Ateş 2",
+    "subtitle": "/e ateş2",
     "walks": {
       "style": "move_characters@michael@fire"
     }
   },
   {
     "type": "walks",
-    "title": "Fire 3",
-    "subtitle": "/e fire3",
+    "title": "Ateş 3",
+    "subtitle": "/e ateş3",
     "walks": {
       "style": "move_m@fire"
     }
   },
   {
     "type": "walks",
-    "title": "Flee",
-    "subtitle": "/e flee",
+    "title": "Acele",
+    "subtitle": "/e acele",
     "walks": {
       "style": "move_f@flee@a"
     }
@@ -5226,40 +5226,40 @@
   },
   {
     "type": "walks",
-    "title": "Guard",
-    "subtitle": "/e guard",
+    "title": "Koruma",
+    "subtitle": "/e koruma",
     "walks": {
       "style": "move_m@prison_gaurd"
     }
   },
   {
     "type": "walks",
-    "title": "Handcuffed",
-    "subtitle": "/e handcuffed",
+    "title": "Kelepçeli",
+    "subtitle": "/e kelepçeli",
     "walks": {
       "style": "move_m@prisoner_cuffed"
     }
   },
   {
     "type": "walks",
-    "title": "Heels",
-    "subtitle": "/e heels",
+    "title": "Topuklu Ayakkabı",
+    "subtitle": "/e topuklu",
     "walks": {
       "style": "move_f@heels@c"
     }
   },
   {
     "type": "walks",
-    "title": "Heels 2",
-    "subtitle": "/e heels2",
+    "title": "Topuklu Ayakkabı 2",
+    "subtitle": "/e topuklu2",
     "walks": {
       "style": "move_f@heels@d"
     }
   },
   {
     "type": "walks",
-    "title": "Hiking",
-    "subtitle": "/e hiking",
+    "title": "Doğa Yürüyüşü",
+    "subtitle": "/e doğa",
     "walks": {
       "style": "move_m@hiking"
     }
@@ -5274,40 +5274,40 @@
   },
   {
     "type": "walks",
-    "title": "Hobo",
-    "subtitle": "/e hobo",
+    "title": "Serseri",
+    "subtitle": "/e serseri",
     "walks": {
       "style": "move_m@hobo@a"
     }
   },
   {
     "type": "walks",
-    "title": "Hurry",
-    "subtitle": "/e hurry",
+    "title": "Acele",
+    "subtitle": "/e acele",
     "walks": {
       "style": "move_f@hurry@a"
     }
   },
   {
     "type": "walks",
-    "title": "Janitor",
-    "subtitle": "/e janitor",
+    "title": "Kapıcı",
+    "subtitle": "/e kapıcı",
     "walks": {
       "style": "move_p_m_zero_janitor"
     }
   },
   {
     "type": "walks",
-    "title": "Janitor 2",
-    "subtitle": "/e janitor2",
+    "title": "Kapıcı 2",
+    "subtitle": "/e kapıcı2",
     "walks": {
       "style": "move_p_m_zero_slow"
     }
   },
   {
     "type": "walks",
-    "title": "Jog",
-    "subtitle": "/e jog",
+    "title": "Koşu",
+    "subtitle": "/e koşu",
     "walks": {
       "style": "move_m@jog@"
     }
@@ -5338,8 +5338,8 @@
   },
   {
     "type": "walks",
-    "title": "Maneater",
-    "subtitle": "/e maneater",
+    "title": "Yönetici",
+    "subtitle": "/e yönetici",
     "walks": {
       "style": "move_f@maneater"
     }
@@ -5354,80 +5354,80 @@
   },
   {
     "type": "walks",
-    "title": "Money",
-    "subtitle": "/e money",
+    "title": "Zengin",
+    "subtitle": "/e zengin",
     "walks": {
       "style": "move_m@money"
     }
   },
   {
     "type": "walks",
-    "title": "Muscle",
-    "subtitle": "/e muscle",
+    "title": "Kaslı",
+    "subtitle": "/e kaslı",
     "walks": {
       "style": "move_m@muscle@a"
     }
   },
   {
     "type": "walks",
-    "title": "Posh",
-    "subtitle": "/e posh",
+    "title": "Lüks",
+    "subtitle": "/e lüks",
     "walks": {
       "style": "move_m@posh@"
     }
   },
   {
     "type": "walks",
-    "title": "Posh2",
-    "subtitle": "/e posh2",
+    "title": "lüks2",
+    "subtitle": "/e lüks2",
     "walks": {
       "style": "move_f@posh@"
     }
   },
   {
     "type": "walks",
-    "title": "Quick",
-    "subtitle": "/e quick",
+    "title": "Hızlı",
+    "subtitle": "/e hızlı",
     "walks": {
       "style": "move_m@quick"
     }
   },
   {
     "type": "walks",
-    "title": "Runner",
-    "subtitle": "/e runner",
+    "title": "Koşucu",
+    "subtitle": "/e koşucu",
     "walks": {
       "style": "female_fast_runner"
     }
   },
   {
     "type": "walks",
-    "title": "Sad",
-    "subtitle": "/e sad",
+    "title": "Üzgün",
+    "subtitle": "/e üzgün",
     "walks": {
       "style": "move_m@sad@a"
     }
   },
   {
     "type": "walks",
-    "title": "Sassy",
-    "subtitle": "/e sassy",
+    "title": "Şımarık",
+    "subtitle": "/e şımarık",
     "walks": {
       "style": "move_m@sassy"
     }
   },
   {
     "type": "walks",
-    "title": "Sassy2",
-    "subtitle": "/e sassy2",
+    "title": "şımarık2",
+    "subtitle": "/e şımarık2",
     "walks": {
       "style": "move_f@sassy"
     }
   },
   {
     "type": "walks",
-    "title": "Scared",
-    "subtitle": "/e scared",
+    "title": "Korkmuş",
+    "subtitle": "/e korkmuş",
     "walks": {
       "style": "move_f@scared"
     }
@@ -5442,56 +5442,56 @@
   },
   {
     "type": "walks",
-    "title": "Shady",
-    "subtitle": "/e shady",
+    "title": "Şüpheli",
+    "subtitle": "/e şüpheli",
     "walks": {
       "style": "move_m@shadyped@a"
     }
   },
   {
     "type": "walks",
-    "title": "Slow",
-    "subtitle": "/e slow",
+    "title": "Yavaş",
+    "subtitle": "/e yavaş",
     "walks": {
       "style": "move_characters@jimmy@slow@"
     }
   },
   {
     "type": "walks",
-    "title": "Swagger",
-    "subtitle": "/e swagger",
+    "title": "Havalı",
+    "subtitle": "/e havalı",
     "walks": {
       "style": "move_m@swagger"
     }
   },
   {
     "type": "walks",
-    "title": "Tough",
-    "subtitle": "/e tough",
+    "title": "Sert",
+    "subtitle": "/e sert",
     "walks": {
       "style": "move_m@tough_guy@"
     }
   },
   {
     "type": "walks",
-    "title": "Tough2",
-    "subtitle": "/e tough2",
+    "title": "Sert2",
+    "subtitle": "/e sert2",
     "walks": {
       "style": "move_f@tough_guy@"
     }
   },
   {
     "type": "walks",
-    "title": "Trash",
-    "subtitle": "/e trash",
+    "title": "Çöpçü",
+    "subtitle": "/e çöpçü",
     "walks": {
       "style": "clipset@move@trash_fast_turn"
     }
   },
   {
     "type": "walks",
-    "title": "Trash2",
-    "subtitle": "/e trash2",
+    "title": "Çöpçü2",
+    "subtitle": "/e çöpçü2",
     "walks": {
       "style": "missfbi4prepp1_garbageman"
     }
@@ -5506,8 +5506,8 @@
   },
   {
     "type": "walks",
-    "title": "Wide",
-    "subtitle": "/e wide",
+    "title": "Geniş",
+    "subtitle": "/e geniş",
     "walks": {
       "style": "move_m@bag"
     }
@@ -5515,192 +5515,192 @@
 
   {
     "type": "expressions",
-    "title": "Angry",
-    "subtitle": "/e angry",
+    "title": "Sinirli",
+    "subtitle": "/e sinirli",
     "expressions": {
       "expression": "mood_angry_1"
     }
   },
   {
     "type": "expressions",
-    "title": "Drunk",
-    "subtitle": "/e drunk",
+    "title": "Sarhoş",
+    "subtitle": "/e sarhoş",
     "expressions": {
       "expression": "mood_drunk_1"
     }
   },
   {
     "type": "expressions",
-    "title": "Dumb",
-    "subtitle": "/e dumb",
+    "title": "Aptal",
+    "subtitle": "/e aptal",
     "expressions": {
       "expression": "pose_injured_1"
     }
   },
   {
     "type": "expressions",
-    "title": "Electrocuted",
-    "subtitle": "/e electrocuted",
+    "title": "Elektrik Çarpmış",
+    "subtitle": "/e elektrik",
     "expressions": {
       "expression": "electrocuted_1"
     }
   },
   {
     "type": "expressions",
-    "title": "Grumpy",
-    "subtitle": "/e grumpy",
+    "title": "Huysuz",
+    "subtitle": "/e huysuz",
     "expressions": {
       "expression": "effort_1"
     }
   },
   {
     "type": "expressions",
-    "title": "Grumpy2",
-    "subtitle": "/e grumpy2",
+    "title": "Huysuz2",
+    "subtitle": "/e huysuz2",
     "expressions": {
       "expression": "mood_drivefast_1"
     }
   },
   {
     "type": "expressions",
-    "title": "Grumpy 3",
-    "subtitle": "/e grumpy3",
+    "title": "Huysuz 3",
+    "subtitle": "/e huysuz3",
     "expressions": {
       "expression": "pose_angry_1"
     }
   },
   {
     "type": "expressions",
-    "title": "Happy",
-    "subtitle": "/e happy",
+    "title": "Mutlu",
+    "subtitle": "/e mutlu",
     "expressions": {
       "expression": "mood_happy_1"
     }
   },
   {
     "type": "expressions",
-    "title": "Injured",
-    "subtitle": "/e injured",
+    "title": "Yaralı",
+    "subtitle": "/e yaralı",
     "expressions": {
       "expression": "mood_injured_1"
     }
   },
   {
     "type": "expressions",
-    "title": "Joyful",
-    "subtitle": "/e joyful",
+    "title": "Neşe Dolu",
+    "subtitle": "/e neşe",
     "expressions": {
       "expression": "mood_dancing_low_1"
     }
   },
   {
     "type": "expressions",
-    "title": "Mouthbreather",
-    "subtitle": "/e mouthbreather",
+    "title": "Suni Tenefüs",
+    "subtitle": "/e st",
     "expressions": {
       "expression": "smoking_hold_1"
     }
   },
   {
     "type": "expressions",
-    "title": "Never Blink",
-    "subtitle": "/e neverblink",
+    "title": "Göz Kırpmayan",
+    "subtitle": "/e göz",
     "expressions": {
       "expression": "pose_normal_1"
     }
   },
   {
     "type": "expressions",
-    "title": "One Eye",
-    "subtitle": "/e oneeye",
+    "title": "Tek Göz",
+    "subtitle": "/e tekgöz",
     "expressions": {
       "expression": "pose_aiming_1"
     }
   },
   {
     "type": "expressions",
-    "title": "Shocked",
-    "subtitle": "/e shocked",
+    "title": "Şok",
+    "subtitle": "/e şok",
     "expressions": {
       "expression": "shocked_1"
     }
   },
   {
     "type": "expressions",
-    "title": "Shocked2",
-    "subtitle": "/e shocked2",
+    "title": "Şok2",
+    "subtitle": "/e şok2",
     "expressions": {
       "expression": "shocked_2"
     }
   },
   {
     "type": "expressions",
-    "title": "Sleeping",
-    "subtitle": "/e sleeping",
+    "title": "Uykulu",
+    "subtitle": "/e uykulu",
     "expressions": {
       "expression": "mood_sleeping_1"
     }
   },
   {
     "type": "expressions",
-    "title": "Sleeping 2",
-    "subtitle": "/e sleeping2",
+    "title": "Uykulu 2",
+    "subtitle": "/e uykulu2",
     "expressions": {
       "expression": "dead_1"
     }
   },
   {
     "type": "expressions",
-    "title": "Sleeping 3",
-    "subtitle": "/e sleeping3",
+    "title": "Uykulu 3",
+    "subtitle": "/e uykulu3",
     "expressions": {
       "expression": "dead_2"
     }
   },
   {
     "type": "expressions",
-    "title": "Smug",
-    "subtitle": "/e smug",
+    "title": "Gururlu",
+    "subtitle": "/e gururlu",
     "expressions": {
       "expression": "mood_smug_1"
     }
   },
   {
     "type": "expressions",
-    "title": "Speculative",
-    "subtitle": "/e speculative",
+    "title": "Spekülatif",
+    "subtitle": "/e spekülatif",
     "expressions": {
       "expression": "mood_aiming_1"
     }
   },
   {
     "type": "expressions",
-    "title": "Stressed",
-    "subtitle": "/e stressed",
+    "title": "Stresli",
+    "subtitle": "/e stresli",
     "expressions": {
       "expression": "mood_stressed_1"
     }
   },
   {
     "type": "expressions",
-    "title": "Sulking",
-    "subtitle": "/e sulking",
+    "title": "Somurtkan",
+    "subtitle": "/e somurtkan",
     "expressions": {
       "expression": "mood_sulk_1"
     }
   },
   {
     "type": "expressions",
-    "title": "Weird",
-    "subtitle": "/e weird",
+    "title": "Garip",
+    "subtitle": "/e ",
     "expressions": {
       "expression": "effort_2"
     }
   },
   {
     "type": "expressions",
-    "title": "Weird2",
-    "subtitle": "/e weird2",
+    "title": "Garip 2",
+    "subtitle": "/e garip2",
     "expressions": {
       "expression": "effort_3"
     }
@@ -5708,8 +5708,8 @@
 
   {
     "type": "shared",
-    "title": "Handshake",
-    "subtitle": "/e handshake",
+    "title": "Tokalaşma",
+    "subtitle": "/e tokalaşma",
     "shared": {
       "first": ["mp_ped_interaction", "handshake_guy_a", 1.0, 3000],
       "second": ["mp_ped_interaction", "handshake_guy_b", 0.9, 3000]
@@ -5717,8 +5717,8 @@
   },
   {
     "type": "shared",
-    "title": "Hug Other",
-    "subtitle": "/e hugother",
+    "title": "Sarıl",
+    "subtitle": "/e sarıl",
     "shared": {
       "first": ["mp_ped_interaction", "kisses_guy_a", 1.0, 10000],
       "second": ["mp_ped_interaction", "kisses_guy_b", 1.05, 10000]
@@ -5726,8 +5726,8 @@
   },
   {
     "type": "shared",
-    "title": "Hug Other 2",
-    "subtitle": "/e hugother2",
+    "title": "Sarıl 2",
+    "subtitle": "/e sarıl2",
     "shared": {
       "first": ["mp_ped_interaction", "hugs_guy_a", 5000],
       "second": ["mp_ped_interaction", "hugs_guy_b", 1.14, 7000]
@@ -5735,8 +5735,8 @@
   },
   {
     "type": "shared",
-    "title": "Give & Take",
-    "subtitle": "/e givetake",
+    "title": "Almak ve Vermek",
+    "subtitle": "/e alver",
     "shared": {
       "first": ["mp_common", "givetake1_a", 2000],
       "second": ["mp_common", "givetake1_b", 1.0, 2000]
@@ -5763,8 +5763,8 @@
   },
   {
     "type": "shared",
-    "title": "Point At Man",
-    "subtitle": "/e pointatman",
+    "title": "Nişan Al",
+    "subtitle": "/e nişan",
     "shared": {
       "first": [
         "random@countryside_gang_fight",
@@ -5777,8 +5777,8 @@
   },
   {
     "type": "shared",
-    "title": "Punch",
-    "subtitle": "/e punch",
+    "title": "Yumruk",
+    "subtitle": "/e yumruk",
     "shared": {
       "first": [
         "melee@unarmed@streamed_variations",
@@ -5796,8 +5796,8 @@
   },
   {
     "type": "shared",
-    "title": "Headbutt",
-    "subtitle": "/e headputt",
+    "title": "Kafa At",
+    "subtitle": "/e kafaat",
     "shared": {
       "first": [
         "melee@unarmed@streamed_variations",
@@ -5815,8 +5815,8 @@
   },
   {
     "type": "shared",
-    "title": "Back Slap",
-    "subtitle": "/e backslap",
+    "title": "Geri Tokat",
+    "subtitle": "/e geritokat",
     "shared": {
       "first": [
         "melee@unarmed@streamed_variations",
@@ -5834,8 +5834,8 @@
   },
   {
     "type": "shared",
-    "title": "Front Slap",
-    "subtitle": "/e frontslap",
+    "title": "Ön Tokat",
+    "subtitle": "/e öntokat",
     "shared": {
       "first": [
         "melee@unarmed@streamed_variations",
@@ -5853,7 +5853,7 @@
   },
   {
     "type": "dances",
-    "title": "Gang Sign New 1",
+    "title": "Gang Sign 1",
     "subtitle": "/e gangsignn1",
     "dances": {
       "dict": "mikey@gangsigns@new",
@@ -5862,7 +5862,7 @@
   },
   {
     "type": "dances",
-    "title": "Gang Sign New 2",
+    "title": "Gang Sign 2",
     "subtitle": "/e gangsignn2",
     "dances": {
       "dict": "mikey@gangsigns@new",
@@ -5871,7 +5871,7 @@
   },
   {
     "type": "dances",
-    "title": "Gang Sign New 3",
+    "title": "Gang Sign 3",
     "subtitle": "/e gangsignn3",
     "dances": {
       "dict": "mikey@gangsigns@new",
@@ -5880,7 +5880,7 @@
   },
   {
     "type": "dances",
-    "title": "Gang Sign New 4",
+    "title": "Gang Sign 4",
     "subtitle": "/e gangsignn4",
     "dances": {
       "dict": "mikey@gangsigns@new",
@@ -5889,7 +5889,7 @@
   },
   {
     "type": "dances",
-    "title": "Gang Sign New 5",
+    "title": "Gang Sign 5",
     "subtitle": "/e gangsignn5",
     "dances": {
       "dict": "mikey@gangsigns@new",
@@ -5898,7 +5898,7 @@
   },
   {
     "type": "dances",
-    "title": "Gang Sign New 6",
+    "title": "Gang Sign 6",
     "subtitle": "/e gangsignn6",
     "dances": {
       "dict": "mikey@gangsigns@new",
@@ -5907,7 +5907,7 @@
   },
   {
     "type": "dances",
-    "title": "Gang Sign New 7",
+    "title": "Gang Sign 7",
     "subtitle": "/e gangsignn7",
     "dances": {
       "dict": "mikey@gangsigns@new",
@@ -5916,7 +5916,7 @@
   },
   {
     "type": "dances",
-    "title": "Gang Sign New 8",
+    "title": "Gang Sign 8",
     "subtitle": "/e gangsignn8",
     "dances": {
       "dict": "mikey@gangsigns@new",
@@ -5925,7 +5925,7 @@
   },
   {
     "type": "dances",
-    "title": "Gang Sign New 9",
+    "title": "Gang Sign 9",
     "subtitle": "/e gangsignn9",
     "dances": {
       "dict": "mikey@gangsigns@new",
@@ -5934,7 +5934,7 @@
   },
   {
     "type": "dances",
-    "title": "Gang Sign New 10",
+    "title": "Gang Sign 10",
     "subtitle": "/e gangsignn10",
     "dances": {
       "dict": "mikey@gangsigns@new",
@@ -5943,7 +5943,7 @@
   },
   {
     "type": "dances",
-    "title": "Gang Sign New 11",
+    "title": "Gang Sign 11",
     "subtitle": "/e gangsignn11",
     "dances": {
       "dict": "mikey@gangsigns@new",
@@ -5952,8 +5952,8 @@
   },
   {
     "type": "dances",
-    "title": "F - Downward",
-    "subtitle": "/e fdown",
+    "title": "Aşağıya",
+    "subtitle": "/e aşağıya",
     "dances": {
       "dict": "export@downward_fortnite",
       "anim": "Downward_fortnite"
@@ -5961,8 +5961,8 @@
   },
   {
     "type": "dances",
-    "title": "F - Pullup",
-    "subtitle": "/e fpull",
+    "title": "Yukarıya",
+    "subtitle": "/e yukarıya",
     "dances": {
       "dict": "export@pullup",
       "anim": "pullup"
@@ -5979,8 +5979,8 @@
   },
   {
     "type": "dances",
-    "title": "F - Wanna See",
-    "subtitle": "/e wsm",
+    "title": "Görmek İster Misin?",
+    "subtitle": "/e gim",
     "dances": {
       "dict": "export@wanna_see_me",
       "anim": "wanna_see_me"
@@ -5988,7 +5988,7 @@
   },
   {
     "type": "dances",
-    "title": "F - Billy Bounce",
+    "title": "Billy Bounce",
     "subtitle": "/e billyb",
     "dances": {
       "dict": "export@billybounce",

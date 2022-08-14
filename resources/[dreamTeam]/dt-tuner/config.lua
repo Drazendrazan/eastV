@@ -11,7 +11,7 @@ Config.checkTunesMessage    = "phone"
 
 Config.WaitTimes = {
     ['crafting'] = 20000,
-    ['installing'] = 25000
+    ['installing'] = 20000
 }
 
 Config.ShopItems = {

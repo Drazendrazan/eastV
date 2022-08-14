@@ -353,7 +353,7 @@ RegisterNetEvent('tuners:client:useitem', function(type, item, tier)
                         if not success then isUpgrading = false return end
                     end
                     PlaceObjectOnGroundProperly(spawnObj)
-                    QBCore.Functions.Progressbar("repair_vehicle", "Yükleniyor "..type, (Config.WaitTimes['installing']), false, true, {
+                    QBCore.Functions.Progressbar("repair_vehicle", "Yükleniyor", (Config.WaitTimes['installing']), false, true, {
                         disableMovement = true,
                         disableCarMovement = true,
                         disableMouse = false,

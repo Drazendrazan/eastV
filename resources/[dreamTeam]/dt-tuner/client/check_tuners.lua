@@ -91,6 +91,7 @@ function checkVehicleMods()
 				tostring(vehProps.modTransmission).. '/' .. GetNumVehicleMods(vehicle,13),
 				tostring(vehProps.modTurbo),
 				tostring(vehProps.modXenon),
+
 			} 
 		})
 		QBCore.Functions.Notify("Araç Modifikasyon Listesi Alındı", "success")
