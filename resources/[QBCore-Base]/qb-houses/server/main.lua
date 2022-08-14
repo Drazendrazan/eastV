@@ -222,7 +222,7 @@ RegisterNetEvent('qb-houses:server:buyHouse', function(house)
         pData.Functions.RemoveMoney('bank', HousePrice, "bought-house") -- 21% Extra house costs
         TriggerEvent('qb-bossmenu:server:addAccountMoney', "realestate", (HousePrice / 100) * math.random(18, 25))    
     else
-        TriggerClientEvent('QBCore:Notify', source, "You dont have enough money..", "error")
+        TriggerClientEvent('QBCore:Notify', source, "Yeterli paran yok..", "error")
     end
 end)
 
