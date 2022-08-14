@@ -454,6 +454,7 @@ QBShared.Items = {
 	["dream-silver"] 				= {["name"] = "dream-silver",  	    			["label"] = "Günüş",		["weight"] = 100, 		["type"] = "item", 		["image"] = "glockslides.png", 		["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,   	["combinable"] = nil,   ["description"] = "Günüş parçası" },
 	["dream-tin"] 					= {["name"] = "dream-tin",  	    			["label"] = "Kalay",		["weight"] = 100, 		["type"] = "item", 		["image"] = "glockslides.png", 		["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,   	["combinable"] = nil,   ["description"] = "Kalay parçası" },
 	["dream-diamonds"] 				= {["name"] = "dream-diamonds",  	    		["label"] = "Elmas",		["weight"] = 100, 		["type"] = "item", 		["image"] = "glockslides.png", 		["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,   	["combinable"] = nil,   ["description"] = "Elmas parçası" },
+	["dream-gold"] 					= {["name"] = "dream-gold",  	    			["label"] = "Altın",		["weight"] = 100, 		["type"] = "item", 		["image"] = "glockslides.png", 		["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,   	["combinable"] = nil,   ["description"] = "Altın parçası" },
 
 	["meatdeer"] 		 			 	 = {["name"] = "meatdeer",       	    		["label"] = "Deer Horns",	 				["weight"] = 100, 		["type"] = "item", 		["image"] = "deerhorns.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Deer Horns"},
 	["meatpig"] 		 			 	 = {["name"] = "meatpig",       	    		["label"] = "Pig Meat",	 					["weight"] = 100, 		["type"] = "item", 		["image"] = "pigpelt.png", 				["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Pig Meat"},
@@ -563,7 +564,7 @@ QBShared.Items = {
 		["useable"] = false,
 		["shouldClose"] = false,
 		["combinable"] = nil,
-		["description"] = "Broken Phone"
+		["description"] = "Kırık Telefon"
 	},
 	["housekeys"] = {
 		["name"] = "housekeys",
