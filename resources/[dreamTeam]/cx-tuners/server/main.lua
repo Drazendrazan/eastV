@@ -196,3 +196,10 @@ QBCore.Functions.CreateUseableItem("turbo", function(source, item)
         TriggerClientEvent("tuners:client:useitem", source, 'turbo', item.name, 1)
     end
 end)
+
+QBCore.Functions.CreateUseableItem("xenon", function(source, item)
+    local Player = QBCore.Functions.GetPlayer(source)
+	if Player.Functions.GetItemByName('xenon') ~= nil then
+        TriggerClientEvent("tuners:client:useitem", source, 'xenon', item.name, 1)
+    end
+end)

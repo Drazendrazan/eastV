@@ -1,8 +1,6 @@
 fx_version "cerulean"
 game "gta5"
 version "1.0"
-
-
 author "dreamTeam Works"
 
 client_scripts {

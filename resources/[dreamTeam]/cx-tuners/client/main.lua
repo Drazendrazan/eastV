@@ -291,15 +291,15 @@ RegisterNetEvent('tuners:client:openbilling', function()
     if player ~= -1 and distance < 2.5 then
         local playerId = GetPlayerServerId(player)
         local dialog = exports['qb-input']:ShowInput({
-            header = "Fatura Oluştur",
-            submitText = "Fatura",
+            header = "Create Receipt",
+            submitText = "Bill",
             inputs = {{
-                text = "Oyuncu ID",
+                text = "Player ID",
                 name = "plyid",
                 type = "number",
                 isRequired = true
             }, {
-                text = "Ücret",
+                text = "Amount",
                 name = "amount",
                 type = "number",
                 isRequired = true
@@ -308,10 +308,10 @@ RegisterNetEvent('tuners:client:openbilling', function()
         if tonumber(dialog['plyid']) > 0 and tonumber(dialog['amount']) > 0 then
             TriggerServerEvent("tuners:server:billplayer", dialog['plyid'], dialog['amount'])
         else
-            QBCore.Functions.Notify('Tutar 0dan büyük olmalıdır', 'error')
+            QBCore.Functions.Notify('Amount must be greater than 0', 'error')
         end
     else
-        QBCore.Functions.Notify('Yakınlarda kimse yok!', 'error')
+        QBCore.Functions.Notify('No one nearby!', 'error')
     end
 end)
 
@@ -325,7 +325,8 @@ RegisterNetEvent('tuners:client:useitem', function(type, item, tier)
             local pedCoords = GetEntityCoords(ped)
             local vehEngine = GetEntityBoneIndexByName(closestVeh, "engine")
             local enginePos = GetWorldPositionOfEntityBone(closestVeh, vehEngine)
-
+            local spawnObj  = CreateObject(GetHashKey("imp_prop_engine_hoist_02a"), pedCoords.x, pedCoords.y, pedCoords.z, true, true, true)
+            
             if #(pedCoords - enginePos) < 2 then
                 if (not IsBackEngine(GetEntityModel(closestVeh)) and GetVehicleDoorAngleRatio(closestVeh, 4) ~= 0) or (IsBackEngine(GetEntityModel(closestVeh)) and GetVehicleDoorAngleRatio(closestVeh, 5) ~= 0) then
                     isUpgrading = true
@@ -333,7 +334,8 @@ RegisterNetEvent('tuners:client:useitem', function(type, item, tier)
                         local success = exports['qb-lock']:StartLockPickCircle(1, 50)
                         if not success then isUpgrading = false return end
                     end
-                    QBCore.Functions.Progressbar("repair_vehicle", "Installing "..type, (Config.WaitTimes['installing']), false, true, {
+                    PlaceObjectOnGroundProperly(spawnObj)
+                    QBCore.Functions.Progressbar("repair_vehicle", "Yükleniyor "..type, (Config.WaitTimes['installing']), false, true, {
                         disableMovement = true,
                         disableCarMovement = true,
                         disableMouse = false,
@@ -345,6 +347,7 @@ RegisterNetEvent('tuners:client:useitem', function(type, item, tier)
                     }, {}, {}, function() -- Done
                         TriggerEvent('inventory:client:ItemBox', QBCore.Shared.Items[item], 'remove')
                         StopAnimTask(ped, "mini@repair", "fixing_a_player", 1.0)
+                        DeleteObject(spawnObj)
                         SetVehicleModKit(closestVeh, 0)
                         if type == 'engine' then
                             SetVehicleMod(closestVeh, 11, tier, false)
@@ -354,14 +357,14 @@ RegisterNetEvent('tuners:client:useitem', function(type, item, tier)
                             SetVehicleMod(closestVeh, 15, tier)
                         elseif type == 'brakes' then
                             SetVehicleMod(closestVeh, 12, tier, false)
+                        elseif type == 'xenon' then
+                            SetVehicleMod(closestVeh, 22, tier, false)
                         elseif type == 'turbo' then
                             ToggleVehicleMod(closestVeh, 18, 1)
                         end
-
                         local vehMods = QBCore.Functions.GetVehicleProperties(closestVeh)
                         TriggerServerEvent('tuners:server:finish', item, vehMods)
-
-                        QBCore.Functions.Notify('Succesfully installed '..type)
+                        QBCore.Functions.Notify('Başarılı ile yüklendi '..type)
 
                         isUpgrading = false
                     end, function() -- Cancel

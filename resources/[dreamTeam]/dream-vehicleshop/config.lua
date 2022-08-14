@@ -14,8 +14,8 @@ Config.Blip = {
 
 -- Vehicle Stock
 
-Config.Hour = 20
-Config.NumOfVehicles = 5
+Config.Hour = 1
+Config.NumOfVehicles = 1
 
 
 -- Test Drive
@@ -29,13 +29,16 @@ Config.TestDrive = {
 Config.Vehicles = {
     {
       title = "daily vehicles",
-      buttons = {}
+      buttons = {
+		{ name = "Panto", costs = 5000, model = "panto", stock = "5", maxStock = "5" },
+		{ name = "Blista", costs = 2000, model = "blista", maxStock = "1" },
+	  }
     }, -- BURAYA ASLA DOKUNMA AMINA KORUM
     {
       title = "Compact",
       buttons = {
-        {name = "Panto", costs = 5000, model = "panto"},
-		{name = "Blista", costs = 2000, model = "blista"},
+        { name = "Panto", costs = 5000, model = "panto", stock = "5", maxStock = "5" },
+		{ name = "Blista", costs = 2000, model = "blista" },
 		{ name = "Brioso", model = "brioso", costs = 62000 },
 		{ name = "Dilettante", model = "dilettante", costs = 40000 },
 		{ name = "Issi S", model = "issi2", costs = 38500 },
@@ -237,7 +240,7 @@ Config.Vehicles = {
     {
       title = "Motorsiklet",
       buttons = {
-        {name = "Akuma", costs = 2200, model = "akuma", maxStock = 15},
+        { name = "Akuma", costs = 2200, model = "akuma", maxStock = 15 },
 		{ name = "Avarus", model = "avarus", costs = 4700 },
 		{ name = "Bati", model = "bati", costs = 50000 },
 		{ name = "Carbonr S", model = "carbonrs", costs = 31200 },
@@ -267,21 +270,6 @@ Config.Vehicles = {
 }
 
 
-
-
--- {
---   title = "SUV", -- BAŞLIK
---   buttons = {
---     {name = "ARABA İSMİ GÖZÜKEN", costs = FİYATI, model = "ARABANIN KODU", maxStock = 2},
---     {name = "ARABA İSMİ GÖZÜKEN", costs = FİYATI, model = "ARABANIN KODU", maxStock = 2},
---   }
--- },
-
-
-
-
-
-
 -- https://wiki.rage.mp/index.php?title=Vehicle_Colors
 Config.Colors = {
   {r = 255, g = 255, b = 246, colorName = "white", gtaColor = 111},
@@ -296,8 +284,7 @@ Config.Colors = {
   {r = 110, g = 163, b = 198, colorName = "lightblue", gtaColor = 74},
 }
 
--- Functions:
-
+-- Functions;
 
 -- Client:
 Config.BuyVehicleFunc = function(Core,vehicleEntity,vehicleName)
@@ -313,6 +300,7 @@ Config.TestDriveFunc = function(Core,vehicleEntity)
 end
 
 -- Server:
+
 Config.GetPlayerMoney = function(playerId,Core)
     if type(playerId) == "number" then
         local player = Core.Functions.GetPlayer(playerId)

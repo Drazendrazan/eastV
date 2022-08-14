@@ -1244,6 +1244,11 @@ RegisterCommand('getoffset', function()
 end)
 
 
+
+-- House Models Functions
+
+-- Stash --
+
 RegisterNetEvent('dream:client:openPersonalStash', function()
     TriggerServerEvent("inventory:server:OpenInventory", "stash", CurrentHouse)
     TriggerEvent("inventory:client:SetCurrentStash", CurrentHouse)
@@ -1254,13 +1259,41 @@ local stashBoxModels = {
     `prop_mil_crate_01`,
 }
 
-
 exports['qb-target']:AddTargetModel(stashBoxModels, {
     options = {
         {
             event = "dream:client:openPersonalStash",
             icon = "fas fa-wrench",
             label = "Depo", 
+        },
+    },
+    distance = 1.0
+})
+
+
+
+
+
+-- Clothes --
+
+
+RegisterNetEvent('dream:client:openOutfitMenu', function()
+    -- TriggerEvent('qb-clothing:client:openOutfitMenu') qb-clothing
+    TriggerEvent('fivem-appearance:pickNewOutfit')
+end)
+
+
+
+local clothesBoxModels = {
+    `v_52_clothing12`,
+}
+
+exports['qb-target']:AddTargetModel(stashBoxModels, {
+    options = {
+        {
+            event = "dream:client:openOutfitMenu",
+            icon = "fas fa-wrench",
+            label = "Kıyafet Dolabı", 
         },
     },
     distance = 1.0

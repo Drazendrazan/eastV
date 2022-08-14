@@ -437,6 +437,8 @@ QBShared.Items = {
 	["brakes_level3"] 			 	 = {["name"] = "brakes_level3", 			  	["label"] = "Frenler Seviye 3", 		["weight"] = 20000,		["type"] = "item", 		["image"] = "brakes3.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["description"] = "Yüksek seviyeli bir fren"},
 	-- Turbo
 	["turbo"] 			 	 		 = {["name"] = "turbo", 			  			["label"] = "Turbo", 					["weight"] = 30000,		["type"] = "item", 		["image"] = "turbo.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["description"] = "Güzel görünen bir Turbo"},
+	-- Xenon
+	["xenon"] 			 	 		 = {["name"] = "xenon", 			  			["label"] = "Xenon", 					["weight"] = 30000,		["type"] = "item", 		["image"] = "turbo.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["description"] = "Mavi Xenon"},
 	---chairs 
 	["chair1"] 						= {["name"] = "chair1",  	    				["label"] = "Kamp Sandalyesi",			["weight"] = 100, 		["type"] = "item", 		["image"] = "chair1.png", 		["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,   	["combinable"] = nil,   ["description"] = "" },
 	-- Combine itemler
@@ -455,7 +457,7 @@ QBShared.Items = {
 
 	["meatdeer"] 		 			 	 = {["name"] = "meatdeer",       	    		["label"] = "Deer Horns",	 				["weight"] = 100, 		["type"] = "item", 		["image"] = "deerhorns.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Deer Horns"},
 	["meatpig"] 		 			 	 = {["name"] = "meatpig",       	    		["label"] = "Pig Meat",	 					["weight"] = 100, 		["type"] = "item", 		["image"] = "pigpelt.png", 				["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Pig Meat"},
-	["meatboar"] 		 			 	 = {["name"] = "meatboar",       	    		["label"] = "Boar Tusks",	 				["weight"] = 100, 		["type"] = "item", 		["image"] = "boartusks.png", 				["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Boar Tusks"},
+	["meatboar"] 		 			 	 = {["name"] = "meatboar",       	    		["label"] = "Boar Tusks",	 				["weight"] = 100, 		["type"] = "item", 		["image"] = "boartusks.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Boar Tusks"},
 	["meatlion"] 		 			 	 = {["name"] = "meatlion",       	    		["label"] = "Cougar Claws",	 				["weight"] = 100, 		["type"] = "item", 		["image"] = "cougarclaw.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Cougar Claw"},
 	["meatcow"] 		 			 	 = {["name"] = "meatcow",       	    		["label"] = "Cow Pelt",	 					["weight"] = 100, 		["type"] = "item", 		["image"] = "cowpelt.png", 				["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Cow Pelt"},
 	["meatrabbit"] 		 			 	 = {["name"] = "meatrabbit",       	    		["label"] = "Rabbit Fur",	 				["weight"] = 100, 		["type"] = "item", 		["image"] = "rabbitfur.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Rabbit Fur"},
@@ -467,7 +469,7 @@ QBShared.Items = {
 	-- Metal Detecting
 	["metaldetector"] = {
 		["name"] = "metaldetector",
-		["label"] = "Metal Detector",
+		["label"] = "Metal Detektör",
 		["weight"] = 200,
 		["type"] = "item",
 		["image"] = "metaldetector.png",
@@ -481,7 +483,7 @@ QBShared.Items = {
 	-- common detectable items
 	["metaltrash"] = {
 		["name"] = "metaltrash",
-		["label"] = "Metal Trash",
+		["label"] = "Metal Çöpü",
 		["weight"] = 200,
 		["type"] = "item",
 		["image"] = "metaltrash.png",

@@ -87,6 +87,12 @@
 
 13.08.2022 - Güncellemeler
 8.1- Kese kağıdı, ses bombası, molotf ve kırık cam şişesi eklendi.
-8.2- Çöpleri karıştırarak gerekli \** itemleri artık bulabilirsiniz.
+8.2- Çöpleri karıştırarak gerekli ** itemleri artık bulabilirsiniz.
 8.3- İllegal modifiye hayranları için yeni ithal motor, fren, suspansiyon eklendi. (mekanik aracılığı ile üretebilir veya satın alabilirsiniz.)
-8.4- *Bağış Araçlar\* eklendi.(IC olarak erişebileceğiniz güzel araçlarda var, bağış araçları ile ilgili söylebileceğimiz en önemli şey hızlarının IC araçlar ile yakın seviyelerde olmasıdır.Bağışcı araçlarının tek farkı görüntüleri ve bizlere olan desteğidir. )
+8.4- Bağış Araçlar eklendi.(IC olarak erişebileceğiniz güzel araçlarda var, bağış araçları ile ilgili söylebileceğimiz en önemli şey hızlarının IC araçlar ile yakın seviyelerde olmasıdır.Bağışcı araçlarının tek farkı görüntüleri ve bizlere olan desteğidir. )
+8.5- Benzinliklere yakıt pompası eklendi ve benzin bidonu (ufak bir uyarı yakıt pompasını çok çekmeyin :)
+8.6- Araçlara airbag eklenmiştir. kaza yaptığınızda açılır.
+8.7- Ev Dekorasyon menüsüne yeni kategori eklendi (depo, \*\*** masası, \*\*\*\* masası, gardrop içeriyor.)
+8.8- Avcılık malzemeleri için ruhsat aktif edildi.
+8.9- Filmlerde ki yarışçılardan olmadığımız için artık yüksek hızlı ve drift tarzı hareketler yaparken stress seviyeniz yükseliyor.
+8.10- Optimizasyon çalışmaları son hız devam ediyor!
