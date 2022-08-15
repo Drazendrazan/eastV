@@ -132,8 +132,6 @@ RegisterNUICallback('cDataPed', function(data)
                     SetBlockingOfNonTemporaryEvents(charPed, true)
                     data = json.decode(data)
                     exports['fivem-appearance']:setPedAppearance(charPed, data)
-                    loadAnimDict("amb@world_human_leaning@male@wall@back@foot_up@idle_a")
-                    TaskPlayAnim(charPed, "amb@world_human_leaning@male@wall@back@foot_up@idle_a", "idle_a", 2.0, 2.0, -1, 49, 0, false, false, false) -- Animasyon Ayarı
                 end)
             else
                 Citizen.CreateThread(function()
@@ -152,8 +150,6 @@ RegisterNUICallback('cDataPed', function(data)
                     SetEntityInvincible(charPed, true)
                     PlaceObjectOnGroundProperly(charPed)
                     SetBlockingOfNonTemporaryEvents(charPed, true)
-                    loadAnimDict("amb@world_human_leaning@male@wall@back@foot_up@idle_a")
-                    TaskPlayAnim(charPed, "amb@world_human_leaning@male@wall@back@foot_up@idle_a", "idle_a", 2.0, 2.0, -1, 49, 0, false, false, false) -- Animasyon Ayarı
                 end)
             end
         end, cData.citizenid)
@@ -174,8 +170,6 @@ RegisterNUICallback('cDataPed', function(data)
             SetEntityInvincible(charPed, true)
             PlaceObjectOnGroundProperly(charPed)
             SetBlockingOfNonTemporaryEvents(charPed, true)
-            loadAnimDict("amb@world_human_leaning@male@wall@back@foot_up@idle_a")
-            TaskPlayAnim(charPed['default'], "amb@world_human_leaning@male@wall@back@foot_up@idle_a", "idle_a", 2.0, 2.0, -1, 49, 0, false, false, false)
         end)
     end
 end)
