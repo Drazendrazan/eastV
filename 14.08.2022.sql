@@ -41,10 +41,6 @@ CREATE TABLE IF NOT EXISTS `apartments` (
   KEY `name` (`name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4156 DEFAULT CHARSET=latin1;
 
--- hayalet-temel.apartments: ~0 rows (yaklaşık) tablosu için veriler indiriliyor
-REPLACE INTO `apartments` (`id`, `name`, `type`, `label`, `citizenid`) VALUES
-	(4148, 'apartment12270', 'apartment1', 'South Rockford Drive 2270', 'UZA73834');
-
 -- tablo yapısı dökülüyor hayalet-temel.bank_accounts
 CREATE TABLE IF NOT EXISTS `bank_accounts` (
   `record_id` bigint(255) NOT NULL AUTO_INCREMENT,
@@ -82,10 +78,6 @@ CREATE TABLE IF NOT EXISTS `bank_statements` (
   KEY `gangid` (`gangid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
--- hayalet-temel.bank_statements: ~0 rows (yaklaşık) tablosu için veriler indiriliyor
-REPLACE INTO `bank_statements` (`record_id`, `citizenid`, `account`, `business`, `businessid`, `gangid`, `deposited`, `withdraw`, `balance`, `date`, `type`) VALUES
-	(1, 'DUW83993', 'Saving', NULL, NULL, NULL, 1, 0, 1, '2022-07-30 11:15:28', 'Transfer Current Account to Savings');
-
 -- tablo yapısı dökülüyor hayalet-temel.bans
 CREATE TABLE IF NOT EXISTS `bans` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -112,9 +104,6 @@ CREATE TABLE IF NOT EXISTS `crypto` (
   PRIMARY KEY (`crypto`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- hayalet-temel.crypto: ~0 rows (yaklaşık) tablosu için veriler indiriliyor
-REPLACE INTO `crypto` (`crypto`, `worth`, `history`) VALUES
-	('qbit', 1024, '[{"NewWorth":1010,"PreviousWorth":1000},{"NewWorth":1015,"PreviousWorth":1010},{"NewWorth":1015,"PreviousWorth":1015},{"NewWorth":1024,"PreviousWorth":1015}]');
 
 -- tablo yapısı dökülüyor hayalet-temel.crypto_transactions
 CREATE TABLE IF NOT EXISTS `crypto_transactions` (
@@ -266,10 +255,6 @@ CREATE TABLE IF NOT EXISTS `mdt_bulletin` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
--- hayalet-temel.mdt_bulletin: ~0 rows (yaklaşık) tablosu için veriler indiriliyor
-REPLACE INTO `mdt_bulletin` (`id`, `title`, `desc`, `author`, `time`, `jobtype`) VALUES
-	(1, 'ANANIZI SİKERİM', 'ANANIZI SİKERİM', 'Black Mathilda', '1660183272523', 'police');
-
 -- tablo yapısı dökülüyor hayalet-temel.mdt_convictions
 CREATE TABLE IF NOT EXISTS `mdt_convictions` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -333,10 +318,6 @@ CREATE TABLE IF NOT EXISTS `mdt_incidents` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
--- hayalet-temel.mdt_incidents: ~0 rows (yaklaşık) tablosu için veriler indiriliyor
-REPLACE INTO `mdt_incidents` (`id`, `author`, `title`, `details`, `tags`, `officersinvolved`, `civsinvolved`, `evidence`, `time`, `jobtype`) VALUES
-	(1, 'Black Mathilda', 'Name - Charge - 8/6/2022', '📝 Summary:\n\n[Insert Report Summary Here]\n\n🧍 Hostage: [Name Here]\n\n🔪 Weapons/Items Confiscated:\n\n· [Insert List Here]\n\n-----\n💸 Fine:\n⌚ Sentence:\n-----', '[]', '[]', '[]', '[]', '1659790364431', 'police');
-
 -- tablo yapısı dökülüyor hayalet-temel.mdt_logs
 CREATE TABLE IF NOT EXISTS `mdt_logs` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -376,10 +357,6 @@ CREATE TABLE IF NOT EXISTS `mdt_vehicleinfo` (
   `image` text NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
-
--- hayalet-temel.mdt_vehicleinfo: ~0 rows (yaklaşık) tablosu için veriler indiriliyor
-REPLACE INTO `mdt_vehicleinfo` (`id`, `plate`, `information`, `stolen`, `code5`, `image`) VALUES
-	(1, '', '', 0, 0, '');
 
 -- tablo yapısı dökülüyor hayalet-temel.permissions
 CREATE TABLE IF NOT EXISTS `permissions` (
@@ -428,9 +405,6 @@ CREATE TABLE IF NOT EXISTS `phone_invoices` (
   KEY `citizenid` (`citizenid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
--- hayalet-temel.phone_invoices: ~0 rows (yaklaşık) tablosu için veriler indiriliyor
-REPLACE INTO `phone_invoices` (`id`, `citizenid`, `amount`, `society`, `sender`, `sendercitizenid`) VALUES
-	(1, 'YPS30671', 10, 'mechanic', 'Black', 'UZA73834');
 
 -- tablo yapısı dökülüyor hayalet-temel.phone_messages
 CREATE TABLE IF NOT EXISTS `phone_messages` (
@@ -543,10 +517,6 @@ CREATE TABLE IF NOT EXISTS `player_houses` (
   KEY `citizenid` (`citizenid`),
   KEY `identifier` (`identifier`)
 ) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4;
-
--- hayalet-temel.player_houses: ~0 rows (yaklaşık) tablosu için veriler indiriliyor
-REPLACE INTO `player_houses` (`id`, `house`, `identifier`, `citizenid`, `keyholders`, `decorations`, `stash`, `outfit`, `logout`) VALUES
-	(22, 'signal st2', 'license:0914ab671d4452856c454f3e70c58c6cb585f1cd', 'UZA73834', '["UZA73834"]', '[{"objectId":1,"roty":-1.1,"object":1642754,"rotx":0.0,"x":156.8296600341808,"y":-3056.572265625,"rotz":88.55000000000028,"hashname":"bkr_prop_weed_table_01a","z":-22.88290519714356},{"objectId":2,"roty":-0.0,"object":1643010,"rotx":0.0,"x":151.8964385986328,"y":-3054.127197265625,"rotz":0.0,"hashname":"prop_mil_crate_01","z":-22.25203552246095}]', NULL, NULL, NULL);
 
 -- tablo yapısı dökülüyor hayalet-temel.player_mails
 CREATE TABLE IF NOT EXISTS `player_mails` (
