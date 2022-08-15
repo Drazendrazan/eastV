@@ -7,12 +7,11 @@ server_script 'sv_chat.lua'
 
 files {
     'html/index.html',
-    'html/index.css',
-    'html/config.default.js',
-    'html/config.js',
-    'html/App.js',
-    'html/Message.js',
-    'html/Suggestions.js',
+    'html/css/style.css',
+    'html/js/config.default.js',
+    'html/js/App.js',
+    'html/js/Message.js',
+    'html/js/Suggestions.js',
     'html/vendor/vue.2.3.3.min.js',
     'html/vendor/flexboxgrid.6.3.1.min.css',
     'html/vendor/animate.3.5.2.min.css',
@@ -23,7 +22,4 @@ files {
     'html/vendor/fonts/LatoLight.woff2',
     'html/vendor/fonts/LatoBold.woff2',
     'html/vendor/fonts/LatoBold2.woff2',
-    'html/image/CID.png',
-    'html/image/F.png',
-    'html/image/M.png',
   }

@@ -6,27 +6,18 @@ RegisterServerEvent('chat:removeSuggestion')
 RegisterServerEvent('_chat:messageEntered')
 RegisterServerEvent('chat:clear')
 RegisterServerEvent('__cfx_internal:commandFallback')
- 
+
 AddEventHandler('_chat:messageEntered', function(author, color, message)
     if not message or not author then
         return
     end
- 
+
     TriggerEvent('chatMessage', source, author, message)
- 
+
     if not WasEventCanceled() then
-        TriggerClientEvent('chatMessage', -1, author,  { 255, 255, 255 }, message)
+        --TriggerClientEvent('chatMessage', -1, 'OOC | '..author,  false, message)
     end
- 
-    print(author .. '^7: ' .. message .. '^7')
 end)
-
-AddEventHandler("chatMessage", function(source, args, raw)
-    CancelEvent()
-end)
- 
-
-
 
 AddEventHandler('__cfx_internal:commandFallback', function(command)
     local name = GetPlayerName(source)
@@ -34,14 +25,21 @@ AddEventHandler('__cfx_internal:commandFallback', function(command)
     TriggerEvent('chatMessage', source, name, '/' .. command)
 
     if not WasEventCanceled() then
-        TriggerClientEvent('chatMessage', -1, name, { 255, 255, 255 }, '/' .. command) 
+        TriggerClientEvent('chatMessage', -1, name, false, '/' .. command) 
     end
 
     CancelEvent()
 end)
 
--- command suggestions for clients
+-- player join messages
+AddEventHandler('chat:init', function()
+    --TriggerClientEvent('chatMessage', -1, '', { 255, 255, 255 }, '^2* ' .. GetPlayerName(source) .. ' joined.')
+end)
 
+AddEventHandler('playerDropped', function(reason)
+    --TriggerClientEvent('chatMessage', -1, '', { 255, 255, 255 }, '^2* ' .. GetPlayerName(source) ..' left (' .. reason .. ')')
+end)
+-- command suggestions for clients
 local function refreshCommands(player)
     if GetRegisteredCommands then
         local registeredCommands = GetRegisteredCommands()
