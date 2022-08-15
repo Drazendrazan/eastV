@@ -19,23 +19,23 @@ QBShared.Jobs = {
 		offDutyPay = false,
 		grades = {
             ['0'] = {
-                name = 'Recruit',
+                name = 'Stajyer',
                 payment = 50
             },
 			['1'] = {
-                name = 'Officer',
+                name = 'Memur',
                 payment = 75
             },
 			['2'] = {
-                name = 'Sergeant',
+                name = 'Çavuş',
                 payment = 100
             },
 			['3'] = {
-                name = 'Lieutenant',
+                name = 'Teğmen',
                 payment = 125
             },
 			['4'] = {
-                name = 'Chief',
+                name = 'Şef',
 				isboss = true,
                 payment = 150
             },
@@ -47,23 +47,23 @@ QBShared.Jobs = {
 		offDutyPay = false,
 		grades = {
             ['0'] = {
-                name = 'Recruit',
+                name = 'Stajyer',
                 payment = 50
             },
 			['1'] = {
-                name = 'Paramedic',
+                name = 'Hemşire',
                 payment = 75
             },
 			['2'] = {
-                name = 'Doctor',
+                name = 'Doktor',
                 payment = 100
             },
 			['3'] = {
-                name = 'Surgeon',
+                name = 'Cerrah',
                 payment = 125
             },
 			['4'] = {
-                name = 'Chief',
+                name = 'Profesör Doktor',
 				isboss = true,
                 payment = 150
             },
@@ -174,19 +174,19 @@ QBShared.Jobs = {
                 payment = 50
             },
 			['1'] = {
-                name = 'Novice',
+                name = 'Acemi',
                 payment = 75
             },
 			['2'] = {
-                name = 'Experienced',
+                name = 'Tecrübeli',
                 payment = 100
             },
 			['3'] = {
-                name = 'Advanced',
+                name = 'Gelişmiş',
                 payment = 125
             },
 			['4'] = {
-                name = 'Manager',
+                name = 'Patron',
 				isboss = true,
                 payment = 150
             },
