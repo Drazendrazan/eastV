@@ -25,30 +25,30 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
-                            <img src="images/logo.png" class="img-fluid">
+                            <!-- <img src="images/logo.png" class="img-fluid"> -->
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <div class="nav flex-column nav-pills p-2 shadow-lg" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="background:rgba(51, 51, 51, 0.8); border-radius: 5px;">
-                                <a class="nav-link active m-1" id="bankingHome-tab" data-toggle="pill" href="#bankingHome" role="tab" aria-controls="bankingHome" aria-selected="true" style="color: white">Account Home</a>
-                                <a class="nav-link m-1" id="bankingWithdraw-tab" data-toggle="pill" href="#bankingWithdraw" role="tab" aria-controls="bankingWithdraw" aria-selected="false" style="color: white">Withdrawals</a>
-                                <a class="nav-link m-1" id="bankingDeposit-tab" data-toggle="pill" href="#bankingDeposit" role="tab" aria-controls="bankingDeposit" aria-selected="false" style="color: white">Deposit</a>
+                            <div class="nav flex-column nav-pills p-2 shadow-lg" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="margin: 70px 10px 30px; background:rgba(51, 51, 51, 0.8); border-radius: 5px;">
+                                <a class="nav-link active m-1" id="bankingHome-tab" data-toggle="pill" href="#bankingHome" role="tab" aria-controls="bankingHome" aria-selected="true" style="color: white">Ana Menü</a>
+                                <a class="nav-link m-1" id="bankingWithdraw-tab" data-toggle="pill" href="#bankingWithdraw" role="tab" aria-controls="bankingWithdraw" aria-selected="false" style="color: white">Para Çekme</a>
+                                <a class="nav-link m-1" id="bankingDeposit-tab" data-toggle="pill" href="#bankingDeposit" role="tab" aria-controls="bankingDeposit" aria-selected="false" style="color: white">Para Yatırma</a>
                                 <a class="nav-link m-1" id="bankingTransfer-tab" data-toggle="pill" href="#bankingTransfer" role="tab" aria-controls="bankingTransfer" aria-selected="false" style="color: white">Transfer</a>
                                 <!-- <a class="nav-link m-1" id="bankingStatement-tab" data-toggle="pill" href="#bankingStatement" role="tab" aria-controls="bankingStatement" aria-selected="false" style= "color: white">Statement</a> -->
-                                <a class="nav-link m-1" id="bankingSavings-tab" style="display:none; color: white;" data-toggle="pill" href="#bankingSavings" role="tab" aria-controls="bankingSavings" aria-selected="false">Savings Account</a>
-                                <a class="nav-link m-1" id="bankingActions-tab" data-toggle="pill" href="#bankingActions" role="tab" aria-controls="bankingActions" aria-selected="false" style="color: white">Account Options</a>
+                                <a class="nav-link m-1" id="bankingSavings-tab" style="display:none; color: white;" data-toggle="pill" href="#bankingSavings" role="tab" aria-controls="bankingSavings" aria-selected="false">Birikim Hesabı</a>
+                                <a class="nav-link m-1" id="bankingActions-tab" data-toggle="pill" href="#bankingActions" role="tab" aria-controls="bankingActions" aria-selected="false" style="color: white">Hesap Ayarları</a>
                             </div>
                         </div>
                     </div>
                     <div class="row mt-2">
                         <div class="col-12">
                             <div class="card mb-3" style="background:rgba(51, 51, 51, 0.8); color: white;">
-                                <div class="card-header">Account Information</div>
+                                <div class="card-header">Hesap Bilgileri</div>
                                 <div class="card-body">
                                     <p class="card-text" style="color: white;"><small>
-                                        Account Name: <span id="accountName"></span><br>
-                                        Account Number: <span id="accountNumber"></span><br>
+                                        Kişisel Bilgiler: <span id="accountName"></span><br>
+                                        Hesap Numarası:   <span id="accountNumber"></span><br>
                                         <!--Account Sort Code: <span id="accountSortCode">-->
 
                                         </span></small></p>
@@ -58,7 +58,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <button class="btn btn-block" id="logoffbutton" style="background-color: #DC143C; color: white">Logoff</button>
+                            <button class="btn btn-block" id="logoffbutton" style="background-color: #DC143C; color: white">Çıkış Yap</button>
                         </div>
                     </div>
                 </div>
@@ -70,7 +70,7 @@
                         <div class="container-fluid p-2">
                             <div class="row">
                                 <div class="col-12 title">
-                                    <h3 style="font-size: 35px;">Welcome, <span id="customerName"></span></h3>
+                                    <h3 style="font-size: 35px;">Hoşgeldin, <span id="customerName"></span></h3>
                                 </div>
                             </div>
                             <div class="row" id="successRow" style="display:none;">
@@ -81,19 +81,19 @@
                             <div class="row">
                                 <div class="col-6">
                                     <div class="card mb-3" style="background:rgba(51, 51, 51, 0.8); color: white;">
-                                        <div class="card-header"><i class="fad fa-fw fa-money-bill-wave"></i> Current Bank Balance:</div>
+                                        <div class="card-header"><i class="fad fa-fw fa-money-bill-wave"></i> Mevcut Banka Bakiyen:</div>
                                         <div class="card-body">
                                             <h5 class="card-title" style="font-weight: bolder; color: #28a745;" id="currentBalance"></h5>
-                                            <p class="card-text" style="color: white;">Total Amount Available To Withdraw/Transfer</p>
+                                            <p class="card-text" style="color: white;">Para Çekmek/Transfer etmek için uygun olan bakiye:</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="card mb-3" style="background:rgba(51, 51, 51, 0.8); color: white;">
-                                        <div class="card-header"><i class="fad fa-fw fa-coin"></i> Current Cash Balance:</div>
+                                        <div class="card-header"><i class="fad fa-fw fa-coin"></i> Mevcut Nakit Bakiyen:</div>
                                         <div class="card-body">
                                             <h5 class="card-title" style="font-weight: bolder; color: #28a745;" id="currentCashBalance"></h5>
-                                            <p class="card-text" style="color: white;">Total Amount Available To Deposit</p>
+                                            <p class="card-text" style="color: white;">Yatırabileceğin uygun olan bakiye:</p>
                                         </div>
                                     </div>
                                 </div>
@@ -101,25 +101,25 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="card mb-3" style="background:rgba(51, 51, 51, 0.8);">
-                                        <div class="card-header" style="color: white"><i class="fad fa-fw fa-pencil-alt"></i> Quick Actions:</div>
+                                        <div class="card-header" style="color: white"><i class="fad fa-fw fa-pencil-alt"></i> Hızlı İşlemler:</div>
                                         <div class="card-body">
                                             <div class="container-fluid">
                                                 <div class="row m-1">
-                                                    <div class="col-4"><button class="btn btn-primary btn-block" data-action="deposit" data-amount="100">Deposit $100</button></div>
-                                                    <div class="col-4"><button class="btn btn-primary btn-block" data-action="deposit" data-amount="1000">Deposit $1,000</button></div>
-                                                    <div class="col-4"><button class="btn btn-primary btn-block" data-action="deposit" data-amount="10000">Deposit $10,000</button></div>
+                                                    <div class="col-4"><button class="btn btn-primary btn-block" data-action="deposit" data-amount="100">Yatır $100</button></div>
+                                                    <div class="col-4"><button class="btn btn-primary btn-block" data-action="deposit" data-amount="1000">Yatır $1,000</button></div>
+                                                    <div class="col-4"><button class="btn btn-primary btn-block" data-action="deposit" data-amount="10000">Yatır $10,000</button></div>
                                                 </div>
                                                 <div class="row m-1">
-                                                    <div class="col-4"><button class="btn btn-secondary btn-block" data-action="withdraw" data-amount="100">Withdraw $100</button></div>
-                                                    <div class="col-4"><button class="btn btn-secondary btn-block" data-action="withdraw" data-amount="1000">Withdraw $1,000</button></div>
-                                                    <div class="col-4"><button class="btn btn-secondary btn-block" data-action="withdraw" data-amount="10000">Withdraw $10,000</button></div>
+                                                    <div class="col-4"><button class="btn btn-secondary btn-block" data-action="withdraw" data-amount="100">Çek $100</button></div>
+                                                    <div class="col-4"><button class="btn btn-secondary btn-block" data-action="withdraw" data-amount="1000">Çek $1,000</button></div>
+                                                    <div class="col-4"><button class="btn btn-secondary btn-block" data-action="withdraw" data-amount="10000">Çek $10,000</button></div>
                                                 </div>
                                                 <div class="row m-1">
                                                     <div class="col-6">
-                                                        <button class="btn btn-info btn-block" id="savingsQuicky1" style="display:none;" data-action="savingsdeposit" data-amount="10000">Transfer $10,000 from Bank to Savings</button>
+                                                        <button class="btn btn-info btn-block" id="savingsQuicky1" style="display:none;" data-action="savingsdeposit" data-amount="10000">Banka Hesabından Birikim Hesabına 10.000$ Yatır</button>
                                                     </div>
                                                     <div class="col-6">
-                                                        <button class="btn btn-info btn-block" id="savingsQuicky2" style="display:none;" data-action="savingswithdraw" data-amount="10000">Transfer $10,000 from Savings to Bank</button>
+                                                        <button class="btn btn-info btn-block" id="savingsQuicky2" style="display:none;" data-action="savingswithdraw" data-amount="10000">Birikim Hesabından Banka Hesabına 10.000$ Yatır</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -133,30 +133,30 @@
                         <div class="container-fluid p-2" style="position: relative; top: 54px;">
                             <div class="row">
                                 <div class="col-12 title">
-                                    <h3 style="font-size: 35px;">Withdrawals</h3>
+                                    <h3 style="font-size: 35px;">Para Çekme</h3>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12" style="font-size: 12px; color: white;">
-                                    Withdrawal money from your bank account. To withdrawal money from your savings account, first you must transfer it.
+                                    Banka hesabınızdan para çekme. Birikim hesabınızdan para çekmek için önce onu transfer etmeniz gerekir.
                                 </div>
                             </div>
                             <div class="row" style="position: relative; top: 20px;">
                                 <div class="col-6">
                                     <div class="card mb-3" style="background:rgba(51, 51, 51, 0.8); color: white;">
-                                        <div class="card-header"><i class="fad fa-fw fa-money-bill-wave"></i> Current Bank Balance:</div>
+                                        <div class="card-header"><i class="fad fa-fw fa-money-bill-wave"></i> Mevcut Banka Bakiyeniz:</div>
                                         <div class="card-body">
                                             <h5 class="card-title" style="font-weight: bolder; color: #28a745;" id="currentBalance1"></h5>
-                                            <p class="card-text" style="color: white;">Total Amount Available To Withdraw/Transfer</p>
+                                            <p class="card-text" style="color: white;">Çekilebilecek/Transfer Yapılabilecek Toplam Tutar</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="card mb-3" style="background:rgba(51, 51, 51, 0.8); color: white;">
-                                        <div class="card-header"><i class="fad fa-fw fa-coin"></i> Current Cash Balance:</div>
+                                        <div class="card-header"><i class="fad fa-fw fa-coin"></i> Mevcut Nakit Bakiyeniz:</div>
                                         <div class="card-body">
                                             <h5 class="card-title" style="font-weight: bolder; color: #28a745;" id="currentCashBalance1"></h5>
-                                            <p class="card-text" style="color: white;">Total Amount Available To Deposit</p>
+                                            <p class="card-text" style="color: white;">Yatırılabilecek Toplam Tutar</p>
                                         </div>
                                     </div>
                                 </div>
@@ -174,7 +174,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="row mt-2">
-                                                    <div class="col-3 my-auto" style="font-size: 19px; color: white;"><label for="withdrawAmount"><small>Amount to Withdraw:</small></label></div>
+                                                    <div class="col-3 my-auto" style="font-size: 19px; color: white;"><label for="withdrawAmount"><small>Çekilecek Tutar:</small></label></div>
                                                     <div class="col-9"><input type="number" placeholder="$" class="form-control" id="withdrawAmount" name="withdrawAmount"></div>
                                                 </div>
                                             </div>
@@ -184,7 +184,7 @@
                                 </div>
                             </div>
                             <div class="row" style="position: relative; top: 20px;">
-                                <div class="col-12 text-center"><button class="btn" style="background-color: #28a745; color: white" id="initiateWithdraw">Complete Withdrawal</button></div>
+                                <div class="col-12 text-center"><button class="btn" style="background-color: #28a745; color: white" id="initiateWithdraw">Parayı Çek</button></div>
                             </div>
                         </div>
                     </div>
@@ -192,30 +192,30 @@
                         <div class="container-fluid p-2" style="position: relative; top: 54px;">
                             <div class="row">
                                 <div class="col-12 title">
-                                    <h3 style="font-size: 35px;">Deposits</h3>
+                                    <h3 style="font-size: 35px;">Para Yatırma</h3>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12" style="font-size: 12px; color: white;">
-                                    Deposit money into your bank account. To deposit money into your savings account, simply transfer it from your bank after your initial deposit.
+                                    Banka hesabınıza para yatırın. Birikim hesabınıza para yatırmak için, ilk para yatırma işleminizden sonra bankanızdan aktarmanız yeterlidir.
                                 </div>
                             </div>
                             <div class="row" style="position: relative; top: 20px;">
                                 <div class="col-6">
                                     <div class="card mb-3" style="background:rgba(51, 51, 51, 0.8); color: white;">
-                                        <div class="card-header"><i class="fad fa-fw fa-money-bill-wave"></i> Current Bank Balance:</div>
+                                        <div class="card-header"><i class="fad fa-fw fa-money-bill-wave"></i> Mevcut Banka Bakiyeniz:</div>
                                         <div class="card-body">
                                             <h5 class="card-title" style="font-weight: bolder; color: #28a745;" id="currentBalance2"></h5>
-                                            <p class="card-text" style="color: white;">Total Amount Available To Withdraw/Transfer</p>
+                                            <p class="card-text" style="color: white;">Çekilebilecek/Transfer Yapılabilecek Toplam Tutar</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="card mb-3" style="background:rgba(51, 51, 51, 0.8); color: white;">
-                                        <div class="card-header"><i class="fad fa-fw fa-coin"></i> Current Cash Balance:</div>
+                                        <div class="card-header"><i class="fad fa-fw fa-coin"></i> Mevcut Nakit Bakiyeniz:</div>
                                         <div class="card-body">
                                             <h5 class="card-title" style="font-weight: bolder; color: #28a745;" id="currentCashBalance2"></h5>
-                                            <p class="card-text" style="color: white;">Total Amount Available To Deposit</p>
+                                            <p class="card-text" style="color: white;">Yatırılabilecek Toplam Tutar</p>
                                         </div>
                                     </div>
                                 </div>
@@ -233,7 +233,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="row mt-2">
-                                                    <div class="col-3 my-auto" style="font-size: 19px; color: white;"><label for="depositAmount"><small>Amount to Deposit:</small></label></div>
+                                                    <div class="col-3 my-auto" style="font-size: 19px; color: white;"><label for="depositAmount"><small>Yatırılacak Tutar:</small></label></div>
                                                     <div class="col-9"><input type="number" placeholder="$" class="form-control" id="depositAmount" name="depositAmount"></div>
                                                 </div>
                                             </div>
@@ -243,7 +243,7 @@
                                 </div>
                             </div>
                             <div class="row" style="position: relative; top: 20px;">
-                                <div class="col-12 text-center"><button class="btn" style="background-color: #28a745; color: white" id="initiateDeposit">Complete Deposit</button></div>
+                                <div class="col-12 text-center"><button class="btn" style="background-color: #28a745; color: white" id="initiateDeposit">Para Yatır</button></div>
                             </div>
                         </div>
                     </div>
@@ -252,11 +252,11 @@
                         <div class="container-fluid p-2" style="position: relative; top: 54px;">
                             <div class="row">
                                 <div class="col-12 title">
-                                    <h3 style="font-size: 35px;">Transfers</h3>
+                                    <h3 style="font-size: 35px;">Transfer</h3>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-12" style="font-size: 12px; color:white">Transfer money to another account simply by entering the dedicated number of that account and the amount to transfer.
+                                <div class="col-12" style="font-size: 12px; color:white">Sadece o hesabın özel numarasını ve transfer edilecek tutarı girerek başka bir hesaba para aktarın.
                                 </div>
                             </div>
                             <div class="row">
@@ -276,11 +276,11 @@
                                                         <!-- form -->
                                                         <div class="container-fluid">
                                                             <div class="row m-1">
-                                                                <div class="col-3 my-auto" style="font-size: 19px; color: white;"><label for="transferAcctNo"><small>Account Number:</small></label></div>
+                                                                <div class="col-3 my-auto" style="font-size: 19px; color: white;"><label for="transferAcctNo"><small>Hesap Numarası:</small></label></div>
                                                                 <div class="col-9"><input type="text" id="transferAcctNo" name="transferAcctNo" class="form-control"></div>
                                                             </div>
                                                             <div class="row m-1">
-                                                                <div class="col-3 my-auto" style="font-size: 19px; color: white;"><label for="transferAmount"><small>Amount To Transfer:</small></label></div>
+                                                                <div class="col-3 my-auto" style="font-size: 19px; color: white;"><label for="transferAmount"><small>Transfer Edilecek Miktar:</small></label></div>
                                                                 <div class="col-9"><input type="number" id="transferAmount" name="transferAmount" class="form-control" placeholder="$"></div>
                                                             </div>
                                                         </div>
@@ -294,7 +294,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-12 text-center" style="position: relative; top: 20px;">
-                                    <button class="btn" id="initiateTransfer" style="background-color: #28a745; color: white">Complete Transfer</button>
+                                    <button class="btn" id="initiateTransfer" style="background-color: #28a745; color: white">Transfer Et</button>
                                 </div>
                             </div>
                         </div>
@@ -303,7 +303,7 @@
                         <div class="container-fluid p-2">
                             <div class="row">
                                 <div class="col-12 title">
-                                    <h3>Current Account Statement</h3>
+                                    <h3>Cari Hesap Özeti</h3>
                                 </div>
                             </div>
                             <div class="row">
@@ -313,11 +313,11 @@
                                             <table id="currentStatement" class="display" style="width:100%">
                                                 <thead>
                                                     <tr>
-                                                        <th>Date</th>
-                                                        <th>Description</th>
-                                                        <th class="text-center">Withdrawn</th>
-                                                        <th class="text-center">Deposit</th>
-                                                        <th class="text-center">New Balance</th>
+                                                        <th>Tarih</th>
+                                                        <th>Açıklama</th>
+                                                        <th class="text-center">Çekilen</th>
+                                                        <th class="text-center">Yatırılan</th>
+                                                        <th class="text-center">Yeni Bakiye</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody id="currentStatementContents">
@@ -333,39 +333,39 @@
                         <div class="container-fluid p-2" style="position: relative; top: 54px;">
                             <div class="row">
                                 <div class="col-12 title">
-                                    <h4 style="font-size: 35px;">Savings Account</h4>
+                                    <h4 style="font-size: 35px;">Birikim Hesabı</h4>
                                 </div>
                             </div>
                             <div class="row" style="position: relative; top: 20px;">
                                 <div class="col-4" style="color: #00af17">
                                     <div class="card mb-3" style="background:rgba(51, 51, 51, 0.8); color: white; min-height:150px;">
-                                        <div class="card-header"><i class="fad fa-fw fa-money-bill-wave"></i> Savings Account Balance:</div>
+                                        <div class="card-header"><i class="fad fa-fw fa-money-bill-wave"></i> Birikim Hesabı Mevcut Bakiye:</div>
                                         <div class="card-body">
                                             <h5 class="card-title">&#36;&nbsp;<span id="savingsBalance"></span></h5>
-                                            <p class="card-text" style="font-size: 10px; color: white;">This is currently how much you have saved in your savings account</p>
+                                            <p class="card-text" style="font-size: 10px; color: white;">Bu, şu anda birikim hesabınızda ne kadar biriktirdiğinizi gösterir.</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="col-8">
                                     <div class="card mb-3" style="background:rgba(51, 51, 51, 0.8); color: white;">
-                                        <div class="card-header">Savings Withdraw & Deposits</div>
+                                        <div class="card-header">Birikim Para Çekme & Para Yatırma</div>
                                         <div class="card-body">
                                             <div class="container-fluid">
                                                 <div class="row">
-                                                    <div class="col-4"><label for="savingsAction"><small>Action</small></label>
+                                                    <div class="col-4"><label for="savingsAction"><small>Eylem</small></label>
                                                         <select name="savingsAction" id="savingsAction" class="form-control" style="font-size: 13px;">
-                                                        <option selected disabled value="def">Please Select</option>
-                                                        <option value="deposit">Deposit</option>
-                                                        <option value="withdraw">Withdrawal</option>
+                                                        <option selected disabled value="def">Lütfen Seçiniz</option>
+                                                        <option value="deposit">Para Yatır</option>
+                                                        <option value="withdraw">Para Çek</option>
                                                     </select>
                                                     </div>
                                                     <div class="col-4">
-                                                        <label for="savingsTAmount"><small>Amount</small></label>
+                                                        <label for="savingsTAmount"><small>Miktar</small></label>
                                                         <input type="number" id="savingsTAmount" name="savingsTAmount" class="form-control" placeholder="$" style="font-size: 13px;">
                                                     </div>
                                                     <div class="col-4 my-auto">
-                                                        <button class="btn btn-block" id="makeSavingsTransfer" style="background-color: #28a745; font-size: 12px; color: white">Complete Request</button>
+                                                        <button class="btn btn-block" id="makeSavingsTransfer" style="background-color: #28a745; font-size: 12px; color: white">İşlemi Bitir</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -376,16 +376,16 @@
                         </div>
                         <div style="position: relative; top: 60px">
                             <div class="card mb-3" style="background:rgba(51, 51, 51, 0.8); color: white;">
-                                <div class="card-header">Savings Account Statement</div>
+                                <div class="card-header">Birikim Hesabı Özeti:</div>
                                 <div class="card-body">
                                     <table id="savingsStatement" class="display" style="width:100%">
                                         <thead>
                                             <tr style="font-size: 14px; color: white;">
-                                                <th>Date</th>
-                                                <th>Description</th>
-                                                <th class="text-center">Withdrawn</th>
-                                                <th class="text-center">Deposit</th>
-                                                <th class="text-center">New Balance</th>
+                                                <th>Tarih</th>
+                                                <th>Açıklama</th>
+                                                <th class="text-center">Çekilen</th>
+                                                <th class="text-center">Yatırılan</th>
+                                                <th class="text-center">Yeni Bakiye</th>
                                             </tr>
                                         </thead>
                                         <tbody id="savingsStatementContents" style="font-size: 14px;">
@@ -399,29 +399,30 @@
                         <div class="container-fluid p-2">
                             <div class="row">
                                 <div class="col-12 title">
-                                    <h3 style="font-size: 35px;">Account Options</h3>
+                                    <h3 style="font-size: 35px;">Hesap Ayarları</h3>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12 content" style="font-size: 12px;">
-                                    <p>From within the Account options section you are able to manage every aspect of your banking experience with QBCore Banks, from ordering a new debit card, changing your pins, and even create a savings account.</p>
+                                    <p>Hesap seçenekleri bölümünden, Golden Bankası ile bankacılık deneyiminizin her yönünü, yeni bir banka kartı sipariş etmekten, pinlerinizi değiştirmekten ve hatta bir birikim hesabı oluşturmaktan yönetebilirsiniz.</p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12">
                                     <div class="card mb-3" style="background:rgba(51, 51, 51, 0.8); color: white;">
-                                        <div class="card-header" style="color: white">Debit Card Management</div>
+                                        <div class="card-header" style="color: white">Banka Kartı Yönetimi</div>
                                         <div class="card-body">
                                             <!-- Card In-Active Container -->
                                             <div class="container-fluid" id="cardInactive" style="display:none;">
                                                 <div class="row">
                                                     <div class="col-12 content" style="font-size: 16px;">
-                                                        <p>You can order yourself a Debit card to enable you to use ATM's and Pay by card features provided free of charge by QBCore Management.</p>
+                                                        <p>
+                                                            QBCore Management tarafından ücretsiz olarak sağlanan ATM'leri ve Kartla Öde özelliklerini kullanabilmeniz için kendinize bir Banka kartı sipariş edebilirsiniz.</p>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-12">
-                                                        <button class="btn btn-block" id="orderCardBtn" style="background:#28a745; color: white;">Order Debit Card</button>
+                                                        <button class="btn btn-block" id="orderCardBtn" style="background:#28a745; color: white;">Sipariş Et</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -429,7 +430,7 @@
                                             <div class="container-fluid" id="cardOrdering" style="display:none;">
                                                 <div class="row">
                                                     <div class="col-12">
-                                                        <p>To order a new debit card you first need to set a Personal Identification Number (PIN) this allows you to use your card at ATM's</p>
+                                                        <p>Yeni bir banka kartı sipariş etmek için öncelikle bir Kişisel Kimlik Numarası (PIN) belirlemeniz gerekir; bu, kartınızı ATM'lerde kullanmanıza olanak tanır.</p>
                                                     </div>
                                                 </div>
                                                 <div class="row" id="pinCreatorError" style="display:none;">
@@ -441,14 +442,14 @@
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-3 my-auto">
-                                                        <label for="cardPinNumber"><small>Personal Pin</small></label>
+                                                        <label for="cardPinNumber"><small>Kart Şifresi</small></label>
                                                     </div>
                                                     <div class="col-9">
                                                         <input type="password" maxlength="4" id="cardPinNumber" name="cardPinNumber" class="form-control">
                                                     </div>
                                                 </div>
                                                 <div class="row mt-2">
-                                                    <div class="col-12 text-center "><button class="btn btn-info" id="processCard">Order Card</button></div>
+                                                    <div class="col-12 text-center "><button class="btn btn-info" id="processCard">Sipariş Et</button></div>
                                                 </div>
                                             </div>
                                             <!-- Card Active Container -->
@@ -457,39 +458,39 @@
 
                                                     <div class="col-4">
                                                         <div class="card text-white bg-info mb-3" id="debitCardPin" style="min-height:230px">
-                                                            <div class="card-header">Change Pin</div>
-                                                            <div class="card-body">Your pin is currently set.</div>
+                                                            <div class="card-header">PIN Değiştir</div>
+                                                            <div class="card-body">PIN'iniz ayarlandı.</div>
                                                             <div class="card-footer">
-                                                                <button class="btn btn-primary btn-block" id="changePin">Change PIN</button>
+                                                                <button class="btn btn-primary btn-block" id="changePin">PIN Değiştir</button>
                                                             </div>
                                                         </div>
                                                     </div>
 
                                                     <div class="col-4">
                                                         <div class="card text-white bg-dark mb-3" id="requestNewCard1" style="min-height:230px; display:block;">
-                                                            <div class="card-header">Request New Card</div>
-                                                            <div class="card-body">Current Active Card<br>
+                                                            <div class="card-header">Yeni Kart Sipariş Et</div>
+                                                            <div class="card-body">Şuanda Aktif Olan Kartlarınız<br>
                                                                 <small><span id="cardType">Visa</span><br>
                                                                         <span id="cardNumberShow">************3455</span></small>
                                                             </div>
                                                             <div class="card-footer">
-                                                                <button class="btn btn-primary btn-block" id="makeNewCardRequestBtn1">Make Request</button>
+                                                                <button class="btn btn-primary btn-block" id="makeNewCardRequestBtn1">Sipariş Et</button>
                                                             </div>
                                                         </div>
 
                                                         <div class="card text-white bg-dark mb-3" id="requestNewCard2" style="min-height:230px; display:none;">
-                                                            <div class="card-header">Confirm Request</div>
-                                                            <div class="card-body"><small>By making this request your old card will be blocked.</small>
+                                                            <div class="card-header">Siparişi Tamamla</div>
+                                                            <div class="card-body"><small>Eski Kartınız Bloke Edildi..</small>
 
                                                             </div>
                                                             <div class="card-footer text-center">
-                                                                <button class="btn btn-success btn-sm" id="confirmCardRequest">Confirm</button> <button class="btn btn-danger btn-sm" id="cancelNewCardReq">Cancel</button>
+                                                                <button class="btn btn-success btn-sm" id="confirmCardRequest">Onayla</button> <button class="btn btn-danger btn-sm" id="cancelNewCardReq">Cancel</button>
                                                             </div>
                                                         </div>
 
                                                         <div class="card text-white bg-success mb-3" id="requestNewCard3" style="min-height:230px; display:none;">
-                                                            <div class="card-header">Request Confirmed</div>
-                                                            <div class="card-body"><small>You have received a new card, and your previous one has been blocked.</small>
+                                                            <div class="card-header">Onayla</div>
+                                                            <div class="card-body"><small>Eski Kartınız Bloke Edildi..</small>
 
                                                             </div>
                                                             <div class="card-footer text-center">
@@ -499,10 +500,10 @@
 
                                                     <div class="col-4">
                                                         <div class="card text-white bg-success mb-3" id="debitCardStatus" style="min-height:230px">
-                                                            <div class="card-header">Card Unlocked</div>
-                                                            <div class="card-body">Your card is currently active.</div>
+                                                            <div class="card-header">Kartın Kilidi Açıldı</div>
+                                                            <div class="card-body">Kartınız şu anda etkin.</div>
                                                             <div class="card-footer">
-                                                                <button class="btn btn-primary btn-block" id="lockCard">Lock/Block Card</button>
+                                                                <button class="btn btn-primary btn-block" id="lockCard">Kartı Kilitle/Bloke Et</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -510,7 +511,7 @@
                                                 <div class="row" id="createNewPin" style="display:none;">
                                                     <div class="col-12">
                                                         <div class="card bg-light mb-3">
-                                                            <div class="card-header">Create a New Pin</div>
+                                                            <div class="card-header">Yeni Pin Oluştur</div>
                                                             <div class="card-body">
                                                                 <div class="container-fluid">
                                                                     <div class="row" id="newPinReqMsgDiv" style="display:none;">
@@ -521,11 +522,11 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="row">
-                                                                        <div class="col-3 my-aut"><label for="newPinNumber"><small>New Pin Number</small></label></div>
+                                                                        <div class="col-3 my-aut"><label for="newPinNumber"><small>Yeni Pin Numarası</small></label></div>
                                                                         <div class="col-9"><input type="password" class="form-control" id="newPinNumber" name="newPinNumber"></div>
                                                                     </div>
                                                                     <div class="row mt-2">
-                                                                        <div class="col-12 text-center"><button class="btn btn-success" id="updateNewPin">Update Pin</button></div>
+                                                                        <div class="col-12 text-center"><button class="btn btn-success" id="updateNewPin">Pini Güncelle</button></div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -540,12 +541,12 @@
                             <div class="row" id="savingAccountCreator" style="display:none;">
                                 <div class="col-12">
                                     <div class="card mb-3" style="background:rgba(51, 51, 51, 0.8); color: white;">
-                                        <div class="card-header">Savings Account Management</div>
+                                        <div class="card-header">Birikim Hesabı Ayarları</div>
                                         <div class="card-body">
                                             <div class="container-fluid">
                                                 <div class="row">
                                                     <div class="col-12 content" style="font-size: 16px;">
-                                                        <p>You have not yet opened a savings account with QBCore Banks, click the button below to open a personal savings account, with a seperate account number and sort code.</p>
+                                                        <p>Henüz Golden Bankasında birikim hesabı açmadınız, ayrı bir hesap numarası ve sıralama kodu ile kişisel birikim hesabı açmak için aşağıdaki düğmeyi tıklayın.</p>
                                                     </div>
                                                 </div>
                                                 <div class="row">
@@ -556,7 +557,7 @@
                                             </div>
                                         </div>
                                         <div class="card-footer">
-                                            <p class="card-text"><small>This sections allows you to eaily manage your savings account.</small></p>
+                                            <p class="card-text"><small>Bu bölümler birikim hesabınızı kolayca yönetmenizi sağlar.</small></p>
                                         </div>
                                     </div>
                                 </div>
