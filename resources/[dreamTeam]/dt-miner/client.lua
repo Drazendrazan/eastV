@@ -11,8 +11,8 @@ RegisterNetEvent('kaz:maden')
 AddEventHandler('kaz:maden', function()
 local playerCoords = GetEntityCoords(PlayerPedId())
 local coords = GetEntityCoords(PlayerPedId())
-viberagotten = miner:isPointInside(coords)
-    if viberagotten then 
+erkanagotten = miner:isPointInside(coords)
+    if erkanagotten then 
         QBCore.Functions.Progressbar('kaz', 'Kazıyorsun', 3000, false, true, { -- Name | Label | Time | useWhileDead | canCancel
             disableMovement = true,
             disableCarMovement = true,
