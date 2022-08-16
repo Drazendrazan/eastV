@@ -333,7 +333,7 @@ function CreateStartWork()
 							exports.pNotify:SendNotification({text = "<b>Patron</b></br>Burada bir kamyonu çekmek için yeterli alan yok.", timeout = 4500})
 						end
 					elseif(IsControlJustReleased(0, Keys['E']) and IsPedInAnyVehicle(ped, false) and VehicleOut) then
-						local vehicle = GetVehiclePedIsIn(GetPlayerPed(-1), true)
+						local vehicle = GetVehiclePedIsIn(PlayerPedId(), true)
 						if GetVehicleNumberPlateText(vehicle) == Plate then
 							QBCore.Functions.TriggerCallback('dream-tanker:gettruck', function(cb)
 								if cb then
@@ -410,7 +410,7 @@ function CreateWork()
 							sleep = 0
 							DrawText3Ds(Config.tanker['Semitrailer'].Pos.x, Config.tanker['Semitrailer'].Pos.y, Config.tanker['Semitrailer'].Pos.z+1.0, 'Press [~g~E~w~] to connect a trailer.')
 							if(IsControlJustReleased(0, Keys['E']) and IsPedInAnyVehicle(ped, false)) then
-								local vehicle = GetVehiclePedIsIn(GetPlayerPed(-1), true)
+								local vehicle = GetVehiclePedIsIn(PlayerPedId(), true)
 								if GetVehicleNumberPlateText(vehicle) == Plate then
 									if GetEntityHeading(vehicle) > Config.tanker['Semitrailer'].Pos.h and GetEntityHeading(vehicle) < Config.tanker['Semitrailer'].Pos.h+20 or GetEntityHeading(vehicle) < Config.tanker['Semitrailer'].Pos.h and GetEntityHeading(vehicle) > Config.tanker['Semitrailer'].Pos.h-20 then
 										if IsSpawnPointClear(Config.tanker['Semitrailer'].PosSpawn, 2) then
@@ -467,7 +467,7 @@ function Work()
 				if(GetDistanceBetweenCoords(coords,Config.tanker['Refueling'].Pos.x, Config.tanker['Refueling'].Pos.y, Config.tanker['Refueling'].Pos.z, true) < 3.0) then				
 					DrawText3Ds(Config.tanker['Refueling'].Pos.x, Config.tanker['Refueling'].Pos.y, Config.tanker['Refueling'].Pos.z+1.0, 'Press [~g~E~w~] to fill the trailer with fuel.')
 					if(IsControlJustReleased(0, Keys['E']) and IsPedInAnyVehicle(ped, false)) then
-						local vehicle = GetVehiclePedIsIn(GetPlayerPed(-1), true)
+						local vehicle = GetVehiclePedIsIn(PlayerPedId(), true)
 						if GetVehicleNumberPlateText(vehicle) == Plate then
 							if IsVehicleAttachedToTrailer(vehicle) then
 								FreezeEntityPosition(vehicle, true)

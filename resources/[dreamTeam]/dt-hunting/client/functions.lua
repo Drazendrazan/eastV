@@ -370,8 +370,8 @@ function ToggleSlaughterAnimation(toggle, animalEnity)
         makeEntityFaceEntity(ped, animalEnity)
         loadAnimDict('amb@medic@standing@kneel@base')
         loadAnimDict('anim@gangops@facility@servers@bodysearch@')
-        TaskPlayAnim(GetPlayerPed(-1), "amb@medic@standing@kneel@base", "base", 8.0, -8.0, -1, 1, 0, false, false, false)
-        TaskPlayAnim(GetPlayerPed(-1), "anim@gangops@facility@servers@bodysearch@", "player_search", 8.0, -8.0, -1, 1,
+        TaskPlayAnim(ped, "amb@medic@standing@kneel@base", "base", 8.0, -8.0, -1, 1, 0, false, false, false)
+        TaskPlayAnim(ped, "anim@gangops@facility@servers@bodysearch@", "player_search", 8.0, -8.0, -1, 1,
             0, false, false, false)
     elseif not toggle then
         SetCurrentPedWeapon(ped, GetHashKey("WEAPON_UNARMED"), true)

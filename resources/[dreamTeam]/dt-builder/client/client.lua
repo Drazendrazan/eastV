@@ -680,7 +680,7 @@ function JobStart()
 															if GetDistanceBetweenCoords(coords.x, coords.y, coords.z, Config.Places2lvl[Place].PlaceUnLoad.x, Config.Places2lvl[Place].PlaceUnLoad.y, Config.Places2lvl[Place].PlaceUnLoad.z, true) < 2.5 then
 																DrawText3Ds(Config.Places2lvl[Place].PlaceUnLoad.x, Config.Places2lvl[Place].PlaceUnLoad.y, Config.Places2lvl[Place].PlaceUnLoad.z+1.0, Locales['unload_veh'], 35)
 																if IsControlJustReleased(0, Keys['E']) and IsPedInAnyVehicle(ped, false) then
-																	local vehicle = GetVehiclePedIsIn(GetPlayerPed(-1), true)
+																	local vehicle = GetVehiclePedIsIn(PlayerPedId(), true)
 																	if GetVehicleNumberPlateText(vehicle) == Plate then
 																		exports.rprogress:Custom({
 																			Duration = 2500,

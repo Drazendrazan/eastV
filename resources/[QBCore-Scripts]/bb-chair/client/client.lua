@@ -32,7 +32,8 @@ RegisterNetEvent("jim-chairs:Use")
 AddEventHandler("jim-chairs:Use", function(item)
 	if not haschairalready then
 		haschairalready = true
-	local coords = GetEntityCoords(GetPlayerPed(-1))
+	local ped = PlayerPedId()
+	local coords = GetEntityCoords(ped)
 	local animDict = "timetable@ron@ig_3_couch"
 	local animation = "base"
 	FreezeEntityPosition(PlayerPedId(),true)

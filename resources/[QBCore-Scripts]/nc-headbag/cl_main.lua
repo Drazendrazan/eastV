@@ -33,9 +33,9 @@ end)
 RegisterNetEvent("CheckThread")
 AddEventHandler("CheckThread", function()
     local closestPlayer, closestDistance = GetClosestPlayer();
-    local player = GetPlayerPed(-1);
+    local player = PlayerPedId();
     if closestPlayer == -1 or closestDistance > 2.0 then
-        TriggerEvent("notification", "No players nearby!", "error");
+        TriggerEvent("notification", "Yakınlarda kimse yok!", "error");
     else
         local handsup = IsEntityPlayingAnim(GetPlayerPed(closestPlayer), "missminuteman_1ig_2", "handsup_base", 1);
         if not headMask then
@@ -54,7 +54,7 @@ function GetClosestPlayer()
     local closestPlayers = QBCore.Functions.GetPlayersFromCoords();
     local closestDistance = -1;
     local closestPlayer = -1;
-    local coords = GetEntityCoords(GetPlayerPed(-1));
+    local coords = GetEntityCoords(PlayerPedId());
 
     for i=1, #closestPlayers, 1 do
         if closestPlayers[i] ~= PlayerId() then;
