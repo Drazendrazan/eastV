@@ -360,7 +360,7 @@ end)
 
 RegisterNetEvent("dream-weed:client:cutWeed")
 AddEventHandler("dream-weed:client:cutWeed", function()
-    exports['anims']:PlayEmote('mechanic')
+    exports['anims']:PlayEmote('mechanic3')
     QBCore.Functions.Progressbar("cut_weed", "Bitki Kesiliyor ", (QBWeed.WaitTimes['cutWeed']), false, true, {
         disableMovement = false,
         disableCarMovement = false,
@@ -376,7 +376,7 @@ AddEventHandler("dream-weed:client:cutWeed", function()
 end)
 
 RegisterNetEvent('dream-weed:client:dryWeed', function()
-    exports['anims']:PlayEmote('mechanic')
+    exports['anims']:PlayEmote('mechanic3')
     QBCore.Functions.Progressbar("dry_weed", "Esrar Kurutuluyor", (QBWeed.WaitTimes['dryWeed']), false, true, {
         disableMovement = false,
         disableCarMovement = false,

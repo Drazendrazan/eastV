@@ -226,7 +226,7 @@ RegisterNetEvent('dream-weed:server:dryWeed', function()
     local weedDryer = Player.Functions.GetItemByName('weed_dryer')
     if weedDry ~= nil then
         if weedDryer ~= nil then
-            if weedDry.amount > 1 then
+            if weedDry.amount > 0 then
                 Player.Functions.RemoveItem('weed_dry', weedDry.amount)
                 Player.Functions.AddItem('ready_weed', weedDry.amount)
                 TriggerClientEvent('QBCore:Notify', src, 'Bitki Kurutuldu', 'success', 3500)

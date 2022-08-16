@@ -213,129 +213,129 @@ end)
 
 -- Rare Trade Menu -- 
 
-RegisterNetEvent('dt-metaldetector:RareTradingMenu', function(data)
-    exports['qb-menu']:openMenu({
-        {
-            id = 1,
-            header = "Rare Material Trade",
-            txt = ""
-        },
-        {
-            id = 2,
-            header = "Burried Treasure",
-            txt = "Trade 1 Burried Treasure for $10,000!",
-            params = {
-                isServer = true,
-                event = "dt-metaldetector:server:RareTrade",
-                args = {
-                    id = 2,
-                    item = 'burriedtreasure'
-                }
-            }
-        },
-        {
-            id = 3,
-            header = "Treasure Key",
-            txt = "Trade 1 Treasure Key for $1,500!",
-            params = {
-                isServer = true,
-                event = "dt-metaldetector:server:RareTrade",
-                args = {
-                    id = 3,
-                    item = 'treasurekey'
-                }
-            }
-        },
-        {
-            id = 4,
-            header = "Antique Coin",
-            txt = "Trade 1 Antique Coin for $500!",
-            params = {
-                isServer = true,
-                event = "dt-metaldetector:server:RareTrade",
-                args = {
-                    id = 4,
-                    item = 'antiquecoin'
-                }
-            }
-        },
-        {
-            id = 5,
-            header = "Golden Nuggets",
-            txt = "Trade 1 Golden Nuggets $200!",
-            params = {
-                isServer = true,
-                event = "dt-metaldetector:server:RareTrade",
-                args = {
-                    id = 5,
-                    item = 'goldennugget'
-                }
-            }
-        },
-        {
-            id = 6,
-            header = "Gold Coin",
-            txt = "Trade 1 Gold Coin for $300!",
-            params = {
-                isServer = true,
-                event = "dt-metaldetector:server:RareTrade",
-                args = {
-                    id = 6,
-                    item = 'goldcoin'
-                }
-            }
-        },
-        {
-            id = 7,
-            header = "Ancient Coin",
-            txt = "Trade 1 Ancient Coin for $1000!",
-            params = {
-                isServer = true,
-                event = "dt-metaldetector:server:RareTrade",
-                args = {
-                    id = 7,
-                    item = 'ancientcoin'
-                }
-            }
-        },
-        {
-            id = 8,
-            header = "WW2 Relic",
-            txt = "Trade 1 WW2 Relic for $800!",
-            params = {
-                isServer = true,
-                event = "dt-metaldetector:server:RareTrade",
-                args = {
-                    id = 8,
-                    item = 'ww2relic'
-                }
-            }
-        },
-        {
-            id = 9,
-            header = "Broken Gameboys",
-            txt = "Trade 10 Broken Gameboys for 1 working Gameboy!",
-            params = {
-                isServer = true,
-                event = "dt-metaldetector:server:RareTrade",
-                args = {
-                    id = 9,
-                    item = 'brokengameboy'
-                }
-            }
-        },
-        {
-            id = 10,
-            header = "Pocket Watch",
-            txt = "Trade 1 Pocket watch for $150!",
-            params = {
-                isServer = true,
-                event = "dt-metaldetector:server:RareTrade",
-                args = {
-                    id = 10,
-                    item = 'pocketwatch'
-                }
-            }
-        },
-    })
-end)
+-- RegisterNetEvent('dt-metaldetector:RareTradingMenu', function(data)
+--     exports['qb-menu']:openMenu({
+--         {
+--             id = 1,
+--             header = "Rare Material Trade",
+--             txt = ""
+--         },
+--         {
+--             id = 2,
+--             header = "Burried Treasure",
+--             txt = "Trade 1 Burried Treasure for $10,000!",
+--             params = {
+--                 isServer = true,
+--                 event = "dt-metaldetector:server:RareTrade",
+--                 args = {
+--                     id = 2,
+--                     item = 'burriedtreasure'
+--                 }
+--             }
+--         },
+--         {
+--             id = 3,
+--             header = "Treasure Key",
+--             txt = "Trade 1 Treasure Key for $1,500!",
+--             params = {
+--                 isServer = true,
+--                 event = "dt-metaldetector:server:RareTrade",
+--                 args = {
+--                     id = 3,
+--                     item = 'treasurekey'
+--                 }
+--             }
+--         },
+--         {
+--             id = 4,
+--             header = "Antique Coin",
+--             txt = "Trade 1 Antique Coin for $500!",
+--             params = {
+--                 isServer = true,
+--                 event = "dt-metaldetector:server:RareTrade",
+--                 args = {
+--                     id = 4,
+--                     item = 'antiquecoin'
+--                 }
+--             }
+--         },
+--         {
+--             id = 5,
+--             header = "Golden Nuggets",
+--             txt = "Trade 1 Golden Nuggets $200!",
+--             params = {
+--                 isServer = true,
+--                 event = "dt-metaldetector:server:RareTrade",
+--                 args = {
+--                     id = 5,
+--                     item = 'goldennugget'
+--                 }
+--             }
+--         },
+--         {
+--             id = 6,
+--             header = "Gold Coin",
+--             txt = "Trade 1 Gold Coin for $300!",
+--             params = {
+--                 isServer = true,
+--                 event = "dt-metaldetector:server:RareTrade",
+--                 args = {
+--                     id = 6,
+--                     item = 'goldcoin'
+--                 }
+--             }
+--         },
+--         {
+--             id = 7,
+--             header = "Ancient Coin",
+--             txt = "Trade 1 Ancient Coin for $1000!",
+--             params = {
+--                 isServer = true,
+--                 event = "dt-metaldetector:server:RareTrade",
+--                 args = {
+--                     id = 7,
+--                     item = 'ancientcoin'
+--                 }
+--             }
+--         },
+--         {
+--             id = 8,
+--             header = "WW2 Relic",
+--             txt = "Trade 1 WW2 Relic for $800!",
+--             params = {
+--                 isServer = true,
+--                 event = "dt-metaldetector:server:RareTrade",
+--                 args = {
+--                     id = 8,
+--                     item = 'ww2relic'
+--                 }
+--             }
+--         },
+--         {
+--             id = 9,
+--             header = "Broken Gameboys",
+--             txt = "Trade 10 Broken Gameboys for 1 working Gameboy!",
+--             params = {
+--                 isServer = true,
+--                 event = "dt-metaldetector:server:RareTrade",
+--                 args = {
+--                     id = 9,
+--                     item = 'brokengameboy'
+--                 }
+--             }
+--         },
+--         {
+--             id = 10,
+--             header = "Pocket Watch",
+--             txt = "Trade 1 Pocket watch for $150!",
+--             params = {
+--                 isServer = true,
+--                 event = "dt-metaldetector:server:RareTrade",
+--                 args = {
+--                     id = 10,
+--                     item = 'pocketwatch'
+--                 }
+--             }
+--         },
+--     })
+-- end)
