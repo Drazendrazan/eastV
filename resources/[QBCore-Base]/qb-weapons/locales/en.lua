@@ -1,30 +1,30 @@
 local Translations = {
     error = {
-        canceled = 'Canceled',
-        max_ammo = 'Max Ammo Capacity',
-        no_weapon = 'You have no weapon.',
-        no_support_attachment = 'This weapon does not support this attachment.',
-        no_weapon_in_hand = 'You dont have a weapon in your hand.',
-        weapon_broken = 'This weapon is broken and can not be used.',
-        no_damage_on_weapon = 'This weapon is not damaged..',
-        weapon_broken_need_repair = 'Your weapon is broken, you need to repair it before you can use it again.',
-        attachment_already_on_weapon = 'You already have a %{value} on your weapon.'
+        canceled = 'İptal edildi',
+        max_ammo = 'Mermi kapasitesi doldu',
+        no_weapon = 'Silaha sahip değilsin.',
+        no_support_attachment = 'Bu silaha eklenti takamazsın.',
+        no_weapon_in_hand = 'Elinde bir silah yok.',
+        weapon_broken = 'Silahın kırık veya kullanılamaz halde.',
+        no_damage_on_weapon = 'Silah sağlam bir hasarı yok..',
+        weapon_broken_need_repair = 'Silahın bozulmuş, kullanmadan önce tamir etmelisin.',
+        attachment_already_on_weapon = '%{value} Zaten silahına takılı.'
     },
     success = {
-        reloaded = 'Reloaded'
+        reloaded = 'Şarjör takıldı'
     },
     info = {
-        loading_bullets = 'Loading Bullets',
-        repairshop_not_usable = 'The repairshop in this moment is ~r~NOT~w~ usable.',
-        weapon_will_repair = 'Your weapon will be repaired.',
-        take_weapon_back = '[E] - Take Weapon Back',
-        repair_weapon_price = '[E] Repair Weapon, ~g~$%{value}~w~',
-        removed_attachment = 'You removed %{value} from your weapon!',
-        hp_of_weapon = 'Durability of your weapon'
+        loading_bullets = 'Şarjör Değiştiriyorsun',
+        repairshop_not_usable = 'Şuanda tamir edemezsin',
+        weapon_will_repair = 'Silah zaten iyi durumda.',
+        take_weapon_back = '[E] - Sırtına as',
+        repair_weapon_price = '[E] Tamir et, ~g~$%{value}~w~',
+        removed_attachment = '%{value} eklenti silahtan çıkarıldı!',
+        hp_of_weapon = 'Silahının durumu'
     },
     mail = {
-        sender = 'Tyrone',
-        subject = 'Repair',
+        sender = 'Mike',
+        subject = 'Tamir',
         message = 'Your %{value} is repaired u can pick it up at the location. <br><br> Peace out madafaka'
     },
 }

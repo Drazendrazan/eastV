@@ -355,7 +355,7 @@ RegisterNetEvent('qb-banking:createSavingsAccount', function()
 end)
 
 
-QBCore.Commands.Add('givecash', Lang:t('command.givecash'), {{name = 'id', help = 'Player ID'}, {name = 'amount', help = 'Amount'}}, true, function(source, args)
+QBCore.Commands.Add('paraver', Lang:t('command.givecash'), {{name = 'id', help = 'Player ID'}, {name = 'amount', help = 'Amount'}}, true, function(source, args)
     local src = source
 	local id = tonumber(args[1])
 	local amount = math.ceil(tonumber(args[2]))

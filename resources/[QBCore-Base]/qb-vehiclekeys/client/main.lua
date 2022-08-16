@@ -449,7 +449,7 @@ function CarjackVehicle(target)
         end
     end)
 
-    QBCore.Functions.Progressbar("rob_keys", "Attempting Carjacking..", Config.CarjackingTime, false, true, {}, {}, {}, {}, function()
+    QBCore.Functions.Progressbar("rob_keys", "Aracı çalmaya çalışıyorsun..", Config.CarjackingTime, false, true, {}, {}, {}, {}, function()
         local hasWeapon, weaponHash = GetCurrentPedWeapon(PlayerPedId(), true)
         if hasWeapon and isCarjacking then
             if math.random() <= Config.CarjackChance[tostring(GetWeapontypeGroup(weaponHash))] then
@@ -493,7 +493,7 @@ function AttemptPoliceAlert(type)
             chance = Config.PoliceNightAlertChance
         end
         if math.random() <= chance then
-           TriggerServerEvent('police:server:policeAlert', 'Vehicle theft in progress. Type: ' .. type)
+           exports['ps-dispatch']:CarJacking(vehicle)
         end
         AlertSend = true
         SetTimeout(Config.AlertCooldown, function()

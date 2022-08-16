@@ -1,7 +1,7 @@
 local Translations = {
     error = {
         not_give = "Verilen id ye eşya verilemedi.",
-        givecash = "Kullanım: /givecash [ID] [MİKTAR]",
+        givecash = "Kullanım: /paraver [ID] [MİKTAR]",
         wrong_id = "Yanlış ID.",
         dead = "Öldün.",
         too_far_away = "Çok uzaksın.",
