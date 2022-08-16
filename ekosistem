@@ -1,0 +1,99 @@
+Maden İtemler ;
+1- Demir
+2- Bakır
+3- Gümüş
+4- Altın
+5- Elmas / Rare
+
+Maden Eriyen İtemler ; 
+1- Demir > iron
+2- Bakır > copper
+3- Gümüş > silver
+4- Altın > gold
+5- Çelik > steel
+6- Alüminyum > aluminum
+7- Plastik > plastic
+8- Kauçuk > rubber
+9- Kükürt > sulfur
+10- Çinko > zinc
+
+Çöp Karıştırma Malzemeleri ; 
+1- Kırık Şişe
+2- Hurda Demir > irontrash
+3- Hurda Bakır > coppertrash
+4- Hurda Çelik > steeltrash
+5- Maymuncuk > lockpick
+6- Hurda Alüminyum > aluminumtrash
+7- plastic > plastic
+
+Dedektör Malzemeleri ;
+1- Kırık Şişe
+2- Hurda Demir > irontrash
+3- Hurda Bakır > coppertrash
+4- Hurda Çelik > steeltrash
+5- Maymuncuk > lockpick
+6- Hurda Alüminyum > aluminumtrash
+7- plastic > plastic
+8- Kırık Bıçak > brokenknife > 5 to Knife
+
+Geri Dönüşüm İtemler ;
+1- Hurda Demir > Demir > irontrash
+2- Hurda Çelik > Çelik > steeltrash
+3- Hurda Gümüş > Gümüş
+4- Hurda Alüminyum > Alüminyum
+
+Geri Dönüşüm Çıkacak Yerler ;
+1- Çöp Karıştırma
+2- Metal Dedektör
+3- Hurdalıklar
+
+Kullanılacak Alanlar ;
+1- Tunershop
+2- Silah Craftı
+3- Uyuşturucu Malzemeleri
+4- Soygun Malzemeleri
+
+1- Tunershop ;
+1-1 Alüminyum
+1-2 Çelik
+1-3 Kauçuk
+
+2- Silah&Eklenti Craftı ;
+2-1 Demir
+2-2 Çelik
+2-3 Gümüş
+2-4 Alüminyum
+2-5 Plastik
+2-6 Kauçuk
+
+Üretilecek Silahlar;
+1- Glock GEN4 > WEAPON_GLOCKGEN4 > Plastik 200 - Kauçuk 100 - Çelik 250  - Alüminyum 250  - Yiv Seti 1
+2- MAC10 > WEAPON_MAC10 > Demir 150 - Kauçuk 150  - Çelik 100 - Alüminyum 250 - Yiv Seti 1
+3- Pumpshotgun > WEAPON_MOSSBERG > Demir 250 - Kauçuk 175 - Çelik 150 - Alüminyum 250 - Yiv Seti 1
+4- AK47 > WEAPON_AK47 > Demir 300 - Kauçuk 250 - Çelik 200 - Alüminyum 250 - Yiv Seti 1 
+5- qızKeleşi - WEAPON_AK47 > Demir 250 - Kauçuk 175 - Çelik 150 - Alüminyum 250 - Yiv Seti 1
+6- Molotof > WEAPON_MOLOTOV > Cam Şişe 25 - Benzin - Level 20 
+
+Silah Üretim Masası ;
+1- Ev - ch_chint03_weapons Model Kodu
+
+3- Uyuşturucu Malzemeleri ;
+3-1 Kükürt > Meth Malzemesi
+
+
+4- Soygun Malzemeleri ;
+4-1 Thermite > Demir - Alüminyum - Kükürt
+
+5- Blackmarket İçerik ;
+5-1 Trojan USB
+5-2 Elektronik Kit
+5-3 Gelişmiş Maymuncuk
+5-4 Gece Görüşü
+5-5 Silah Parçaları
+5-6 Silah Kaplamaları
+5-7 IFAK - Kan Dondurucu
+5-8 Zırh
+
+6- Maden Rare Değişim ;
+6-1 Altın - Saat&Kolye
+6-2 Elams - Yüzük&Kolye
