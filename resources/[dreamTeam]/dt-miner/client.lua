@@ -5,7 +5,6 @@ local kazmaProp = `prop_tool_pickaxe`
 local miner = CircleZone:Create(vector3(-593.13, 2074.56, 131.34), 15.0, {
     name="miner",
     useZ=false,
-    --debugPoly=true
 })
 
 RegisterNetEvent('kaz:maden')

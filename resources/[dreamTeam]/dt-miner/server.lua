@@ -9,7 +9,8 @@ end)
 Items = {
     "copper",
     "iron",
-    "diamond",
+    "aluminum",
+    "gold",
 }
   
 function RandomItem()
