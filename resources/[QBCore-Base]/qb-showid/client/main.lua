@@ -36,13 +36,6 @@ Citizen.CreateThread(function()
             animationState = shouldDraw
             if animationState then
                 local playerPed = PlayerPedId()
-                -- loadAnimDict("missheistdockssetup1clipboard@base")
-                -- TaskPlayAnim(playerPed, 'missheistdockssetup1clipboard@base', 'base', 8.0, -8, -1, 49, 0, 0, 0, 0)
-                -- clipboardEntity = CreateObject(GetHashKey("p_amb_clipboard_01"), x, y, z, true)
-                -- coords = { x = 0.2, y = 0.1, z = 0.08 }
-                -- rotation = { x = -80.0, y = -20.0, z = 0.0 }
-                -- AttachEntityToEntity(clipboardEntity, GetPlayerPed(-1), GetPedBoneIndex(GetPlayerPed(PlayerId()), 18905), coords.x, coords.y, coords.z, rotation.x, rotation.y, rotation.z, 1, 1, 0, 1, 0, 1)
-            else
                 ClearPedTasks(playerPed)
                 if clipboardEntity ~= nil then
                     DeleteEntity(clipboardEntity)

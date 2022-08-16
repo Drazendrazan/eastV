@@ -36,12 +36,6 @@ Config.MaxOffset = 120
 ---------------------------------------------------------------
 
 Citizen.CreateThread(function()
-    -- if not GetPlayerPed(-1) then return end
-    -- while not firstname do
-    --     Citizen.Wait(10)
-    -- end
-
-    -- if notLoaded then
         for k, v in pairs(Config.Enable) do
             print(k, v, json.encode(v))
             if Config.Enable[k] ~= false then
@@ -56,10 +50,7 @@ Citizen.CreateThread(function()
             Config.Shooting.Success = 100 -- 10 seconds
             Config.Shooting.Fail = 0 -- 0 seconds
         end
-            
-        -- notLoaded = nil
-    -- end
-
+        
     Config.WeaponBlacklist = {
         'WEAPON_GRENADE',
         'WEAPON_BZGAS',
