@@ -132,6 +132,13 @@ Config.GlobalPlayerOptions = {
 			label = 'Cezaevine sevk et',
 			job = 'police',
 		},
+		{
+			type = "client",
+			event = "hospital:client:RevivePlayer",
+			icon = 'fas fa-phone',
+			label = 'Hastayı Tedavi Et',
+			job = 'ambulance',
+		},
 	},
 }
 

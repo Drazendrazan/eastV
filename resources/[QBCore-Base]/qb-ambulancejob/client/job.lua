@@ -210,6 +210,8 @@ RegisterNetEvent('hospital:client:CheckStatus', function()
     end
 end)
 
+
+
 RegisterNetEvent('hospital:client:RevivePlayer', function()
     QBCore.Functions.TriggerCallback('QBCore:HasItem', function(hasItem)
         if hasItem then
