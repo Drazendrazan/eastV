@@ -201,7 +201,7 @@ end, 'admin')
 
 -- Job
 
-QBCore.Commands.Add('job', 'Check Your Job', {}, false, function(source)
+QBCore.Commands.Add('meslek', 'Check Your Job', {}, false, function(source)
     local PlayerJob = QBCore.Functions.GetPlayer(source).PlayerData.job
     TriggerClientEvent('QBCore:Notify', source, Lang:t('info.job_info', {value = PlayerJob.label, value2 = PlayerJob.grade.name, value3 = PlayerJob.onduty}))
 end, 'user')
@@ -244,7 +244,6 @@ QBCore.Commands.Add('clearinv', 'Clear Players Inventory (Admin Only)', { { name
 end, 'admin')
 
 -- Me command
-
 QBCore.Commands.Add('me', 'Show local message', {{name = 'message', help = 'Message to respond with'}}, false, function(source, args)
     if #args < 1 then TriggerClientEvent('QBCore:Notify', source, Lang:t('error.missing_args2'), 'error') return end
     local ped = GetPlayerPed(source)

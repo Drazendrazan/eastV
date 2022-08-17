@@ -63,7 +63,7 @@ RegisterNetEvent('qb-atms:client:loadATM', function(cards)
             local atm = IsObjectNearPoint(hash, playerCoords.x, playerCoords.y, playerCoords.z, 1.5)
             if atm then
                 PlayATMAnimation('enter')
-                QBCore.Functions.Progressbar("accessing_atm", "Accessing ATM", 1500, false, true, {
+                QBCore.Functions.Progressbar("accessing_atm", "Kartı Yerleştiriyorsun", 1500, false, true, {
                     disableMovement = false,
                     disableCarMovement = false,
                     disableMouse = false,
@@ -75,12 +75,12 @@ RegisterNetEvent('qb-atms:client:loadATM', function(cards)
                         cards = cards,
                     })
                 end, function()
-                    QBCore.Functions.Notify("Failed!", "error")
+                    QBCore.Functions.Notify("Hata!", "error")
                 end)
             end
         end
     else
-        QBCore.Functions.Notify("Please visit a branch to order a card", "error")
+        QBCore.Functions.Notify("Lütfen vezneden bir banka kartı alın!", "error")
     end
 end)
 
@@ -132,9 +132,9 @@ RegisterNUICallback("removeCard", function(data)
             SendNUIMessage({
                 status = "closeATM"
             })
-            QBCore.Functions.Notify('Card has been deleted.', 'success')
+            QBCore.Functions.Notify('Kart Silindi.', 'success')
         else
-            QBCore.Functions.Notify('Failed to delete card.', 'error')
+            QBCore.Functions.Notify('Kart Silinemedi.', 'error')
         end
     end, data)
 end)

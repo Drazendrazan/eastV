@@ -15,7 +15,7 @@ body {
     border-radius: 7px;
     min-height: 800px;
     max-height: 800px;
-    /* display: none; */
+    display: none;
 }
 
 #ATMContainer {
