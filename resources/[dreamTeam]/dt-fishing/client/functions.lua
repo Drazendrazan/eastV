@@ -3,11 +3,11 @@ local QBCore = exports['qb-core']:GetCoreObject()
 
 TryToFish = function()
     QBCore.Functions.TriggerCallback('qb-fishing:GetItemData', function(count)
-        if IsPedSwimming(cachedData["ped"]) then return QBCore.Functions.Notify("You can't be swimming and fishing at the same time.", "error") end 
-        if IsPedInAnyVehicle(cachedData["ped"]) then return QBCore.Functions.Notify("You need to exit your vehicle to start fishing.", "error") end 
+        if IsPedSwimming(cachedData["ped"]) then return QBCore.Functions.Notify("aynı anda hem yüzerken hem balık tutamazsın.", "error") end 
+        if IsPedInAnyVehicle(cachedData["ped"]) then return QBCore.Functions.Notify("Balık tutmaya başlamak için aracınızdan çıkmanız gerekiyor.", "error") end 
         if count ~= nil then
             if count == 0 then
-                QBCore.Functions.Notify("You need both a fishing rod and bait to fish.", "primary")
+                QBCore.Functions.Notify("Balık tutmak için hem oltaya hem de yeme ihtiyacınız var..", "primary")
             else
                 local waterValidated, castLocation = IsInWater()
 
@@ -16,7 +16,7 @@ TryToFish = function()
 
                     CastBait(fishingRod, castLocation)
                 else
-                    QBCore.Functions.Notify("You need to aim towards the water to fish", "primary")
+                    QBCore.Functions.Notify("Balık tutmak için oltan suya bakmalı", "primary")
                 end
             end
         end
@@ -31,7 +31,7 @@ CastBait = function(rodHandle, castLocation)
     local startedCasting = GetGameTimer()
 
     if not HasFishingBait() then
-        QBCore.Functions.Notify('You don\'t have any bait!', 'error')
+        QBCore.Functions.Notify('hiç yeminiz yok!', 'error')
 
         isFishing = false
         return DeleteEntity(rodHandle)
@@ -39,11 +39,8 @@ CastBait = function(rodHandle, castLocation)
 
     while not IsControlJustPressed(0, 47) do
         Citizen.Wait(5)
-
-        ShowHelpNotification("Cast your line by pressing ~INPUT_DETONATE~")
-
         if GetGameTimer() - startedCasting > 5000 then
-            QBCore.Functions.Notify("You need to cast the bait.", "primary")
+            QBCore.Functions.Notify("Yeme ihtiyacın var.", "primary")
 
             isFishing = false
             return DeleteEntity(rodHandle)
@@ -66,7 +63,7 @@ CastBait = function(rodHandle, castLocation)
     local randomBait = math.random(10000, 30000)
 
     -- DrawBusySpinner("Waiting for a fish that is biting..")
-    QBCore.Functions.Notify("Waiting for a fish to bite...", "success", "10000")
+    QBCore.Functions.Notify("Bir balığın yemi ısırmasını bekliyorsun..", "success", "10000")
     TriggerServerEvent('QBCore:Server:RemoveItem', "fishingbait", 1)
 	TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["fishingbait"], "remove")
 
@@ -94,7 +91,7 @@ CastBait = function(rodHandle, castLocation)
         return DeleteEntity(rodHandle)
     end
     
-    local caughtFish = TryToCatchFish()
+    local caughtFish = exports['qb-lock']:StartLockPickCircle(1, 50)
 
     ClearPedTasks(cachedData["ped"])
 
@@ -102,78 +99,13 @@ CastBait = function(rodHandle, castLocation)
         TriggerServerEvent("qb-fishing:receiveFish", castLocation, function(received) end)
         TriggerServerEvent('hud:server:RelieveStress', 1)
     else
-        QBCore.Functions.Notify("The fish got loose.", "error")
+        QBCore.Functions.Notify("Balık kaçtı.", "error")
     end
     
     isFishing = false
     CastBait(rodHandle, castLocation)
     return DeleteEntity(rodHandle)
 end
-
-TryToCatchFish = function()
-    local minigameSprites = {
-        ["powerDict"] = "custom",
-        ["powerName"] = "bar",
-    
-        ["tennisDict"] = "tennis",
-        ["tennisName"] = "swingmetergrad"
-    }
-
-    while not HasStreamedTextureDictLoaded(minigameSprites["powerDict"]) and not HasStreamedTextureDictLoaded(minigameSprites["tennisDict"]) do
-        RequestStreamedTextureDict(minigameSprites["powerDict"], false)
-        RequestStreamedTextureDict(minigameSprites["tennisDict"], false)
-
-        Citizen.Wait(5)
-    end
-
-    local swingOffset = 0.09
-    local swingReversed = false
-
-    local DrawObject = function(x, y, width, height, red, green, blue)
-        DrawRect(x + (width / 2.0), y + (height / 2.0), width, height, red, green, blue, 150)
-    end
-
-    while true do
-        Citizen.Wait(5)
-
-        ShowHelpNotification("Press ~INPUT_CONTEXT~ in the green area.")
-
-        DrawSprite(minigameSprites["powerDict"], minigameSprites["powerName"], 0.5, 0.4, 0.01, 0.2, 0.0, 255, 0, 0, 255)
-
-        DrawObject(0.49453227, 0.3, 0.010449, 0.03, 0, 255, 0)
-
-        DrawSprite(minigameSprites["tennisDict"], minigameSprites["tennisName"], 0.5, 0.4 + swingOffset, 0.018, 0.002, 0.0, 0, 0, 0, 255)
-
-        if swingReversed then
-            swingOffset = swingOffset - 0.005
-        else
-            swingOffset = swingOffset + 0.005
-        end
-
-        if swingOffset > 0.09 then
-            swingReversed = true
-        elseif swingOffset < -0.09 then
-            swingReversed = false
-        end
-
-        if IsControlJustPressed(0, 38) then
-            swingOffset = 0 - swingOffset
-
-            extraPower = (swingOffset + 0.09) * 250 + 1.0
-
-            print(extraPower)
-            if extraPower >= 30 then
-                return true
-            else
-                return false
-            end
-        end
-    end
-
-    SetStreamedTextureDictAsNoLongerNeeded(minigameSprites["powerDict"])
-    SetStreamedTextureDictAsNoLongerNeeded(minigameSprites["tennisDict"])
-end
-
 
 
 IsInWater = function()
@@ -196,7 +128,7 @@ IsInWater = function()
     SetEntityAlpha(fishHandle, 0, true) -- makes the fish invisible.
 
     -- DrawBusySpinner("Checking fishing location....")
-    QBCore.Functions.Notify("Checking fishing location...", "success", "3000")
+    QBCore.Functions.Notify("Balık tutma yeri kontrol ediliyor...", "success", "3000")
 
     while GetGameTimer() - startedCheck < 3000 do
         Citizen.Wait(0)
@@ -256,15 +188,14 @@ HandleStore = function()
 end
 
 
+
 SellFish = function()
     QBCore.Functions.TriggerCallback('qb-fishing:GetItemData', function(count)
         TaskTurnPedToFaceEntity(cachedData["storeOwner"], cachedData["ped"], 1000)
         TaskTurnPedToFaceEntity(cachedData["ped"], cachedData["storeOwner"], 1000)
-
         TriggerServerEvent("qb-fishing:sellFish", function(sold, fishesSold) end)
     end)
 end
-
 
 
 PlayAnimation = function(ped, dict, anim, settings)

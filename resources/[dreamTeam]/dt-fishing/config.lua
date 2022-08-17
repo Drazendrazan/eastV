@@ -22,6 +22,7 @@ Config.FishingRestaurant = {
     }
 }
 
+
 Config.FishingItems = {
     ["rod"] = {
         ["name"] = "fishingrod",
