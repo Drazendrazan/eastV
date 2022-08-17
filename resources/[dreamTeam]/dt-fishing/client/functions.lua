@@ -1,13 +1,15 @@
 QBCore = nil
 local QBCore = exports['qb-core']:GetCoreObject()
+local pedSpawned = false
+local ShopPed = {}
 
 TryToFish = function()
     QBCore.Functions.TriggerCallback('qb-fishing:GetItemData', function(count)
-        if IsPedSwimming(cachedData["ped"]) then return QBCore.Functions.Notify("aynı anda hem yüzerken hem balık tutamazsın.", "error") end 
-        if IsPedInAnyVehicle(cachedData["ped"]) then return QBCore.Functions.Notify("Balık tutmaya başlamak için aracınızdan çıkmanız gerekiyor.", "error") end 
+        if IsPedSwimming(cachedData["ped"]) then return QBCore.Functions.Notify("Yüzerken balık tutamazsın.", "error") end 
+        if IsPedInAnyVehicle(cachedData["ped"]) then return QBCore.Functions.Notify("Araçtan inmen gerekli.", "error") end 
         if count ~= nil then
             if count == 0 then
-                QBCore.Functions.Notify("Balık tutmak için hem oltaya hem de yeme ihtiyacınız var..", "primary")
+                QBCore.Functions.Notify("Bir olta ve yeme ihtiyacın var.", "primary")
             else
                 local waterValidated, castLocation = IsInWater()
 
@@ -16,7 +18,7 @@ TryToFish = function()
 
                     CastBait(fishingRod, castLocation)
                 else
-                    QBCore.Functions.Notify("Balık tutmak için oltan suya bakmalı", "primary")
+                    QBCore.Functions.Notify("Oltayı suya çevirmelisin", "primary")
                 end
             end
         end
@@ -31,7 +33,7 @@ CastBait = function(rodHandle, castLocation)
     local startedCasting = GetGameTimer()
 
     if not HasFishingBait() then
-        QBCore.Functions.Notify('hiç yeminiz yok!', 'error')
+        QBCore.Functions.Notify('Yemin kalmadı!', 'error')
 
         isFishing = false
         return DeleteEntity(rodHandle)
@@ -39,6 +41,9 @@ CastBait = function(rodHandle, castLocation)
 
     while not IsControlJustPressed(0, 47) do
         Citizen.Wait(5)
+
+        ShowHelpNotification("Balık Tutmaya Başla ~INPUT_DETONATE~")
+
         if GetGameTimer() - startedCasting > 5000 then
             QBCore.Functions.Notify("Yeme ihtiyacın var.", "primary")
 
@@ -63,7 +68,7 @@ CastBait = function(rodHandle, castLocation)
     local randomBait = math.random(10000, 30000)
 
     -- DrawBusySpinner("Waiting for a fish that is biting..")
-    QBCore.Functions.Notify("Bir balığın yemi ısırmasını bekliyorsun..", "success", "10000")
+    QBCore.Functions.Notify("Balığın yemi yutmasını bekliyorsun...", "success", "10000")
     TriggerServerEvent('QBCore:Server:RemoveItem', "fishingbait", 1)
 	TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["fishingbait"], "remove")
 
@@ -128,7 +133,7 @@ IsInWater = function()
     SetEntityAlpha(fishHandle, 0, true) -- makes the fish invisible.
 
     -- DrawBusySpinner("Checking fishing location....")
-    QBCore.Functions.Notify("Balık tutma yeri kontrol ediliyor...", "success", "3000")
+    QBCore.Functions.Notify("Bölge kontrol ediliyor...", "success", "3000")
 
     while GetGameTimer() - startedCheck < 3000 do
         Citizen.Wait(0)
@@ -163,30 +168,31 @@ end
 
 HandleStore = function()
     local storeData = Config.FishingRestaurant
-
     WaitForModel(storeData["ped"]["model"])
-
     local pedHandle = CreatePed(5, storeData["ped"]["model"], storeData["ped"]["position"], storeData["ped"]["heading"], false)
-
     SetEntityInvincible(pedHandle, true)
     SetEntityAsMissionEntity(pedHandle, true, true)
+    FreezeEntityPosition(pedHandle, true)
     SetBlockingOfNonTemporaryEvents(pedHandle, true)
-
     cachedData["storeOwner"] = pedHandle
-
     SetModelAsNoLongerNeeded(storeData["ped"]["model"])
+    
+    if Config.UseTarget then
+        exports['qb-target']:AddTargetEntity(pedHandle, {
+            options = {
+                {
+                    label = "Balıkları Sat",
+                    icon = 'fa-solid fa-dollar-sign',
+                    action = function()
+                        SellFish()
+                    end
+                }
+            },
+            distance = 2.0
+        })
+    end
 
-    local storeBlip = AddBlipForCoord(storeData["ped"]["position"])
-	
-    SetBlipSprite(storeBlip, storeData["blip"]["sprite"])
-    SetBlipScale(storeBlip, 0.65)
-    SetBlipColour(storeBlip, storeData["blip"]["color"])
-    SetBlipAsShortRange(storeBlip, true)
-    BeginTextCommandSetBlipName("STRING")
-    AddTextComponentString(storeData["name"])
-    EndTextCommandSetBlipName(storeBlip)
 end
-
 
 
 SellFish = function()

@@ -4,7 +4,7 @@ cachedData = {}
 local JobBusy = false
 
 function CreateBlips()
-    for i, zone in ipairs(Config.FishingZones) do
+    for i, zone in ipairs(Config.FishingRestaurant) do
         local coords = zone.secret and ((zone.coords / 1.5) - 133.37) or zone.coords
         local name = zone.name
         if not zone.secret then
@@ -43,33 +43,6 @@ Citizen.CreateThread(function()
     while true do
         local sleepThread = 500
         local ped = cachedData["ped"]
-        if DoesEntityExist(cachedData["storeOwner"]) then
-            local pedCoords = GetEntityCoords(ped)
-            local dstCheck = #(pedCoords - GetEntityCoords(cachedData["storeOwner"]))
-            if dstCheck < 3.0 then
-                if JobBusy == true then
-                    sleepThread = 5
-                    local displayText = not IsEntityDead(cachedData["storeOwner"]) and
-                                            "~INPUT_CONTEXT~ Balıkları Sat." or
-                                            "Ölüleri boş koy silivri f tipi."
-                    if IsControlJustPressed(0, 38) then
-                        DeleteBlips()
-                        SellFish()
-                    end
-                    ShowHelpNotification(displayText)
-                elseif JobBusy == false then
-                    sleepThread = 5
-                    local displayText = not IsEntityDead(cachedData["storeOwner"]) and
-                                            "~INPUT_CONTEXT~ Balık Tut."
-                    if IsControlJustPressed(0, 38) then
-                        JobBusy = true
-                        CreateBlips()
-                        Citizen.Wait(5000)
-                    end
-                    ShowHelpNotification(displayText)
-                end
-            end
-        end
         Citizen.Wait(sleepThread)
     end
 end)
