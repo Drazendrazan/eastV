@@ -25,47 +25,47 @@ Config.FishingRestaurant = {
 Config.FishingItems = {
     ["rod"] = {
         ["name"] = "fishingrod",
-        ["label"] = "Fishing Rod"
+        ["label"] = "Olta"
     },
     ["bait"] = {
         ["name"] = "fishingbait",
-        ["label"] = "Fishing Bait"
+        ["label"] = "Yem"
     },
     ["fish"] = {
-        ["price"] = 50 
+        ["price"] = 7 
     },
     ["stripedbass"] = {
-        ["price"] = 60
+        ["price"] = 6
     },
     ["bluefish"] = {
-        ["price"] = 60
+        ["price"] = 6
     },
     ["redfish"] = {
-        ["price"] = 160
+        ["price"] = 7
     },
     ["pacifichalibut"] = {
-        ["price"] = 160
+        ["price"] = 30
     },
     ["goldfish"] = {
-        ["price"] = 160
+        ["price"] = 75
     },
     ["largemouthbass"] = {
-        ["price"] = 500
+        ["price"] = 22
     },
     ["salmon"] = {
-        ["price"] = 500
+        ["price"] = 10
     },
     ["catfish"] = {
-        ["price"] = 500
+        ["price"] = 45
     },
     ["tigersharkmeat"] = {
-        ["price"] = 500
+        ["price"] = 55
     },
     ["stingraymeat"] = {
-        ["price"] = 700
+        ["price"] = 60
     },
     ["killerwhalemeat"] = {
-        ["price"] = 800
+        ["price"] = 80
     },
 }
 

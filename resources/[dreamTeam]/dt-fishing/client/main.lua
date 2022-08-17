@@ -27,8 +27,6 @@ function DeleteBlips()
     end
 end
 
--- function SellFish()
-
 RegisterNetEvent("qb-fishing:tryToFish")
 AddEventHandler("qb-fishing:tryToFish", function()
     TryToFish()
@@ -52,8 +50,8 @@ Citizen.CreateThread(function()
                 if JobBusy == true then
                     sleepThread = 5
                     local displayText = not IsEntityDead(cachedData["storeOwner"]) and
-                                            "Press ~INPUT_CONTEXT~ to sell your fish to the owner." or
-                                            "The owner is dead, and therefore can not speak."
+                                            "~INPUT_CONTEXT~ Balıkları Sat." or
+                                            "Ölüleri boş koy silivri f tipi."
                     if IsControlJustPressed(0, 38) then
                         DeleteBlips()
                         SellFish()
@@ -62,7 +60,7 @@ Citizen.CreateThread(function()
                 elseif JobBusy == false then
                     sleepThread = 5
                     local displayText = not IsEntityDead(cachedData["storeOwner"]) and
-                                            "Press ~INPUT_CONTEXT~ to start working."
+                                            "~INPUT_CONTEXT~ Balık Tut."
                     if IsControlJustPressed(0, 38) then
                         JobBusy = true
                         CreateBlips()

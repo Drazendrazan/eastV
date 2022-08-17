@@ -137,6 +137,6 @@ AddEventHandler("qb-fishing:sellFish", function()
             end
         end
         Player.Functions.AddMoney("cash", price, "sold-fish")
-		TriggerClientEvent('QBCore:Notify', src, "You have sold your fish for $" .. price)
+		TriggerClientEvent('QBCore:Notify', src, "Balıkları Sattın Kazancın: $" .. price)
 	end
 end)
