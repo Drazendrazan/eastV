@@ -9,10 +9,10 @@ window.addEventListener("message", function (event) {
 function CreateNotification(data) {
   var mdi;
   if (data.type === "success") {
-    mdi = "done";
+    mdi = "arrow_right";
   }
   if (data.type === "inform" || data.type === undefined) {
-    mdi = "info";
+    mdi = "arrow_right";
   }
   if (data.type === "error") {
     mdi = "dangerous";

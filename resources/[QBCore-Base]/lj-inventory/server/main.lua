@@ -665,13 +665,13 @@ RegisterNetEvent('inventory:server:OpenInventory', function(name, id, other)
 					end
 				end
 				secondInv.name = "trunk-"..id
-				secondInv.label = "Trunk-"..id
+				secondInv.label = "Bagaj-"..id
 				secondInv.maxweight = other.maxweight or 60000
 				secondInv.inventory = {}
 				secondInv.slots = other.slots or 50
 				if (Trunks[id] and Trunks[id].isOpen) or (QBCore.Shared.SplitStr(id, "PLZI")[2] and Player.PlayerData.job.name ~= "police") then
 					secondInv.name = "none-inv"
-					secondInv.label = "Trunk-None"
+					secondInv.label = "Bagaj-None"
 					secondInv.maxweight = other.maxweight or 60000
 					secondInv.inventory = {}
 					secondInv.slots = 0
@@ -708,7 +708,7 @@ RegisterNetEvent('inventory:server:OpenInventory', function(name, id, other)
 					end
 				end
 				secondInv.name = "glovebox-"..id
-				secondInv.label = "Glovebox-"..id
+				secondInv.label = "Torpido-"..id
 				secondInv.maxweight = 10000
 				secondInv.inventory = {}
 				secondInv.slots = 5

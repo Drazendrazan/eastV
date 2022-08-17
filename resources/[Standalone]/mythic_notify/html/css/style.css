@@ -8,7 +8,7 @@ body {
 }
 
 .notif-container {
-    width: 20%;
+    width: auto;
     position: absolute;
     right: 15%;
     display: table;
@@ -19,7 +19,7 @@ body {
     background-color: transparent !important;
     padding-right: 10px;
     margin-top: -4px;
-    font-size: 14px;
+    font-size: 2px;
     float: left;
     display: table-cell;
 }
@@ -31,7 +31,7 @@ body {
 
 .notification {
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 2px;
     font: caption;
     font-size: 13px;
     font-weight: bold;
@@ -46,12 +46,12 @@ body {
 }
 
 .success {
-    background: #72cc72;
+    background: #272727;
     color: #ffffff;
 }
 
 .inform {
-    background-color: #46a3d1;
+    background-color: #272727;
     color: #ffffff;
 }
 
