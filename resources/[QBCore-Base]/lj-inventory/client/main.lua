@@ -364,7 +364,7 @@ RegisterNetEvent('inventory:client:CraftItems', function(itemName, itemCosts, am
         action = "close",
     })
     isCrafting = true
-    QBCore.Functions.Progressbar("repair_vehicle", "Crafting..", (math.random(2000, 5000) * amount), false, true, {
+    QBCore.Functions.Progressbar("repair_vehicle", "Üretiliyor", (math.random(2000, 5000) * amount), false, true, {
 		disableMovement = true,
 		disableCarMovement = true,
 		disableMouse = false,
@@ -443,6 +443,7 @@ RegisterNetEvent('inventory:client:UseWeapon', function(weaponData, shootbool)
     local weaponName = tostring(weaponData.name)
     if currentWeapon == weaponName then
         SetCurrentPedWeapon(ped, `WEAPON_UNARMED`, true)
+        -- ExecuteCommand("me Silahı Beline Koyar")
         Wait(1500)
         RemoveAllPedWeapons(ped, true)
         TriggerEvent('weapons:client:SetCurrentWeapon', nil, shootbool)
@@ -468,6 +469,7 @@ RegisterNetEvent('inventory:client:UseWeapon', function(weaponData, shootbool)
                 ammo = 4000
             end
             GiveWeaponToPed(ped, GetHashKey(weaponName), 0, false, false)
+            -- ExecuteCommand("me Silahı Belinden Alır")
             SetPedAmmo(ped, GetHashKey(weaponName), ammo)
             SetCurrentPedWeapon(ped, GetHashKey(weaponName), true)
             if weaponData.info.attachments ~= nil then
@@ -810,15 +812,16 @@ RegisterNUICallback("GiveItem", function(data)
         if (data.inventory == 'player') then
             local playerId = GetPlayerServerId(player)
             SetCurrentPedWeapon(PlayerPedId(),'WEAPON_UNARMED',true)
+            ExecuteCommand('me Kisiye '..data.item.amount.. ' Adet ' ..data.item.label..' Uzatır')
             TriggerServerEvent("inventory:server:GiveItem", playerId, data.item.name, data.amount, data.item.slot)
         else
             QBCore.Functions.Notify("You do not own this item!", "error")
         end
     else
-        ExecuteCommand('me '..data.item.amount.. ' ' ..data.item.name..' Uzatır')
         QBCore.Functions.Notify("No one nearby!", "error")
     end
 end)
+
 
 -- Threads
 
