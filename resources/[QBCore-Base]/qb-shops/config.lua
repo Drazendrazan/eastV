@@ -100,7 +100,7 @@ Config.Products = {
         [12] = {
             name = "rolling_paper",
             price = 2,
-            amount = 5000,
+            amount = 5,
             info = {},
             type = "item",
             slot = 12,
@@ -292,7 +292,7 @@ Config.Products = {
         [3] = {
             name = "weed_nutrition",
             price = 20,
-            amount = 1000,
+            amount = 5,
             info = {},
             type = "item",
             slot = 3,
@@ -300,7 +300,7 @@ Config.Products = {
         [4] = {
             name = "empty_weed_bag",
             price = 2,
-            amount = 1000,
+            amount = 2,
             info = {},
             type = "item",
             slot = 4,
@@ -308,10 +308,18 @@ Config.Products = {
         [5] = {
             name = "rolling_paper",
             price = 2,
-            amount = 1000,
+            amount = 5,
             info = {},
             type = "item",
             slot = 5,
+        },
+        [6] = {
+            name = "weed_purple-haze_seed",
+            price = 2,
+            amount = 15,
+            info = {},
+            type = "item",
+            slot = 6,
         },
     },
     ["gearshop"] = {
@@ -401,40 +409,22 @@ Config.Products = {
             requiredJob = { "mechanic", "police" }
         },
         [4] = {
-            name = "weapon_pistol",
-            price = 2500,
+            name = "weapon_snspistol",
+            price = 750,
             amount = 5,
             info = {},
             type = "item",
             slot = 4,
-            requiresLicense = false
+            requiresLicense = true
         },
         [5] = {
-            name = "weapon_snspistol",
-            price = 1500,
-            amount = 5,
-            info = {},
-            type = "item",
-            slot = 5,
-            requiresLicense = false
-        },
-        [6] = {
-            name = "weapon_vintagepistol",
-            price = 4000,
-            amount = 5,
-            info = {},
-            type = "item",
-            slot = 6,
-            requiresLicense = false
-        },
-        [7] = {
             name = "pistol_ammo",
             price = 250,
             amount = 250,
             info = {},
             type = "item",
-            slot = 7,
-            requiresLicense = false
+            slot = 5,
+            requiresLicense = true
         },
     },
     ["casino"] = {
@@ -459,7 +449,7 @@ Config.Products = {
         },
         [2] = {
             name = 'shotgun_ammo',
-            price = 100,
+            price = 350,
             amount = 50,
             info = {},
             type = 'item',
@@ -811,107 +801,7 @@ Config.Locations = {
         ["blipsprite"] = 402,
         ["blipcolor"] = 0
     },
-
-    -- Ammunation Locations
     ["ammunation"] = {
-        ["label"] = "Silahcı",
-        ["type"] = "weapon",
-        ["coords"] = vector4(-661.96, -933.53, 21.83, 177.05),
-        ["ped"] = 's_m_y_ammucity_01',
-        ["scenario"] = "WORLD_HUMAN_COP_IDLES",
-        ["radius"] = 1.5,
-        ["targetIcon"] = "fas fa-gun",
-        ["targetLabel"] = "Silahları Gör",
-        ["products"] = Config.Products["weapons"],
-        ["showblip"] = true,
-        ["blipsprite"] = 110,
-        ["blipcolor"] = 0
-    },
-    ["ammunation2"] = {
-        ["label"] = "Silahcı",
-        ["type"] = "weapon",
-        ["coords"] = vector4(809.68, -2159.13, 29.62, 1.43),
-        ["ped"] = 's_m_y_ammucity_01',
-        ["scenario"] = "WORLD_HUMAN_COP_IDLES",
-        ["radius"] = 1.5,
-        ["targetIcon"] = "fas fa-gun",
-        ["targetLabel"] = "Silahları Gör",
-        ["products"] = Config.Products["weapons"],
-        ["showblip"] = true,
-        ["blipsprite"] = 110,
-        ["blipcolor"] = 0
-    },
-    ["ammunation3"] = {
-        ["label"] = "Silahcı",
-        ["type"] = "weapon",
-        ["coords"] = vector4(1692.67, 3761.38, 34.71, 227.65),
-        ["ped"] = 's_m_y_ammucity_01',
-        ["scenario"] = "WORLD_HUMAN_COP_IDLES",
-        ["radius"] = 1.5,
-        ["targetIcon"] = "fas fa-gun",
-        ["targetLabel"] = "Silahları Gör",
-        ["products"] = Config.Products["weapons"],
-        ["showblip"] = true,
-        ["blipsprite"] = 110,
-        ["blipcolor"] = 0
-    },
-    ["ammunation4"] = {
-        ["label"] = "Silahcı",
-        ["type"] = "weapon",
-        ["coords"] = vector4(-331.23, 6085.37, 31.45, 228.02),
-        ["ped"] = 's_m_y_ammucity_01',
-        ["scenario"] = "WORLD_HUMAN_COP_IDLES",
-        ["radius"] = 1.5,
-        ["targetIcon"] = "fas fa-gun",
-        ["targetLabel"] = "Silahları Gör",
-        ["products"] = Config.Products["weapons"],
-        ["showblip"] = true,
-        ["blipsprite"] = 110,
-        ["blipcolor"] = 0
-    },
-    ["ammunation5"] = {
-        ["label"] = "Silahcı",
-        ["type"] = "weapon",
-        ["coords"] = vector4(253.63, -51.02, 69.94, 72.91),
-        ["ped"] = 's_m_y_ammucity_01',
-        ["scenario"] = "WORLD_HUMAN_COP_IDLES",
-        ["radius"] = 1.5,
-        ["targetIcon"] = "fas fa-gun",
-        ["targetLabel"] = "Silahları Gör",
-        ["products"] = Config.Products["weapons"],
-        ["showblip"] = true,
-        ["blipsprite"] = 110,
-        ["blipcolor"] = 0
-    },
-    ["ammunation6"] = {
-        ["label"] = "Silahcı",
-        ["type"] = "weapon",
-        ["coords"] = vector4(23.0, -1105.67, 29.8, 162.91),
-        ["ped"] = 's_m_y_ammucity_01',
-        ["scenario"] = "WORLD_HUMAN_COP_IDLES",
-        ["radius"] = 1.5,
-        ["targetIcon"] = "fas fa-gun",
-        ["targetLabel"] = "Silahları Gör",
-        ["products"] = Config.Products["weapons"],
-        ["showblip"] = true,
-        ["blipsprite"] = 110,
-        ["blipcolor"] = 0
-    },
-    ["ammunation7"] = {
-        ["label"] = "Silahcı",
-        ["type"] = "weapon",
-        ["coords"] = vector4(2567.48, 292.59, 108.73, 349.68),
-        ["ped"] = 's_m_y_ammucity_01',
-        ["scenario"] = "WORLD_HUMAN_COP_IDLES",
-        ["radius"] = 1.5,
-        ["targetIcon"] = "fas fa-gun",
-        ["targetLabel"] = "Silahları Gör",
-        ["products"] = Config.Products["weapons"],
-        ["showblip"] = true,
-        ["blipsprite"] = 110,
-        ["blipcolor"] = 0
-    },
-    ["ammunation8"] = {
         ["label"] = "Silahcı",
         ["type"] = "weapon",
         ["coords"] = vector4(-1118.59, 2700.05, 18.55, 221.89),
@@ -923,77 +813,6 @@ Config.Locations = {
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
         ["blipsprite"] = 110,
-        ["blipcolor"] = 0
-    },
-    ["ammunation9"] = {
-        ["label"] = "Silahcı",
-        ["type"] = "weapon",
-        ["coords"] = vector4(841.92, -1035.32, 28.19, 1.56),
-        ["ped"] = 's_m_y_ammucity_01',
-        ["scenario"] = "WORLD_HUMAN_COP_IDLES",
-        ["radius"] = 1.5,
-        ["targetIcon"] = "fas fa-gun",
-        ["targetLabel"] = "Silahları Gör",
-        ["products"] = Config.Products["weapons"],
-        ["showblip"] = true,
-        ["blipsprite"] = 110,
-        ["blipcolor"] = 0
-    },
-    ["ammunation10"] = {
-        ["label"] = "Silahcı",
-        ["type"] = "weapon",
-        ["coords"] = vector4(-1304.19, -395.12, 36.7, 75.03),
-        ["ped"] = 's_m_y_ammucity_01',
-        ["scenario"] = "WORLD_HUMAN_COP_IDLES",
-        ["radius"] = 1.5,
-        ["targetIcon"] = "fas fa-gun",
-        ["targetLabel"] = "Silahları Gör",
-        ["products"] = Config.Products["weapons"],
-        ["showblip"] = true,
-        ["blipsprite"] = 110,
-        ["blipcolor"] = 0
-    },
-    ["ammunation11"] = {
-        ["label"] = "Silahcı",
-        ["type"] = "weapon",
-        ["coords"] = vector4(-3173.31, 1088.85, 20.84, 244.18),
-        ["ped"] = 's_m_y_ammucity_01',
-        ["scenario"] = "WORLD_HUMAN_COP_IDLES",
-        ["radius"] = 1.5,
-        ["targetIcon"] = "fas fa-gun",
-        ["targetLabel"] = "Silahları Gör",
-        ["products"] = Config.Products["weapons"],
-        ["showblip"] = true,
-        ["blipsprite"] = 110,
-        ["blipcolor"] = 0
-    },
-
-    -- Casino Locations
-    ["casino"] = {
-        ["label"] = "Diamond Casino",
-        ["coords"] = vector4(949.29, 32.13, 71.95, 79.54),
-        ["ped"] = 'csb_tomcasino',
-        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
-        ["radius"] = 1.5,
-        ["targetIcon"] = "fas fa-coins",
-        ["targetLabel"] = "Buy Chips",
-        ["products"] = Config.Products["casino"],
-        ["showblip"] = true,
-        ["blipsprite"] = 617,
-        ["blipcolor"] = 0
-    },
-
-    ["casinobar"] = {
-        ["label"] = "Casino Bar",
-        ["coords"] = vector4(937.45, 27.22, 71.83, 61.21),
-        ["ped"] = 'a_m_y_smartcaspat_01',
-        ["scenario"] = "WORLD_HUMAN_VALET",
-        ["radius"] = 1.5,
-        ["targetIcon"] = "fas fa-wine-bottle",
-        ["targetLabel"] = "Open Casino Bar",
-        ["products"] = Config.Products["liquor"],
-        ["showblip"] = false,
-        ["blipsprite"] = 52,
         ["blipcolor"] = 0
     },
 

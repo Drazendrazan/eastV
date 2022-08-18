@@ -11,7 +11,8 @@ shared_script 'config.lua'
 client_scripts {
   'game/build/client.js',
   'client/client.lua',
-  'client/targetevent.lua'
+  'client/targetevent.lua',
+  'client/commands.lua'
 }
 
 server_scripts {

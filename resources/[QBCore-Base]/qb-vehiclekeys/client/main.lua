@@ -40,7 +40,7 @@ CreateThread(function()
                         if not isTakingKeys then
                             isTakingKeys = true
                             SetVehicleDoorsLocked(entering, 1)
-                            QBCore.Functions.Progressbar("steal_keys", "Taking keys from body...", 2500, false, false, {
+                            QBCore.Functions.Progressbar("steal_keys", "Ceplerinde anahtarı arıyorsun...", 2500, false, false, {
                                 disableMovement = false,
                                 disableCarMovement = true,
                                 disableMouse = false,
@@ -393,7 +393,7 @@ function Hotwire(vehicle, plate)
 
     SetVehicleAlarm(vehicle, true)
     SetVehicleAlarmTimeLeft(vehicle, hotwireTime)
-    QBCore.Functions.Progressbar("hotwire_vehicle", "Searching for the car keys...", hotwireTime, false, true, {
+    QBCore.Functions.Progressbar("hotwire_vehicle", "Araç anahtarları aranıyor...", hotwireTime, false, true, {
         disableMovement = true,
         disableCarMovement = true,
         disableMouse = false,

@@ -169,11 +169,11 @@ end)
 
 RegisterNetEvent('fivem-appearance:saveOutfit', function()
 	local keyboard = exports['qb-input']:ShowInput({
-        header = "Name your outfit",
-        submitText = "Create Outfit",
+        header = "Kombinin Adı",
+        submitText = "Kombin Yarat",
         inputs = {
             {
-                text = "Outfit Name",
+                text = "Kombin Adı",
                 name = "input",
                 type = "text",
                 isRequired = true
@@ -188,7 +188,7 @@ RegisterNetEvent('fivem-appearance:saveOutfit', function()
 		local pedProps = exports['fivem-appearance']:getPedProps(playerPed)
 		Wait(500)
 		TriggerServerEvent('fivem-appearance:saveOutfit', keyboard.input, pedModel, pedComponents, pedProps)
-		QBCore.Functions.Notify('Outfit '..keyboard.input.. ' has been saved', 'success')
+		QBCore.Functions.Notify('Kıyafet '..keyboard.input.. ' Kaydedildi', 'success')
 	end
 end)
 
@@ -221,7 +221,7 @@ end)
 RegisterNetEvent('fivem-appearance:deleteOutfit', function(id)
 	TriggerServerEvent('fivem-appearance:deleteOutfit', id)
 	-- TriggerEvent('fivem-appearance:clothingShop')
-	QBCore.Functions.Notify('Outfit Deleted', 'error')
+	QBCore.Functions.Notify('Kıyafet Silindi', 'error')
 end)
 
 RegisterNetEvent("fivem-appearance:purchase", function(bool)

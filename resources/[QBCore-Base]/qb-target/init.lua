@@ -90,7 +90,14 @@ Config.GlobalPedOptions = {
 }
 
 Config.GlobalVehicleOptions = {
-
+	options = {
+		{
+			type = "client",
+			event = "qb-trunk:client:GetIn",
+			icon = 'fas fa-truck-ramp-box',
+			label = 'Bagaja Gir',
+		},
+	}
 }
 
 Config.GlobalObjectOptions = {

@@ -58,7 +58,7 @@ RegisterNetEvent('fivem-appearances:buyclothing', function()
 		if Player.Functions.RemoveMoney('cash', Config.Money, "clothing-buy") then
 			TriggerClientEvent('fivem-appearance:purchase', src, true)
 		else
-			TriggerClientEvent('QBCore:Notify', src, 'You dont have enough money!', 'error')
+			TriggerClientEvent('QBCore:Notify', src, 'Yeterli Paran Yok!', 'error')
 			TriggerClientEvent('fivem-appearance:purchase', src, false)
 		end
 	else

@@ -737,6 +737,8 @@ RegisterNUICallback("CloseInventory", function()
     end
     if CurrentVehicle ~= nil then
         CloseTrunk()
+        -- print("Closing Trunk")
+        -- ExecuteCommand('me closes the trunk')
         TriggerServerEvent("inventory:server:SaveInventory", "trunk", CurrentVehicle)
         CurrentVehicle = nil
     elseif CurrentGlovebox ~= nil then
@@ -813,6 +815,7 @@ RegisterNUICallback("GiveItem", function(data)
             QBCore.Functions.Notify("You do not own this item!", "error")
         end
     else
+        ExecuteCommand('me '..playerID.. ' ' ..data.item.amount.. ' ' ..data.item.name..' Uzatır')
         QBCore.Functions.Notify("No one nearby!", "error")
     end
 end)
