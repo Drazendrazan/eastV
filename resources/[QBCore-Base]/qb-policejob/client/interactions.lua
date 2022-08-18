@@ -385,6 +385,7 @@ RegisterNetEvent('police:client:GetCuffed', function(playerId, isSoftcuff)
             QBCore.Functions.Notify(Lang:t("info.cuff"), 'primary')
         else
             cuffType = 49
+            ExecuteCommand("me ellerini arkada birlestirir")
             GetCuffedAnimation(playerId)
             QBCore.Functions.Notify(Lang:t("info.cuffed_walk"), 'primary')
         end
