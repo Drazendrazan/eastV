@@ -138,6 +138,10 @@ QBCore.Commands.Add("grantlicense", Lang:t("commands.license_grant"), {{name = "
         if args[2] == "weapon" then
             Player.Functions.AddItem("weaponlicense", 1)
             TriggerClientEvent("inventory:client:ItemBox", _source, "weaponlicense", "add")
+        else
+            Player.Functions.AddItem("driverlicense", 1)
+            TriggerClientEvent("inventory:client:ItemBox", _source, "driverlicense", "add")
+        end
     else
         TriggerClientEvent('QBCore:Notify', src, Lang:t("error.rank_license"), "error")
     end
