@@ -116,7 +116,7 @@ QBCore.Commands.Add("spikestrip", Lang:t("commands.place_spike"), {}, false, fun
     end
 end)
 
-QBCore.Commands.Add("grantlicense", Lang:t("commands.license_grant"), {{name = "id", help = Lang:t('info.player_id')}, {name = "license", help = Lang:t('info.license_type')}}, true, function(source, args)
+QBCore.Commands.Add("lisansver", Lang:t("commands.license_grant"), {{name = "id", help = Lang:t('info.player_id')}, {name = "license", help = Lang:t('info.license_type')}}, true, function(source, args)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
     if Player.PlayerData.job.name == "police" and Player.PlayerData.job.grade.level >= Config.LicenseRank then
@@ -135,19 +135,12 @@ QBCore.Commands.Add("grantlicense", Lang:t("commands.license_grant"), {{name = "
         else
             TriggerClientEvent('QBCore:Notify', src, Lang:t("error.error_license_type"), "error")
         end
-        if args[2] == "weapon" then
-            SearchedPlayer.Functions.AddItem("weaponlicense", 1)
-            TriggerClientEvent("inventory:client:ItemBox", _source, "weaponlicense", "add")
-        else
-            SearchedPlayer.Functions.AddItem("driverlicense", 1)
-            TriggerClientEvent("inventory:client:ItemBox", _source, "driverlicense", "add")
-        end
     else
         TriggerClientEvent('QBCore:Notify', src, Lang:t("error.rank_license"), "error")
     end
 end)
 
-QBCore.Commands.Add("revokelicense", Lang:t("commands.license_revoke"), {{name = "id", help = Lang:t('info.player_id')}, {name = "license", help = Lang:t('info.license_type')}}, true, function(source, args)
+QBCore.Commands.Add("lisansal", Lang:t("commands.license_revoke"), {{name = "id", help = Lang:t('info.player_id')}, {name = "license", help = Lang:t('info.license_type')}}, true, function(source, args)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
     if Player.PlayerData.job.name == "police" and Player.PlayerData.job.grade.level >= Config.LicenseRank then
