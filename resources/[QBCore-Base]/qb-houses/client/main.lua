@@ -1274,27 +1274,27 @@ exports['qb-target']:AddTargetModel(stashBoxModels, {
 
 
 
--- Clothes --
+-- -- Clothes --
 
 
-RegisterNetEvent('dream:client:openOutfitMenu', function()
-    -- TriggerEvent('qb-clothing:client:openOutfitMenu') qb-clothing
-    TriggerEvent('fivem-appearance:pickNewOutfit')
-end)
+-- RegisterNetEvent('dream:client:openOutfitMenu', function()
+--     -- TriggerEvent('qb-clothing:client:openOutfitMenu') qb-clothing
+--     TriggerEvent('fivem-appearance:pickNewOutfit')
+-- end)
 
 
 
-local clothesBoxModels = {
-    `v_52_clothing12`,
-}
+-- local clothesBoxModels = {
+--     `v_52_clothing12`,
+-- }
 
-exports['qb-target']:AddTargetModel(stashBoxModels, {
-    options = {
-        {
-            event = "dream:client:openOutfitMenu",
-            icon = "fas fa-wrench",
-            label = "Kıyafet Dolabı", 
-        },
-    },
-    distance = 1.0
-})
+-- exports['qb-target']:AddTargetModel(stashBoxModels, {
+--     options = {
+--         {
+--             event = "dream:client:openOutfitMenu",
+--             icon = "fas fa-wrench",
+--             label = "Kıyafet Dolabı", 
+--         },
+--     },
+--     distance = 1.0
+-- })

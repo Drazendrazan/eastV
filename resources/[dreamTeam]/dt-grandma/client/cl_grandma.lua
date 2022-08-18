@@ -83,7 +83,7 @@ end)
 RegisterNetEvent('dt-grandma:reviveplayer', function(source)
     SetEntityCoords(PlayerPedId(), Config.Coords.x, Config.Coords.y, Config.Coords.z)
     TaskStartScenarioInPlace(grandma, "CODE_HUMAN_MEDIC_TEND_TO_DEAD", 0, true)
-    QBCore.Functions.Progressbar("grandma", "Büyükanne yaralarını iyileştiriyor..", 10000, false, true, {
+    QBCore.Functions.Progressbar("grandma", "Büyükanne yaralarını iyileştiriyor..", 80000, false, true, {
         disableMovement = true,
         disableCarMovement = true,
         disableMouse = false,
