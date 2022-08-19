@@ -26,5 +26,5 @@
     "enabled": true,
     "sentryEnabled": true
   },
-  "apps": []
+  "apps": ["npwd_qb_garage", "npwd_qb_services", "npwd_qb_mail"]
 }
