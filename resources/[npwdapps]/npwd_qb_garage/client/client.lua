@@ -51,9 +51,9 @@ end)
 RegisterNUICallback("npwd:qb-garage:requestWaypoint", function(data, cb)
 	local plate = data.plate
 	if findVehFromPlateAndLocate(plate) then
-		QBCore.Functions.Notify("Your vehicle has been marked", "success")
+		QBCore.Functions.Notify("Aracın gpsde işaretlendi", "success")
 	else
-		QBCore.Functions.Notify("This vehicle cannot be located", "error")
+		QBCore.Functions.Notify("Aracın çekilmişlerde olabilir", "error")
 	end
 	cb({})
 end)
