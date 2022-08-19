@@ -170,7 +170,6 @@ CreateThread(function()
                         end
                     end
                 end
-
                 SetCurrentPedWeapon(ped, `WEAPON_UNARMED`, true)
             elseif InLaststand then
                 sleep = 5
