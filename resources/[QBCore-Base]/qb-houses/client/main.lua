@@ -1272,8 +1272,6 @@ exports['qb-target']:AddTargetModel(stashBoxModels, {
 
 
 
-
-
 -- -- Clothes --
 
 

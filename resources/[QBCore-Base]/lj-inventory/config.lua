@@ -11,7 +11,7 @@ Config.BinObjects = {
 }
 
 
-Config.CraftingObject = `prop_toolchest_05` -- Only needed if not using target | Line 928 to change Target Models
+Config.CraftingObject = `ch_chint03_weapons` -- Only needed if not using target | Line 928 to change Target Models
 
 Config.VendingItem = {
     [1] = {
@@ -44,7 +44,7 @@ Config.CraftingItems = {
         type = "item",
         slot = 1,
         threshold = 0,
-        points = 1,
+        points = 500,
     },
     [2] = {
         name = "screwdriverset",
@@ -208,7 +208,7 @@ Config.AttachmentCraftingLocation = vector3(88.91, 3743.88, 40.77) -- Only neede
 Config.AttachmentCrafting = {
     ["items"] = {
         [1] = {
-            name = "pistol_extendedclip",
+            name = "weapon_pistol",
             amount = 50,
             info = {},
             costs = {
@@ -219,7 +219,7 @@ Config.AttachmentCrafting = {
             type = "item",
             slot = 1,
             threshold = 0,
-            points = 1,
+            points = 5,
         },
         [2] = {
             name = "pistol_suppressor",
@@ -307,14 +307,13 @@ Config.AttachmentCrafting = {
             points = 7,
         },
         [8] = {
-            name = "assaultrifle_drum",
+            name = "weapon_glock17",
             amount = 50,
             info = {},
             costs = {
-                ["metalscrap"] = 300,
-                ["steel"] = 469,
-                ["rubber"] = 170,
-                ["smg_extendedclip"] = 2,
+                ["metalscrap"] = 1,
+                ["steel"] = 1,
+                ["rubber"] = 1,
             },
             type = "item",
             slot = 8,

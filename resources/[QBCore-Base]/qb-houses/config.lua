@@ -8,7 +8,7 @@ Config.Houses = {}
 
 Config.Furniture = {
 	["sofas"] = {
-		label = "Sofas",
+		label = "Kanepeler",
 		items = {
 			[1] = { ["object"] = "miss_rub_couch_01", ["price"] = 300, ["label"] = "Old couch" },
 			[2] = { ["object"] = "prop_fib_3b_bench", ["price"] = 700, ["label"] = "Threesits couch" },
@@ -67,7 +67,7 @@ Config.Furniture = {
 		},
 	},
 	["chairs"] = {
-		label = "Chair's",
+		label = "Sandalyeler",
 		items = {
 			[1] = { ["object"] = "v_res_d_highchair", ["price"] = 700, ["label"] = "High chair" },
 			[2] = { ["object"] = "apa_mp_h_stn_chairstrip_03", ["price"] = 500, ["label"] = "Sitchair 4" },
@@ -173,18 +173,20 @@ Config.Furniture = {
 		},	
 	},
 	["general"] = {
-		label = "General",
+		label = "Genel",
 		items = {
 			[1] = { ["object"] = "v_52_clothing12", ["price"] = 500, ["label"] = "Gardrop" },
 			[2] = { ["object"] = "prop_mil_crate_01", ["price"] = 500, ["label"] = "Depo" },
 			[3] = { ["object"] = "bkr_prop_meth_table01a", ["price"] = 500, ["label"] = "Kimyasal Masası" },
 			[4] = { ["object"] = "bkr_prop_weed_table_01a", ["price"] = 500, ["label"] = "Bitki Masası" },
+			[5] = { ["object"] = "v_ret_ml_tableb", ["price"] = 500, ["label"] = "Üretim Masası" },
+
 
 			
 		},
 	},
 	["general2"] = {
-		label = "Props",
+		label = "Objeler",
 		items = {
 			[1] = { ["object"] = "prop_a4_pile_01", ["price"] = 100, ["label"] = "A4 Pile" },
 			[2] = { ["object"] = "prop_amb_40oz_03", ["price"] = 100, ["label"] = "40 oz" },
@@ -308,7 +310,7 @@ Config.Furniture = {
 		},
 	},
 	["general3"] = {
-		label = "Random",
+		label = "Rastgele",
 		items = {
 			[1] = { ["object"] = "v_ret_csr_bin", ["price"] = 100, ["label"] = "CSR Bin" },
 			[2] = { ["object"] = "v_ret_fh_wickbskt", ["price"] = 100, ["label"] = "Basket" },
@@ -366,7 +368,7 @@ Config.Furniture = {
 		},
 	},
 	["general4"] = {
-		label = "Random 2",
+		label = "Rastgele 2",
 		items = {
 			[1] = { ["object"] = "prop_dummy_01", ["price"] = 100, ["label"] = "Dummy" },
 			[2] = { ["object"] = "prop_egg_clock_01", ["price"] = 100, ["label"] = "Egg Clock" },
@@ -431,7 +433,7 @@ Config.Furniture = {
 		},
 	},
 	["small"] = {
-		label = "Details",
+		label = "Ürünler",
 		items = {
 			[1] = { ["object"] = "v_res_r_figcat", ["price"] = 300, ["label"] = "Fig Cat" },
 			[2] = { ["object"] = "v_res_r_figclown", ["price"] = 300, ["label"] = "Fig Clown" },
@@ -481,7 +483,7 @@ Config.Furniture = {
 		},
 	},
 	["storage"] = {
-		label = "Storage",
+		label = "Depolama",
 		items = {
 			[1] = { ["object"] = "v_res_cabinet", ["price"] = 2500, ["label"] = "Cabinet Large" },
 			[2] = { ["object"] = "v_res_d_dressingtable", ["price"] = 2500, ["label"] = "Dressing Table" },
@@ -544,7 +546,7 @@ Config.Furniture = {
 		},
 	},
 	["electronics"] = {
-		label = "Electronics",
+		label = "Elektronik",
 		items = {
 			[1] = { ["object"] = "prop_trailr_fridge", ["price"] = 300, ["label"] = "Old Fridge" },
 			[2] = { ["object"] = "v_res_fh_speaker", ["price"] = 300, ["label"] = "Speaker" },
@@ -604,7 +606,7 @@ Config.Furniture = {
 		},
 	},
 	["lighting"] = {
-		label = "Lighting",
+		label = "Işıklandırma",
 		items = {
 			[1] = { ["object"] = "v_corp_cd_desklamp", ["price"] = 100, ["label"] = "Desk Corp Lamp" },
 			[2] = { ["object"] = "v_res_desklamp", ["price"] = 100, ["label"] = "Desk Lamp" },
@@ -672,7 +674,7 @@ Config.Furniture = {
 		},
 	},
 	["tables"] = {
-		label = "Tables",
+		label = "Masalar",
 		items = {
 			[1] = { ["object"] = "v_res_d_coffeetable", ["price"] = 500, ["label"] = "Coffee Table 1" },
 			[2] = { ["object"] = "v_res_d_roundtable", ["price"] = 500, ["label"] = "Round Table" },
@@ -727,7 +729,7 @@ Config.Furniture = {
 		},
 	},
 	["plants"] = {
-		label = "Plants",
+		label = "Zemin Ürünleri",
 		items = {
 			[1] = { ["object"] = "prop_fib_plant_01", ["price"] = 150, ["label"] = "Plant Fib" },
 			[2] = { ["object"] = "v_corp_bombplant", ["price"] = 170, ["label"] = "Plant Bomb" },		
@@ -779,7 +781,7 @@ Config.Furniture = {
 		},
 	},
 	["kitchen"] = {
-		label = "Kitchen",
+		label = "Mutfak Ürünleri",
 		items = {
 			[1] = { ["object"] = "prop_washer_01", ["price"] = 150, ["label"] = "Washer 1" },
 			[2] = { ["object"] = "prop_washer_02", ["price"] = 150, ["label"] = "Washer 2" },
@@ -841,7 +843,7 @@ Config.Furniture = {
 		},
 	},
 	["bathroom"] = {
-		label = "Bathroom",
+		label = "Banyo Ürünleri",
 		items = {
 			[1] = { ["object"] = "prop_ld_toilet_01", ["price"] = 100, ["label"] = "Toilet 1" },
 			[2] = { ["object"] = "prop_toilet_01", ["price"] = 100, ["label"] = "Toilet 2" },
@@ -874,7 +876,7 @@ Config.Furniture = {
 		},
 	},
 	["medical"] = {
-		label = "Medical",
+		label = "Sağlık Ürünleri",
 		items = {
 			[1] = { ["object"] = "v_med_barrel", ["price"] = 750, ["label"] = "Barrel" },
 			[2] = { ["object"] = "v_med_apecrate", ["price"] = 750, ["label"] = "Ape Crate" },
@@ -920,7 +922,7 @@ Config.Furniture = {
 		},
 	},
 	["walldecoration"] = {
-		label = "Wall  Deco",
+		label = "Duvar Dekorasyon Ürünleri",
 		items = {
 			[1] = { ["object"] = "apa_p_h_acc_artwalll_02", ["price"] = 1000, ["label"] = "Painting whit marks" },
 			[2] = { ["object"] = "v_ind_cs_toolboard", ["price"] = 500, ["label"] = "Tools" },

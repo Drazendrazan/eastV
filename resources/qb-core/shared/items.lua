@@ -485,16 +485,29 @@ QBShared.Items = {
 	["yivseti"] 					= {["name"] = "yivseti",  	    				["label"] = "Silah Yiv Seti",			["weight"] = 100, 		["type"] = "item", 		["image"] = "glockslides.png", 		["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,   	["combinable"] = nil,   ["description"] = "Silah İçin Yiv Seti" },
 	
 	-- Avcılık
-	["meatdeer"] 		 			 	 = {["name"] = "meatdeer",       	    		["label"] = "Geyik Boynuzu",	 				["weight"] = 100, 		["type"] = "item", 		["image"] = "deerhorns.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Deer Horns"},
-	["meatpig"] 		 			 	 = {["name"] = "meatpig",       	    		["label"] = "Domuz Eti",	 					["weight"] = 100, 		["type"] = "item", 		["image"] = "pigpelt.png", 				["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Pig Meat"},
+	["meatdeer"] 		 			 	 = {["name"] = "meatdeer",       	    		["label"] = "Geyik Boynuzu",	 			["weight"] = 100, 		["type"] = "item", 		["image"] = "deerhorns.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Deer Horns"},
+	["meatpig"] 		 			 	 = {["name"] = "meatpig",       	    		["label"] = "Domuz Eti",	 				["weight"] = 100, 		["type"] = "item", 		["image"] = "pigpelt.png", 				["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Pig Meat"},
 	["meatboar"] 		 			 	 = {["name"] = "meatboar",       	    		["label"] = "Boar Tusks",	 				["weight"] = 100, 		["type"] = "item", 		["image"] = "boartusks.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Boar Tusks"},
 	["meatlion"] 		 			 	 = {["name"] = "meatlion",       	    		["label"] = "Cougar Claws",	 				["weight"] = 100, 		["type"] = "item", 		["image"] = "cougarclaw.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Cougar Claw"},
 	["meatcow"] 		 			 	 = {["name"] = "meatcow",       	    		["label"] = "Cow Pelt",	 					["weight"] = 100, 		["type"] = "item", 		["image"] = "cowpelt.png", 				["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Cow Pelt"},
 	["meatrabbit"] 		 			 	 = {["name"] = "meatrabbit",       	    		["label"] = "Rabbit Fur",	 				["weight"] = 100, 		["type"] = "item", 		["image"] = "rabbitfur.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Rabbit Fur"},
 	["meatbird"] 		 			 	 = {["name"] = "meatbird",       	    		["label"] = "Bird Feather",	 				["weight"] = 100, 		["type"] = "item", 		["image"] = "birdfeather.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Bird Feather"},
 	["meatcoyote"] 		 			 	 = {["name"] = "meatcoyote",       	    		["label"] = "Coyote Pelt",	 				["weight"] = 100, 		["type"] = "item", 		["image"] = "coyotepelt.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Coyote Pelt"},
-	["huntingbait"] 		 			 = {["name"] = "huntingbait",       	    	["label"] = "Hayvam Yemi",	 				["weight"] = 150, 		["type"] = "item", 		["image"] = "huntingbait.png", 			["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,   	["combinable"] = nil,   ["description"] = "Hunting Bait"},
-	
+	["huntingbait"] 		 			 = {["name"] = "huntingbait",       	    	["label"] = "Hayvam Yemi",	 				["weight"] = 150, 		["type"] = "item", 		["image"] = "huntingbait.png", 			["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Hunting Bait"},
+	---- Crypto Mining
+	["basic_miningrig"]					 = {["name"] = "basic_miningrig",				["label"] = "Basic Mining Rig",				["weight"] = 20000,		["type"] = "item",		["image"] = "basic_miningrig.png",		["unique"] = true,		["useable"] = true,		["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "A Basic Mining Rig!"},
+	["advanced_miningrig"] 				 = {["name"] = "advanced_miningrig",			["label"] = "Advanced Mining Rig",			["weight"] = 15000,		["type"] = "item",		["image"] = "advanced_miningrig.png",	["unique"] = true,		["useable"] = true,		["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "An Advanced Mining Rig!"},
+	["rtx3090"]							 = {["name"] = "rtx3090",						["label"] = "RTX 3090",						["weight"] = 4000,		["type"] = "item",		["image"] = "rtx3090.png",				["unique"] = true,		["useable"] = true,		["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "RTX 3090 Graphics Card"},
+	["rtx3080"]							 = {["name"] = "rtx3080",						["label"] = "RTX 3080",						["weight"] = 4000,		["type"] = "item",		["image"] = "rtx3080.png",				["unique"] = true,		["useable"] = true,		["shouldClose"] = false,   ["combinable"] = nil,	["description"] = "RTX 3080 Graphics Card"},
+	["rtx3080ti"]						 = {["name"] = "rtx3080ti",						["label"] = "RTX 3080TI",					["weight"] = 4000,		["type"] = "item",		["image"] = "rtx3080ti.png",			["unique"] = true,		["useable"] = true,		["shouldClose"] = false,   ["combinable"] = nil,	["description"] = "RTX 3080TI Graphics Card"},
+	["rtx3070ti"]						 = {["name"] = "rtx3070ti",						["label"] = "RTX 3070TI",					["weight"] = 4000,		["type"] = "item",		["image"] = "rtx3070ti.png",			["unique"] = true,		["useable"] = true,		["shouldClose"] = false,   ["combinable"] = nil,	["description"] = "RTX 3070TI Graphics Card"},
+	["rtx3070"]							 = {["name"] = "rtx3070",						["label"] = "RTX 3070",						["weight"] = 4000,		["type"] = "item",		["image"] = "rtx3070.png",				["unique"] = true,		["useable"] = true,		["shouldClose"] = false,   ["combinable"] = nil,	["description"] = "RTX 3070 Graphics Card"},
+	["rx6800"]							 = {["name"] = "rx6800",						["label"] = "RX 6800",						["weight"] = 4000,		["type"] = "item",		["image"] = "rx6800.png",				["unique"] = true,		["useable"] = true,		["shouldClose"] = false,   ["combinable"] = nil,	["description"] = "RX 6800 Graphics Card"},
+	["rx6800xt"]						 = {["name"] = "rx6800xt",						["label"] = "RX 6800 XT",					["weight"] = 4000,		["type"] = "item",		["image"] = "rx6800xt.png",				["unique"] = true,		["useable"] = true,		["shouldClose"] = false,   ["combinable"] = nil,	["description"] = "RX 6800 XT Graphics Card"},
+	["rx6900xt"]						 = {["name"] = "rx6900xt",						["label"] = "RX 6900 XT",					["weight"] = 4000,		["type"] = "item",		["image"] = "rx6900xt.png",				["unique"] = true,		["useable"] = true,		["shouldClose"] = false,   ["combinable"] = nil,	["description"] = "RX 6900 XT Graphics Card"},
+	["rx6700xt"]						 = {["name"] = "rx6700xt",						["label"] = "RX 6700 XT",					["weight"] = 4000,		["type"] = "item",		["image"] = "rx6700xt.png",				["unique"] = true,		["useable"] = true,		["shouldClose"] = false,   ["combinable"] = nil,	["description"] = "RX 6700 XT Graphics Card"},
+
+
 	-- Sanat Galerisi Soygunu
 	["faberge_egg"] 		 	 	 = {["name"] = "faberge_egg",           		["label"] = "Faberge Egg",	 			["weight"] = 2500, 		["type"] = "item", 		["image"] = "faberge-egg.png", 			["unique"] = true, 		["useable"] = false, 	["shouldClose"] = false,   		["combinable"] = nil,   ["description"] = "A Precious Faberge Egg."},
 	["laptop_black"] 		 	 	 = {["name"] = "laptop_black",        		   	["label"] = "Laptop",	 				["weight"] = 2500, 		["type"] = "item", 		["image"] = "laptop_black.png", 		["unique"] = true, 		["useable"] = true, 	["shouldClose"] = false,   		["combinable"] = nil,   ["description"] = "A laptop made for hacking"},
@@ -761,5 +774,4 @@ QBShared.Items = {
 		["combinable"] = nil,
 		["description"] = "A working Gameboy."
 	}
-
 }

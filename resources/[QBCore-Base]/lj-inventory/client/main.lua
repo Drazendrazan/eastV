@@ -881,21 +881,10 @@ end)
         crafting.items = GetAttachmentThresholdItems()
         TriggerServerEvent("inventory:server:OpenInventory", "attachment_crafting", math.random(1, 99), crafting)
     end)
-    
 
-    local stashBoxModels = {
-        `prop_mil_crate_01`,
-    }
 
     local toolBoxModels = {
-        `prop_toolchest_05`,
-        `prop_tool_bench02_ld`,
-        `prop_tool_bench02`,
-        `prop_toolchest_02`,
-        `prop_toolchest_03`,
-        `prop_toolchest_03_l2`,
-        `prop_toolchest_05`,
-        `prop_toolchest_04`,
+        `bkr_prop_meth_table01a`,
     }
 
 
@@ -904,12 +893,12 @@ end)
                 {
                     event = "inventory:client:WeaponAttachmentCrafting",
                     icon = "fas fa-wrench",
-                    label = "Weapon Attachment Crafting", 
+                    label = "Silah Üretimi", 
                 },
                 {
                     event = "inventory:client:Crafting",
                     icon = "fas fa-wrench",
-                    label = "Item Crafting", 
+                    label = "Ürün Üretimi", 
                 },
             },
         distance = 1.0
