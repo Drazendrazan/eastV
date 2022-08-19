@@ -74,7 +74,6 @@ CreateThread(function()
 			if weapon == `WEAPON_FIREEXTINGUISHER` or  weapon == `WEAPON_PETROLCAN` then
 				if IsPedShooting(ped) then
 					SetPedInfiniteAmmo(ped, true, `WEAPON_FIREEXTINGUISHER`)
-					SetPedInfiniteAmmo(ped, true, `WEAPON_PETROLCAN`)
 				end
 			end
 		else
@@ -84,10 +83,10 @@ CreateThread(function()
     end
 end)
 
-CreateThread(function()
-    local pedPool = GetGamePool('CPed')
-    for _, v in pairs(pedPool) do
-        SetPedDropsWeaponsWhenDead(v, false)
-    end
-    Wait(500)
-end)
+-- CreateThread(function()
+--     local pedPool = GetGamePool('CPed')
+--     for _, v in pairs(pedPool) do
+--         SetPedDropsWeaponsWhenDead(v, false)
+--     end
+--     Wait(500)
+-- end)

@@ -10,7 +10,7 @@ shared_scripts {
     'config.lua',
     'configs/*.lua',
     '@qb-core/shared/locale.lua',
-    'locales/en.lua' -- Change this to your preferred language
+    'locales/tr.lua' -- Change this to your preferred language
 }
 
 server_script 'server/main.lua'
