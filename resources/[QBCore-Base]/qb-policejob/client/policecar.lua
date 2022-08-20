@@ -17,13 +17,13 @@ RegisterNetEvent('qb-policecar:openMenu', function()
         },
         {
             id = 2,
-            header = "Mustang",
+            header = "Police Charger",
             txt = "$250.00",
             params = {
                 event = "qb-policecar:spawncar",
                 args = {
-                    model = 'police2',
-                    money = 250,
+                    model = 'polchar',
+                    money = 0,
                 }
             }
         },
@@ -114,6 +114,7 @@ AddEventHandler('qb-policecar:spawncar', function(data)
         TriggerEvent("vehiclekeys:client:SetOwner", GetVehicleNumberPlateText(vehicle))
         TriggerServerEvent("inventory:server:addTrunkItems", QBCore.Functions.GetPlate(vehicle), Config.CarItems)
         SetVehicleEngineOn(vehicle, true, true)
+        SetVehicleLivery(vehicle, 2)
         exports['LegacyFuel']:SetFuel(vehicle, 100.0)
         SpawnVehicle = true
     end, vector4(445.0459, -989.1485, 25.6998, 268.8760), true)
