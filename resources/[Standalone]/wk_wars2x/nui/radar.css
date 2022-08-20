@@ -8,7 +8,7 @@
 	
 	MIT License
 
-	Copyright (c) 2020-2021 WolfKnight
+	Copyright (c) 2020 WolfKnight
 
 	Permission is hereby granted, free of charge, to any person obtaining a copy
 	of this software and associated documentation files (the "Software"), to deal
@@ -157,14 +157,6 @@ button:focus { outline: none; }
 
 .plate_yellow {
 	color: rgb(255, 255, 0);
-}
-
-.green {
-	color: rgb( 0, 255, 0 );
-}
-
-.red {
-	color: rgb( 255, 0, 0 );
 }
 
 .arrow {
@@ -778,7 +770,7 @@ button:focus { outline: none; }
  
 #plateReaderBox {
 	width: 225px;
-	height: 330px;
+	height: 300px;
 
 	position: absolute;
 	margin: auto;

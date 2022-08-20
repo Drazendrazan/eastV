@@ -121,14 +121,14 @@ Config.Zones = {
 Config.ZoneDrugs = {
     [1] = {zone="sellzonegroove", item = 'cokebaggy', price = math.random(100, 200)},
     [2] = {zone="sellzonegroove", item = 'meth', price = math.random(100, 200)},    
-    [3] = {zone="sellzonegroove", item = 'joint', price = math.random(100, 200)},
+    [3] = {zone="sellzonegroove", item = 'joint', price = math.random(30, 40)},
 
     [4] = {zone="sellzonevinewood", item = 'cokebaggy', price = math.random(100, 200)},
-    [5] = {zone="sellzonevinewood", item = 'meth', price = math.random(100, 200)},    
+    [5] = {zone="sellzonevinewood", item = 'joint', price = math.random(40, 55)},    
     
     [6] = {zone="sellzoneforumdr", item = 'cokebaggy', price = math.random(100, 200)},
     [7] = {zone="sellzoneforumdr", item = 'meth', price = math.random(100, 200)},
-    [8] = {zone="sellzoneforumdr", item = 'joint', price = math.random(100, 200)},
+    [8] = {zone="sellzoneforumdr", item = 'joint', price = math.random(30, 45)},
 
 }
 

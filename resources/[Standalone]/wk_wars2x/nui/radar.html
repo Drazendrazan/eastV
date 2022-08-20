@@ -8,7 +8,7 @@
 	
 	MIT License
 
-	Copyright (c) 2020-2021 WolfKnight
+	Copyright (c) 2020 WolfKnight
 
 	Permission is hereby granted, free of charge, to any person obtaining a copy
 	of this software and associated documentation files (the "Software"), to deal
@@ -45,7 +45,7 @@
 				<div class="panel_side panel_left"></div>
 
 				<div id="radar">
-					<div class="label label_top">FRONT ANTENNA</div>
+					<div class="label label_top">ÖN / ARKA RADAR</div>
 
 					<div class="pwr_button_container">
 						<div id="pwrBtn" data-nuitype="togglePower" class="pwr_button">PWR</div>
@@ -53,15 +53,15 @@
 
 					<div class="modes_container">
 						<div class="modes">
-							<p id="frontSame">SAME</p>
-							<p id="frontOpp">OPP</p>
-							<p id="frontXmit">XMIT</p>
+							<p id="frontSame">DUZ</p>
+							<p id="frontOpp">SOL</p>
+							<p id="frontXmit">A/K</p>
 						</div>
 
 						<div class="modes">
-							<p id="rearSame">SAME</p>
-							<p id="rearOpp">OPP</p>
-							<p id="rearXmit">XMIT</p>
+							<p id="rearSame">DUZ</p>
+							<p id="rearOpp">SOL</p>
+							<p id="rearXmit">A/K</p>
 						</div>
 					</div>
 
@@ -91,13 +91,13 @@
 
 					<div class="modes_container">
 						<div class="modes fast_top">
-							<p id="frontFastLabel">FAST</p>
-							<p id="frontFastLockLabel">LOCK</p>
+							<p id="frontFastLabel">HIZ</p>
+							<p id="frontFastLockLabel">KİLİT</p>
 						</div>
 
 						<div class="modes fast_bottom">
-							<p id="rearFastLabel">FAST</p>
-							<p id="rearFastLockLabel">LOCK</p>
+							<p id="rearFastLabel">HIZ</p>
+							<p id="rearFastLockLabel">KİLİT</p>
 						</div>
 					</div>
 
@@ -126,7 +126,7 @@
 					</div>
 
 					<div class="patrol_and_logo_container">
-						<div class="logo"><span class="name">Wraith</span> ARS 2X</div>
+						<div class="logo"><span class="name">Police</span> Radar System</div>
 
 						<div class="speeds_container">
 							<div class="display fast">
@@ -135,10 +135,9 @@
 							</div>
 						</div>
 
-						<div class="speed_label">PATROL SPEED</div>
+						<div class="speed_label">DEVRİYE HIZI</div>
 					</div>
 
-					<div class="label label_bottom">REAR ANTENNA</div>
 				</div>
 
 				<div class="panel_side panel_right"></div>
@@ -146,52 +145,52 @@
 		</div>
 
 		<div id="rc">
-			<button id="toggleDisplay" data-nuitype="toggleRadarDisplay" class="rounded_btn toggle_display">TOGGLE DISPLAY</button>
+			<button id="toggleDisplay" data-nuitype="toggleRadarDisplay" class="rounded_btn toggle_display">RADAR AC/KAPA</button>
 
-			<p class="label">FRONT ANTENNA</p>
+			<p class="label">ON RADAR</p>
 
 			<div class="antenna_btns_container">
 				<div class="btns btns_top">
-					<button id="frontOppMode" data-nuitype="setAntennaMode" data-value="front" data-mode="2" class="zone_btn top_left">OPP LK/REL</button>
+					<button id="frontOppMode" data-nuitype="setAntennaMode" data-value="front" data-mode="2" class="zone_btn top_left">SOL ON</button>
 
 					<div class="xmit_wrap">
 						<div class="xmit_btn xmit_top">
 							<div class="arrow"></div>
-							<button id="frontXmitToggle" data-nuitype="toggleAntenna" data-value="front" class="top_middle">XMIT HOLD</button>
+							<button id="frontXmitToggle" data-nuitype="toggleAntenna" data-value="front" class="top_middle">AKTAR DURDUR</button>
 						</div>
 					</div>
 
-					<button id="frontSameMode" data-nuitype="setAntennaMode" data-value="front" data-mode="1" class="zone_btn top_right">SAME LK/REL</button>
+					<button id="frontSameMode" data-nuitype="setAntennaMode" data-value="front" data-mode="1" class="zone_btn top_right">DUZ ON</button>
 				</div>
 
 				<div class="breaker"></div>
 
 				<div class="btns btns_bottom">
-					<button id="rearOppMode" data-nuitype="setAntennaMode" data-value="rear" data-mode="2" class="zone_btn bottom_left">LK/REL OPP</button>
+					<button id="rearOppMode" data-nuitype="setAntennaMode" data-value="rear" data-mode="2" class="zone_btn bottom_left">SOL ARKA</button>
 
 					<div class="xmit_wrap">
 						<div class="xmit_btn xmit_bottom">
 							<div class="arrow arrow_bottom"></div>
-							<button id="rearXmitToggle" data-nuitype="toggleAntenna" data-value="rear" class="bottom_middle">HOLD XMIT</button>
+							<button id="rearXmitToggle" data-nuitype="toggleAntenna" data-value="rear" class="bottom_middle">AKTAR DURDUR</button>
 						</div>
 					</div>	
 
-					<button id="rearSameMode" data-nuitype="setAntennaMode" data-value="rear" data-mode="1" class="zone_btn bottom_right">LK/REL SAME</button>
+					<button id="rearSameMode" data-nuitype="setAntennaMode" data-value="rear" data-mode="1" class="zone_btn bottom_right">DUZ ARKA</button>
 				</div>
 			</div>
 
-			<p class="label">REAR ANTENNA</p>
+			<p class="label">ARKA RADAR</p>
 
 			<button id="menuButton" data-nuitype="menu" class="circle_btn menu blue">MENU</button>
 
 			<div class="plate_reader_and_help_container">
-				<button id="plateReaderBtn" class="plate_reader blue">PLATE READER</button>
-				<button id="helpBtn" class="help blue">HELP</button>
+				<button id="plateReaderBtn" class="plate_reader blue">PLAKA OKUYUCUSU</button>
+				<button id="helpBtn" class="help blue">YARDIM</button>
 			</div>
 
-			<button id="uiSettings" class="rounded_btn light blue">UI SETTINGS</button>
+			<button id="uiSettings" class="rounded_btn light blue">AYARLAR</button>
 
-			<p class="logo"><span class="large">Wraith</span> ARS 2X</p>
+			<p class="logo"><span class="large">Police</span> Radar System</p>
 		</div>
 		
 		<div id="plateReaderFrame">
@@ -199,8 +198,8 @@
 
 			<div id="plateReader">
 				<div class="labels">
-					<p class="title">FRONT</p>
-					<p class="title">REAR</p>
+					<p class="title">ON</p>
+					<p class="title">ARKA</p>
 				</div>
 
 				<div class="plates">
@@ -228,33 +227,31 @@
 				</div>
 
 				<div class="labels">
-					<p id="frontPlateLock">LOCKED</p>
-					<p id="rearPlateLock">LOCKED</p>
+					<p id="frontPlateLock">KİLİT</p>
+					<p id="rearPlateLock">KİLİT</p>
 				</div>
 			</div>
 		</div>
 
 		<div id="plateReaderBox">
 			<div class="header">
-				<p class="title">Plate Reader</p>
+				<p class="title">Plaka Okuyucu</p>
 			</div>
 
 			<div class="container">
-				<button id="togglePlateReader" data-nuitype="togglePlateReaderDisplay" class="btn">Toggle Display</button>
+				<button id="togglePlateReader" data-nuitype="togglePlateReaderDisplay" class="btn">PLAKA EKRANI</button>
 
 				<input id="boloText" type="text" maxlength="8" placeholder="12ABC345" onkeypress="checkPlateInput(event)" class="plate_input"/>
 
-				<button id="setBoloPlate" class="btn">Set BOLO Plate</button>
-
-				<button id="clearBoloPlate" class="btn">Clear BOLO Plate</button>
+				<button id="setBoloPlate" class="btn">ARANAN PLAKA</button>
 			</div>
 
-			<button id="closePlateReaderSettings" class="close">CLOSE</button>
+			<button id="closePlateReaderSettings" class="close">KAPAT</button>
 		</div>
 
 		<div id="uiSettingsBox">
 			<div class="header">
-				<p class="title">UI Settings</p>
+				<p class="title">AYARLAR</p>
 			</div>
 
 			<div class="scaling_container">
@@ -262,7 +259,7 @@
 					<div id="radarDecreaseScale" class="symbol minus"></div>
 
 					<div class="info">
-						<p>Radar Scale</p>
+						<p>Radar Boyutu</p>
 						<p id="radarScaleDisplay" class="multiplier">1.00x</p>
 					</div>
 
@@ -273,7 +270,7 @@
 					<div id="remoteDecreaseScale" class="symbol minus"></div>
 
 					<div class="info">
-						<p>Remote Scale</p>
+						<p>Kumanda Boyutu</p>
 						<p id="remoteScaleDisplay" class="multiplier">1.00x</p>
 					</div>
 
@@ -284,7 +281,7 @@
 					<div id="readerDecreaseScale" class="symbol minus"></div>
 
 					<div class="info">
-						<p>Reader Scale</p>
+						<p>Plaka Boyutu</p>
 						<p id="readerScaleDisplay" class="multiplier">1.00x</p>
 					</div>
 
@@ -297,10 +294,10 @@
 				<input type="range" min="0" max="100" value="0" step="5" class="slider" id="safezone">
 			</div>
 
-			<button id="closeUiSettings" class="close">CLOSE</button>
+			<button id="closeUiSettings" class="close">KAPAT</button>
 		</div>
 		
-		<p id="keyLockLabel">Radar key binds <span id="keyLockStateLabel"></span></p>
+		<p id="keyLockLabel">Radar key lock <span id="keyLockStateLabel"></span></p>
 
 		<div id="helpWindow">
 			<iframe id="helpWeb" src="about:blank"></iframe>
@@ -319,7 +316,7 @@
 		</div>
 
 		<!-- Load JavaScript files -->
-		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<script src="jquery-3.4.1.min.js"></script>
 		<script src="radar.js"></script>
 	</body>
 </html>
