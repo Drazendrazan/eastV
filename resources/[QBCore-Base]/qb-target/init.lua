@@ -108,7 +108,7 @@ Config.GlobalPlayerOptions = {
 	options = {
 		{
 			type = "client",
-			event = "qb-phone:client:GiveContactDetails",
+			event = "contact:checkDist",
 			icon = 'fas fa-phone',
 			label = 'İletişim Bilgilerini Ver',
 			item = 'phone',
