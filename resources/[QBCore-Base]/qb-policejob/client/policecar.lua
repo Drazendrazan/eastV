@@ -17,8 +17,44 @@ RegisterNetEvent('qb-policecar:openMenu', function()
         },
         {
             id = 2,
+            header = "Police Victoria",
+            txt = "Victoria",
+            params = {
+                event = "qb-policecar:spawncar",
+                args = {
+                    model = 'polvic',
+                    money = 0,
+                }
+            }
+        },
+        {
+            id = 3,
+            header = "Police Taurus ",
+            txt = "Taurus",
+            params = {
+                event = "qb-policecar:spawncar",
+                args = {
+                    model = 'poltaurus',
+                    money = 0,
+                }
+            }
+        },
+        {
+            id = 4,
+            header = "Police Tahoe",
+            txt = "Tahoe",
+            params = {
+                event = "qb-policecar:spawncar",
+                args = {
+                    model = 'poltah',
+                    money = 0,
+                }
+            }
+        },
+        {
+            id = 5,
             header = "Police Charger",
-            txt = "$250.00",
+            txt = "Charger",
             params = {
                 event = "qb-policecar:spawncar",
                 args = {
@@ -28,26 +64,26 @@ RegisterNetEvent('qb-policecar:openMenu', function()
             }
         },
         {
-            id = 3,
-            header = "Bison ",
-            txt = "$500.00",
+            id = 6,
+            header = "Police Raptor",
+            txt = "Raptor",
             params = {
                 event = "qb-policecar:spawncar",
                 args = {
-                    model = 'bison',
-                    money = 500,
+                    model = 'polraptor',
+                    money = 0,
                 }
             }
         },
         {
-            id = 4,
-            header = "Sanchez",
-            txt = "$750.00",
+            id = 7,
+            header = "Police HSU",
+            txt = "Mustang",
             params = {
                 event = "qb-policecar:spawncar",
                 args = {
-                    model = 'sanchez',
-                    money = 750,
+                    model = '2015polstang',
+                    money = 0,
                 }
             }
         },
@@ -103,7 +139,7 @@ end
 
 RegisterNetEvent('qb-policecar:spawncar')
 AddEventHandler('qb-policecar:spawncar', function(data)
-    local money =data.money
+    local money = data.money
     local model = data.model
     local player = PlayerPedId()
     QBCore.Functions.SpawnVehicle(model, function(vehicle)
