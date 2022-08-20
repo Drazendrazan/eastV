@@ -8,7 +8,7 @@ RegisterNetEvent('qb_rpchat:sendMe', function(playerId, title, message, color)
 
 	if targetPed == source or #(sourceCoords - targetCoords) < 20 then
 		TriggerEvent('chat:addMessage', {
-      template = '<div style="padding: 0.45vw; margin: 0.05vw; background-color: rgba(202, 83, 220, 0.6); border-radius: 10px;"><i class="fas fa-user-circle"></i> {0}: {1}</div>',
+      template = '<div style="padding: 0.45vw; margin: 0.05vw; background-color: rgba(202, 83, 220, 0.6); border-radius: 10px;">{0}: {1}</div>',
         args = { title, message }
     })
 	end
@@ -26,7 +26,7 @@ RegisterNetEvent('qb_rpchat:sendDo', function(playerId, title, message, color)
 
 	if targetPed == source or #(sourceCoords - targetCoords) < 20 then
 		TriggerEvent('chat:addMessage', {
-      template = '<div style="padding: 0.45vw; margin: 0.05vw; background-color: rgba(220, 173, 17, 0.6); border-radius: 10px;"><i class="fas fa-users"></i> {0}: {1}</div>',
+      template = '<div style="padding: 0.45vw; margin: 0.05vw; background-color: rgba(220, 173, 17, 0.6); border-radius: 10px;">{0}: {1}</div>',
         args = { title, message }
     })
 	end
