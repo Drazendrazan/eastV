@@ -340,7 +340,7 @@ Config.Locations = {
         settings = {
             label = 'MRPD Motorworks',
             welcomeLabel = "Welcome to MRPD Motorworks!",
-            enabled = false,
+            enabled = true,
         },
         categories = {
             repair = true,
@@ -349,7 +349,7 @@ Config.Locations = {
             tint = true,
             extras = true,
             plate = true,
-            cosmetics = true,
+            cosmetics = false,
         },
         drawtextui = {
             text = "MRPD Motorworks",
