@@ -145,7 +145,7 @@ end
 
 RegisterNetEvent('consumables:client:Eat', function(itemName)
     TriggerEvent('animations:client:EmoteCommandStart', {"eat"})
-    QBCore.Functions.Progressbar("eat_something", "Eating..", 5000, false, true, {
+    QBCore.Functions.Progressbar("eat_something", "Yemek Yiyorsun..", 5000, false, true, {
         disableMovement = false,
         disableCarMovement = false,
 		disableMouse = false,
@@ -160,7 +160,7 @@ end)
 
 RegisterNetEvent('consumables:client:Drink', function(itemName)
     TriggerEvent('animations:client:EmoteCommandStart', {"drink"})
-    QBCore.Functions.Progressbar("drink_something", "Drinking..", 5000, false, true, {
+    QBCore.Functions.Progressbar("drink_something", "İçiyorsun..", 5000, false, true, {
         disableMovement = false,
         disableCarMovement = false,
 		disableMouse = false,
@@ -174,7 +174,7 @@ end)
 
 RegisterNetEvent('consumables:client:DrinkAlcohol', function(itemName)
     TriggerEvent('animations:client:EmoteCommandStart', {"drink"})
-    QBCore.Functions.Progressbar("snort_coke", "Drinking liquor..", math.random(3000, 6000), false, true, {
+    QBCore.Functions.Progressbar("snort_coke", "Alkol İçiyorsun.", math.random(3000, 6000), false, true, {
         disableMovement = false,
         disableCarMovement = false,
         disableMouse = false,
@@ -199,7 +199,7 @@ end)
 
 RegisterNetEvent('consumables:client:Cokebaggy', function()
     local ped = PlayerPedId()
-    QBCore.Functions.Progressbar("snort_coke", "Quick sniff..", math.random(5000, 8000), false, true, {
+    QBCore.Functions.Progressbar("snort_coke", "Kokain Çekiyorsun", math.random(5000, 8000), false, true, {
         disableMovement = false,
         disableCarMovement = false,
         disableMouse = false,
@@ -329,7 +329,7 @@ end)
 
 RegisterNetEvent('consumables:client:UseParachute', function()
     EquipParachuteAnim()
-    QBCore.Functions.Progressbar("use_parachute", "parachute using..", 5000, false, true, {
+    QBCore.Functions.Progressbar("use_parachute", "Paraşüt Giyiliyor..", 5000, false, true, {
         disableMovement = false,
         disableCarMovement = false,
 		disableMouse = false,
@@ -352,7 +352,7 @@ end)
 RegisterNetEvent('consumables:client:ResetParachute', function()
     if ParachuteEquiped then
         EquipParachuteAnim()
-        QBCore.Functions.Progressbar("reset_parachute", "Packing parachute..", 40000, false, true, {
+        QBCore.Functions.Progressbar("reset_parachute", "Paraşüt Paketleniyor..", 40000, false, true, {
             disableMovement = false,
             disableCarMovement = false,
             disableMouse = false,
@@ -371,13 +371,13 @@ RegisterNetEvent('consumables:client:ResetParachute', function()
             ParachuteEquiped = false
         end)
     else
-        QBCore.Functions.Notify("You dont have a parachute!", "error")
+        QBCore.Functions.Notify("Paraşütün Yok!", "error")
     end
 end)
 
 RegisterNetEvent('consumables:client:UseArmor', function()
-    if GetPedArmour(PlayerPedId()) >= 75 then QBCore.Functions.Notify('You already have enough armor on!', 'error') return end
-    QBCore.Functions.Progressbar("use_armor", "Putting on the body armour..", 5000, false, true, {
+    if GetPedArmour(PlayerPedId()) >= 75 then QBCore.Functions.Notify('Zaten üzerinde bir zırh var!', 'error') return end
+    QBCore.Functions.Progressbar("use_armor", "Zırh giyiliyor.", 5000, false, true, {
         disableMovement = false,
         disableCarMovement = false,
 		disableMouse = false,
@@ -391,10 +391,10 @@ RegisterNetEvent('consumables:client:UseArmor', function()
 end)
 
 RegisterNetEvent('consumables:client:UseHeavyArmor', function()
-    if GetPedArmour(PlayerPedId()) == 100 then QBCore.Functions.Notify('You already have enough armor on!', 'error') return end
+    if GetPedArmour(PlayerPedId()) == 100 then QBCore.Functions.Notify('Üzerinde bir zırh var!', 'error') return end
     local ped = PlayerPedId()
     local PlayerData = QBCore.Functions.GetPlayerData()
-    QBCore.Functions.Progressbar("use_heavyarmor", "Putting on body armour..", 5000, false, true, {
+    QBCore.Functions.Progressbar("use_heavyarmor", "Zırh giyiliyor.", 5000, false, true, {
         disableMovement = false,
         disableCarMovement = false,
 		disableMouse = false,
@@ -422,7 +422,7 @@ end)
 RegisterNetEvent('consumables:client:ResetArmor', function()
     local ped = PlayerPedId()
     if currentVest ~= nil and currentVestTexture ~= nil then
-        QBCore.Functions.Progressbar("remove_armor", "Removing the body armour..", 2500, false, true, {
+        QBCore.Functions.Progressbar("remove_armor", "Zırh Çıkarılıyor..", 2500, false, true, {
             disableMovement = false,
             disableCarMovement = false,
             disableMouse = false,

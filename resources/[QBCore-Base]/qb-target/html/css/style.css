@@ -7,7 +7,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
-    font-size: 3vh;
+    font-size: 2vh;
     text-shadow: 0.2vh 0.2vh 0.2vh #000000;
 }
 

@@ -22,6 +22,7 @@ client_scripts {
 	--'client/anpr.lua',
 	'client/evidence.lua',
 	'client/objects.lua',
+	'client/policecar.lua',
 	'client/tracker.lua'
 }
 

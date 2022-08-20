@@ -10,6 +10,7 @@ local inHelicopter = false
 local inImpound = false
 local inGarage = false
 
+
 local function loadAnimDict(dict) -- interactions, job,
     while (not HasAnimDictLoaded(dict)) do
         RequestAnimDict(dict)
@@ -46,26 +47,26 @@ local function openFingerprintUI()
     SetNuiFocus(true, true)
 end
 
-local function SetCarItemsInfo()
-	local items = {}
-	for _, item in pairs(Config.CarItems) do
-		local itemInfo = QBCore.Shared.Items[item.name:lower()]
-		items[item.slot] = {
-			name = itemInfo["name"],
-			amount = tonumber(item.amount),
-			info = item.info,
-			label = itemInfo["label"],
-			description = itemInfo["description"] and itemInfo["description"] or "",
-			weight = itemInfo["weight"],
-			type = itemInfo["type"],
-			unique = itemInfo["unique"],
-			useable = itemInfo["useable"],
-			image = itemInfo["image"],
-			slot = item.slot,
-		}
-	end
-	Config.CarItems = items
-end
+-- local function SetCarItemsInfo()
+-- 	local items = {}
+-- 	for _, item in pairs(Config.CarItems) do
+-- 		local itemInfo = QBCore.Shared.Items[item.name:lower()]
+-- 		items[item.slot] = {
+-- 			name = itemInfo["name"],
+-- 			amount = tonumber(item.amount),
+-- 			info = item.info,
+-- 			label = itemInfo["label"],
+-- 			description = itemInfo["description"] and itemInfo["description"] or "",
+-- 			weight = itemInfo["weight"],
+-- 			type = itemInfo["type"],
+-- 			unique = itemInfo["unique"],
+-- 			useable = itemInfo["useable"],
+-- 			image = itemInfo["image"],
+-- 			slot = item.slot,
+-- 		}
+-- 	end
+-- 	Config.CarItems = items
+-- end
 
 local function doCarDamage(currentVehicle, veh)
 	local smash = false
@@ -493,13 +494,9 @@ RegisterNetEvent('qb-police:client:openArmoury', function()
     }
     local index = 1
     for _, armoryItem in pairs(Config.Items.items) do
-        for i=1, #armoryItem.authorizedJobGrades do
-            if armoryItem.authorizedJobGrades[i] == PlayerJob.grade.level then
-                authorizedItems.items[index] = armoryItem
-                authorizedItems.items[index].slot = index
-                index = index + 1
-            end
-        end
+        authorizedItems.items[index] = armoryItem
+        authorizedItems.items[index].slot = index
+        index = index + 1
     end
     SetWeaponSeries()
     TriggerServerEvent("inventory:server:OpenInventory", "shop", "police", authorizedItems)

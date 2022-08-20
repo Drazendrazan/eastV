@@ -96,6 +96,20 @@ Config.TargetModels = {
         },
         distance = 4.0
     },
+	["PoliceCars"] = {
+        models = {
+            `s_f_y_cop_01`,
+        },
+        options = {
+            {
+                type = "client",
+                event = "qb-policecar:openMenu",
+                icon = "fas fa-car",
+                label = "Araç Al",
+            },
+        },
+        distance = 4.0
+    },
 }
 
 Config.GlobalPedOptions = {
