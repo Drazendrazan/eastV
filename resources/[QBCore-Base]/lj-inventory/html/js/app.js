@@ -635,6 +635,22 @@ function FormatItemInfo(itemData, dom) {
     } else if (itemData.name == "labkey") {
       $(".item-info-title").html("<p>" + itemData.label + "</p>");
       $(".item-info-description").html("<p>Lab: " + itemData.info.lab + "</p>");
+    } else if (itemData.name == "stickynote") {
+      $(".item-info-title").html("<p>" + itemData.label + "</p>");
+      $(".item-info-description").html("<p>" + itemData.info.label + "</p>");
+    } else if (itemData.name == "rentalpapers") {
+      $(".item-info-title").html("<p>" + itemData.label + "</p>");
+      $(".item-info-description").html(
+        "<p><strong>İsim: </strong><span>" +
+          itemData.info.firstname +
+          "</span></p><p><strong>Soyisim: </strong><span>" +
+          itemData.info.lastname +
+          "</span></p><p><strong>Plaka: </strong><span>" +
+          itemData.info.plate +
+          "<p><strong>Model: </strong><span>" +
+          itemData.info.model +
+          "</span></p>"
+      );
     } else {
       $(".item-info-title").html("<p>" + itemData.label + "</p>");
       $(".item-info-description").html("<p>" + itemData.description + "</p>");

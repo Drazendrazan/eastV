@@ -8,19 +8,17 @@ local miner = CircleZone:Create(vector3(-593.13, 2074.56, 131.34), 15.0, {
     --debugPoly=false
 })
 
-local function createBlips()
-    for k, v in pairs(Config.MadenLocations) do
-        blips[k] = AddBlipForCoord(tonumber(v.x), tonumber(v.y), tonumber(v.z))
-        SetBlipSprite(blips[k], Config.Blip.blipType)
-        SetBlipDisplay(blips[k], 4)
-        SetBlipScale  (blips[k], Config.Blip.blipScale)
-        SetBlipColour (blips[k], Config.Blip.blipColor)
-        SetBlipAsShortRange(blips[k], true)
-        BeginTextCommandSetBlipName("STRING")
-        AddTextComponentString("Maden")
-        EndTextCommandSetBlipName(blips[k])
-    end
-end
+CreateThread(function()
+    blip = AddBlipForCoord(-593.13, 2074.56, 131.34)
+    SetBlipSprite (blip, 78)
+    SetBlipDisplay(blip, 4)
+    SetBlipScale  (blip, 0.5)
+    SetBlipColour (blip, 77)
+    SetBlipAsShortRange(blip, true)
+    BeginTextCommandSetBlipName("STRING")
+    AddTextComponentString('Taş Madeni')
+    EndTextCommandSetBlipName(blip)
+end)
 
 
 RegisterNetEvent('kaz:maden')
