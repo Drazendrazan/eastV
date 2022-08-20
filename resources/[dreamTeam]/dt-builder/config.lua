@@ -19,19 +19,19 @@ Config.ExperienceRequirement = {
 		Requirement = 0, 
         MinExpDrop = 1, 
         MaxExpDrop = 3, 
-        Payout = 1700, 
+        Payout = 250, 
 	},
     [2] = { 
 		Requirement = 200, 
         MinExpDrop = 2, 
         MaxExpDrop = 5, 
-        Payout = 3100, 
+        Payout = 750, 
 	},
     [3] = { 
 		Requirement = 430, 
         MinExpDrop = 3, 
         MaxExpDrop = 6, 
-        Payout = 6700, 
+        Payout = 2250, 
 	},
 }
 
