@@ -4581,6 +4581,16 @@ QBShared.Vehicles = {
         ['hash'] = `weevil2`,
         ['shop'] = 'pdm',
     },
+	['polchar'] = {
+        ['name'] = 'Police Charger',
+        ['brand'] = 'PC',
+        ['model'] = 'polchar',
+        ['price'] = 95000,
+        ['category'] = 'muscle',
+        ['hash'] = `polchar`,
+        ['shop'] = 'pdm',
+    },
+	
 }
 
 for _, v in pairs(QBShared.Vehicles) do
