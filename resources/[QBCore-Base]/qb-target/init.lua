@@ -142,28 +142,15 @@ Config.GlobalPlayerOptions = {
 		},
 		{
 			type = "client",
-			event = "qcallTakeHostage",
+			event = "callTakeHostage",
 			icon = 'fas fa-phone',
 			label = 'Rehin Al',
-		},
-		{
-			type = "client",
-			event = "dt-carry:client:StartCarry",
-			icon = 'fas fa-phone',
-			label = 'Kucakla',
 		},
 		{
 			type = "client",
 			event = "police:client:GetEscorted",
 			icon = 'fas fa-phone',
 			label = 'Kişinin koluna gir',
-			job = 'police',
-		},
-		{
-			type = "client",
-			event = "police:client:SendToJail",
-			icon = 'fas fa-phone',
-			label = 'Cezaevine sevk et',
 			job = 'police',
 		},
 		{
